@@ -1,38 +1,4 @@
-<#
-.SYNOPSIS
-    Finds FIDO keys based on specified criteria.
 
-.DESCRIPTION
-    The Find-FIDOKey function filters and displays FIDO keys from a JSON file based on specified Brand, Type, View, and TypeFilterMode parameters. 
-    It supports filtering by multiple types, and allows the results to be displayed in either a table or list format.
-
-.PARAMETER Brand
-    Specifies the brand of FIDO keys to filter by.
-
-.PARAMETER Type
-    Specifies the type(s) of FIDO keys to filter by. Accepts multiple values from a predefined set of types: Bio, USB, NFC, BLE.
-
-.PARAMETER View
-    Specifies the format in which to display the results. Accepts either "Table" or "List". Default is "List".
-
-.PARAMETER TypeFilterMode
-    Specifies the mode for filtering by type. Accepts one of the following values:
-    - AtLeastTwo: At least two of the specified types must match.
-    - AtLeastOne: At least one of the specified types must match. (Default)
-    - AtLeastThree: At least three of the specified types must match.
-    - All: All specified types must match.
-
-.EXAMPLE
-    Find-FIDOKey -Brand "Yubico" -Type "USB" -View "Table"
-    Finds and displays all Yubico FIDO keys that support USB in a table format.
-
-.EXAMPLE
-    Find-FIDOKey -Type "Bio", "NFC" -TypeFilterMode "AtLeastTwo"
-    Finds and displays all FIDO keys that support at least Bio and NFC.
-
-.NOTES
-    The function reads FIDO key data from a JSON file located at "../Assets/FidoKeys.json".
-#>
 function Find-FIDOKey {
     [CmdletBinding()]
     param (
@@ -43,7 +9,7 @@ function Find-FIDOKey {
             "Google","GoTrust","HID Global","Hideez","Hypersecu","HYPR","IDCore","IDEMIA","IDmelon","Thales",
             "ImproveID","KEY-ID","KeyXentic","KONAI","NEOWAVE","NXP Semiconductors","Nymi","OCTATCO","OneSpan",
             "OnlyKey","OpenSK","Pone Biometrics","Precision","RSA","SafeNet","Yubico","Sentry Enterprises",
-            "SmartDisplayer","SoloKeys","Swissbit","Taglio","Token Ring","TOKEN2","Identiv","VALMIDO","Kensington",
+            "SmartDisplayer","SoloKeys","Swissbit","Taglio","Token Ring","TOKEN2","Identiv","VALMIDO","ensington",
             "VinCSS","WiSECURE")]
         [string[]]$Brand,
 
@@ -64,9 +30,8 @@ function Find-FIDOKey {
     )
     
     # Start with all devices
-    $results = Get-Content -raw "$PSScriptRoot/../Assets/FidoKeys.json" | ConvertFrom-Json
+    $results = Get-Content -raw "$PSScriptRoot/FidoKeys.json" | ConvertFrom-Json
 
-    
     # Filter by Brand if provided
     if ($Brand) {
         $results = $results | Where-Object {
