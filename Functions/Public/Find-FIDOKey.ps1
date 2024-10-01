@@ -64,8 +64,9 @@ function Find-FIDOKey {
     )
     
     # Start with all devices
-    $results = Get-Content -raw "../Assets/FidoKeys.json" | ConvertFrom-Json
+    $results = Get-Content -raw "$PSScriptRoot/../Assets/FidoKeys.json" | ConvertFrom-Json
 
+    
     # Filter by Brand if provided
     if ($Brand) {
         $results = $results | Where-Object {
