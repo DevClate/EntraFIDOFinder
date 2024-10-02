@@ -6,64 +6,90 @@
     <title>FIDO Key Explorer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .filter-input {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
+            margin-top: 20px;
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 12px;
+            text-align: left;
         }
         th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
             background-color: #f2f2f2;
         }
-        .filter-input {
-            margin-bottom: 10px;
-            padding: 8px;
-            width: 100%;
-            box-sizing: border-box;
+        tr:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
 <body>
-    <h1>FIDO Key Explorer</h1>
-    <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..." onkeyup="filterTable()">
-    <select id="filterBio" class="filter-input" onchange="filterTable()">
-        <option value="">All Bio</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-    <select id="filterUSB" class="filter-input" onchange="filterTable()">
-        <option value="">All USB</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-    <select id="filterNFC" class="filter-input" onchange="filterTable()">
-        <option value="">All NFC</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-    <select id="filterBLE" class="filter-input" onchange="filterTable()">
-        <option value="">All BLE</option>
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-    </select>
-    <table id="fidoTable">
-        <thead>
-            <tr>
-                <th>Vendor</th>
-                <th>Description</th>
-                <th>Bio</th>
-                <th>USB</th>
-                <th>NFC</th>
-                <th>BLE</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="container">
+        <h1>FIDO Key Explorer</h1>
+        <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..." onkeyup="filterTable()">
+        <select id="filterBio" class="filter-input" onchange="filterTable()">
+            <option value="">All Bio</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterUSB" class="filter-input" onchange="filterTable()">
+            <option value="">All USB</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterNFC" class="filter-input" onchange="filterTable()">
+            <option value="">All NFC</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterBLE" class="filter-input" onchange="filterTable()">
+            <option value="">All BLE</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <table id="fidoTable">
+            <thead>
+                <tr>
+                    <th>Vendor</th>
+                    <th>Description</th>
+                    <th>Bio</th>
+                    <th>USB</th>
+                    <th>NFC</th>
+                    <th>BLE</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
