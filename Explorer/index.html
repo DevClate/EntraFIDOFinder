@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entra Attestation FIDO Key Explorer</title>
+    <title>Attestation FIDO Key Explorer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-    <h1>Attestation FIDO Key Explorer</h1>
+    <h1>FIDO Key Explorer</h1>
     <table id="fidoTable">
         <thead>
             <tr>
@@ -39,7 +39,7 @@
     </table>
 
     <script>
-        fetch('FidoKeys.json')
+        fetch('explorer/FidoKeys.json')
             .then(response => response.json())
             .then(data => {
                 const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
