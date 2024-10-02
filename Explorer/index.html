@@ -106,7 +106,7 @@
                 const nfc = cells[4].innerText;
                 const ble = cells[5].innerText;
 
-                const matchesVendor = vendor.indexOf(vendorInput) > -1;
+                const matchesVendor = vendor.includes(vendorInput);
                 const matchesBio = !bioFilter || bio === bioFilter;
                 const matchesUSB = !usbFilter || usb === usbFilter;
                 const matchesNFC = !nfcFilter || nfc === nfcFilter;
