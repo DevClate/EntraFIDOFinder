@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attestation FIDO Key Explorer</title>
+    <title>FIDO Key Explorer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,7 +40,12 @@
 
     <script>
         fetch('FidoKeys.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(data => {
                 const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
                 data.forEach(item => {
