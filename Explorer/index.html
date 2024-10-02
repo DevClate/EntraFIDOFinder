@@ -19,7 +19,7 @@
         th {
             background-color: #f2f2f2;
         }
-        #searchInput {
+        .filter-input {
             margin-bottom: 10px;
             padding: 8px;
             width: 100%;
@@ -29,7 +29,27 @@
 </head>
 <body>
     <h1>FIDO Key Explorer</h1>
-    <input type="text" id="searchInput" placeholder="Search for vendors..." onkeyup="filterTable()">
+    <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..." onkeyup="filterTable()">
+    <select id="filterBio" class="filter-input" onchange="filterTable()">
+        <option value="">All Bio</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <select id="filterUSB" class="filter-input" onchange="filterTable()">
+        <option value="">All USB</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <select id="filterNFC" class="filter-input" onchange="filterTable()">
+        <option value="">All NFC</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+    <select id="filterBLE" class="filter-input" onchange="filterTable()">
+        <option value="">All BLE</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
     <table id="fidoTable">
         <thead>
             <tr>
@@ -70,15 +90,29 @@
         });
 
         function filterTable() {
-            const input = document.getElementById('searchInput');
-            const filter = input.value.toLowerCase();
+            const vendorInput = document.getElementById('searchVendor').value.toLowerCase();
+            const bioFilter = document.getElementById('filterBio').value;
+            const usbFilter = document.getElementById('filterUSB').value;
+            const nfcFilter = document.getElementById('filterNFC').value;
+            const bleFilter = document.getElementById('filterBLE').value;
             const table = document.getElementById('fidoTable');
             const rows = table.getElementsByTagName('tr');
 
             for (let i = 1; i < rows.length; i++) {
                 const cells = rows[i].getElementsByTagName('td');
                 const vendor = cells[0].innerText.toLowerCase();
-                if (vendor.indexOf(filter) > -1) {
+                const bio = cells[2].innerText;
+                const usb = cells[3].innerText;
+                const nfc = cells[4].innerText;
+                const ble = cells[5].innerText;
+
+                const matchesVendor = vendor.indexOf(vendorInput) > -1;
+                const matchesBio = !bioFilter || bio === bioFilter;
+                const matchesUSB = !usbFilter || usb === usbFilter;
+                const matchesNFC = !nfcFilter || nfc === nfcFilter;
+                const matchesBLE = !bleFilter || ble === bleFilter;
+
+                if (matchesVendor && matchesBio && matchesUSB && matchesNFC && matchesBLE) {
                     rows[i].style.display = '';
                 } else {
                     rows[i].style.display = 'none';
