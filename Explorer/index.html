@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entra Attestation FIDO Key Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Attestation FIDO Key Explorer</h1>
+    <table id="fidoTable">
+        <thead>
+            <tr>
+                <th>Vendor</th>
+                <th>Description</th>
+                <th>Bio</th>
+                <th>USB</th>
+                <th>NFC</th>
+                <th>BLE</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        fetch('FidoKeys.json')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
+                data.forEach(item => {
+                    const row = tableBody.insertRow();
+                    row.insertCell(0).innerText = item.Vendor;
+                    row.insertCell(1).innerText = item.Description;
+                    row.insertCell(2).innerText = item.Bio;
+                    row.insertCell(3).innerText = item.USB;
+                    row.insertCell(4).innerText = item.NFC;
+                    row.insertCell(5).innerText = item.BLE;
+                });
+            })
+            .catch(error => console.error('Error loading JSON data:', error));
+    </script>
+</body>
+</html>
