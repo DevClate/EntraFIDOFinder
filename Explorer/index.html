@@ -80,11 +80,11 @@
                 <tr>
                     <th>Vendor</th>
                     <th>Description</th>
+                    <th>AAGUID</th>
                     <th>Bio</th>
                     <th>USB</th>
                     <th>NFC</th>
                     <th>BLE</th>
-                    <th>AAGUID</th>
                 </tr>
             </thead>
             <tbody>
@@ -107,11 +107,11 @@
                         const row = tableBody.insertRow();
                         row.insertCell(0).innerText = item.Vendor;
                         row.insertCell(1).innerText = item.Description;
-                        row.insertCell(2).innerText = item.Bio;
-                        row.insertCell(3).innerText = item.USB;
-                        row.insertCell(4).innerText = item.NFC;
-                        row.insertCell(5).innerText = item.BLE;
-                        row.insertCell(6).innerText = item.AAGUID;
+                        row.insertCell(2).innerText = item.AAGUID;
+                        row.insertCell(3).innerText = item.Bio;
+                        row.insertCell(4).innerText = item.USB;
+                        row.insertCell(5).innerText = item.NFC;
+                        row.insertCell(6).innerText = item.BLE;
                     });
                 })
                 .catch(error => console.error('Error loading JSON data:', error));
@@ -129,10 +129,10 @@
             for (let i = 1; i < rows.length; i++) {
                 const cells = rows[i].getElementsByTagName('td');
                 const vendor = cells[0].innerText.toLowerCase();
-                const bio = cells[2].innerText;
-                const usb = cells[3].innerText;
-                const nfc = cells[4].innerText;
-                const ble = cells[5].innerText;
+                const bio = cells[3].innerText;
+                const usb = cells[4].innerText;
+                const nfc = cells[5].innerText;
+                const ble = cells[6].innerText;
 
                 const matchesVendor = vendor.includes(vendorInput);
                 const matchesBio = !bioFilter || bio === bioFilter;
