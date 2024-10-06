@@ -51,7 +51,7 @@
         }
         .last-updated {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 14px;
             color: #666;
         }
@@ -60,6 +60,7 @@
 <body>
     <div class="container">
         <h1>FIDO Key Explorer</h1>
+        <div class="last-updated" id="lastUpdated"></div>
         <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..." onkeyup="filterTable()">
         <select id="filterBio" class="filter-input" onchange="filterTable()">
             <option value="">All Bio</option>
@@ -96,7 +97,6 @@
             <tbody>
             </tbody>
         </table>
-        <div class="last-updated" id="lastUpdated"></div>
     </div>
 
     <script>
@@ -110,6 +110,10 @@
                 })
                 .then(data => {
                     const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
+                    
+                    // Sort data by vendor
+                    data.keys.sort((a, b) => a.Vendor.localeCompare(b.Vendor));
+
                     data.keys.forEach(item => {
                         const row = tableBody.insertRow();
                         row.insertCell(0).innerText = item.Vendor;
