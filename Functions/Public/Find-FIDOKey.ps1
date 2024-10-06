@@ -38,13 +38,13 @@ function Find-FIDOKey {
     param (
         # Parameter for filtering by Brand
         [Parameter()]
-        [ValidateSet("ACS","Allthenticator","Arculus","AuthenTrend","Atos","authenton1","Chunghwa Telecom",
-            "Crayonic","Cryptnox","Egomet","Ensurity","eWBM","Excelsecu","Feitian","FIDO KeyPass","FT-JCOS",
-            "Google","GoTrust","HID Global","Hideez","Hypersecu","HYPR","IDCore","IDEMIA","IDmelon","Thales",
-            "ImproveID","KEY-ID","KeyXentic","KONAI","NEOWAVE","NXP Semiconductors","Nymi","OCTATCO","OneSpan",
-            "OnlyKey","OpenSK","Pone Biometrics","Precision","RSA","SafeNet","Yubico","Sentry Enterprises",
-            "SmartDisplayer","SoloKeys","Swissbit","Taglio","Token Ring","TOKEN2","Identiv","VALMIDO","ensington",
-            "VinCSS","WiSECURE")]
+        [ValidateSet("ACS", "Allthenticator", "Arculus", "AuthenTrend", "Atos", "authenton1", "Chunghwa Telecom",
+            "Crayonic", "Cryptnox", "Egomet", "Ensurity", "eWBM", "Excelsecu", "Feitian", "FIDO KeyPass", "FT-JCOS",
+            "Google", "GoTrust", "HID Global", "Hideez", "Hypersecu", "HYPR", "IDCore", "IDEMIA", "IDmelon", "Thales",
+            "ImproveID", "KEY-ID", "KeyXentic", "KONAI", "NEOWAVE", "NXP Semiconductors", "Nymi", "OCTATCO", "OneSpan",
+            "OnlyKey", "OpenSK", "Pone Biometrics", "Precision", "RSA", "SafeNet", "Yubico", "Sentry Enterprises",
+            "SmartDisplayer", "SoloKeys", "Swissbit", "Taglio", "Token Ring", "TOKEN2", "Identiv", "VALMIDO", "Kensington",
+            "VinCSS", "WiSECURE")]
         [string[]]$Brand,
 
         # Parameter for filtering by Type (Bio, USB, NFC, BLE)
@@ -62,10 +62,23 @@ function Find-FIDOKey {
         [ValidateSet("AtLeastTwo", "AtLeastOne", "AtLeastThree", "All")]
         [string]$TypeFilterMode = "AtLeastOne"
     )
-    
-    # Start with all devices
-    $results = Get-Content -raw "$PSScriptRoot/FidoKeys.json" | ConvertFrom-Json
+    # Construct the path to the JSON file in the assets folder two levels up
+    $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
+    $jsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FidoKeys.json"
 
+    # Check if the file exists
+    if (-Not (Test-Path -Path $jsonFilePath)) {
+        Write-Error "The JSON file was not found at path: $jsonFilePath"
+        return
+    }
+
+    # Start with all devices
+    $data = Get-Content -raw $jsonFilePath | ConvertFrom-Json
+
+    # Extract metadata and keys
+    $metadata = $data.metadata
+    $results = $data.keys
+        
     # Filter by Brand if provided
     if ($Brand) {
         $results = $results | Where-Object {
@@ -91,17 +104,31 @@ function Find-FIDOKey {
         }
     }
 
+    # Sort the results by Vendor in alphabetical order
+    $results = $results | Sort-Object -Property Vendor
+
+    # Create a PSCustomObject for the results
+    $output = [PSCustomObject]@{
+        Count       = $results.Count
+        Devices     = $results
+        LastUpdated = $metadata.databaseLastUpdated
+    }
+
     # Output results based on the specified view format
-    if ($results.Count -gt 0) {
-        Write-Host "FIDO Devices eligible for attestation with Entra ID: $($results.Count)"
+    if ($output.Count -gt 0) {
+        Write-Host "FIDO Devices eligible for attestation with Entra ID: $($output.Count)"
+        Write-Host "Database Last Updated: $($output.LastUpdated)"
         if ($View -eq "Table") {
-            $results | Format-Table -AutoSize
+            $output.Devices | Format-Table -AutoSize
         }
         else {
-            $results
+            $output.Devices
         }
     }
     else {
         Write-Host "No devices found matching the criteria."
     }
+
+    # Return the PSCustomObject
+    # return $output
 }

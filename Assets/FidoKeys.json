@@ -1,4 +1,8 @@
-[
+{
+  "metadata": {
+    "databaseLastUpdated": "2024-09-30T06:30:00Z"
+  },
+  "keys": [
     {
       "Vendor": "ACS",
       "Description": "ACS FIDO Authenticator",
@@ -1116,4 +1120,4 @@
       "BLE": "No"
     }
   ]
-  
+}
