@@ -49,6 +49,12 @@
         tr:hover {
             background-color: #ddd;
         }
+        .last-updated {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +96,7 @@
             <tbody>
             </tbody>
         </table>
+        <div class="last-updated" id="lastUpdated"></div>
     </div>
 
     <script>
@@ -103,7 +110,7 @@
                 })
                 .then(data => {
                     const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
-                    data.forEach(item => {
+                    data.keys.forEach(item => {
                         const row = tableBody.insertRow();
                         row.insertCell(0).innerText = item.Vendor;
                         row.insertCell(1).innerText = item.Description;
@@ -113,6 +120,10 @@
                         row.insertCell(5).innerText = item.NFC;
                         row.insertCell(6).innerText = item.BLE;
                     });
+
+                    // Display the last updated timestamp
+                    const lastUpdatedElement = document.getElementById('lastUpdated');
+                    lastUpdatedElement.innerText = `Database Last Updated: ${data.metadata.databaseLastUpdated}`;
                 })
                 .catch(error => console.error('Error loading JSON data:', error));
         });
