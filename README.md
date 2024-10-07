@@ -1,6 +1,7 @@
 # EntraFIDOFinder
 
 PowerShell Module to find compatible attestation FIDO2 keys for Entra.
+
 **Database Last Updated:** 2024-09-30
 
 If you have trouble with the json path, please update to v0.0.5+ and it will fix your issue.
@@ -23,3 +24,5 @@ Find-FIDOKey -Type USB,NFC
 Also the brands parameter is validated so if you start typing in a brand and press tab it will fill the rest of the brand name in if it is available. I have all compatible brands in there as of Sept 30, 2024.
 
 The four types of keys are USB, NFC, BIO, and BLE which are also validated in so you can tab complete.
+
+Also check out the web version: https://devclate.github.io/EntraFIDOFinder/Explorer/
