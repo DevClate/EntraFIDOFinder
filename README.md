@@ -19,14 +19,12 @@ Find-FIDOKey -Brand Yubico,Onespan
 Find-FIDOKey -Type USB,NFC -TypeFilterMode AtLeastTwo
 # Find keys that have either USB or NFC
 Find-FIDOKey -Type USB,NFC
-# Find your databse version
+# Find your databse version and compare to newest version
 Show-FIDODbVersion
-$ Find newest database version
-Show-FIDODbVersion -NewestVersion
 ```
 
 Also the brands parameter is validated so if you start typing in a brand and press tab it will fill the rest of the brand name in if it is available. I have all compatible brands in there as of Sept 30, 2024.
 
 The four types of keys are USB, NFC, BIO, and BLE which are also validated in so you can tab complete.
 
-Also check out the web version: https://devclate.github.io/EntraFIDOFinder/Explorer/
+Also check out the web version: [https://devclate.github.io/EntraFIDOFinder/Explorer/](https://devclate.github.io/EntraFIDOFinder/Explorer/)
