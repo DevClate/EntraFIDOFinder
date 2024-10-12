@@ -1,40 +1,32 @@
 <#
 .SYNOPSIS
-Merges FIDO data from a JSON file with data from a specified URL and logs the changes.
+Merges FIDO data from a JSON file and a URL source, updating and validating entries.
 
 .DESCRIPTION
-The `Merge-FidoData` function reads FIDO data from a JSON file and merges it with data retrieved from a specified URL. 
-It logs any changes made during the merge process to both a text log file and a markdown log file. 
-The function also validates vendor names against a predefined list and prompts the user for valid vendor names if necessary.
+The `Merge-FidoData` function reads FIDO key data from a JSON file and a URL source, merges the data, validates vendors, and logs changes. It updates the JSON file with the merged data and generates log and markdown files documenting the changes.
 
 .PARAMETER Url
-The URL from which to retrieve the FIDO data. Defaults to "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor".
+The URL to fetch the FIDO key data from. Defaults to "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor".
 
 .PARAMETER JsonFilePath
-The file path to the JSON file containing the original FIDO data. If not provided, a default path is constructed.
+The file path to the JSON file containing the original FIDO key data. If not provided, a default path is constructed.
 
 .PARAMETER LogFilePath
-The file path to the text log file where changes will be logged. Defaults to "merge_log.txt".
+The file path to the log file where changes are documented. If not provided, a default path is constructed.
 
 .PARAMETER MarkdownFilePath
-The file path to the markdown log file where changes will be logged in markdown format. Defaults to "merge_log.md".
+The file path to the markdown file where changes are documented. If not provided, a default path is constructed.
 
 .EXAMPLE
-PS> Merge-FidoData -JsonFilePath "C:\Path\To\FidoKeys.json" -LogFilePath "C:\Path\To\merge_log.txt" -MarkdownFilePath "C:\Path\To\merge_log.md"
+Merge-FidoData -JsonFilePath "C:\path\to\FidoKeys.json" -LogFilePath "C:\path\to\merge_log.txt" -MarkdownFilePath "C:\path\to\merge_log.md"
 
-Merges FIDO data from the specified JSON file with data from the default URL and logs the changes to the specified log files.
-
-.EXAMPLE
-PS> Merge-FidoData -Url "https://example.com/fido-data" -JsonFilePath "C:\Path\To\FidoKeys.json"
-
-Merges FIDO data from the specified JSON file with data from the specified URL and logs the changes to the default log files.
+This example merges FIDO data from the specified JSON file and URL, logs changes to the specified log and markdown files, and updates the JSON file with the merged data.
 
 .NOTES
-- The function validates vendor names against a predefined list of vendors.
-- If a vendor name is not valid, the user is prompted to enter a valid vendor name or to skip validation.
-- The function logs duplicate entries found in both the JSON and URL data.
-- The function updates the JSON file with the merged data and logs the changes to the specified log files.
-
+- The function validates vendors against a predefined list and prompts for valid vendor names if necessary.
+- Duplicate entries in both JSON and URL data are logged.
+- The function ensures that AAGUIDs are unique in the merged data.
+- Changes are logged and saved to both log and markdown files.
 #>
 function Merge-FidoData {
     [CmdletBinding()]
@@ -46,16 +38,28 @@ function Merge-FidoData {
         [string]$JsonFilePath,
 
         [Parameter()]
-        [string]$LogFilePath = "merge_log.txt",
+        [string]$LogFilePath,
 
         [Parameter()]
-        [string]$MarkdownFilePath = "merge_log.md"
+        [string]$MarkdownFilePath
     )
     
     # If JsonFilePath is not provided, construct the default path
     if (-not $PSBoundParameters.ContainsKey('JsonFilePath')) {
         $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
         $JsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FidoKeys.json"
+    }
+
+    # If LogFilePath is not provided, construct the default path
+    if (-not $PSBoundParameters.ContainsKey('LogFilePath')) {
+        $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
+        $LogFilePath = Join-Path -Path $parentDir -ChildPath "merge_log.txt"
+    }
+
+    # If MarkdownFilePath is not provided, construct the default path
+    if (-not $PSBoundParameters.ContainsKey('MarkdownFilePath')) {
+        $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
+        $MarkdownFilePath = Join-Path -Path $parentDir -ChildPath "merge_log.md"
     }
 
     # Read the original JSON file
@@ -171,122 +175,123 @@ function Merge-FidoData {
 
     $changesMade = $false
 
-    # Loop through the URL data and merge with JSON data
-    foreach ($urlItem in $urlData) {
-        $aaguid = $urlItem.AAGUID
-        $description = $urlItem.Description
-        if ($jsonDataByAAGUID.ContainsKey($aaguid)) {
-            # Update the entry in the new JSON with the URL value
-            $jsonItem = $jsonDataByAAGUID[$aaguid]
-            foreach ($field in $urlItem.PSObject.Properties.Name) {
-                if ($jsonItem.$field -ne $urlItem.$field) {
-                    $logEntry = "Updated $field for AAGUID $aaguid with description '$description' from '$($jsonItem.$field)' to '$($urlItem.$field)'"
-                    $logContent += $logEntry
-                    $markdownContent += "$logEntry`n"
-                    $jsonItem.$field = $urlItem.$field
-                    $changesMade = $true
-                }
-            }
-            # Validate the vendor
-            $originalVendor = $jsonItem.Vendor
-            $jsonItem.Vendor = Test-ValidVendor -vendor $jsonItem.Vendor -description $description
-            if ($jsonItem.Vendor -ne $originalVendor) {
-                $logEntry = "Updated vendor for AAGUID $($jsonItem.AAGUID) with description '$description' from '$originalVendor' to '$($jsonItem.Vendor)'"
+   # Loop through the URL data and merge with JSON data
+foreach ($urlItem in $urlData) {
+    $aaguid = $urlItem.AAGUID
+    $description = $urlItem.Description
+    if ($jsonDataByAAGUID.ContainsKey($aaguid)) {
+        # Update the entry in the new JSON with the URL value
+        $jsonItem = $jsonDataByAAGUID[$aaguid]
+        foreach ($field in $urlItem.PSObject.Properties.Name) {
+            if ($jsonItem.$field -ne $urlItem.$field) {
+                $logEntry = "Updated $field for AAGUID $aaguid with description '$description' from '$($jsonItem.$field)' to '$($urlItem.$field)'"
                 $logContent += $logEntry
                 $markdownContent += "$logEntry`n"
+                $jsonItem.$field = $urlItem.$field
                 $changesMade = $true
             }
-            if (-not (Test-AAGUIDExists -aaguid $jsonItem.AAGUID -keys $mergedData.keys)) {
-                $mergedData.keys += [PSCustomObject]@{
-                    Vendor = $jsonItem.Vendor
-                    Description = $jsonItem.Description
-                    AAGUID = $jsonItem.AAGUID
-                    Bio = $jsonItem.Bio
-                    USB = $jsonItem.USB
-                    NFC = $jsonItem.NFC
-                    BLE = $jsonItem.BLE
-                }
-            }
-        } else {
-            # Prompt for vendor if not available or invalid
-            $vendor = Read-Host "Enter vendor for new AAGUID $aaguid with description '$description'"
-            $vendor = Test-ValidVendor -vendor $vendor -description $description
-            $urlItem | Add-Member -MemberType NoteProperty -Name Vendor -Value $vendor
-            if (-not (Test-AAGUIDExists -aaguid $urlItem.AAGUID -keys $mergedData.keys)) {
-                $mergedData.keys += [PSCustomObject]@{
-                    Vendor = $urlItem.Vendor
-                    Description = $urlItem.Description
-                    AAGUID = $urlItem.AAGUID
-                    Bio = $urlItem.Bio
-                    USB = $urlItem.USB
-                    NFC = $urlItem.NFC
-                    BLE = $urlItem.BLE
-                }
-                $changesMade = $true
-            }
-            $logEntry = "Added new AAGUID $aaguid with description '$description' and vendor $vendor"
-            $logContent += $logEntry
-            $markdownContent += "$logEntry`n"
         }
-    }
-
-    # Check for AAGUIDs in JSON data but not in URL data and remove them
-    foreach ($jsonItem in $jsonData.keys) {
-        if (-not $urlDataByAAGUID.ContainsKey($jsonItem.AAGUID)) {
-            $logEntry = "Removed AAGUID $($jsonItem.AAGUID) with description '$($jsonItem.Description)' from JSON data"
+        # Validate the vendor
+        $originalVendor = $jsonItem.Vendor
+        $jsonItem.Vendor = Test-ValidVendor -vendor $jsonItem.Vendor -description $description
+        if ($jsonItem.Vendor -ne $originalVendor) {
+            $logEntry = "Updated vendor for AAGUID $($jsonItem.AAGUID) with description '$description' from '$originalVendor' to '$($jsonItem.Vendor)'"
             $logContent += $logEntry
             $markdownContent += "$logEntry`n"
             $changesMade = $true
-        } else {
-            $originalVendor = $jsonItem.Vendor
-            $jsonItem.Vendor = Test-ValidVendor -vendor $jsonItem.Vendor -description $jsonItem.Description
-            if ($jsonItem.Vendor -ne $originalVendor) {
-                $logEntry = "Updated vendor for AAGUID $($jsonItem.AAGUID) with description '$($jsonItem.Description)' from '$originalVendor' to '$($jsonItem.Vendor)'"
-                $logContent += $logEntry
-                $markdownContent += "$logEntry`n"
-                $changesMade = $true
-            }
-            if (-not (Test-AAGUIDExists -aaguid $jsonItem.AAGUID -keys $mergedData.keys)) {
-                $mergedData.keys += [PSCustomObject]@{
-                    Vendor = $jsonItem.Vendor
-                    Description = $jsonItem.Description
-                    AAGUID = $jsonItem.AAGUID
-                    Bio = $jsonItem.Bio
-                    USB = $jsonItem.USB
-                    NFC = $jsonItem.NFC
-                    BLE = $jsonItem.BLE
-                }
+        }
+        if (-not (Test-AAGUIDExists -aaguid $jsonItem.AAGUID -keys $mergedData.keys)) {
+            $mergedData.keys += [PSCustomObject]@{
+                Vendor = $jsonItem.Vendor
+                Description = $jsonItem.Description
+                AAGUID = $jsonItem.AAGUID
+                Bio = $jsonItem.Bio
+                USB = $jsonItem.USB
+                NFC = $jsonItem.NFC
+                BLE = $jsonItem.BLE
             }
         }
-    }
-
-    # Save the new JSON structure back to the original JSON file
-    $mergedData | ConvertTo-Json -Depth 10 | Set-Content -Path $JsonFilePath
-
-    # Compare current markdown content with the last one
-    $lastMarkdownContent = if (Test-Path -Path $MarkdownFilePath) { Get-Content -Raw -Path $MarkdownFilePath } else { "" }
-    $currentMarkdownContent = $markdownContent -join "`n"
-
-    if ($changesMade) {
-        $mergedData.metadata.databaseLastUpdated = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
-    }
-
-    # Save the markdown content to the markdown file if there are changes and it's different from the last one
-    if ($changesMade -and $currentMarkdownContent -ne $lastMarkdownContent) {
-        if (Test-Path -Path $MarkdownFilePath) {
-            $markdownContent | Out-File -FilePath $MarkdownFilePath -Append
-        } else {
-            $markdownContent | Out-File -FilePath $MarkdownFilePath
-        }
-        Write-Host "Markdown log saved to $MarkdownFilePath"
     } else {
-        $logContent += "No changes"
-        Write-Host "No changes detected, Markdown log not updated"
+        # Prompt for vendor if not available or invalid
+        $vendor = Read-Host "Enter vendor for new AAGUID $aaguid with description '$description'"
+        $vendor = Test-ValidVendor -vendor $vendor -description $description
+        $urlItem | Add-Member -MemberType NoteProperty -Name Vendor -Value $vendor
+        if (-not (Test-AAGUIDExists -aaguid $urlItem.AAGUID -keys $mergedData.keys)) {
+            $mergedData.keys += [PSCustomObject]@{
+                Vendor = $urlItem.Vendor
+                Description = $urlItem.Description
+                AAGUID = $urlItem.AAGUID
+                Bio = $urlItem.Bio
+                USB = $urlItem.USB
+                NFC = $urlItem.NFC
+                BLE = $urlItem.BLE
+            }
+            $changesMade = $true
+        }
+        $logEntry = "Added new AAGUID $aaguid with description '$description' and vendor $vendor"
+        $logContent += $logEntry
+        $markdownContent += "$logEntry`n"
     }
+}
 
-    # Always save the log content to the log file
-    $logContent | Out-File -FilePath $LogFilePath -Append
-    Write-Host "Log file saved to $LogFilePath"
+# Check for AAGUIDs in JSON data but not in URL data and remove them
+foreach ($jsonItem in $jsonData.keys) {
+    if (-not $urlDataByAAGUID.ContainsKey($jsonItem.AAGUID)) {
+        $logEntry = "Removed AAGUID $($jsonItem.AAGUID) with description '$($jsonItem.Description)' from JSON data"
+        $logContent += $logEntry
+        $markdownContent += "$logEntry`n"
+        $changesMade = $true
+    } else {
+        $originalVendor = $jsonItem.Vendor
+        $jsonItem.Vendor = Test-ValidVendor -vendor $jsonItem.Vendor -description $jsonItem.Description
+        if ($jsonItem.Vendor -ne $originalVendor) {
+            $logEntry = "Updated vendor for AAGUID $($jsonItem.AAGUID) with description '$($jsonItem.Description)' from '$originalVendor' to '$($jsonItem.Vendor)'"
+            $logContent += $logEntry
+            $markdownContent += "$logEntry`n"
+            $changesMade = $true
+        }
+        if (-not (Test-AAGUIDExists -aaguid $jsonItem.AAGUID -keys $mergedData.keys)) {
+            $mergedData.keys += [PSCustomObject]@{
+                Vendor = $jsonItem.Vendor
+                Description = $jsonItem.Description
+                AAGUID = $jsonItem.AAGUID
+                Bio = $jsonItem.Bio
+                USB = $jsonItem.USB
+                NFC = $jsonItem.NFC
+                BLE = $jsonItem.BLE
+            }
+        }
+    }
+}
 
-    Write-Host "Merged data saved to $JsonFilePath"
+# Update the databaseLastUpdated field if changes were made
+if ($changesMade) {
+    $mergedData.metadata.databaseLastUpdated = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
+}
+
+# Save the new JSON structure back to the original JSON file
+$mergedData | ConvertTo-Json -Depth 10 | Set-Content -Path $JsonFilePath
+
+# Compare current markdown content with the last one
+$lastMarkdownContent = if (Test-Path -Path $MarkdownFilePath) { Get-Content -Raw -Path $MarkdownFilePath } else { "" }
+$currentMarkdownContent = $markdownContent -join "`n"
+
+# Save the markdown content to the markdown file if there are changes and it's different from the last one
+if ($changesMade -and $currentMarkdownContent -ne $lastMarkdownContent) {
+    if (Test-Path -Path $MarkdownFilePath) {
+        $markdownContent | Out-File -FilePath $MarkdownFilePath -Append
+    } else {
+        $markdownContent | Out-File -FilePath $MarkdownFilePath
+    }
+    Write-Host "Markdown log saved to $MarkdownFilePath"
+} else {
+    $logContent += "No changes"
+    Write-Host "No changes detected, Markdown log not updated"
+}
+
+# Always save the log content to the log file
+$logContent | Out-File -FilePath $LogFilePath -Append
+Write-Host "Log file saved to $LogFilePath"
+
+Write-Host "Merged data saved to $JsonFilePath"
 }
