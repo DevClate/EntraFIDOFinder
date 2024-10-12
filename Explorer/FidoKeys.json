@@ -1,6 +1,7 @@
 {
   "metadata": {
-    "databaseLastUpdated": "2024-09-30T06:30:00Z"
+    "databaseLastChecked": "2024-10-12T06:54:09Z",
+    "databaseLastUpdated": "2024-10-12T06:52:33Z"
   },
   "keys": [
     {
@@ -169,15 +170,6 @@
       "Vendor": "eWBM",
       "Description": "eWBM eFA320 FIDO2 Authenticator",
       "AAGUID": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No"
-    },
-    {
-      "Vendor": "eWBM",
-      "Description": "eWBM eFPA FIDO2 Authenticator",
-      "AAGUID": "61250591-b2bc-4456-b719-0b17be90bb30",
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
@@ -630,7 +622,7 @@
       "AAGUID": "30b5035e-d297-4ff1-b00b-addc96ba6a98",
       "Bio": "Yes",
       "USB": "Yes",
-      "NFC": "No",
+      "NFC": "Yes",
       "BLE": "Yes"
     },
     {
