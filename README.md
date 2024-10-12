@@ -2,7 +2,7 @@
 
 PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
-**Database Last Updated:** 2024-09-30
+**Database Last Updated:** 2024-10-12
 
 If you have trouble with the json path, please update to v0.0.5+ and it will fix your issue.
 
@@ -21,6 +21,8 @@ Find-FIDOKey -Type USB,NFC -TypeFilterMode AtLeastTwo
 Find-FIDOKey -Type USB,NFC
 # Find your databse version and compare to newest version
 Show-FIDODbVersion
+# View Master Database Log
+Get-FIDODbLog
 ```
 
 Also the brands parameter is validated so if you start typing in a brand and press tab it will fill the rest of the brand name in if it is available. I have all compatible brands in there as of Sept 30, 2024.
