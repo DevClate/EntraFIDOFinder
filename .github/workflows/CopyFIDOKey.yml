@@ -3,7 +3,7 @@ name: Update FidoKeys in gh-pages
 on:
   push:
     branches:
-      - main  # Replace with your initial branch name
+      - main
 
 jobs:
   copy-file:
@@ -30,6 +30,6 @@ jobs:
           git checkout main -- Explorer/FidoKeys.json
 
           # Commit and push the changes
-          git add Explorer/FidoKeys.json
+          git add Assets/FidoKeys.json
           git commit -m "Update FidoKeys.json from main branch"
           git push origin gh-pages
