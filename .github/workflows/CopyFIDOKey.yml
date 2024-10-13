@@ -13,22 +13,19 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: main  # Replace with your initial branch name
 
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
       - name: Copy file to gh-pages branch
         run: |
           # Check out the gh-pages branch
           git fetch origin gh-pages
           git checkout gh-pages
-
           # Copy the file from the main branch to the gh-pages branch
           git checkout main -- Explorer/FidoKeys.json
-
           # Commit and push the changes
           git add Assets/FidoKeys.json
           git commit -m "Update FidoKeys.json from main branch"
