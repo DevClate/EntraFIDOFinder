@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - Assets/FidoKeys.json
 
 jobs:
   copy-file:
@@ -13,7 +15,7 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v4
         with:
-          ref: main  # Replace with your initial branch name
+          ref: main
 
       - name: Set up Git
         run: |
