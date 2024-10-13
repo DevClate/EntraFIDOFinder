@@ -62,9 +62,12 @@ function Find-FIDOKey {
         [ValidateSet("AtLeastTwo", "AtLeastOne", "AtLeastThree", "All")]
         [string]$TypeFilterMode = "AtLeastOne"
     )
+    
     # Construct the path to the JSON file in the assets folder two levels up
     $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
     $jsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FidoKeys.json"
+
+
 
     # Check if the file exists
     if (-Not (Test-Path -Path $jsonFilePath)) {
