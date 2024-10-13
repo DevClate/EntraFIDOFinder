@@ -26,9 +26,9 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
           # Copy the file from the main branch to the gh-pages branch
-          git checkout main -- assets/fidokeys.json
-          mv assets/fidokeys.json Explorer/fidokeys.json
+          git checkout main -- EntraFIDOFinder/Assets/FidoKeys.json
+          mv EntraFidoFinder/Assets/FidoKeys.json Explorer/FidoKeys.json
           # Commit and push the changes
-          git add Explorer/fidokeys.json
+          git add EntraFIDOFinder/Explorer/FidoKeys.json
           git commit -m "Update fidokeys.json from main branch"
           git push origin gh-pages
