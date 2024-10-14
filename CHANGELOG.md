@@ -2,6 +2,22 @@
 
 Here you will find all changes per version
 
+## v0.0.10
+
+**Changes**
+
+* Removed Requirement for PSParseHTML as it is not needed as of yet
+
+## v0.0.9
+
+**Enhancements**
+
+* Fixed Log Output
+* Created Get-FIDODbLog
+  * You can view the master database log from terminal
+* FidoKeys.json automatically copies to web version on update
+* Database Updated - See Database Log File
+
 ## v0.0.8
 
 **Enhancements**
