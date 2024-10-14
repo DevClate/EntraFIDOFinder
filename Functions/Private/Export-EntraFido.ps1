@@ -24,8 +24,6 @@ function Export-EntraFido {
         [string]$Url
     )
 
-    #requires -Module PSParseHTML
-
     # Fetch the webpage content
     $response = Invoke-WebRequest -Uri $Url
     $htmlContent = $response.Content
