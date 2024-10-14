@@ -12,7 +12,7 @@
 RootModule = 'EntraFIDOFinder.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.9'
+ModuleVersion = '0.0.10'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core'
@@ -51,7 +51,9 @@ PowerShellVersion = '7.0'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-# RequiredModules = @()
+RequiredModules = @(
+    @{ ModuleName='PSParseHTML'; ModuleVersion='1.0.2' }
+)
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
