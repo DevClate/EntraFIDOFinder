@@ -1,4 +1,4 @@
-# EntraFIDOFinder
+# EntraFIDOFinder ![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/EntraFIDOFinder?label=Downloads&style=flat-square)
 
 PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
