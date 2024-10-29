@@ -2,6 +2,12 @@
 
 Here you will find all changes per version
 
+## v0.0.11
+
+**Changes**
+
+* Database Updated (see Merge Logs)
+
 ## v0.0.10
 
 **Changes**
