@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "databaseLastChecked": "2024-11-02T04:53:20Z",
+    "databaseLastUpdated": "2024-10-29T04:59:05Z"
+  },
   "keys": [
     {
       "Vendor": "ACS",
@@ -1107,9 +1111,5 @@
       "NFC": "No",
       "BLE": "No"
     }
-  ],
-  "metadata": {
-    "databaseLastUpdated": "2024-10-29T04:59:05Z",
-    "databaseLastChecked": "2024-11-01T04:25:30Z"
-  }
+  ]
 }
