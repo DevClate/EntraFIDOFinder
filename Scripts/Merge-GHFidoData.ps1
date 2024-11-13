@@ -1,3 +1,32 @@
+<#
+.SYNOPSIS
+    Merges FIDO data from a JSON file and a URL source, updating and validating entries.
+
+.DESCRIPTION
+    The `Merge-GHFidoData` function merges FIDO key data from a specified URL and a local JSON file. It validates the vendors, updates the entries, and logs the changes. The function also handles invalid vendors and prepares issue entries for further action.
+
+.PARAMETER Url
+    The URL to fetch the FIDO key data from. Default is "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor".
+
+.PARAMETER JsonFilePath
+    The path to the local JSON file containing the FIDO key data. Default is "Assets/FidoKeys.json".
+
+.PARAMETER MarkdownFilePath
+    The path to the markdown file for logging merge results. Default is "merge_log.md".
+
+.PARAMETER DetailedLogFilePath
+    The path to the detailed log file for logging detailed merge results. Default is "detailed_log.txt".
+
+.PARAMETER ValidVendorsFilePath
+    The path to the JSON file containing the list of valid vendors. Default is "Assets/valid_vendors.json".
+
+.EXAMPLE
+    Merge-GHFidoData -Url "https://example.com/fido-keys" -JsonFilePath "Assets/FidoKeys.json" -MarkdownFilePath "merge_log.md" -DetailedLogFilePath "detailed_log.txt" -ValidVendorsFilePath "Assets/valid_vendors.json"
+    Merges FIDO key data from the specified URL and local JSON file, validates the vendors, updates the entries, and logs the changes.
+
+.NOTES
+    The function reads the list of valid vendors from the specified JSON file and uses the `Test-GHValidVendor` function to validate the vendors. It logs the changes to the specified markdown and detailed log files.
+#>
 Function Merge-GHFidoData {
     [CmdletBinding()]
     param (
