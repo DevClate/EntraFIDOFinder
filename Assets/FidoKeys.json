@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "databaseLastUpdated": "2024-11-13 11:06:26",
+    "databaseLastChecked": "2024-11-13 11:18:42"
+  },
   "keys": [
     {
       "Vendor": "ACS",
@@ -7,7 +11,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "ACS",
@@ -16,7 +21,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Allthenticator",
@@ -25,7 +31,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Arculus",
@@ -34,7 +41,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Arculus",
@@ -43,7 +51,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "AuthenTrend",
@@ -52,7 +61,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "AuthenTrend",
@@ -61,7 +71,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "AuthenTrend",
@@ -70,7 +81,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "AuthenTrend",
@@ -79,7 +91,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "AuthenTrend",
@@ -88,7 +101,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Atos",
@@ -97,7 +111,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "authenton1",
@@ -106,7 +121,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Chunghwa Telecom",
@@ -115,7 +131,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Crayonic",
@@ -124,7 +141,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Cryptnox",
@@ -133,7 +151,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Egomet",
@@ -142,7 +161,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Ensurity",
@@ -151,7 +171,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "eWBM",
@@ -160,7 +181,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "eWBM",
@@ -169,7 +191,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "eWBM",
@@ -178,7 +201,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -187,7 +211,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -196,7 +221,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -205,7 +231,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -214,7 +241,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -223,7 +251,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -232,7 +261,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -241,7 +271,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Excelsecu",
@@ -250,7 +281,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -259,7 +291,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -268,7 +301,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -277,7 +311,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -286,7 +321,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -295,7 +331,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -304,7 +341,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Feitian",
@@ -313,7 +351,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "FIDO KeyPass",
@@ -322,7 +361,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "FT-JCOS",
@@ -331,7 +371,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Google",
@@ -340,7 +381,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "GoTrust",
@@ -349,7 +391,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "GoTrust",
@@ -358,7 +401,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "HID Global",
@@ -367,7 +411,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "HID Global",
@@ -376,7 +421,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "HID Global",
@@ -385,7 +431,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "HID Global",
@@ -394,7 +441,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "HID Global",
@@ -403,7 +451,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Hideez",
@@ -412,7 +461,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Hypersecu",
@@ -421,7 +471,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Hypersecu",
@@ -430,7 +481,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "HYPR",
@@ -439,7 +491,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "IDCore",
@@ -448,7 +501,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "IDEMIA",
@@ -457,7 +511,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "IDmelon",
@@ -466,7 +521,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "IDmelon",
@@ -475,7 +531,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Thales",
@@ -484,7 +541,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Thales",
@@ -493,7 +551,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Thales",
@@ -502,7 +561,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Thales",
@@ -511,7 +571,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "ImproveID",
@@ -520,7 +581,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "KEY-ID",
@@ -529,7 +591,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "KeyXentic",
@@ -538,7 +601,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "KeyXentic",
@@ -547,7 +611,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "KONAI",
@@ -556,7 +621,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "KeyXentic",
@@ -565,7 +631,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "NEOWAVE",
@@ -574,7 +641,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "NEOWAVE",
@@ -583,7 +651,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "NXP Semiconductors",
@@ -592,7 +661,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Nymi",
@@ -601,7 +671,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OCTATCO",
@@ -610,7 +681,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OneSpan",
@@ -619,7 +691,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OneSpan",
@@ -628,7 +701,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OneSpan",
@@ -637,7 +711,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OneSpan",
@@ -646,7 +721,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OnlyKey",
@@ -655,7 +731,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "OpenSK",
@@ -664,7 +741,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Pone Biometrics",
@@ -673,7 +751,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Precision",
@@ -682,7 +761,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "RSA",
@@ -691,7 +771,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SafeNet",
@@ -700,7 +781,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SafeNet",
@@ -709,7 +791,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SafeNet",
@@ -718,7 +801,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -727,7 +811,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -736,7 +821,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -745,7 +831,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -754,7 +841,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -763,7 +851,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -772,7 +861,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -781,7 +871,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -790,7 +881,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Sentry Enterprises",
@@ -799,7 +891,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SmartDisplayer",
@@ -808,7 +901,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SoloKeys",
@@ -817,7 +911,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SoloKeys",
@@ -826,7 +921,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "SoloKeys",
@@ -835,7 +931,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Swissbit",
@@ -844,7 +941,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Swissbit",
@@ -853,7 +951,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Taglio",
@@ -862,7 +961,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Taglio",
@@ -871,7 +971,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Thales",
@@ -880,7 +981,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Token Ring",
@@ -889,7 +991,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "TOKEN2",
@@ -898,7 +1001,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "TOKEN2",
@@ -907,7 +1011,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Identiv",
@@ -916,7 +1021,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "VALMIDO",
@@ -925,7 +1031,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "Yes"
+      "BLE": "Yes",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Kensington",
@@ -934,7 +1041,8 @@
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "VinCSS",
@@ -943,7 +1051,8 @@
       "Bio": "No",
       "USB": "No",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "WiSECURE",
@@ -952,7 +1061,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -961,7 +1071,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -970,7 +1081,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -979,7 +1091,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -988,7 +1101,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -997,7 +1111,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1006,7 +1121,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1015,7 +1131,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1024,7 +1141,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1033,7 +1151,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1042,7 +1161,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1051,7 +1171,8 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1060,7 +1181,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1069,7 +1191,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1078,7 +1201,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1087,7 +1211,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1096,7 +1221,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
@@ -1105,11 +1231,8 @@
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No"
+      "BLE": "No",
+      "ValidVendor": "Yes"
     }
-  ],
-  "metadata": {
-    "databaseLastChecked": "2024-11-12T05:46:20Z",
-    "databaseLastUpdated": "2024-10-29T04:59:05Z"
-  }
+  ]
 }

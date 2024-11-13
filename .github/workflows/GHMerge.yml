@@ -1,0 +1,190 @@
+name: Development Merge
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+  push:
+    branches:
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  merge-fido-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        ref: development
+
+    - name: Install PSParseHTML Module
+      shell: pwsh
+      run: Install-Module -Name PSParseHTML -Force -Scope CurrentUser
+
+    - name: Run Merge-GHFidoData Script
+      id: merge_script
+      shell: pwsh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
+      run: |
+        Import-Module PSParseHTML
+        . ./Scripts/Test-GHValidVendor.ps1
+        . ./Scripts/Test-GHAAGUIDExists.ps1
+        . ./Scripts/Export-GHEntraFido.ps1
+        . ./Scripts/Merge-GHFidoData.ps1
+
+    - name: Read Environment Variables
+      shell: bash
+      run: |
+        if [ -f ./Scripts/env_vars.txt ]; then
+          echo "Setting environment variables from env_vars.txt"
+          cat ./Scripts/env_vars.txt >> $GITHUB_ENV
+        else
+          echo "env_vars.txt not found."
+        fi
+
+    - name: Debug - Display ISSUE_ENTRIES, KEYS_NOW_VALID, and VENDORS_NOW_VALID Environment Variables
+      shell: bash
+      run: |
+        echo "ISSUE_ENTRIES: $ISSUE_ENTRIES"
+        echo "KEYS_NOW_VALID: $KEYS_NOW_VALID"
+        echo "VENDORS_NOW_VALID: $VENDORS_NOW_VALID"
+
+    - name: Close Fixed Issues and Create New Issues
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const issueEntriesRaw = process.env.ISSUE_ENTRIES || '';
+          const issueEntries = issueEntriesRaw.split('%0A').map(entry => decodeURIComponent(entry)).filter(entry => entry.trim() !== '');
+          if (issueEntries.length === 0) {
+            console.log('No new issue entries found.');
+          } else {
+            for (const entry of issueEntries) {
+              const parts = entry.split('|');
+              if (parts.length < 2) {
+                console.error(`Invalid entry format: ${entry}`);
+                continue;
+              }
+              const [issueTitle, issueBody, issueLabel] = parts;
+              console.log(`Processing issue: ${issueTitle}`);
+              const { data: issues } = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                labels: 'auto-generated',
+              });
+              const existingIssue = issues.find(issue => issue.title === issueTitle);
+              if (!existingIssue) {
+                const assignees = [];
+                if (issueLabel === 'InvalidVendor' || issueLabel === 'DuplicateEntry') {
+                  assignees.push('DevClate');
+                }
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: issueTitle,
+                  body: issueBody,
+                  labels: issueLabel ? ['auto-generated', issueLabel] : ['auto-generated'],
+                  assignees: assignees,
+                });
+                console.log(`Issue created: ${issueTitle}`);
+              } else {
+                console.log(`Issue already exists: ${issueTitle}`);
+              }
+            }
+          }
+
+          // Close issues for keys (AAGUIDs) that are now valid
+          const keysNowValidRaw = process.env.KEYS_NOW_VALID || '';
+          const keysNowValid = keysNowValidRaw.split('%0A').map(entry => decodeURIComponent(entry)).filter(entry => entry.trim() !== '');
+          if (keysNowValid.length === 0) {
+            console.log('No keys have become valid.');
+          } else {
+            console.log('Keys that are now valid:', keysNowValid);
+            for (const aaguid of keysNowValid) {
+              const { data: issues } = await github.rest.issues.listForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                state: 'open',
+                labels: ['auto-generated', 'InvalidVendor'],
+                per_page: 100,
+              });
+              for (const issue of issues) {
+                if (issue.title.includes(aaguid)) {
+                  await github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issue.number,
+                    state: 'closed',
+                    state_reason: 'completed',
+                  });
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issue.number,
+                    body: `The vendor for key with AAGUID '${aaguid}' is now valid. This issue is being closed automatically.`,
+                  });
+                  console.log(`Closed issue for key with AAGUID: ${aaguid}`);
+                }
+              }
+            }
+          }
+
+    - name: Display Merge Log
+      shell: bash
+      run: |
+        echo "Extracting newest 3 entries from merge_log.md"
+
+        # Extract the first 3 '# Merge Log -' sections
+        awk '/^# Merge Log -/{n++; if(n>3) exit} {print}' merge_log.md > newest_merge_log_entries.txt
+
+        # Adjust header levels from '#' to '###' to fit within the summary
+        sed 's/^# /### /' newest_merge_log_entries.txt > temp_merge_log_entries.txt
+
+        # Append to GitHub Action Summary without code block
+        echo "## Merge Log - Newest 3 Entries" >> $GITHUB_STEP_SUMMARY
+        cat temp_merge_log_entries.txt >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+
+        # Clean up temporary files
+        rm temp_merge_log_entries.txt newest_merge_log_entries.txt
+
+    - name: Display Detailed Log
+      shell: bash
+      run: |
+        echo "Extracting the 3 newest entries from detailed_log.txt"
+
+        # Extract the first 3 'Detailed Log -' sections
+        awk '/^Detailed Log -/{n++; if(n>3) exit} {print}' detailed_log.txt > newest_detailed_log_entries.txt
+
+        # Append to GitHub Action Summary
+        echo "## Detailed Log - Newest 3 Entries" >> $GITHUB_STEP_SUMMARY
+        echo '```' >> $GITHUB_STEP_SUMMARY
+        cat newest_detailed_log_entries.txt >> $GITHUB_STEP_SUMMARY
+        echo '```' >> $GITHUB_STEP_SUMMARY
+
+        # Clean up temporary file
+        rm newest_detailed_log_entries.txt
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'DevClate'
+        git config --global user.email 'clate@clatent.com'
+
+    - name: Commit changes
+      run: |
+        git add Assets/FidoKeys.json merge_log.md detailed_log.txt
+        git commit -m "Update Fidokeys.json, merge_log.md, and detailed_log.txt" || echo "No changes to commit"
+
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: development
