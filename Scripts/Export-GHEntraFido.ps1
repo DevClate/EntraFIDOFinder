@@ -1,3 +1,21 @@
+<#
+.SYNOPSIS
+    Extracts FIDO key data from a specified URL and outputs it as a list of objects.
+
+.DESCRIPTION
+    The `Export-GHEntraFido` function fetches the content of a specified URL, parses the HTML to find a table containing FIDO key data, and extracts the data into a list of objects. The function looks for a table with headers "Description" and "AAGUID" and processes the rows to extract relevant information.
+
+.PARAMETER Url
+    The URL to fetch the FIDO key data from. This parameter is mandatory.
+
+.EXAMPLE
+    $url = "https://example.com/fido-keys"
+    $data = Export-GHEntraFido -Url $url
+    $data | Format-Table -AutoSize
+
+.NOTES
+    This function uses the HtmlAgilityPack library to parse the HTML content. Ensure that the library is available in your environment.
+#>
 Function Export-GHEntraFido {
     [CmdletBinding()]
     param (
