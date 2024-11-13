@@ -1,3 +1,57 @@
+<#
+.SYNOPSIS
+    Validates the vendor of a FIDO key against a list of valid vendors.
+
+.DESCRIPTION
+    The `Test-GHValidVendor` function checks if the provided vendor is in the list of valid vendors. If the vendor is not valid, it attempts to use the first word of the description as the vendor. If the vendor is still not valid, it logs the invalid vendor and prepares an issue entry.
+
+.PARAMETER vendor
+    [ref] The vendor of the FIDO key to be validated.
+
+.PARAMETER description
+    [string] The description of the FIDO key.
+
+.PARAMETER aaguid
+    [string] The AAGUID of the FIDO key.
+
+.PARAMETER ValidVendors
+    [string[]] The list of valid vendors.
+
+.PARAMETER markdownContent
+    [ref] The markdown content to be updated with log entries.
+
+.PARAMETER detailedLogContent
+    [ref] The detailed log content to be updated with log entries.
+
+.PARAMETER loggedInvalidVendors
+    [ref] The list of logged invalid vendors.
+
+.PARAMETER issueEntries
+    [ref] The list of issue entries to be created.
+
+.PARAMETER existingLogEntries
+    [string[]] The list of existing log entries to avoid duplicates.
+
+.PARAMETER changesDetected
+    [ref] A flag indicating if any changes were detected.
+
+.EXAMPLE
+    $vendor = [ref]"UnknownVendor"
+    $description = "UnknownVendor FIDO2 Key"
+    $aaguid = "12345678-1234-1234-1234-123456789012"
+    $ValidVendors = @("Yubico", "Feitian", "Google")
+    $markdownContent = [ref]""
+    $detailedLogContent = [ref]""
+    $loggedInvalidVendors = [ref]@()
+    $issueEntries = [ref]@()
+    $existingLogEntries = @()
+    $changesDetected = [ref]$false
+
+    Test-GHValidVendor -vendor $vendor -description $description -aaguid $aaguid -ValidVendors $ValidVendors -markdownContent $markdownContent -detailedLogContent $detailedLogContent -loggedInvalidVendors $loggedInvalidVendors -issueEntries $issueEntries -existingLogEntries $existingLogEntries -changesDetected $changesDetected
+
+.NOTES
+    The function reads the list of valid vendors from a JSON file located at "Assets/valid_vendors.json".
+#>
 function Test-GHValidVendor {
     param (
         [Parameter(Mandatory = $true)]
