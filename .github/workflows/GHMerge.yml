@@ -1,4 +1,4 @@
-name: Development Merge
+name: main Merge
 
 on:
   workflow_dispatch:
@@ -6,10 +6,10 @@ on:
     - cron: '0 0 * * *'
   push:
     branches:
-      - development
+      - main
   pull_request:
     branches:
-      - development
+      - main
 
 jobs:
   merge-fido-data:
@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-        ref: development
+        ref: main
 
     - name: Install PSParseHTML Module
       shell: pwsh
@@ -187,4 +187,4 @@ jobs:
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: development
+        branch: main
