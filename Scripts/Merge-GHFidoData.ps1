@@ -74,7 +74,7 @@ Function Merge-GHFidoData {
     $updateDatabaseLastUpdated = $false
 
     # Import the Test-GHValidVendor function
-    #. "$PSScriptRoot\Test-GHValidVendor.ps1"
+    . "$PSScriptRoot\Test-GHValidVendor.ps1"
 
     # Initialize merged data
     $mergedData = @{
