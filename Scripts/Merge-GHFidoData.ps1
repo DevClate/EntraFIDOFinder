@@ -116,7 +116,6 @@ Function Merge-GHFidoData {
 
     # Merge data and handle vendors
     foreach ($urlItem in $urlData) {
-        # Create mutable object
         $hash = [ordered]@{}
         foreach ($prop in $urlItem.PSObject.Properties) {
             $hash[$prop.Name] = $prop.Value
@@ -221,10 +220,6 @@ Function Merge-GHFidoData {
             $changesDetected.Value = $true
             $updateDatabaseLastUpdated = $true
 
-            # Log that a new entry without Vendor has been added
-            #$logEntry = "New entry added for description '$description', but Vendor information is missing."
-            #$currentLogEntries += $logEntry
-            #$detailedLogContent.Value += "`n$logEntry"
         }
 
         # Collect current invalid vendors for comparison

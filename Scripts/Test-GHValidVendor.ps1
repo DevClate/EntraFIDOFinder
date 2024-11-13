@@ -6,7 +6,7 @@ function Test-GHValidVendor {
         [string]$description,
         [Parameter(Mandatory = $true)]
         [string]$aaguid,
-        [string[]]$ValidVendors, # Added this parameter
+        [string[]]$ValidVendors,
         [ref]$markdownContent,
         [ref]$detailedLogContent,
         [ref]$loggedInvalidVendors,

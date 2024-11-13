@@ -44,7 +44,7 @@ Function Export-GHEntraFido {
                 USB = ""
                 NFC = ""
                 BLE = ""
-                Vendor = ""  # Initialize Vendor as an empty string
+                Vendor = ""
             }
 
             for ($i = 0; $i -lt $cellNodes.Count; $i++) {
