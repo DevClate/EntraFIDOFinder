@@ -1,18 +1,12 @@
 name: Update FidoKeys in gh-pages
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - Assets/FidoKeys.json
-  pull_request:
-    branches:
-      - main
-    paths:
-      - Assets/FidoKeys.json
+  workflow_run:
+    workflows: ["Main Entra Merge"]
     types:
-      - closed
+      - completed
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
