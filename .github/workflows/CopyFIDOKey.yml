@@ -6,6 +6,13 @@ on:
       - main
     paths:
       - Assets/FidoKeys.json
+  pull_request:
+    branches:
+      - main
+    paths:
+      - Assets/FidoKeys.json
+    types:
+      - closed
 
 jobs:
   copy-file:
@@ -24,13 +31,21 @@ jobs:
 
       - name: Copy file to gh-pages branch
         run: |
-          # Check out the gh-pages branch
+          # Fetch and checkout the gh-pages branch
           git fetch origin gh-pages
           git checkout gh-pages
+  
           # Copy the file from the main branch to the gh-pages branch
           git checkout main -- Assets/FidoKeys.json
+  
+          # Move the file to the desired location
           mv Assets/FidoKeys.json Explorer/FidoKeys.json
-          # Commit and push the changes
-          git add Explorer/FidoKeys.json
-          git commit -m "Update fidokeys.json from main branch"
-          git push origin gh-pages
+  
+          # Commit and push the changes if there are any updates
+          if [ -n "$(git status --porcelain)" ]; then
+            git add Explorer/FidoKeys.json
+            git commit -m "Update FidoKeys.json from main branch"
+            git push origin gh-pages
+          else
+            echo "No changes to commit."
+          fi
