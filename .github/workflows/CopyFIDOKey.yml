@@ -32,5 +32,5 @@ jobs:
           mv Assets/FidoKeys.json Explorer/FidoKeys.json
           # Commit and push the changes
           git add Explorer/FidoKeys.json
-          git commit -m "Update fidokeys.json from main branch"
+          git commit -m "Update FidoKeys.json from main branch"
           git push origin gh-pages
