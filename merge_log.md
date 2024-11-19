@@ -1,7 +1,6 @@
 # Merge Log - 2024-11-19 00:21:55
 
-Property 'NFC' for AAGUID 'a25342c0-3cdc-4414-8e46-f4807fca511c' changed from 'No' to 'Yes'.
-
+Updated NFC for AAGUID a25342c0-3cdc-4414-8e46-f4807fca511c with description 'YubiKey 5 Series with NFC' from 'No' to 'Yes'
 
 # Merge Log - 2024-10-29 04:59:05
 
