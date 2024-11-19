@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "databaseLastUpdated": "2024-10-29 04:59:00",
-    "databaseLastChecked": "2024-11-18 00:22:44"
+    "databaseLastChecked": "2024-11-19 00:21:55",
+    "databaseLastUpdated": "2024-11-19 00:21:55"
   },
   "keys": [
     {
@@ -1160,7 +1160,7 @@
       "AAGUID": "a25342c0-3cdc-4414-8e46-f4807fca511c",
       "Bio": "No",
       "USB": "Yes",
-      "NFC": "No",
+      "NFC": "Yes",
       "BLE": "No",
       "ValidVendor": "Yes"
     },
