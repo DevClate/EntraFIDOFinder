@@ -1,3 +1,8 @@
+# Merge Log - 2024-11-19 00:21:55
+
+Property 'NFC' for AAGUID 'a25342c0-3cdc-4414-8e46-f4807fca511c' changed from 'No' to 'Yes'.
+
+
 # Merge Log - 2024-10-29 04:59:05
 
 Updated USB for AAGUID 77010bd7-212a-4fc9-b236-d2ca5e9d4084 with description 'Feitian BioPass FIDO2 Authenticator' from 'No' to 'Yes'
@@ -23,5 +28,3 @@ Updated NFC for AAGUID 30b5035e-d297-4ff1-b00b-addc96ba6a98 with description 'On
 Duplicate entry found in URL data for AAGUID 61250591-b2bc-4456-b719-0b17be90bb30 with description 'eWBM eFPA FIDO2 Authenticator'
 
 Updated Description for AAGUID 50a45b0c-80e7-f944-bf29-f552bfa2e048 with description 'ACS FIDO Authenticator' from 'ACS FIDO Authenticato' to 'ACS FIDO Authenticator'
-
-
