@@ -8,6 +8,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -18,6 +19,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -28,6 +30,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -38,6 +41,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -48,6 +52,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -58,6 +63,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -68,6 +74,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -78,6 +85,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -88,6 +96,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -98,6 +107,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -108,6 +118,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -118,6 +129,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -128,6 +140,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -138,6 +151,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -148,6 +162,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -158,6 +173,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -168,6 +184,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -178,6 +195,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -188,6 +206,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -198,6 +217,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -208,6 +228,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -218,6 +239,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -228,6 +250,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -238,6 +261,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -248,6 +272,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -258,6 +283,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -268,6 +294,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -278,6 +305,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -288,6 +316,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -298,6 +327,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -308,6 +338,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -318,6 +349,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -328,6 +360,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -338,6 +371,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -348,6 +382,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -358,6 +393,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -368,6 +404,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -378,6 +415,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -388,6 +426,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -398,6 +437,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -408,6 +448,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -418,6 +459,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -428,6 +470,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -438,6 +481,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -448,6 +492,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -458,6 +503,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -468,6 +514,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -478,6 +525,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -488,6 +536,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -498,6 +547,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -508,6 +558,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -518,6 +569,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -528,6 +580,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -538,6 +591,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -548,6 +602,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -558,6 +613,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -568,6 +624,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -578,6 +635,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -588,6 +646,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -598,6 +657,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -608,6 +668,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -618,6 +679,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -628,6 +690,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -638,6 +701,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -648,6 +712,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -658,6 +723,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -668,6 +734,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -678,6 +745,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -688,6 +756,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -698,6 +767,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -708,6 +778,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -718,6 +789,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -728,6 +800,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -738,6 +811,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -748,6 +822,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -758,6 +833,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -768,6 +844,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -778,6 +855,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -788,6 +866,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -798,6 +877,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -808,6 +888,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -818,6 +899,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -828,6 +910,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -838,6 +921,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -848,6 +932,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -858,6 +943,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -868,6 +954,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -878,6 +965,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -888,6 +976,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -898,6 +987,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -908,6 +998,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -918,6 +1009,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -928,6 +1020,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -938,6 +1031,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -948,6 +1042,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -958,6 +1053,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -968,6 +1064,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -978,6 +1075,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -988,6 +1086,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -998,6 +1097,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1008,6 +1108,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1018,6 +1119,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1028,6 +1130,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1038,6 +1141,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1048,6 +1152,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1058,6 +1163,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1068,6 +1174,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1078,6 +1185,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1088,6 +1196,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1098,6 +1207,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1108,6 +1218,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1118,6 +1229,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1128,6 +1240,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1138,6 +1251,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1148,6 +1262,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1158,6 +1273,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1168,6 +1284,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1178,6 +1295,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1188,6 +1306,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1198,6 +1317,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1208,6 +1328,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1218,6 +1339,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1228,6 +1350,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     }
   ],
