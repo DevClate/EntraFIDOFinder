@@ -95,7 +95,11 @@
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
-        <input type="text" id="filterVersion" class="filter-input" placeholder="Search for versions..." onkeyup="filterTable()">
+        <select id="filterVersion" class="filter-input" onchange="filterTable()">
+            <option value="">All Versions</option>
+            <option value="2.0">2.0</option>
+            <option value="2.1">2.1</option>
+        </select>
         <table id="fidoTable">
             <thead>
                 <tr>
@@ -164,7 +168,7 @@
             const usbFilter = document.getElementById('filterUSB').value;
             const nfcFilter = document.getElementById('filterNFC').value;
             const bleFilter = document.getElementById('filterBLE').value;
-            const versionInput = document.getElementById('filterVersion').value.toLowerCase();
+            const versionFilter = document.getElementById('filterVersion').value;
             const table = document.getElementById('fidoTable');
             const rows = table.getElementsByTagName('tr');
 
@@ -175,14 +179,14 @@
                 const usb = cells[4].innerText;
                 const nfc = cells[5].innerText;
                 const ble = cells[6].innerText;
-                const version = cells[7].innerText.toLowerCase(); // Get Version cell
+                const version = cells[7].innerText;
 
                 const matchesVendor = vendor.includes(vendorInput);
                 const matchesBio = !bioFilter || bio === bioFilter;
                 const matchesUSB = !usbFilter || usb === usbFilter;
                 const matchesNFC = !nfcFilter || nfc === nfcFilter;
                 const matchesBLE = !bleFilter || ble === bleFilter;
-                const matchesVersion = version.includes(versionInput);
+                const matchesVersion = !versionFilter || version === versionFilter;
 
                 if (matchesVendor && matchesBio && matchesUSB && matchesNFC && matchesBLE && matchesVersion) {
                     rows[i].style.display = '';
