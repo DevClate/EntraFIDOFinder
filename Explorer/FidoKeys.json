@@ -1,15 +1,9 @@
 {
+  "metadata": {
+    "databaseLastChecked": "2024-11-20 12:25:11",
+    "databaseLastUpdated": "2024-11-19 00:21:55"
+  },
   "keys": [
-    {
-      "Vendor": "ACS",
-      "Description": "ACS FIDO Authenticator",
-      "AAGUID": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
     {
       "Vendor": "ACS",
       "Description": "ACS FIDO Authenticator Card",
@@ -18,6 +12,18 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "ACS",
+      "Description": "ACS FIDO Authenticator",
+      "AAGUID": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -28,6 +34,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -38,6 +45,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -48,56 +56,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "AuthenTrend",
-      "Description": "ATKey.Card CTAP2.0",
-      "AAGUID": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "AuthenTrend",
-      "Description": "ATKey.Card NFC",
-      "AAGUID": "da1fa263-8b25-42b6-a820-c0036f21ba7f",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "AuthenTrend",
-      "Description": "ATKey.Pro CTAP2.0",
-      "AAGUID": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "AuthenTrend",
-      "Description": "ATKey.Pro CTAP2.1",
-      "AAGUID": "e416201b-afeb-41ca-a03d-2281c28322aa",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "AuthenTrend",
-      "Description": "ATKey.ProS",
-      "AAGUID": "ba76a271-6eb6-4171-874d-b6428dbe3437",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -108,6 +67,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -118,6 +78,62 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.1",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "AuthenTrend",
+      "Description": "ATKey.Pro CTAP2.1",
+      "AAGUID": "e416201b-afeb-41ca-a03d-2281c28322aa",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.1",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "AuthenTrend",
+      "Description": "ATKey.Pro CTAP2.0",
+      "AAGUID": "e1a96183-5016-4f24-b55b-e3ae23614cc6",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "AuthenTrend",
+      "Description": "ATKey.Card CTAP2.0",
+      "AAGUID": "d41f5a69-b817-4144-a13c-9ebd6d9254d6",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "AuthenTrend",
+      "Description": "ATKey.Card NFC",
+      "AAGUID": "da1fa263-8b25-42b6-a820-c0036f21ba7f",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "AuthenTrend",
+      "Description": "ATKey.ProS",
+      "AAGUID": "ba76a271-6eb6-4171-874d-b6428dbe3437",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -128,6 +144,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -138,6 +155,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -148,6 +166,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -158,6 +177,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -168,6 +188,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -178,16 +199,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "eWBM",
-      "Description": "eWBM eFA320 FIDO2 Authenticator",
-      "AAGUID": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -198,66 +210,18 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
-      "Vendor": "Excelsecu",
-      "Description": "Excelsecu eSecu FIDO2 Fingerprint Key",
-      "AAGUID": "6002f033-3c07-ce3e-d0f7-0ffe5ed42543",
+      "Vendor": "eWBM",
+      "Description": "eWBM eFA320 FIDO2 Authenticator",
+      "AAGUID": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
       "Bio": "Yes",
-      "USB": "Yes",
+      "USB": "No",
       "NFC": "No",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Excelsecu",
-      "Description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
-      "AAGUID": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Excelsecu",
-      "Description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
-      "AAGUID": "d384db22-4d50-ebde-2eac-5765cf1e2a44",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Excelsecu",
-      "Description": "Excelsecu eSecu FIDO2 NFC Security Key",
-      "AAGUID": "a3975549-b191-fd67-b8fb-017e2917fdb3",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Excelsecu",
-      "Description": "Excelsecu eSecu FIDO2 NFC Security Key",
-      "AAGUID": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Excelsecu",
-      "Description": "Excelsecu eSecu FIDO2 Pro Security Key",
-      "AAGUID": "0d9b2e56-566b-c393-2940-f821b7f15d6d",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -268,6 +232,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -278,36 +243,73 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
-      "Vendor": "Feitian",
-      "Description": "Feitian AllinOne FIDO2 Authenticator",
-      "AAGUID": "12ded745-4bed-47d4-abaa-e713f51d6393",
+      "Vendor": "Excelsecu",
+      "Description": "Excelsecu eSecu FIDO2 Fingerprint Key",
+      "AAGUID": "6002f033-3c07-ce3e-d0f7-0ffe5ed42543",
       "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Excelsecu",
+      "Description": "Excelsecu eSecu FIDO2 NFC Security Key",
+      "AAGUID": "fbefdf68-fe86-0106-213e-4d5fa24cbe2e",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Excelsecu",
+      "Description": "Excelsecu eSecu FIDO2 Pro Security Key",
+      "AAGUID": "0d9b2e56-566b-c393-2940-f821b7f15d6d",
+      "Bio": "No",
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
-      "Vendor": "Feitian",
-      "Description": "Feitian BioPass FIDO2 Authenticator",
-      "AAGUID": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
+      "Vendor": "Excelsecu",
+      "Description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
+      "AAGUID": "20f0be98-9af9-986a-4b42-8eca4acb28e4",
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
-      "Vendor": "Feitian",
-      "Description": "Feitian BioPass FIDO2 Plus Authenticator",
-      "AAGUID": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
+      "Vendor": "Excelsecu",
+      "Description": "Excelsecu eSecu FIDO2 Fingerprint Security Key",
+      "AAGUID": "d384db22-4d50-ebde-2eac-5765cf1e2a44",
       "Bio": "Yes",
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Excelsecu",
+      "Description": "Excelsecu eSecu FIDO2 NFC Security Key",
+      "AAGUID": "a3975549-b191-fd67-b8fb-017e2917fdb3",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -318,6 +320,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -328,6 +331,18 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Feitian",
+      "Description": "Feitian AllinOne FIDO2 Authenticator",
+      "AAGUID": "12ded745-4bed-47d4-abaa-e713f51d6393",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -338,6 +353,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.1",
       "ValidVendor": "Yes"
     },
     {
@@ -348,6 +364,29 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Feitian",
+      "Description": "Feitian BioPass FIDO2 Authenticator",
+      "AAGUID": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Feitian",
+      "Description": "Feitian BioPass FIDO2 Plus Authenticator",
+      "AAGUID": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -358,6 +397,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -368,6 +408,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -378,6 +419,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -388,6 +430,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -398,16 +441,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "HID Global",
-      "Description": "HID Crescendo C2300",
-      "AAGUID": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -418,26 +452,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "HID Global",
-      "Description": "HID Crescendo Enabled",
-      "AAGUID": "54d9fee8-e621-4291-8b18-7157b99c5bec",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "HID Global",
-      "Description": "HID Crescendo Key",
-      "AAGUID": "692db549-7ae5-44d5-a1e5-dd20a493b723",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -448,6 +463,40 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "HID Global",
+      "Description": "HID Crescendo Enabled",
+      "AAGUID": "54d9fee8-e621-4291-8b18-7157b99c5bec",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "HID Global",
+      "Description": "HID Crescendo C2300",
+      "AAGUID": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "HID Global",
+      "Description": "HID Crescendo Key",
+      "AAGUID": "692db549-7ae5-44d5-a1e5-dd20a493b723",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -458,6 +507,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -468,6 +518,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -478,6 +529,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -488,6 +540,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -498,6 +551,7 @@
       "USB": "No",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -508,506 +562,7 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "IDmelon",
-      "Description": "IDmelon Android Authenticator",
-      "AAGUID": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "IDmelon",
-      "Description": "IDmelon iOS Authenticator",
-      "AAGUID": "820d89ed-d65a-409e-85cb-f73f0578f82a",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Thales",
-      "Description": "IDPrime 3930 FIDO",
-      "AAGUID": "ca4cff1b-5a81-4404-8194-59aabcf1660b",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Thales",
-      "Description": "IDPrime 3940 FIDO",
-      "AAGUID": "b50d5e0a-7f81-4959-9b12-f45407407503",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Thales",
-      "Description": "IDPrime 931 Fido",
-      "AAGUID": "2194b428-9397-4046-8f39-007a1605a482",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Thales",
-      "Description": "IDPrime 941 Fido",
-      "AAGUID": "2ffd6452-01da-471f-821b-ea4bf6c8676a",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "ImproveID",
-      "Description": "ImproveID Authenticator",
-      "AAGUID": "4c50ff10-1057-4fc6-b8ed-43a529530c3c",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "KEY-ID",
-      "Description": "KEY-ID FIDO2 Authenticator",
-      "AAGUID": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "KeyXentic",
-      "Description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
-      "AAGUID": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "KeyXentic",
-      "Description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
-      "AAGUID": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "KONAI",
-      "Description": "KONAI Secp256R1 FIDO2 Conformance Testing CTAP2 Authenticator",
-      "AAGUID": "f7c558a0-f465-11e8-b568-0800200c9a66",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "KeyXentic",
-      "Description": "KX701 SmartToken FIDO",
-      "AAGUID": "fec067a1-f1d0-4c5e-b4c0-cc3237475461",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "NEOWAVE",
-      "Description": "NEOWAVE Badgeo FIDO2",
-      "AAGUID": "c5703116-972b-4851-a3e7-ae1259843399",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "NEOWAVE",
-      "Description": "NEOWAVE Winkeo FIDO2",
-      "AAGUID": "3789da91-f943-46bc-95c3-50ea2012f03a",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "NXP Semiconductors",
-      "Description": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticator",
-      "AAGUID": "07a9f89c-6407-4594-9d56-621d5f1e358b",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Nymi",
-      "Description": "Nymi FIDO2 Authenticator",
-      "AAGUID": "0acf3011-bc60-f375-fb53-6f05f43154e0",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OCTATCO",
-      "Description": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR",
-      "AAGUID": "a1f52be5-dfab-4364-b51c-2bd496b14a56",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OneSpan",
-      "Description": "OneSpan DIGIPASS FX1 BIO",
-      "AAGUID": "30b5035e-d297-4ff1-b00b-addc96ba6a98",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "Yes",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OneSpan",
-      "Description": "OneSpan DIGIPASS FX1a",
-      "AAGUID": "30b5035e-d297-4ff1-010b-addc96ba6a98",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OneSpan",
-      "Description": "OneSpan DIGIPASS FX7",
-      "AAGUID": "30b5035e-d297-4ff7-b00b-addc96ba6a98",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "Yes",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OneSpan",
-      "Description": "OneSpan FIDO Touch",
-      "AAGUID": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "Yes",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OnlyKey",
-      "Description": "OnlyKey Secp256R1 FIDO2 CTAP2 Authenticator",
-      "AAGUID": "998f358b-2dd2-4cbe-a43a-e8107438dfb3",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "OpenSK",
-      "Description": "OpenSK authenticator",
-      "AAGUID": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Pone Biometrics",
-      "Description": "Pone Biometrics OFFPAD Authenticator",
-      "AAGUID": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "Yes",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Precision",
-      "Description": "Precision InnaIT Key FIDO 2 Level 2 certified",
-      "AAGUID": "88bbd2f0-342a-42e7-9729-dd158be5407a",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "RSA",
-      "Description": "RSA DS100",
-      "AAGUID": "7e3f3d30-3557-4442-bdae-139312178b39",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SafeNet",
-      "Description": "Safenet eToken FIDO",
-      "AAGUID": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SafeNet",
-      "Description": "SafeNet eToken Fusion",
-      "AAGUID": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SafeNet",
-      "Description": "SafeNet eToken Fusion CC",
-      "AAGUID": "23786452-f02d-4344-87ed-aaf703726881",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key by Yubico",
-      "AAGUID": "b92c3f9a-c014-4056-887f-140a2501163b",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key by Yubico",
-      "AAGUID": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key by Yubico with NFC",
-      "AAGUID": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key by Yubico with NFC",
-      "AAGUID": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key NFC by Yubico",
-      "AAGUID": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key NFC by Yubico",
-      "AAGUID": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key NFC by Yubico - Enterprise Edition",
-      "AAGUID": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "Security Key NFC by Yubico - Enterprise Edition",
-      "AAGUID": "47ab2fb4-66ac-4184-9ae1-86be814012d5",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Sentry Enterprises",
-      "Description": "Sentry Enterprises CTAP2 Authenticator",
-      "AAGUID": "89b19028-256b-4025-8872-255358d950e4",
-      "Bio": "Yes",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "Yes",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SmartDisplayer",
-      "Description": "SmartDisplayer BobeePass FIDO2 Authenticator",
-      "AAGUID": "516d3969-5a57-5651-5958-4e7a49434167",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "Yes",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SoloKeys",
-      "Description": "Solo Secp256R1 FIDO2 CTAP2 Authenticator",
-      "AAGUID": "8876631b-d4a0-427f-5773-0ec71c9e0279",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SoloKeys",
-      "Description": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator",
-      "AAGUID": "8976631b-d4a0-427f-5773-0ec71c9e0279",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "SoloKeys",
-      "Description": "Somu Secp256R1 FIDO2 CTAP2 Authenticator",
-      "AAGUID": "9876631b-d4a0-427f-5773-0ec71c9e0279",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Swissbit",
-      "Description": "Swissbit iShield Key FIDO2",
-      "AAGUID": "931327dd-c89b-406c-a81e-ed7058ef36c6",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Swissbit",
-      "Description": "Swissbit iShield Key Pro",
-      "AAGUID": "5d629218-d3a5-11ed-afa1-0242ac120002",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Taglio",
-      "Description": "Taglio CTAP2.1 CS",
-      "AAGUID": "092277e5-8437-46b5-b911-ea64b294acb7",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Taglio",
-      "Description": "Taglio CTAP2.1 EP",
-      "AAGUID": "7d2afadd-bf6b-44a2-a66b-e831fceb8eff",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Thales",
-      "Description": "Thales IDPrime FIDO Bio",
-      "AAGUID": "4d41190c-7beb-4a84-8018-adf265a6352d",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Token Ring",
-      "Description": "Token Ring FIDO2 Authenticator",
-      "AAGUID": "91ad6b93-264b-4987-8737-3a690cad6917",
-      "Bio": "Yes",
-      "USB": "No",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "TOKEN2",
-      "Description": "TOKEN2 FIDO2 Security Key",
-      "AAGUID": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
-      "Bio": "No",
-      "USB": "No",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "TOKEN2",
-      "Description": "TOKEN2 PIN Plus Security Key Series",
-      "AAGUID": "eabb46cc-e241-80bf-ae9e-96fa6d2975cf",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1018,16 +573,40 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
-      "Vendor": "VALMIDO",
-      "Description": "VALMIDO PRO FIDO",
-      "AAGUID": "5626bed4-e756-430b-a7ff-ca78c8b12738",
+      "Vendor": "IDmelon",
+      "Description": "IDmelon Android Authenticator",
+      "AAGUID": "39a5647e-1853-446c-a1f6-a79bae9f5bc7",
       "Bio": "Yes",
       "USB": "No",
       "NFC": "No",
-      "BLE": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "IDmelon",
+      "Description": "IDmelon iOS Authenticator",
+      "AAGUID": "820d89ed-d65a-409e-85cb-f73f0578f82a",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "ImproveID",
+      "Description": "ImproveID Authenticator",
+      "AAGUID": "4c50ff10-1057-4fc6-b8ed-43a529530c3c",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1038,6 +617,447 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "KEY-ID",
+      "Description": "KEY-ID FIDO2 Authenticator",
+      "AAGUID": "d91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "KeyXentic",
+      "Description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+      "AAGUID": "ec31b4cc-2acc-4b8e-9c01-bade00ccbe26",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "KeyXentic",
+      "Description": "KeyXentic FIDO2 Secp256R1 FIDO2 CTAP2 Authenticator",
+      "AAGUID": "4b3f8944-d4f2-4d21-bb19-764a986ec160",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "KeyXentic",
+      "Description": "KX701 SmartToken FIDO",
+      "AAGUID": "fec067a1-f1d0-4c5e-b4c0-cc3237475461",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "KONAI",
+      "Description": "KONAI Secp256R1 FIDO2 Conformance Testing CTAP2 Authenticator",
+      "AAGUID": "f7c558a0-f465-11e8-b568-0800200c9a66",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "NEOWAVE",
+      "Description": "NEOWAVE Badgeo FIDO2",
+      "AAGUID": "c5703116-972b-4851-a3e7-ae1259843399",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "NEOWAVE",
+      "Description": "NEOWAVE Winkeo FIDO2",
+      "AAGUID": "3789da91-f943-46bc-95c3-50ea2012f03a",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "NXP Semiconductors",
+      "Description": "NXP Semiconductros FIDO2 Conformance Testing CTAP2 Authenticator",
+      "AAGUID": "07a9f89c-6407-4594-9d56-621d5f1e358b",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Nymi",
+      "Description": "Nymi FIDO2 Authenticator",
+      "AAGUID": "0acf3011-bc60-f375-fb53-6f05f43154e0",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OCTATCO",
+      "Description": "OCTATCO EzFinger2 FIDO2 AUTHENTICATOR",
+      "AAGUID": "a1f52be5-dfab-4364-b51c-2bd496b14a56",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OneSpan",
+      "Description": "OneSpan DIGIPASS FX1a",
+      "AAGUID": "30b5035e-d297-4ff1-010b-addc96ba6a98",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OneSpan",
+      "Description": "OneSpan FIDO Touch",
+      "AAGUID": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "Yes",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OneSpan",
+      "Description": "OneSpan DIGIPASS FX1 BIO",
+      "AAGUID": "30b5035e-d297-4ff1-b00b-addc96ba6a98",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "Yes",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OneSpan",
+      "Description": "OneSpan DIGIPASS FX7",
+      "AAGUID": "30b5035e-d297-4ff7-b00b-addc96ba6a98",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "Yes",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OnlyKey",
+      "Description": "OnlyKey Secp256R1 FIDO2 CTAP2 Authenticator",
+      "AAGUID": "998f358b-2dd2-4cbe-a43a-e8107438dfb3",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "OpenSK",
+      "Description": "OpenSK authenticator",
+      "AAGUID": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Pone Biometrics",
+      "Description": "Pone Biometrics OFFPAD Authenticator",
+      "AAGUID": "69700f79-d1fb-472e-bd9b-a3a3b9a9eda0",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "Yes",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Precision",
+      "Description": "Precision InnaIT Key FIDO 2 Level 2 certified",
+      "AAGUID": "88bbd2f0-342a-42e7-9729-dd158be5407a",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "RSA",
+      "Description": "RSA DS100",
+      "AAGUID": "7e3f3d30-3557-4442-bdae-139312178b39",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SafeNet",
+      "Description": "Safenet eToken FIDO",
+      "AAGUID": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SafeNet",
+      "Description": "SafeNet eToken Fusion CC",
+      "AAGUID": "23786452-f02d-4344-87ed-aaf703726881",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SafeNet",
+      "Description": "SafeNet eToken Fusion",
+      "AAGUID": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Sentry Enterprises",
+      "Description": "Sentry Enterprises CTAP2 Authenticator",
+      "AAGUID": "89b19028-256b-4025-8872-255358d950e4",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "Yes",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SmartDisplayer",
+      "Description": "SmartDisplayer BobeePass FIDO2 Authenticator",
+      "AAGUID": "516d3969-5a57-5651-5958-4e7a49434167",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "Yes",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SoloKeys",
+      "Description": "Somu Secp256R1 FIDO2 CTAP2 Authenticator",
+      "AAGUID": "9876631b-d4a0-427f-5773-0ec71c9e0279",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SoloKeys",
+      "Description": "Solo Secp256R1 FIDO2 CTAP2 Authenticator",
+      "AAGUID": "8876631b-d4a0-427f-5773-0ec71c9e0279",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "SoloKeys",
+      "Description": "Solo Tap Secp256R1 FIDO2 CTAP2 Authenticator",
+      "AAGUID": "8976631b-d4a0-427f-5773-0ec71c9e0279",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Swissbit",
+      "Description": "Swissbit iShield Key Pro",
+      "AAGUID": "5d629218-d3a5-11ed-afa1-0242ac120002",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Swissbit",
+      "Description": "Swissbit iShield Key FIDO2",
+      "AAGUID": "931327dd-c89b-406c-a81e-ed7058ef36c6",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Taglio",
+      "Description": "Taglio CTAP2.1 CS",
+      "AAGUID": "092277e5-8437-46b5-b911-ea64b294acb7",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.1",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Taglio",
+      "Description": "Taglio CTAP2.1 EP",
+      "AAGUID": "7d2afadd-bf6b-44a2-a66b-e831fceb8eff",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.1",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Thales",
+      "Description": "IDPrime 931 Fido",
+      "AAGUID": "2194b428-9397-4046-8f39-007a1605a482",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Thales",
+      "Description": "IDPrime 3930 FIDO",
+      "AAGUID": "ca4cff1b-5a81-4404-8194-59aabcf1660b",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Thales",
+      "Description": "IDPrime 941 Fido",
+      "AAGUID": "2ffd6452-01da-471f-821b-ea4bf6c8676a",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Thales",
+      "Description": "Thales IDPrime FIDO Bio",
+      "AAGUID": "4d41190c-7beb-4a84-8018-adf265a6352d",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Thales",
+      "Description": "IDPrime 3940 FIDO",
+      "AAGUID": "b50d5e0a-7f81-4959-9b12-f45407407503",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Token Ring",
+      "Description": "Token Ring FIDO2 Authenticator",
+      "AAGUID": "91ad6b93-264b-4987-8737-3a690cad6917",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "TOKEN2",
+      "Description": "TOKEN2 PIN Plus Security Key Series",
+      "AAGUID": "eabb46cc-e241-80bf-ae9e-96fa6d2975cf",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "TOKEN2",
+      "Description": "TOKEN2 FIDO2 Security Key",
+      "AAGUID": "ab32f0c6-2239-afbb-c470-d2ef4e254db7",
+      "Bio": "No",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "VALMIDO",
+      "Description": "VALMIDO PRO FIDO",
+      "AAGUID": "5626bed4-e756-430b-a7ff-ca78c8b12738",
+      "Bio": "Yes",
+      "USB": "No",
+      "NFC": "No",
+      "BLE": "Yes",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1048,6 +1068,7 @@
       "USB": "No",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1058,106 +1079,7 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 FIPS Series",
-      "AAGUID": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 FIPS Series with Lightning",
-      "AAGUID": "85203421-48f9-4355-9bc8-8a53846e5083",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 FIPS Series with NFC",
-      "AAGUID": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series",
-      "AAGUID": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series",
-      "AAGUID": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series",
-      "AAGUID": "ee882879-721c-4913-9775-3dfcce97072a",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series with Lightning",
-      "AAGUID": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series with Lightning",
-      "AAGUID": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "No",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series with NFC",
-      "AAGUID": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
-      "ValidVendor": "Yes"
-    },
-    {
-      "Vendor": "Yubico",
-      "Description": "YubiKey 5 Series with NFC",
-      "AAGUID": "a25342c0-3cdc-4414-8e46-f4807fca511c",
-      "Bio": "No",
-      "USB": "Yes",
-      "NFC": "Yes",
-      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1168,6 +1090,62 @@
       "USB": "Yes",
       "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 Series",
+      "AAGUID": "ee882879-721c-4913-9775-3dfcce97072a",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key NFC by Yubico",
+      "AAGUID": "e77e3c64-05e3-428b-8824-0cbeb04b829d",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key by Yubico with NFC",
+      "AAGUID": "149a2021-8ef6-4133-96b8-81f8d5b7f1f5",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key by Yubico",
+      "AAGUID": "f8a011f3-8c0a-4d15-8006-17111f9edc7d",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key NFC by Yubico - Enterprise Edition",
+      "AAGUID": "0bb43545-fd2c-4185-87dd-feb0b2916ace",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1178,6 +1156,29 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 FIPS Series",
+      "AAGUID": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 FIPS Series with Lightning",
+      "AAGUID": "85203421-48f9-4355-9bc8-8a53846e5083",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1188,36 +1189,62 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
-      "Description": "YubiKey Bio Series - Multi-protocol Edition",
-      "AAGUID": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
-      "Bio": "Yes",
+      "Description": "YubiKey 5 Series",
+      "AAGUID": "19083c3d-8383-4b18-bc03-8f1c9ab2fd1b",
+      "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
-      "Description": "YubiKey Bio Series - Multi-protocol Edition",
-      "AAGUID": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
-      "Bio": "Yes",
+      "Description": "YubiKey 5 Series with NFC",
+      "AAGUID": "2fc0579f-8113-47ea-b116-bb5a8db9202a",
+      "Bio": "No",
       "USB": "Yes",
-      "NFC": "No",
+      "NFC": "Yes",
       "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
       "Vendor": "Yubico",
-      "Description": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN",
-      "AAGUID": "58276709-bb4b-4bb3-baf1-60eea99282a7",
-      "Bio": "Yes",
+      "Description": "YubiKey 5 Series",
+      "AAGUID": "cb69481e-8ff7-4039-93ec-0a2729a154a8",
+      "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 Series with Lightning",
+      "AAGUID": "c5ef55ff-ad9a-4b9f-b580-adebafe026d0",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 FIPS Series with NFC",
+      "AAGUID": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     },
     {
@@ -1228,11 +1255,107 @@
       "USB": "Yes",
       "NFC": "No",
       "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key by Yubico",
+      "AAGUID": "b92c3f9a-c014-4056-887f-140a2501163b",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key NFC by Yubico",
+      "AAGUID": "a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key NFC by Yubico - Enterprise Edition",
+      "AAGUID": "47ab2fb4-66ac-4184-9ae1-86be814012d5",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 Series with NFC",
+      "AAGUID": "a25342c0-3cdc-4414-8e46-f4807fca511c",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey 5 Series with Lightning",
+      "AAGUID": "a02167b9-ae71-4ac7-9a07-06432ebb6f1c",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey Bio Series - Multi-protocol Edition",
+      "AAGUID": "90636e1f-ef82-43bf-bdcf-5255f139d12f",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN",
+      "AAGUID": "58276709-bb4b-4bb3-baf1-60eea99282a7",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "YubiKey Bio Series - Multi-protocol Edition",
+      "AAGUID": "7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3",
+      "Bio": "Yes",
+      "USB": "Yes",
+      "NFC": "No",
+      "BLE": "No",
+      "Version": "2.0",
+      "ValidVendor": "Yes"
+    },
+    {
+      "Vendor": "Yubico",
+      "Description": "Security Key by Yubico with NFC",
+      "AAGUID": "6d44ba9b-f6ec-2e49-b930-0c8fe920cb73",
+      "Bio": "No",
+      "USB": "Yes",
+      "NFC": "Yes",
+      "BLE": "No",
+      "Version": "2.0",
       "ValidVendor": "Yes"
     }
-  ],
-  "metadata": {
-    "databaseLastChecked": "2024-11-20 00:21:37",
-    "databaseLastUpdated": "2024-11-19 00:21:55"
-  }
+  ]
 }
