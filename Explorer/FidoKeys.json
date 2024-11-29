@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "databaseLastUpdated": "2024-11-19 00:21:55",
+    "databaseLastChecked": "2024-11-29 00:22:07"
+  },
   "keys": [
     {
       "Vendor": "ACS",
@@ -1353,9 +1357,5 @@
       "Version": "2.0",
       "ValidVendor": "Yes"
     }
-  ],
-  "metadata": {
-    "databaseLastUpdated": "2024-11-19 00:21:55",
-    "databaseLastChecked": "2024-11-28 00:22:22"
-  }
+  ]
 }
