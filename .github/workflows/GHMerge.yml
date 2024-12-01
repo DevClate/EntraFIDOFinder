@@ -1,4 +1,4 @@
-name: Currently working 3 main Merge
+name: Main Merge
 
 on:
   workflow_dispatch:
