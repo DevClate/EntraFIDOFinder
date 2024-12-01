@@ -395,11 +395,11 @@ Function Merge-GHFidoData {
         elseif ($changesAreSame) {
             Write-Host "Changes are the same as the last run. Not updating merge_log.md."
         }
-        # Update detailed_log.txt with "No changes have been detected since last run."
+        # Update detailed_log.txt with "No changes detected during this run."
         $detailedLogContent.Clear()
         $detailedLogContent.Add("DETAILED LOG - $logDate")
         $detailedLogContent.Add("")
-        $detailedLogContent.Add("No changes have been detected since last run.")
+        $detailedLogContent.Add("No changes detected during this run.")
         # Add consistent spacing between entries
         $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
         Set-Content -Path $DetailedLogFilePath -Value $newDetailedContent -Encoding utf8
