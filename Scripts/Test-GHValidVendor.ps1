@@ -1,58 +1,68 @@
-<#
-.SYNOPSIS
-    Validates the vendor of a FIDO key against a list of valid vendors.
+function Test-GHValidVendor {
+    <#
+    .SYNOPSIS
+    Tests if a vendor is valid based on a list of valid vendors.
 
-.DESCRIPTION
-    The `Test-GHValidVendor` function checks if the provided vendor is in the list of valid vendors. If the vendor is not valid, it attempts to use the first word of the description as the vendor. If the vendor is still not valid, it logs the invalid vendor and prepares an issue entry.
+    .DESCRIPTION
+    This function checks if the provided vendor is in the list of valid vendors. If not, it attempts to use the first word of the description as the vendor. 
+    If the vendor is still invalid and it's a new entry, it logs the invalid vendor and prepares an issue entry.
 
-.PARAMETER vendor
-    [ref] The vendor of the FIDO key to be validated.
+    .PARAMETER vendor
+    [ref] The vendor to be validated.
 
-.PARAMETER description
-    [string] The description of the FIDO key.
+    .PARAMETER description
+    [string] The description associated with the vendor.
 
-.PARAMETER aaguid
-    [string] The AAGUID of the FIDO key.
+    .PARAMETER aaguid
+    [string] The AAGUID associated with the vendor.
 
-.PARAMETER ValidVendors
+    .PARAMETER ValidVendors
     [string[]] The list of valid vendors.
 
-.PARAMETER markdownContent
-    [ref] The markdown content to be updated with log entries.
+    .PARAMETER markdownContent
+    [System.Collections.ArrayList] The collection to store markdown log entries.
 
-.PARAMETER detailedLogContent
-    [ref] The detailed log content to be updated with log entries.
+    .PARAMETER detailedLogContent
+    [System.Collections.ArrayList] The collection to store detailed log entries.
 
-.PARAMETER loggedInvalidVendors
-    [ref] The list of logged invalid vendors.
+    .PARAMETER loggedInvalidVendors
+    [System.Collections.ArrayList] The collection to store logged invalid vendors.
 
-.PARAMETER issueEntries
-    [ref] The list of issue entries to be created.
+    .PARAMETER issueEntries
+    [System.Collections.ArrayList] The collection to store issue entries.
 
-.PARAMETER existingLogEntries
-    [string[]] The list of existing log entries to avoid duplicates.
+    .PARAMETER existingLogEntries
+    [string[]] The list of existing log entries.
 
-.PARAMETER changesDetected
-    [ref] A flag indicating if any changes were detected.
+    .PARAMETER changesDetected
+    [ref] Indicates if any changes were detected.
 
-.EXAMPLE
-    $vendor = [ref]"UnknownVendor"
-    $description = "UnknownVendor FIDO2 Key"
-    $aaguid = "12345678-1234-1234-1234-123456789012"
-    $ValidVendors = @("Yubico", "Feitian", "Google")
-    $markdownContent = [ref]""
-    $detailedLogContent = [ref]""
-    $loggedInvalidVendors = [ref]@()
-    $issueEntries = [ref]@()
+    .PARAMETER IsNewEntry
+    [bool] Indicates if the entry is new.
+
+    .PARAMETER currentLogEntries
+    [System.Collections.ArrayList] The collection to store current log entries.
+
+    .OUTPUTS
+    [string] Returns "Yes" if the vendor is valid or corrected, otherwise returns "No".
+
+    .EXAMPLE
+    $vendor = [ref] "SomeVendor"
+    $description = "Some description"
+    $aaguid = "1234-5678-9012"
+    $ValidVendors = @("ValidVendor1", "ValidVendor2")
+    $markdownContent = [System.Collections.ArrayList]::new()
+    $detailedLogContent = [System.Collections.ArrayList]::new()
+    $loggedInvalidVendors = [System.Collections.ArrayList]::new()
+    $issueEntries = [System.Collections.ArrayList]::new()
     $existingLogEntries = @()
-    $changesDetected = [ref]$false
+    $changesDetected = [ref] $false
+    $IsNewEntry = $true
+    $currentLogEntries = [System.Collections.ArrayList]::new()
 
-    Test-GHValidVendor -vendor $vendor -description $description -aaguid $aaguid -ValidVendors $ValidVendors -markdownContent $markdownContent -detailedLogContent $detailedLogContent -loggedInvalidVendors $loggedInvalidVendors -issueEntries $issueEntries -existingLogEntries $existingLogEntries -changesDetected $changesDetected
+    Test-GHValidVendor -vendor $vendor -description $description -aaguid $aaguid -ValidVendors $ValidVendors -markdownContent $markdownContent -detailedLogContent $detailedLogContent -loggedInvalidVendors $loggedInvalidVendors -issueEntries $issueEntries -existingLogEntries $existingLogEntries -changesDetected $changesDetected -IsNewEntry $IsNewEntry -currentLogEntries $currentLogEntries
+    #>
 
-.NOTES
-    The function reads the list of valid vendors from a JSON file located at "Assets/valid_vendors.json".
-#>
-function Test-GHValidVendor {
     param (
         [Parameter(Mandatory = $true)]
         [ref]$vendor,
@@ -61,20 +71,17 @@ function Test-GHValidVendor {
         [Parameter(Mandatory = $true)]
         [string]$aaguid,
         [string[]]$ValidVendors,
-        [ref]$markdownContent,
-        [ref]$detailedLogContent,
-        [ref]$loggedInvalidVendors,
-        [ref]$issueEntries,
+        [System.Collections.ArrayList]$markdownContent,
+        [System.Collections.ArrayList]$detailedLogContent,
+        [System.Collections.ArrayList]$loggedInvalidVendors,
+        [System.Collections.ArrayList]$issueEntries,
         [string[]]$existingLogEntries,
-        [ref]$changesDetected
+        [ref]$changesDetected,
+        [bool]$IsNewEntry,
+        [System.Collections.ArrayList]$currentLogEntries
     )
 
-    $validVendorsFilePath = "Assets/valid_vendors.json"
-    if (-Not (Test-Path -Path $validVendorsFilePath)) {
-        Write-Error "The valid vendors JSON file was not found at path: $validVendorsFilePath"
-        return "No"
-    }
-    
+    # Check if the vendor is valid
     if ($ValidVendors -contains $vendor.Value) {
         return "Yes"
     }
@@ -88,26 +95,35 @@ function Test-GHValidVendor {
                 Write-Host "Vendor '$firstWord' is valid."
                 $vendor.Value = $firstWord
                 $logEntry = "Vendor corrected for AAGUID '$aaguid': '$($vendor.Value)' to '$firstWord'."
-                $detailedLogContent.Value += "`n$logEntry"
+                $detailedLogContent.Add("")
+                $detailedLogContent.Add($logEntry)
                 Write-Host "Added log entry for vendor correction: $logEntry"
                 $changesDetected.Value = $true
                 return "Yes"
             }
         }
-        # Log invalid vendor for the specific key
-        $logEntry = "Invalid vendor detected for AAGUID '$aaguid' with description '$description'. Vendor '$($vendor.Value)' is not in the list of valid vendors."
-        $logEntryTrimmed = $logEntry.Trim()
-    
-        if (-not ($existingLogEntries -contains $logEntryTrimmed)) {
-            $markdownContent.Value += "$logEntry"
-            $detailedLogContent.Value += "`n$logEntry"
-            Write-Host "Added log entry for invalid vendor: $logEntry"
-            $changesDetected.Value = $true
-    
-            # Prepare issue entry with AAGUID included in the title
-            $issueTitle = "Invalid Vendor Detected for AAGUID $aaguid : $($vendor.Value)"
-            $issueBody = $logEntry
-            $issueEntries.Value += "$issueTitle|$issueBody|InvalidVendor"
+        # Log invalid vendor for the specific key if it's a new entry
+        if ($IsNewEntry) {
+            $logEntry = "Invalid vendor detected for AAGUID '$aaguid' with description '$description'. Vendor '$($vendor.Value)' is not in the list of valid vendors."
+            $logEntryTrimmed = $logEntry.Trim()
+        
+            if (-not ($existingLogEntries -contains $logEntryTrimmed)) {
+                $markdownContent.Add($logEntry)
+                $detailedLogContent.Add("")
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for invalid vendor: $logEntry"
+
+                # Add log entry to currentLogEntries
+                $currentLogEntries.Add($logEntry)
+
+                # Set changesDetected to true
+                $changesDetected.Value = $true
+        
+                # Prepare issue entry with AAGUID included in the title
+                $issueTitle = "Invalid Vendor Detected for AAGUID $aaguid : $($vendor.Value)"
+                $issueBody = $logEntry
+                $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
+            }
         }
         return "No"
     }

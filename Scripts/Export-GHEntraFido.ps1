@@ -1,22 +1,22 @@
-<#
-.SYNOPSIS
-    Extracts FIDO key data from a specified URL and outputs it as a list of objects.
-
-.DESCRIPTION
-    The `Export-GHEntraFido` function fetches the content of a specified URL, parses the HTML to find a table containing FIDO key data, and extracts the data into a list of objects. The function looks for a table with headers "Description" and "AAGUID" and processes the rows to extract relevant information.
-
-.PARAMETER Url
-    The URL to fetch the FIDO key data from. This parameter is mandatory.
-
-.EXAMPLE
-    $url = "https://example.com/fido-keys"
-    $data = Export-GHEntraFido -Url $url
-    $data | Format-Table -AutoSize
-
-.NOTES
-    This function uses the HtmlAgilityPack library to parse the HTML content. Ensure that the library is available in your environment.
-#>
 Function Export-GHEntraFido {
+    <#
+    .SYNOPSIS
+    Exports FIDO data from a specified URL.
+
+    .DESCRIPTION
+    This function fetches the HTML content from the provided URL, parses the HTML to find a specific table with headers "Description" and "AAGUID",
+    and extracts the data from the table. The data is then output in a structured format.
+
+    .PARAMETER Url
+    The URL of the webpage containing the FIDO data table.
+
+    .EXAMPLE
+    Export-GHEntraFido -Url "https://example.com/fido-data"
+    This command fetches and exports the FIDO data from the specified URL.
+
+    .NOTES
+    The function uses HtmlAgilityPack to parse the HTML content.
+    #>
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
@@ -62,7 +62,7 @@ Function Export-GHEntraFido {
                 USB = ""
                 NFC = ""
                 BLE = ""
-                Vendor = ""
+                Vendor = ""  # Initialize Vendor as an empty string
             }
 
             for ($i = 0; $i -lt $cellNodes.Count; $i++) {

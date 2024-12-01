@@ -1,4 +1,4 @@
-name: Main Entra Merge
+name: Currently working 3 main Merge
 
 on:
   workflow_dispatch:
@@ -181,7 +181,7 @@ jobs:
     - name: Commit changes
       run: |
         git add Assets/FidoKeys.json merge_log.md detailed_log.txt
-        git commit -m "Update Fidokeys.json, merge_log.md, and detailed_log.txt" || echo "No changes to commit"
+        git commit -m "Update FidoKeys.json, merge_log.md, and detailed_log.txt" || echo "No changes to commit"
 
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
