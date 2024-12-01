@@ -1,32 +1,3 @@
-<#
-.SYNOPSIS
-    Merges FIDO data from a JSON file and a URL source, updating and validating entries.
-
-.DESCRIPTION
-    The `Merge-GHFidoData` function merges FIDO key data from a specified URL and a local JSON file. It validates the vendors, updates the entries, and logs the changes. The function also handles invalid vendors and prepares issue entries for further action.
-
-.PARAMETER Url
-    The URL to fetch the FIDO key data from. Default is "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor".
-
-.PARAMETER JsonFilePath
-    The path to the local JSON file containing the FIDO key data. Default is "Assets/FidoKeys.json".
-
-.PARAMETER MarkdownFilePath
-    The path to the markdown file for logging merge results. Default is "merge_log.md".
-
-.PARAMETER DetailedLogFilePath
-    The path to the detailed log file for logging detailed merge results. Default is "detailed_log.txt".
-
-.PARAMETER ValidVendorsFilePath
-    The path to the JSON file containing the list of valid vendors. Default is "Assets/valid_vendors.json".
-
-.EXAMPLE
-    Merge-GHFidoData -Url "https://example.com/fido-keys" -JsonFilePath "Assets/FidoKeys.json" -MarkdownFilePath "merge_log.md" -DetailedLogFilePath "detailed_log.txt" -ValidVendorsFilePath "Assets/valid_vendors.json"
-    Merges FIDO key data from the specified URL and local JSON file, validates the vendors, updates the entries, and logs the changes.
-
-.NOTES
-    The function reads the list of valid vendors from the specified JSON file and uses the `Test-GHValidVendor` function to validate the vendors. It logs the changes to the specified markdown and detailed log files.
-#>
 Function Merge-GHFidoData {
     [CmdletBinding()]
     param (
@@ -145,6 +116,7 @@ Function Merge-GHFidoData {
 
     # Merge data and handle vendors
     foreach ($urlItem in $urlData) {
+        # Create mutable object
         $hash = [ordered]@{}
         foreach ($prop in $urlItem.PSObject.Properties) {
             $hash[$prop.Name] = $prop.Value
@@ -180,6 +152,42 @@ Function Merge-GHFidoData {
             # Update vendor variable if it was changed in the function
             $vendor = $vendorRef.Value
 
+            # Determine the Version to use
+            # Default Version is '2.0'
+            $newVersion = '2.0'
+
+            # If Description contains '2.1', set Version to '2.1'
+            if ($description -match '2\.1') {
+                $newVersion = '2.1'
+            }
+
+            # Decide whether to use the auto-calculated Version or keep the existing Version
+            $existingVersion = $existingHash['Version']
+
+            if (-not $existingVersion -or $existingVersion -eq $hash['Version']) {
+                # If existing Version is empty or unchanged, use $newVersion
+                $versionToUse = $newVersion
+            }
+            else {
+                # Version has been manually changed, keep existing Version
+                $versionToUse = $existingVersion
+            }
+
+            # Update the existing hash with the desired property order
+            $existingHash = [ordered]@{
+                Vendor      = $vendor
+                Description = $description
+                AAGUID      = $aaguid
+                Bio         = $hash['Bio']
+                USB         = $hash['USB']
+                NFC         = $hash['NFC']
+                BLE         = $hash['BLE']
+                Version     = $versionToUse
+                ValidVendor = $validVendor
+            }
+
+            $mergedData.keys += [PSCustomObject]$existingHash
+
             # Check if vendor has changed (correction occurred)
             if ($vendor -ne $originalVendor) {
                 $changesDetected.Value = $true
@@ -203,15 +211,36 @@ Function Merge-GHFidoData {
             }
 
             # Check for changes in specific properties
-            $propertiesToCheck = @('Description', 'Bio', 'USB', 'NFC', 'BLE')
+            $propertiesToCheck = @('Description', 'Bio', 'USB', 'NFC', 'BLE', 'Version')
             foreach ($property in $propertiesToCheck) {
-                if ($existingHash[$property] -ne $hash[$property]) {
+                $existingValue = if ($property -eq 'Version') { $existingHash[$property] } else { $existingHash[$property] }
+                $newValue = if ($property -eq 'Version') { $newVersion } else { $hash[$property] }
+                if ($existingValue -ne $newValue) {
                     $changesDetected.Value = $true
                     $updateDatabaseLastUpdated = $true  # Update when property changes
-                    $logEntry = "Property '$property' for AAGUID '$aaguid' changed from '$($existingHash[$property])' to '$($hash[$property])'."
+                    $logEntry = "Updated '$property' for AAGUID '$aaguid' with description '$description' from '$existingValue' to '$newValue'."
                     $currentLogEntries += $logEntry
                     $detailedLogContent.Value += "`n$logEntry"
                 }
+            }
+            # Default Version is '2.0'
+            $autoVersion = '2.0'
+
+            # If Description contains '2.1', set Version to '2.1'
+            if ($description -match '2\.1') {
+                $autoVersion = '2.1'
+            }
+
+            # Decide whether to use the autoVersion or keep the existing Version
+            $existingVersion = $existingHash['Version']
+
+            if (-not $existingVersion -or $existingVersion -eq $hash['Version']) {
+                # If existing Version is empty or unchanged, use autoVersion
+                $newVersion = $autoVersion
+            }
+            else {
+                # Version has been manually changed, keep existing Version
+                $newVersion = $existingVersion
             }
 
             # Update the existing hash with the desired property order
@@ -223,6 +252,7 @@ Function Merge-GHFidoData {
                 USB         = $hash['USB']
                 NFC         = $hash['NFC']
                 BLE         = $hash['BLE']
+                Version     = $hash['Version']
                 ValidVendor = $validVendor
             }
 
@@ -233,6 +263,15 @@ Function Merge-GHFidoData {
             $vendor = ""  # Leave Vendor as empty
             $validVendor = 'No'
 
+            # Determine the Version
+            # Default Version is '2.0'
+            $newVersion = '2.0'
+
+            # If Description contains '2.1', set Version to '2.1'
+            if ($description -match '2\.1') {
+                $newVersion = '2.1'
+            }
+
             # Create a hashtable for new item with desired property order
             $itemHash = [ordered]@{
                 Vendor      = $vendor
@@ -242,6 +281,7 @@ Function Merge-GHFidoData {
                 USB         = $hash['USB']
                 NFC         = $hash['NFC']
                 BLE         = $hash['BLE']
+                Version     = $newVersion
                 ValidVendor = $validVendor
             }
 
@@ -249,6 +289,10 @@ Function Merge-GHFidoData {
             $changesDetected.Value = $true
             $updateDatabaseLastUpdated = $true
 
+            # Log that a new entry without Vendor has been added
+            #$logEntry = "New entry added for description '$description', but Vendor information is missing."
+            #$currentLogEntries += $logEntry
+            #$detailedLogContent.Value += "`n$logEntry"
         }
 
         # Collect current invalid vendors for comparison
@@ -275,6 +319,18 @@ Function Merge-GHFidoData {
         $mergedData.metadata.databaseLastUpdated = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
     }
     $mergedData.metadata.databaseLastChecked = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
+
+    # Write the merged data
+    $jsonOutput = $mergedData | ConvertTo-Json -Depth 10
+
+    # Write to the JSON file
+    Set-Content -Path $JsonFilePath -Value $jsonOutput -Encoding utf8
+
+    # Remove duplicates based on AAGUID
+    $mergedData.keys = $mergedData.keys | Group-Object AAGUID | ForEach-Object { $_.Group[0] }
+
+    # Sort the keys by Vendor
+    $mergedData.keys = $mergedData.keys | Sort-Object Vendor
 
     # Write the merged data
     $jsonOutput = $mergedData | ConvertTo-Json -Depth 10

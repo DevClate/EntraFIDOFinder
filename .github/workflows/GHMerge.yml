@@ -1,4 +1,4 @@
-name: main Merge
+name: Main Entra Merge
 
 on:
   workflow_dispatch:
