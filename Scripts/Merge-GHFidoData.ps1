@@ -384,7 +384,7 @@ Function Merge-GHFidoData {
         }
         $detailedLogContent = $detailedLogContent | ForEach-Object { $_.TrimEnd("`n", "`r") }
         # Add extra newline between entries
-        $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
+        $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
         Set-Content -Path $DetailedLogFilePath -Value $newDetailedContent -Encoding utf8
     }
     else {
@@ -401,7 +401,7 @@ Function Merge-GHFidoData {
         $detailedLogContent.Add("")
         $detailedLogContent.Add("No changes have been detected since last run.")
         # Add consistent spacing between entries
-        $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
+        $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
         Set-Content -Path $DetailedLogFilePath -Value $newDetailedContent -Encoding utf8
     }
 
