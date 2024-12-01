@@ -1,31 +1,35 @@
 <#
 .SYNOPSIS
-    Checks if a given AAGUID exists in a list of FIDO keys.
+    Tests if a given AAGUID exists in a list of keys.
 
 .DESCRIPTION
-    The `Test-GHAAGUIDExists` function iterates through a list of FIDO keys and checks if any key has the specified AAGUID. If a match is found, the function returns `$true`; otherwise, it returns `$false`.
+    This function checks if a specified AAGUID is present in an array of keys. 
+    It iterates through each key and compares its AAGUID property with the provided AAGUID.
 
 .PARAMETER aaguid
-    The AAGUID to check for in the list of FIDO keys.
+    The AAGUID to search for in the keys array.
 
 .PARAMETER keys
-    The list of FIDO keys to search through. Each key should be an object with an `AAGUID` property.
+    An array of keys, each containing an AAGUID property.
+
+.RETURNS
+    [bool] $true if the AAGUID is found in the keys array, otherwise $false.
 
 .EXAMPLE
-    $aaguid = "12345678-1234-1234-1234-123456789012"
     $keys = @(
-        @{ AAGUID = "12345678-1234-1234-1234-123456789012" },
-        @{ AAGUID = "87654321-4321-4321-4321-210987654321" }
+        @{ AAGUID = "1234" },
+        @{ AAGUID = "5678" }
     )
-    $exists = Test-GHAAGUIDExists -aaguid $aaguid -keys $keys
-    if ($exists) {
-        Write-Host "AAGUID exists in the list."
-    } else {
-        Write-Host "AAGUID does not exist in the list."
-    }
+    Test-GHAAGUIDExists -aaguid "1234" -keys $keys
+    # Returns: $true
 
-.NOTES
-    This function is useful for validating the presence of a specific AAGUID in a collection of FIDO keys.
+.EXAMPLE
+    $keys = @(
+        @{ AAGUID = "1234" },
+        @{ AAGUID = "5678" }
+    )
+    Test-GHAAGUIDExists -aaguid "9999" -keys $keys
+    # Returns: $false
 #>
 function Test-GHAAGUIDExists {
     param (
