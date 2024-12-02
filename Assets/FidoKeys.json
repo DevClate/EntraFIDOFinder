@@ -8795,7 +8795,7 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No",
+      "BLE": "Yes",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
       "metadataStatement": {
