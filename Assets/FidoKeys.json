@@ -8911,7 +8911,7 @@
       "AAGUID": "30b5035e-d297-4ff1-010b-addc96ba6a98",
       "Bio": "Yes",
       "USB": "Yes",
-      "NFC": "Yes",
+      "NFC": "No",
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
@@ -9084,7 +9084,7 @@
       "Bio": "No",
       "USB": "Yes",
       "NFC": "No",
-      "BLE": "No",
+      "BLE": "Yes",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
       "metadataStatement": {
