@@ -55,8 +55,8 @@ function Show-FIDODbVersion {
     }
 
     # Display the last updated date of the local JSON file
-    $localLastUpdated = $localJsonData.metadata.databaseLastUpdated
-    Write-Output "The local database was last updated on: $localLastUpdated"
+    $localLastUpdated = [datetime]::ParseExact($localJsonData.metadata.databaseLastUpdated, "yyyy-MM-dd HH:mm:ss", $null)
+    Write-Output ("The local database was last updated on: {0:yyyy-MM-dd HH:mm:ss}" -f $localLastUpdated)
 
     # Fetch the latest JSON file from the URL
     try {
@@ -73,12 +73,12 @@ function Show-FIDODbVersion {
     }
 
     # Get the last updated date of the latest JSON file
-    $latestLastUpdated = $latestJsonData.metadata.databaseLastUpdated
+    $latestLastUpdated = [datetime]::ParseExact($latestJsonData.metadata.databaseLastUpdated, "yyyy-MM-dd HH:mm:ss", $null)
 
     # Compare the dates and inform the user
     if ($localLastUpdated -eq $latestLastUpdated) {
         Write-Output "Your local database is up to date."
     } else {
-        Write-Output "A newer version of the database is available. The latest database was last updated on: $latestLastUpdated"
+        Write-Output ("A newer version of the database is available. The latest database was last updated on: {0:yyyy-MM-dd HH:mm:ss}" -f $latestLastUpdated)
     }
 }
