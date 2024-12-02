@@ -2,6 +2,16 @@
 
 Here you will find all changes per version
 
+## v0.0.13
+
+**Enhancements**
+
+* Filter by FIDO version from FIDO Alliance (PowerShell and Web Version)
+  * Using ValidateSet for versions ("FIDO U2F", "FIDO 2.0", "FIDO 2.1", "FIDO 2.1 PRE")
+* Added -AllProperties
+  * Default to terminal shows basic fields, but added -AllProperties that I’ll add more of the useful fields first
+* Show-FIDODbVersion now shows you your current version and if it needs to be updated
+
 ## v0.0.11
 
 **Changes**
