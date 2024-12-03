@@ -86,7 +86,7 @@ No changes detected during this run.
 
 DETAILED LOG - 2024-12-01 13:54:16
 
-No changes have been detected since last run.
+No changes detected during this run.
 
 
 
