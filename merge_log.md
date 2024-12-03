@@ -1,3 +1,10 @@
+# Merge Log - 2024-12-03 00:15:34
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-010b-addc96ba6a98' from 'No' to 'Yes'.
+
+Updated 'BLE' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'Yes' to 'No'.
+
+
 # Merge Log - 2024-11-19 00:21:55
 
 Updated NFC for AAGUID a25342c0-3cdc-4414-8e46-f4807fca511c with description 'YubiKey 5 Series with NFC' from 'No' to 'Yes'
