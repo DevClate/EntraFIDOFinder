@@ -1,8 +1,3 @@
-# Merge Log - 2024-12-02 12:30:49
-
-Updated 'BLE' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'Yes' to 'No'.
-
-
 # Merge Log - 2024-12-02 11:54:14
 
 Updated 'BLE' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'Yes' to 'No'.
