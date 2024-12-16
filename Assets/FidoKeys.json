@@ -9527,17 +9527,13 @@
         "userVerificationDetails": [
           [
             {
-              "userVerificationMethod": "presence_internal"
-            }
-          ],
-          [
-            {
               "userVerificationMethod": "passcode_external"
-            }
-          ],
-          [
+            },
             {
               "userVerificationMethod": "fingerprint_internal"
+            },
+            {
+              "userVerificationMethod": "presence_internal"
             }
           ]
         ],
@@ -9572,11 +9568,11 @@
             "rk": true,
             "clientPin": true,
             "up": true,
-            "uv": true,
+            "uv": false,
             "pinUvAuthToken": true,
             "credMgmt": true,
-            "makeCredUvNotRqd": false,
-            "alwaysUv": true
+            "makeCredUvNotRqd": true,
+            "alwaysUv": false
           },
           "maxMsgSize": 1024,
           "pinUvAuthProtocols": [
@@ -9584,7 +9580,9 @@
             2
           ],
           "transports": [
-            "ble"
+            "ble",
+            "nfc",
+            "usb"
           ],
           "algorithms": [
             {
@@ -9593,14 +9591,14 @@
             },
             {
               "type": "public-key",
-              "alg": -257
+              "alg": -37
             }
           ],
           "forcePINChange": true,
           "minPINLength": 4,
-          "firmwareVersion": 1,
+          "firmwareVersion": 2,
           "preferredPlatformUvAttempts": 8,
-          "uvModality": 3
+          "uvModality": 2051
         }
       },
       "statusReports": [

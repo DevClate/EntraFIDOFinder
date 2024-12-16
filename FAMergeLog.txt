@@ -1,0 +1,54 @@
+
+===== Script Run on 2024-12-16 11:50:19 UTC =====
+2024-12-16 11:50:17 - AAGUID: 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0
+Path: userVerificationDetails
+Old Value:
+[
+  [
+    {
+      "userVerificationMethod": "presence_internal"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "passcode_external"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "fingerprint_internal"
+    }
+  ]
+]
+
+New Value:
+[
+  {
+    "userVerificationMethod": "passcode_external"
+  },
+  {
+    "userVerificationMethod": "fingerprint_internal"
+  },
+  {
+    "userVerificationMethod": "presence_internal"
+  }
+]
+
+2024-12-16 11:50:17 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.options.uv : true -> false
+2024-12-16 11:50:17 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.options.makeCredUvNotRqd : false -> true
+2024-12-16 11:50:17 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.options.alwaysUv : true -> false
+2024-12-16 11:50:18 - AAGUID: 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0
+Path: authenticatorGetInfo.transports
+Old Value:
+"ble"
+
+New Value:
+[
+  "ble",
+  "nfc",
+  "usb"
+]
+
+2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
+2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
+2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
