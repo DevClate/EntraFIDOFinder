@@ -1,5 +1,5 @@
 # Load existing FIDO keys from local JSON file
-$existingKeyFile = "Assets/FIDOCTKeys.json"
+$existingKeyFile = "Assets/FidoKeys.json"
 $existingFIDOKeys = Get-Content $existingKeyFile -Raw | ConvertFrom-Json -Depth 10
 
 # Fetch FIDO Alliance keys from the MDS3 endpoint
@@ -232,7 +232,7 @@ if (Test-Path $LogFilePath) {
 
 # Save the updated $existingFIDOKeys to the JSON file
 $UpdatedKeysJson = $existingFIDOKeys | ConvertTo-Json -Depth 100
-Set-Content -Path 'Assets/FIDOCTKeys.json' -Value $UpdatedKeysJson
+Set-Content -Path 'Assets/FidoKeys.json' -Value $UpdatedKeysJson
 
 # Calculate counts
 $existingKeyCount = $existingFIDOKeys.keys.Count
