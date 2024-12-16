@@ -11,7 +11,7 @@ $FIDOAKeys = $FIDOAURL | Get-JWTDetails
 $LogBuffer = New-Object System.Collections.ArrayList
 
 # Define the log file path
-$LogFilePath = "FAMergeLog.txt"
+$LogFilePath = "FAmerge_log.txt"
 
 # Initialize the changes tracking variable
 $ChangesMade = $false
