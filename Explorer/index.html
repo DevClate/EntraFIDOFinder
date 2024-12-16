@@ -168,6 +168,7 @@
             <p id="modalBLE"></p>
             <p id="modalVersion"></p>
             <p id="modalProtocolFamily"></p>
+            <p id="modalVersions"></p>
         </div>
     </div>
 
@@ -260,6 +261,7 @@
             document.getElementById('modalBLE').innerText = 'BLE: ' + item.BLE;
             document.getElementById('modalVersion').innerText = 'Version: ' + item.Version;
             document.getElementById('modalProtocolFamily').innerText = 'Protocol Family: ' + item.metadataStatement.protocolFamily;
+            document.getElementById('modalVersions').innerText = 'Versions: ' + item.metadataStatement.authenticatorGetInfo.versions.join(', ');
             document.getElementById('myModal').style.display = 'block';
         }
 
