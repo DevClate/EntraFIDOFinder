@@ -168,7 +168,7 @@
             <p id="modalBLE"></p>
             <p id="modalVersion"></p>
             <p id="modalProtocolFamily"></p>
-            <p id="modalVersions"></p>
+            <ul id="modalVersions"></ul>
         </div>
     </div>
 
@@ -261,7 +261,19 @@
             document.getElementById('modalBLE').innerText = 'BLE: ' + item.BLE;
             document.getElementById('modalVersion').innerText = 'Version: ' + item.Version;
             document.getElementById('modalProtocolFamily').innerText = 'Protocol Family: ' + item.metadataStatement.protocolFamily;
-            document.getElementById('modalVersions').innerText = 'Versions: ' + item.metadataStatement.authenticatorGetInfo.versions.join(', ');
+            document.getElementById('modalVersion').innerText = 'Version: ' + item.Version;
+            // Clear the versions list before adding new items
+            const versionsList = document.getElementById('modalVersions');
+            versionsList.innerHTML = '';
+        
+            // Add each version to the list
+            if (item.metadataStatement.authenticatorGetInfo && item.metadataStatement.authenticatorGetInfo.versions) {
+                item.metadataStatement.authenticatorGetInfo.versions.forEach(version => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = version;
+                    versionsList.appendChild(listItem);
+                });
+            }
             document.getElementById('myModal').style.display = 'block';
         }
 
