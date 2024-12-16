@@ -36,8 +36,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add Assets/FIDOCTKeys.json FAMergeLog.txt
-          git commit -m "Update FIDOCTKeys.json and FAMergeLog.txt" || echo "No changes to commit"
+          git add Assets/FidoKeys.json FAMergeLog.txt
+          git commit -m "Update FidoKeys.json and FAMergeLog.txt" || echo "No changes to commit"
 
       - name: Push changes
         uses: ad-m/github-push-action@v0.6.0
