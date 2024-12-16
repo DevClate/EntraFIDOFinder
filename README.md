@@ -37,4 +37,6 @@ The four types of keys are USB, NFC, BIO, and BLE which are also validated in so
 AllProperties:
 Right now I've only added last time FIDO Alliance has updated their information for that key, but I will be adding more in the very near future. Trying to find the best way to do it so its easy to read.
 
+If you are curious on the FIDO Alliance data, I've now added that into the metadata and it will be compared once a month when the FIDO Alliance publishes the newest version. I will be in the future making these acessible in the PowerShell module and possibly web version.
+
 Also check out the web version: [https://devclate.github.io/EntraFIDOFinder/Explorer/](https://devclate.github.io/EntraFIDOFinder/Explorer/)
