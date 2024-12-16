@@ -167,7 +167,6 @@
             <p id="modalNFC"></p>
             <p id="modalBLE"></p>
             <p id="modalVersion"></p>
-            <p id="modalFamily"></p>
         </div>
     </div>
 
@@ -259,7 +258,6 @@
             document.getElementById('modalNFC').innerText = 'NFC: ' + item.NFC;
             document.getElementById('modalBLE').innerText = 'BLE: ' + item.BLE;
             document.getElementById('modalVersion').innerText = 'Version: ' + item.Version;
-            document.gotElementById('modalFamily').innerText = 'Famiy ' + item.metadataStatement.protocolFamily;
             document.getElementById('myModal').style.display = 'block';
         }
 
