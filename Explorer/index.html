@@ -639,38 +639,6 @@
                 });
             }
 
-            // Supported Extensions
-            const supportedExtensionsList = document.getElementById('modalSupportedExtensions');
-            supportedExtensionsList.innerHTML = '';
-            if (metadata.supportedExtensions) {
-                metadata.supportedExtensions.forEach(extension => {
-                    const extensionItem = document.createElement('li');
-                    extensionItem.innerText = `ID: ${extension.id}`;
-                    const detailsList = document.createElement('ul');
-
-                    if (extension.tag) {
-                        const tagItem = document.createElement('li');
-                        tagItem.innerText = `Tag: ${extension.tag}`;
-                        detailsList.appendChild(tagItem);
-                    }
-
-                    if (extension.data) {
-                        const dataItem = document.createElement('li');
-                        dataItem.innerText = `Data: ${extension.data}`;
-                        detailsList.appendChild(dataItem);
-                    }
-
-                    if (extension.failIfUnknown !== undefined) {
-                        const failItem = document.createElement('li');
-                        failItem.innerText = `Fail If Unknown: ${extension.failIfUnknown}`;
-                        detailsList.appendChild(failItem);
-                    }
-
-                    extensionItem.appendChild(detailsList);
-                    supportedExtensionsList.appendChild(extensionItem);
-                });
-            }
-
             // Show the modal
             document.getElementById('myModal').style.display = 'block';
         }
