@@ -272,18 +272,6 @@
             <h3>Additional Metadata</h3>
             <table class="modal-table">
                 <tr>
-                    <th>Legal Header</th>
-                    <td id="modalLegalHeader"></td>
-                </tr>
-                <tr>
-                    <th>Authenticator Version</th>
-                    <td id="modalAuthenticatorVersion"></td>
-                </tr>
-                <tr>
-                    <th>Public Key Algorithms and Encoding</th>
-                    <td id="modalPublicKeyAlgAndEncoding"></td>
-                </tr>
-                <tr>
                     <th>Second Factor Only</th>
                     <td id="modalIsSecondFactorOnly"></td>
                 </tr>
@@ -292,19 +280,9 @@
                     <td id="modalAttachmentHint"></td>
                 </tr>
                 <tr>
-                    <th>Icon</th>
-                    <td id="modalIcon"></td>
-                </tr>
-                <tr>
                     <th>Supported Extensions</th>
                     <td>
                         <ul id="modalSupportedExtensions"></ul>
-                    </td>
-                </tr>
-                <tr>
-                    <th>Attestation Certificate Key Identifiers</th>
-                    <td>
-                        <ul id="modalAttestationCertKeyIds"></ul>
                     </td>
                 </tr>
             </table>
@@ -506,13 +484,8 @@
             }
 
             // Additional Metadata
-            document.getElementById('modalLegalHeader').innerText = metadata.legalHeader || '';
-            document.getElementById('modalAuthenticatorVersion').innerText = metadata.authenticatorVersion || '';
-            document.getElementById('modalPublicKeyAlgAndEncoding').innerText = metadata.publicKeyAlgAndEncoding || '';
             document.getElementById('modalIsSecondFactorOnly').innerText = metadata.isSecondFactorOnly ? 'Yes' : 'No';
             document.getElementById('modalAttachmentHint').innerText = metadata.attachmentHint || '';
-            document.getElementById('modalIcon').innerText = metadata.icon || '';
-
             // Supported Extensions
             const supportedExtensionsList = document.getElementById('modalSupportedExtensions');
             supportedExtensionsList.innerHTML = '';
@@ -545,16 +518,7 @@
                 });
             }
 
-            // Attestation Certificate Key Identifiers
-            const attestationCertKeyIdsList = document.getElementById('modalAttestationCertKeyIds');
-            attestationCertKeyIdsList.innerHTML = '';
-            if (metadata.attestationCertificateKeyIdentifiers) {
-                metadata.attestationCertificateKeyIdentifiers.forEach(keyId => {
-                    const listItem = document.createElement('li');
-                    listItem.innerText = keyId;
-                    attestationCertKeyIdsList.appendChild(listItem);
-                });
-            }
+            
 
             // Show the modal
             document.getElementById('myModal').style.display = 'block';
