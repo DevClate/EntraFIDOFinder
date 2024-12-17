@@ -327,6 +327,15 @@
                     <td id="modalCryptoStrength"></td>
                 </tr>
             </table>
+
+            <!-- Add a button to show raw data -->
+            <button id="showRawDataBtn">Show Raw Data</button>
+
+            <!-- Add a new section to display raw data -->
+            <div id="rawDataSection" style="display: none; margin-top: 20px;">
+                <h3>Raw Data</h3>
+                <pre id="rawDataContent" style="background-color: #f4f4f9; padding: 10px; border: 1px solid #ddd;"></pre>
+            </div>
         </div>
     </div>
 
@@ -373,6 +382,20 @@
                     lastCheckedElement.innerText = `Database Last Checked: ${formatDate(data.metadata.databaseLastChecked)}`;
                 })
                 .catch(error => console.error('Error loading JSON data:', error));
+
+            // Add event listener to the show raw data button
+            const showRawDataBtn = document.getElementById('showRawDataBtn');
+            const rawDataSection = document.getElementById('rawDataSection');
+
+            showRawDataBtn.addEventListener('click', () => {
+                if (rawDataSection.style.display === 'none') {
+                    rawDataSection.style.display = 'block';
+                    showRawDataBtn.innerText = 'Hide Raw Data';
+                } else {
+                    rawDataSection.style.display = 'none';
+                    showRawDataBtn.innerText = 'Show Raw Data';
+                }
+            });
         });
 
         function filterTable() {
@@ -638,6 +661,10 @@
                     statusReportsList.appendChild(listItem);
                 });
             }
+
+            // Populate the raw data section
+            const rawDataContent = document.getElementById('rawDataContent');
+            rawDataContent.innerText = JSON.stringify(item, null, 2);
 
             // Show the modal
             document.getElementById('myModal').style.display = 'block';
