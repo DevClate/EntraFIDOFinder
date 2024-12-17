@@ -98,6 +98,28 @@
             text-decoration: none;
             cursor: pointer;
         }
+        /* Styles for modal tables */
+        .modal-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .modal-table th, .modal-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .modal-table th {
+            background-color: #f2f2f2;
+            text-align: left;
+            width: 30%;
+        }
+        .modal-table td {
+            width: 70%;
+        }
+        .modal-table ul {
+            margin: 0;
+            padding-left: 20px;
+        }
     </style>
 </head>
 <body>
@@ -159,29 +181,88 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Key Details</h2>
-            <p><strong>Vendor:</strong> <span id="modalVendor"></span></p>
-            <p><strong>Description:</strong> <span id="modalDescription"></span></p>
-            <p><strong>AAGUID:</strong> <span id="modalAAGUID"></span></p>
-            <p><strong>Bio:</strong> <span id="modalBio"></span></p>
-            <p><strong>USB:</strong> <span id="modalUSB"></span></p>
-            <p><strong>NFC:</strong> <span id="modalNFC"></span></p>
-            <p><strong>BLE:</strong> <span id="modalBLE"></span></p>
-            <p><strong>Version:</strong> <span id="modalVersion"></span></p>
-            <!-- New properties -->
+            <table class="modal-table">
+                <tr>
+                    <th>Vendor</th>
+                    <td id="modalVendor"></td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td id="modalDescription"></td>
+                </tr>
+                <tr>
+                    <th>AAGUID</th>
+                    <td id="modalAAGUID"></td>
+                </tr>
+                <tr>
+                    <th>Bio</th>
+                    <td id="modalBio"></td>
+                </tr>
+                <tr>
+                    <th>USB</th>
+                    <td id="modalUSB"></td>
+                </tr>
+                <tr>
+                    <th>NFC</th>
+                    <td id="modalNFC"></td>
+                </tr>
+                <tr>
+                    <th>BLE</th>
+                    <td id="modalBLE"></td>
+                </tr>
+                <tr>
+                    <th>Version</th>
+                    <td id="modalVersion"></td>
+                </tr>
+            </table>
+
             <h3>Metadata Statement</h3>
-            <p><strong>Protocol Family:</strong> <span id="modalProtocolFamily"></span></p>
-            <p><strong>Authenticator Versions:</strong></p>
-            <ul id="modalAuthVersions"></ul>
-            <p><strong>Authentication Algorithms:</strong></p>
-            <ul id="modalAuthAlgorithms"></ul>
-            <p><strong>Attestation Types:</strong></p>
-            <ul id="modalAttestationTypes"></ul>
-            <p><strong>User Verification Details:</strong></p>
-            <ul id="modalUserVerificationDetails"></ul>
-            <p><strong>Key Protection:</strong></p>
-            <ul id="modalKeyProtection"></ul>
+            <table class="modal-table">
+                <tr>
+                    <th>Protocol Family</th>
+                    <td id="modalProtocolFamily"></td>
+                </tr>
+                <tr>
+                    <th>Authenticator Versions</th>
+                    <td>
+                        <ul id="modalAuthVersions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Authentication Algorithms</th>
+                    <td>
+                        <ul id="modalAuthAlgorithms"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Attestation Types</th>
+                    <td>
+                        <ul id="modalAttestationTypes"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>User Verification Details</th>
+                    <td>
+                        <ul id="modalUserVerificationDetails"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Key Protection</th>
+                    <td>
+                        <ul id="modalKeyProtection"></ul>
+                    </td>
+                </tr>
+            </table>
+
             <h3>Status Reports</h3>
-            <ul id="modalStatusReports"></ul>
+            <table class="modal-table">
+                <tr>
+                    <th>Status Reports</th>
+                    <td>
+                        <ul id="modalStatusReports"></ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -265,23 +346,24 @@
         }
 
         function showDetails(item) {
-            document.getElementById('modalVendor').innerText = item.Vendor;
-            document.getElementById('modalDescription').innerText = item.Description;
-            document.getElementById('modalAAGUID').innerText = item.AAGUID;
-            document.getElementById('modalBio').innerText = item.Bio;
-            document.getElementById('modalUSB').innerText = item.USB;
-            document.getElementById('modalNFC').innerText = item.NFC;
-            document.getElementById('modalBLE').innerText = item.BLE;
-            document.getElementById('modalVersion').innerText = item.Version;
+            document.getElementById('modalVendor').innerText = item.Vendor || '';
+            document.getElementById('modalDescription').innerText = item.Description || '';
+            document.getElementById('modalAAGUID').innerText = item.AAGUID || '';
+            document.getElementById('modalBio').innerText = item.Bio || '';
+            document.getElementById('modalUSB').innerText = item.USB || '';
+            document.getElementById('modalNFC').innerText = item.NFC || '';
+            document.getElementById('modalBLE').innerText = item.BLE || '';
+            document.getElementById('modalVersion').innerText = item.Version || '';
 
-            // New properties
-            document.getElementById('modalProtocolFamily').innerText = item.metadataStatement.protocolFamily || '';
+            // Metadata Statement
+            const metadata = item.metadataStatement || {};
+            document.getElementById('modalProtocolFamily').innerText = metadata.protocolFamily || '';
 
             // Authenticator Versions
             const authVersionsList = document.getElementById('modalAuthVersions');
             authVersionsList.innerHTML = '';
-            if (item.metadataStatement.upv) {
-                item.metadataStatement.upv.forEach(version => {
+            if (metadata.upv) {
+                metadata.upv.forEach(version => {
                     const listItem = document.createElement('li');
                     listItem.innerText = `${version.major}.${version.minor}`;
                     authVersionsList.appendChild(listItem);
@@ -291,8 +373,8 @@
             // Authentication Algorithms
             const authAlgorithmsList = document.getElementById('modalAuthAlgorithms');
             authAlgorithmsList.innerHTML = '';
-            if (item.metadataStatement.authenticationAlgorithms) {
-                item.metadataStatement.authenticationAlgorithms.forEach(alg => {
+            if (metadata.authenticationAlgorithms) {
+                metadata.authenticationAlgorithms.forEach(alg => {
                     const listItem = document.createElement('li');
                     listItem.innerText = alg;
                     authAlgorithmsList.appendChild(listItem);
@@ -302,8 +384,8 @@
             // Attestation Types
             const attestationTypesList = document.getElementById('modalAttestationTypes');
             attestationTypesList.innerHTML = '';
-            if (item.metadataStatement.attestationTypes) {
-                item.metadataStatement.attestationTypes.forEach(type => {
+            if (metadata.attestationTypes) {
+                metadata.attestationTypes.forEach(type => {
                     const listItem = document.createElement('li');
                     listItem.innerText = type;
                     attestationTypesList.appendChild(listItem);
@@ -313,8 +395,8 @@
             // User Verification Details
             const userVerificationList = document.getElementById('modalUserVerificationDetails');
             userVerificationList.innerHTML = '';
-            if (item.metadataStatement.userVerificationDetails) {
-                item.metadataStatement.userVerificationDetails.forEach(group => {
+            if (metadata.userVerificationDetails) {
+                metadata.userVerificationDetails.forEach(group => {
                     group.forEach(detail => {
                         const listItem = document.createElement('li');
                         listItem.innerText = detail.userVerificationMethod;
@@ -326,8 +408,8 @@
             // Key Protection
             const keyProtectionList = document.getElementById('modalKeyProtection');
             keyProtectionList.innerHTML = '';
-            if (item.metadataStatement.keyProtection) {
-                item.metadataStatement.keyProtection.forEach(protection => {
+            if (metadata.keyProtection) {
+                metadata.keyProtection.forEach(protection => {
                     const listItem = document.createElement('li');
                     listItem.innerText = protection;
                     keyProtectionList.appendChild(listItem);
