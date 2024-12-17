@@ -395,13 +395,32 @@
             // User Verification Details
             const userVerificationList = document.getElementById('modalUserVerificationDetails');
             userVerificationList.innerHTML = '';
-            if (metadata.userVerificationDetails) {
-                metadata.userVerificationDetails.forEach(group => {
+            if (item.metadataStatement && item.metadataStatement.userVerificationDetails) {
+                item.metadataStatement.userVerificationDetails.forEach((group, groupIndex) => {
+                    const groupItem = document.createElement('li');
+                    groupItem.innerHTML = `<strong>Group ${groupIndex + 1}:</strong>`;
+                    const detailsList = document.createElement('ul');
+
                     group.forEach(detail => {
-                        const listItem = document.createElement('li');
-                        listItem.innerText = detail.userVerificationMethod;
-                        userVerificationList.appendChild(listItem);
+                        const detailItem = document.createElement('li');
+                        detailItem.innerText = `Method: ${detail.userVerificationMethod}`;
+
+                        // Check for caDesc
+                        if (detail.caDesc) {
+                            const caDescList = document.createElement('ul');
+                            for (const [key, value] of Object.entries(detail.caDesc)) {
+                                const caDescItem = document.createElement('li');
+                                caDescItem.innerText = `${key}: ${value}`;
+                                caDescList.appendChild(caDescItem);
+                            }
+                            detailItem.appendChild(caDescList);
+                        }
+
+                        detailsList.appendChild(detailItem);
                     });
+
+                    groupItem.appendChild(detailsList);
+                    userVerificationList.appendChild(groupItem);
                 });
             }
 
