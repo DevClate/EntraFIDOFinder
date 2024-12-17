@@ -405,7 +405,7 @@
                         const detailItem = document.createElement('li');
                         detailItem.innerText = `Method: ${detail.userVerificationMethod}`;
 
-                        // Check for caDesc
+                        // Handle caDesc
                         if (detail.caDesc) {
                             const caDescList = document.createElement('ul');
                             for (const [key, value] of Object.entries(detail.caDesc)) {
@@ -415,6 +415,20 @@
                             }
                             detailItem.appendChild(caDescList);
                         }
+
+                        // Handle baDesc
+                        if (detail.baDesc) {
+                            const baDescList = document.createElement('ul');
+                            for (const [key, value] of Object.entries(detail.baDesc)) {
+                                const baDescItem = document.createElement('li');
+                                baDescItem.innerText = `${key}: ${value}`;
+                                baDescList.appendChild(baDescItem);
+                            }
+                            detailItem.appendChild(baDescList);
+                        }
+
+                        // Handle other descriptors if any
+                        // You can add similar blocks for paDesc, tdDesc, or any other descriptor types
 
                         detailsList.appendChild(detailItem);
                     });
