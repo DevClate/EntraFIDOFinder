@@ -159,17 +159,29 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Key Details</h2>
-            <p id="modalVendor"></p>
-            <p id="modalDescription"></p>
-            <p id="modalAAGUID"></p>
-            <p id="modalBio"></p>
-            <p id="modalUSB"></p>
-            <p id="modalNFC"></p>
-            <p id="modalBLE"></p>
-            <p id="modalVersion"></p>
-            <p id="modalProtocolFamily"></p>
-            <p>FIDO Alliance Versions:</p>
-            <ul id="modalVersions"></ul>
+            <p><strong>Vendor:</strong> <span id="modalVendor"></span></p>
+            <p><strong>Description:</strong> <span id="modalDescription"></span></p>
+            <p><strong>AAGUID:</strong> <span id="modalAAGUID"></span></p>
+            <p><strong>Bio:</strong> <span id="modalBio"></span></p>
+            <p><strong>USB:</strong> <span id="modalUSB"></span></p>
+            <p><strong>NFC:</strong> <span id="modalNFC"></span></p>
+            <p><strong>BLE:</strong> <span id="modalBLE"></span></p>
+            <p><strong>Version:</strong> <span id="modalVersion"></span></p>
+            <!-- New properties -->
+            <h3>Metadata Statement</h3>
+            <p><strong>Protocol Family:</strong> <span id="modalProtocolFamily"></span></p>
+            <p><strong>Authenticator Versions:</strong></p>
+            <ul id="modalAuthVersions"></ul>
+            <p><strong>Authentication Algorithms:</strong></p>
+            <ul id="modalAuthAlgorithms"></ul>
+            <p><strong>Attestation Types:</strong></p>
+            <ul id="modalAttestationTypes"></ul>
+            <p><strong>User Verification Details:</strong></p>
+            <ul id="modalUserVerificationDetails"></ul>
+            <p><strong>Key Protection:</strong></p>
+            <ul id="modalKeyProtection"></ul>
+            <h3>Status Reports</h3>
+            <ul id="modalStatusReports"></ul>
         </div>
     </div>
 
@@ -253,28 +265,87 @@
         }
 
         function showDetails(item) {
-            document.getElementById('modalVendor').innerText = 'Vendor: ' + item.Vendor;
-            document.getElementById('modalDescription').innerText = 'Description: ' + item.Description;
-            document.getElementById('modalAAGUID').innerText = 'AAGUID: ' + item.AAGUID;
-            document.getElementById('modalBio').innerText = 'Bio: ' + item.Bio;
-            document.getElementById('modalUSB').innerText = 'USB: ' + item.USB;
-            document.getElementById('modalNFC').innerText = 'NFC: ' + item.NFC;
-            document.getElementById('modalBLE').innerText = 'BLE: ' + item.BLE;
-            document.getElementById('modalVersion').innerText = 'Version: ' + item.Version;
-            document.getElementById('modalProtocolFamily').innerText = 'Protocol Family: ' + item.metadataStatement.protocolFamily;
-            document.getElementById('modalVersion').innerText = 'Version: ' + item.Version;
-            // Clear the versions list before adding new items
-            const versionsList = document.getElementById('modalVersions');
-            versionsList.innerHTML = '';
-        
-            // Add each version to the list
-            if (item.metadataStatement.authenticatorGetInfo && item.metadataStatement.authenticatorGetInfo.versions) {
-                item.metadataStatement.authenticatorGetInfo.versions.forEach(version => {
+            document.getElementById('modalVendor').innerText = item.Vendor;
+            document.getElementById('modalDescription').innerText = item.Description;
+            document.getElementById('modalAAGUID').innerText = item.AAGUID;
+            document.getElementById('modalBio').innerText = item.Bio;
+            document.getElementById('modalUSB').innerText = item.USB;
+            document.getElementById('modalNFC').innerText = item.NFC;
+            document.getElementById('modalBLE').innerText = item.BLE;
+            document.getElementById('modalVersion').innerText = item.Version;
+
+            // New properties
+            document.getElementById('modalProtocolFamily').innerText = item.metadataStatement.protocolFamily || '';
+
+            // Authenticator Versions
+            const authVersionsList = document.getElementById('modalAuthVersions');
+            authVersionsList.innerHTML = '';
+            if (item.metadataStatement.upv) {
+                item.metadataStatement.upv.forEach(version => {
                     const listItem = document.createElement('li');
-                    listItem.innerText = version;
-                    versionsList.appendChild(listItem);
+                    listItem.innerText = `${version.major}.${version.minor}`;
+                    authVersionsList.appendChild(listItem);
                 });
             }
+
+            // Authentication Algorithms
+            const authAlgorithmsList = document.getElementById('modalAuthAlgorithms');
+            authAlgorithmsList.innerHTML = '';
+            if (item.metadataStatement.authenticationAlgorithms) {
+                item.metadataStatement.authenticationAlgorithms.forEach(alg => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = alg;
+                    authAlgorithmsList.appendChild(listItem);
+                });
+            }
+
+            // Attestation Types
+            const attestationTypesList = document.getElementById('modalAttestationTypes');
+            attestationTypesList.innerHTML = '';
+            if (item.metadataStatement.attestationTypes) {
+                item.metadataStatement.attestationTypes.forEach(type => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = type;
+                    attestationTypesList.appendChild(listItem);
+                });
+            }
+
+            // User Verification Details
+            const userVerificationList = document.getElementById('modalUserVerificationDetails');
+            userVerificationList.innerHTML = '';
+            if (item.metadataStatement.userVerificationDetails) {
+                item.metadataStatement.userVerificationDetails.forEach(group => {
+                    group.forEach(detail => {
+                        const listItem = document.createElement('li');
+                        listItem.innerText = detail.userVerificationMethod;
+                        userVerificationList.appendChild(listItem);
+                    });
+                });
+            }
+
+            // Key Protection
+            const keyProtectionList = document.getElementById('modalKeyProtection');
+            keyProtectionList.innerHTML = '';
+            if (item.metadataStatement.keyProtection) {
+                item.metadataStatement.keyProtection.forEach(protection => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = protection;
+                    keyProtectionList.appendChild(listItem);
+                });
+            }
+
+            // Status Reports
+            const statusReportsList = document.getElementById('modalStatusReports');
+            statusReportsList.innerHTML = '';
+            if (item.statusReports) {
+                item.statusReports.forEach(report => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = `${report.status} (Effective Date: ${report.effectiveDate})`;
+                    statusReportsList.appendChild(listItem);
+                });
+            }
+
+            // Show the modal
             document.getElementById('myModal').style.display = 'block';
         }
 
