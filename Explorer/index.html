@@ -268,6 +268,46 @@
                     </td>
                 </tr>
             </table>
+
+            <h3>Additional Metadata</h3>
+            <table class="modal-table">
+                <tr>
+                    <th>Legal Header</th>
+                    <td id="modalLegalHeader"></td>
+                </tr>
+                <tr>
+                    <th>Authenticator Version</th>
+                    <td id="modalAuthenticatorVersion"></td>
+                </tr>
+                <tr>
+                    <th>Public Key Algorithms and Encoding</th>
+                    <td id="modalPublicKeyAlgAndEncoding"></td>
+                </tr>
+                <tr>
+                    <th>Second Factor Only</th>
+                    <td id="modalIsSecondFactorOnly"></td>
+                </tr>
+                <tr>
+                    <th>Attachment Hint</th>
+                    <td id="modalAttachmentHint"></td>
+                </tr>
+                <tr>
+                    <th>Icon</th>
+                    <td id="modalIcon"></td>
+                </tr>
+                <tr>
+                    <th>Supported Extensions</th>
+                    <td>
+                        <ul id="modalSupportedExtensions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Attestation Certificate Key Identifiers</th>
+                    <td>
+                        <ul id="modalAttestationCertKeyIds"></ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -462,6 +502,57 @@
                     const listItem = document.createElement('li');
                     listItem.innerText = `${report.status} (Effective Date: ${report.effectiveDate})`;
                     statusReportsList.appendChild(listItem);
+                });
+            }
+
+            // Additional Metadata
+            document.getElementById('modalLegalHeader').innerText = metadata.legalHeader || '';
+            document.getElementById('modalAuthenticatorVersion').innerText = metadata.authenticatorVersion || '';
+            document.getElementById('modalPublicKeyAlgAndEncoding').innerText = metadata.publicKeyAlgAndEncoding || '';
+            document.getElementById('modalIsSecondFactorOnly').innerText = metadata.isSecondFactorOnly ? 'Yes' : 'No';
+            document.getElementById('modalAttachmentHint').innerText = metadata.attachmentHint || '';
+            document.getElementById('modalIcon').innerText = metadata.icon || '';
+
+            // Supported Extensions
+            const supportedExtensionsList = document.getElementById('modalSupportedExtensions');
+            supportedExtensionsList.innerHTML = '';
+            if (metadata.supportedExtensions) {
+                metadata.supportedExtensions.forEach(extension => {
+                    const extensionItem = document.createElement('li');
+                    extensionItem.innerText = `ID: ${extension.id}`;
+                    const detailsList = document.createElement('ul');
+
+                    if (extension.tag) {
+                        const tagItem = document.createElement('li');
+                        tagItem.innerText = `Tag: ${extension.tag}`;
+                        detailsList.appendChild(tagItem);
+                    }
+
+                    if (extension.data) {
+                        const dataItem = document.createElement('li');
+                        dataItem.innerText = `Data: ${extension.data}`;
+                        detailsList.appendChild(dataItem);
+                    }
+
+                    if (extension.failIfUnknown !== undefined) {
+                        const failItem = document.createElement('li');
+                        failItem.innerText = `Fail If Unknown: ${extension.failIfUnknown}`;
+                        detailsList.appendChild(failItem);
+                    }
+
+                    extensionItem.appendChild(detailsList);
+                    supportedExtensionsList.appendChild(extensionItem);
+                });
+            }
+
+            // Attestation Certificate Key Identifiers
+            const attestationCertKeyIdsList = document.getElementById('modalAttestationCertKeyIds');
+            attestationCertKeyIdsList.innerHTML = '';
+            if (metadata.attestationCertificateKeyIdentifiers) {
+                metadata.attestationCertificateKeyIdentifiers.forEach(keyId => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = keyId;
+                    attestationCertKeyIdsList.appendChild(listItem);
                 });
             }
 
