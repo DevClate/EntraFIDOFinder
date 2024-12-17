@@ -286,6 +286,72 @@
                     </td>
                 </tr>
             </table>
+
+            <h3>Authenticator Get Info</h3>
+            <table class="modal-table">
+                <tr>
+                    <th>Versions</th>
+                    <td>
+                        <ul id="modalAuthGetInfoVersions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Extensions</th>
+                    <td>
+                        <ul id="modalAuthGetInfoExtensions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Options</th>
+                    <td>
+                        <ul id="modalAuthGetInfoOptions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Max Credential Count In List</th>
+                    <td id="modalMaxCredentialCountInList"></td>
+                </tr>
+                <tr>
+                    <th>Max Credential ID Length</th>
+                    <td id="modalMaxCredentialIdLength"></td>
+                </tr>
+                <tr>
+                    <th>Transports</th>
+                    <td>
+                        <ul id="modalTransports"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Min PIN Length</th>
+                    <td id="modalMinPINLength"></td>
+                </tr>
+                <tr>
+                    <th>Firmware Version</th>
+                    <td id="modalFirmwareVersion"></td>
+                </tr>
+                <tr>
+                    <th>Max Cred Blob Length</th>
+                    <td id="modalMaxCredBlobLength"></td>
+                </tr>
+                <tr>
+                    <th>Max RP IDs For Set Min PIN Length</th>
+                    <td id="modalMaxRPIDsForSetMinPINLength"></td>
+                </tr>
+            </table>
+
+            <h3>Additional Metadata</h3>
+            <table class="modal-table">
+                <tr>
+                    <th>Matcher Protection</th>
+                    <td>
+                        <ul id="modalMatcherProtection"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Crypto Strength</th>
+                    <td id="modalCryptoStrength"></td>
+                </tr>
+            </table>
         </div>
     </div>
 
@@ -472,6 +538,88 @@
                 });
             }
 
+            // Matcher Protection
+            const matcherProtectionList = document.getElementById('modalMatcherProtection');
+            matcherProtectionList.innerHTML = '';
+            if (metadata.matcherProtection) {
+                metadata.matcherProtection.forEach(protection => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = protection;
+                    matcherProtectionList.appendChild(listItem);
+                });
+            }
+
+            // Crypto Strength
+            document.getElementById('modalCryptoStrength').innerText = metadata.cryptoStrength || '';
+
+            // Attachment Hint
+            document.getElementById('modalAttachmentHint').innerText = metadata.attachmentHint ? metadata.attachmentHint.join(', ') : '';
+
+            // Authenticator Get Info
+            const authGetInfo = metadata.authenticatorGetInfo || {};
+
+            // Versions
+            const authGetInfoVersionsList = document.getElementById('modalAuthGetInfoVersions');
+            authGetInfoVersionsList.innerHTML = '';
+            if (authGetInfo.versions) {
+                authGetInfo.versions.forEach(version => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = version;
+                    authGetInfoVersionsList.appendChild(listItem);
+                });
+            }
+
+            // Extensions
+            const authGetInfoExtensionsList = document.getElementById('modalAuthGetInfoExtensions');
+            authGetInfoExtensionsList.innerHTML = '';
+            if (authGetInfo.extensions) {
+                authGetInfo.extensions.forEach(extension => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = extension;
+                    authGetInfoExtensionsList.appendChild(listItem);
+                });
+            }
+
+            // Options
+            const authGetInfoOptionsList = document.getElementById('modalAuthGetInfoOptions');
+            authGetInfoOptionsList.innerHTML = '';
+            if (authGetInfo.options) {
+                for (const [key, value] of Object.entries(authGetInfo.options)) {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = `${key}: ${value}`;
+                    authGetInfoOptionsList.appendChild(listItem);
+                }
+            }
+
+            // Max Credential Count In List
+            document.getElementById('modalMaxCredentialCountInList').innerText = authGetInfo.maxCredentialCountInList || '';
+
+            // Max Credential ID Length
+            document.getElementById('modalMaxCredentialIdLength').innerText = authGetInfo.maxCredentialIdLength || '';
+
+            // Transports
+            const transportsList = document.getElementById('modalTransports');
+            transportsList.innerHTML = '';
+            if (authGetInfo.transports) {
+                authGetInfo.transports.forEach(transport => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = transport;
+                    transportsList.appendChild(listItem);
+                });
+            }
+
+            // Min PIN Length
+            document.getElementById('modalMinPINLength').innerText = authGetInfo.minPINLength || '';
+
+            // Firmware Version
+            document.getElementById('modalFirmwareVersion').innerText = authGetInfo.firmwareVersion || '';
+
+            // Max Cred Blob Length
+            document.getElementById('modalMaxCredBlobLength').innerText = authGetInfo.maxCredBlobLength || '';
+
+            // Max RP IDs For Set Min PIN Length
+            document.getElementById('modalMaxRPIDsForSetMinPINLength').innerText = authGetInfo.maxRPIDsForSetMinPINLength || '';
+
             // Status Reports
             const statusReportsList = document.getElementById('modalStatusReports');
             statusReportsList.innerHTML = '';
@@ -479,13 +627,43 @@
                 item.statusReports.forEach(report => {
                     const listItem = document.createElement('li');
                     listItem.innerText = `${report.status} (Effective Date: ${report.effectiveDate})`;
+                    
+                    const reportDetailsList = document.createElement('ul');
+                    if (report.authenticatorVersion) {
+                        const authVerItem = document.createElement('li');
+                        authVerItem.innerText = `Authenticator Version: ${report.authenticatorVersion}`;
+                        reportDetailsList.appendChild(authVerItem);
+                    }
+                    if (report.url) {
+                        const urlItem = document.createElement('li');
+                        urlItem.innerHTML = `URL: <a href="${report.url}" target="_blank">${report.url}</a>`;
+                        reportDetailsList.appendChild(urlItem);
+                    }
+                    if (report.certificationDescriptor) {
+                        const certDescItem = document.createElement('li');
+                        certDescItem.innerText = `Certification Descriptor: ${report.certificationDescriptor}`;
+                        reportDetailsList.appendChild(certDescItem);
+                    }
+                    if (report.certificateNumber) {
+                        const certNumItem = document.createElement('li');
+                        certNumItem.innerText = `Certificate Number: ${report.certificateNumber}`;
+                        reportDetailsList.appendChild(certNumItem);
+                    }
+                    if (report.certificationPolicyVersion) {
+                        const certPolicyItem = document.createElement('li');
+                        certPolicyItem.innerText = `Certification Policy Version: ${report.certificationPolicyVersion}`;
+                        reportDetailsList.appendChild(certPolicyItem);
+                    }
+                    if (report.certificationRequirementsVersion) {
+                        const certReqItem = document.createElement('li');
+                        certReqItem.innerText = `Certification Requirements Version: ${report.certificationRequirementsVersion}`;
+                        reportDetailsList.appendChild(certReqItem);
+                    }
+                    listItem.appendChild(reportDetailsList);
                     statusReportsList.appendChild(listItem);
                 });
             }
 
-            // Additional Metadata
-            document.getElementById('modalIsSecondFactorOnly').innerText = metadata.isSecondFactorOnly ? 'Yes' : 'No';
-            document.getElementById('modalAttachmentHint').innerText = metadata.attachmentHint || '';
             // Supported Extensions
             const supportedExtensionsList = document.getElementById('modalSupportedExtensions');
             supportedExtensionsList.innerHTML = '';
@@ -517,8 +695,6 @@
                     supportedExtensionsList.appendChild(extensionItem);
                 });
             }
-
-            
 
             // Show the modal
             document.getElementById('myModal').style.display = 'block';
