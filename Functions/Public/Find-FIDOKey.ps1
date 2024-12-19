@@ -148,7 +148,7 @@ function Find-FIDOKey {
 
         # Load existing FIDO keys from JSON file
         $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
-        $jsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FIDOCTKeys.json"
+        $jsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FidoKeys.json"
 
         if (-Not (Test-Path -Path $jsonFilePath)) {
             Write-Error "The JSON file was not found at path: $jsonFilePath"
