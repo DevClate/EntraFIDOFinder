@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entra Compatible Attestation FIDO Key Explorer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .filter-input {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        .last-updated-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .last-updated-container div {
+            margin: 0 10px;
+        }
+        .divider {
+            margin: 0 10px;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #f4f4f9;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            color: #333;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* Styles for modal tables */
+        .modal-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .modal-table th, .modal-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .modal-table th {
+            background-color: #e2e2e2; /* Lighter background */
+            color: #333; /* Dark text color */
+            text-align: left;
+            width: 30%;
+        }
+        .modal-table td {
+            width: 70%;
+        }
+        .modal-table ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        /* Update modal header styles */
+        .modal-content h2, .modal-content h3 {
+            color: #4CAF50; /* Match the main page header color */
+        }
+        /* Button styles */
+        #showRawDataBtn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #showRawDataBtn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Entra Compatible Attestation FIDO Key Explorer</h1>
+        <div class="last-updated-container">
+            <div id="lastUpdated"></div>
+            <div class="divider">|</div>
+            <div id="lastChecked"></div>
+        </div>
+        <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..." onkeyup="filterTable()">
+        <select id="filterBio" class="filter-input" onchange="filterTable()">
+            <option value="">All Bio</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterUSB" class="filter-input" onchange="filterTable()">
+            <option value="">All USB</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterNFC" class="filter-input" onchange="filterTable()">
+            <option value="">All NFC</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterBLE" class="filter-input" onchange="filterTable()">
+            <option value="">All BLE</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        <select id="filterVersion" class="filter-input" onchange="filterTable()">
+            <option value="">All Versions</option>
+            <option value="U2F V2">U2F V2</option>
+            <option value="FIDO 2.0">FIDO 2.0</option>
+            <option value="FIDO 2.1">FIDO 2.1</option>
+            <option value="FIDO 2.1 PRE">FIDO 2.1 PRE</option>
+        </select>
+        <table id="fidoTable">
+            <thead>
+                <tr>
+                    <th>Vendor</th>
+                    <th>Description</th>
+                    <th>AAGUID</th>
+                    <th>Bio</th>
+                    <th>USB</th>
+                    <th>NFC</th>
+                    <th>BLE</th>
+                    <th>Version</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Key Details</h2>
+            <table class="modal-table">
+                <tr>
+                    <th>Vendor</th>
+                    <td id="modalVendor"></td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td id="modalDescription"></td>
+                </tr>
+                <tr>
+                    <th>AAGUID</th>
+                    <td id="modalAAGUID"></td>
+                </tr>
+                <tr>
+                    <th>Bio</th>
+                    <td id="modalBio"></td>
+                </tr>
+                <tr>
+                    <th>USB</th>
+                    <td id="modalUSB"></td>
+                </tr>
+                <tr>
+                    <th>NFC</th>
+                    <td id="modalNFC"></td>
+                </tr>
+                <tr>
+                    <th>BLE</th>
+                    <td id="modalBLE"></td>
+                </tr>
+                <tr>
+                    <th>Version</th>
+                    <td id="modalVersion"></td>
+                </tr>
+            </table>
+
+            <h3>FIDO Alliance Data</h3>
+            <table class="modal-table">
+                <tr>
+                    <th>Versions</th>
+                    <td>
+                        <ul id="modalAuthGetInfoVersions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Protocol Family</th>
+                    <td id="modalProtocolFamily"></td>
+                </tr>
+                <tr>
+                    <th>Authenticator Versions</th>
+                    <td>
+                        <ul id="modalAuthVersions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Authentication Algorithms</th>
+                    <td>
+                        <ul id="modalAuthAlgorithms"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Attestation Types</th>
+                    <td>
+                        <ul id="modalAttestationTypes"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>User Verification Details</th>
+                    <td>
+                        <ul id="modalUserVerificationDetails"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Key Protection</th>
+                    <td>
+                        <ul id="modalKeyProtection"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Attachment Hint</th>
+                    <td id="modalAttachmentHint"></td>
+                </tr>
+                
+                <tr>
+                    <th>Extensions</th>
+                    <td>
+                        <ul id="modalAuthGetInfoExtensions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Options</th>
+                    <td>
+                        <ul id="modalAuthGetInfoOptions"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Max Credential Count In List</th>
+                    <td id="modalMaxCredentialCountInList"></td>
+                </tr>
+                <tr>
+                    <th>Max Credential ID Length</th>
+                    <td id="modalMaxCredentialIdLength"></td>
+                </tr>
+                <tr>
+                    <th>Transports</th>
+                    <td>
+                        <ul id="modalTransports"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Min PIN Length</th>
+                    <td id="modalMinPINLength"></td>
+                </tr>
+                <tr>
+                    <th>Firmware Version</th>
+                    <td id="modalFirmwareVersion"></td>
+                </tr>
+                <tr>
+                    <th>Max Cred Blob Length</th>
+                    <td id="modalMaxCredBlobLength"></td>
+                </tr>
+                <tr>
+                    <th>Max RP IDs For Set Min PIN Length</th>
+                    <td id="modalMaxRPIDsForSetMinPINLength"></td>
+                </tr>
+                <tr>
+                    <th>Matcher Protection</th>
+                    <td>
+                        <ul id="modalMatcherProtection"></ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Crypto Strength</th>
+                    <td id="modalCryptoStrength"></td>
+                </tr>
+                <tr>
+                    <th>Status Reports</th>
+                    <td>
+                        <ul id="modalStatusReports"></ul>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Add a button to show raw data -->
+            <button id="showRawDataBtn">Show Raw Data</button>
+
+            <!-- Add a new section to display raw data -->
+            <div id="rawDataSection" style="display: none; margin-top: 20px;">
+                <h3>Raw Data</h3>
+                <pre id="rawDataContent" style="background-color: #f4f4f9; padding: 10px; border: 1px solid #ddd;"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('FidoKeys.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
+                    
+                    // Sort data by vendor
+                    data.keys.sort((a, b) => a.Vendor.localeCompare(b.Vendor));
+
+                    data.keys.forEach(item => {
+                        const row = tableBody.insertRow();
+                        row.insertCell(0).innerText = item.Vendor;
+                        row.insertCell(1).innerText = item.Description;
+                        row.insertCell(2).innerText = item.AAGUID;
+                        row.insertCell(3).innerText = item.Bio;
+                        row.insertCell(4).innerText = item.USB;
+                        row.insertCell(5).innerText = item.NFC;
+                        row.insertCell(6).innerText = item.BLE;
+                        row.insertCell(7).innerText = item.Version; // Add Version data
+                        row.addEventListener('click', () => showDetails(item));
+                    });
+
+                    // Format dates
+                    const formatDate = (dateString) => {
+                        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                        return new Date(dateString).toLocaleDateString(undefined, options);
+                    };
+
+                    // Display the last updated timestamp
+                    const lastUpdatedElement = document.getElementById('lastUpdated');
+                    lastUpdatedElement.innerText = `Database Last Updated: ${formatDate(data.metadata.databaseLastUpdated)}`;
+
+                    // Display the last checked timestamp
+                    const lastCheckedElement = document.getElementById('lastChecked');
+                    lastCheckedElement.innerText = `Database Last Checked: ${formatDate(data.metadata.databaseLastChecked)}`;
+                })
+                .catch(error => console.error('Error loading JSON data:', error));
+
+            // Add event listener to the show raw data button
+            const showRawDataBtn = document.getElementById('showRawDataBtn');
+            const rawDataSection = document.getElementById('rawDataSection');
+
+            showRawDataBtn.addEventListener('click', () => {
+                if (rawDataSection.style.display === 'none') {
+                    rawDataSection.style.display = 'block';
+                    showRawDataBtn.innerText = 'Hide Raw Data';
+                } else {
+                    rawDataSection.style.display = 'none';
+                    showRawDataBtn.innerText = 'Show Raw Data';
+                }
+            });
+        });
+
+        function filterTable() {
+            const vendorInput = document.getElementById('searchVendor').value.toLowerCase();
+            const bioFilter = document.getElementById('filterBio').value;
+            const usbFilter = document.getElementById('filterUSB').value;
+            const nfcFilter = document.getElementById('filterNFC').value;
+            const bleFilter = document.getElementById('filterBLE').value;
+            const versionFilter = document.getElementById('filterVersion').value;
+            const table = document.getElementById('fidoTable');
+            const rows = table.getElementsByTagName('tr');
+
+            for (let i = 1; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                const vendor = cells[0].innerText.toLowerCase();
+                const bio = cells[3].innerText;
+                const usb = cells[4].innerText;
+                const nfc = cells[5].innerText;
+                const ble = cells[6].innerText;
+                const version = cells[7].innerText;
+
+                const matchesVendor = vendor.includes(vendorInput);
+                const matchesBio = !bioFilter || bio === bioFilter;
+                const matchesUSB = !usbFilter || usb === usbFilter;
+                const matchesNFC = !nfcFilter || nfc === nfcFilter;
+                const matchesBLE = !bleFilter || ble === bleFilter;
+                const matchesVersion = !versionFilter || version === versionFilter;
+
+                if (matchesVendor && matchesBio && matchesUSB && matchesNFC && matchesBLE && matchesVersion) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+
+        function showDetails(item) {
+            document.getElementById('modalVendor').innerText = item.Vendor || '';
+            document.getElementById('modalDescription').innerText = item.Description || '';
+            document.getElementById('modalAAGUID').innerText = item.AAGUID || '';
+            document.getElementById('modalBio').innerText = item.Bio || '';
+            document.getElementById('modalUSB').innerText = item.USB || '';
+            document.getElementById('modalNFC').innerText = item.NFC || '';
+            document.getElementById('modalBLE').innerText = item.BLE || '';
+            document.getElementById('modalVersion').innerText = item.Version || '';
+
+            // Metadata Statement
+            const metadata = item.metadataStatement || {};
+            document.getElementById('modalProtocolFamily').innerText = metadata.protocolFamily || '';
+
+            // Authenticator Versions
+            const authVersionsList = document.getElementById('modalAuthVersions');
+            authVersionsList.innerHTML = '';
+            if (metadata.upv) {
+                metadata.upv.forEach(version => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = `${version.major}.${version.minor}`;
+                    authVersionsList.appendChild(listItem);
+                });
+            }
+
+            // Authentication Algorithms
+            const authAlgorithmsList = document.getElementById('modalAuthAlgorithms');
+            authAlgorithmsList.innerHTML = '';
+            if (metadata.authenticationAlgorithms) {
+                metadata.authenticationAlgorithms.forEach(alg => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = alg;
+                    authAlgorithmsList.appendChild(listItem);
+                });
+            }
+
+            // Attestation Types
+            const attestationTypesList = document.getElementById('modalAttestationTypes');
+            attestationTypesList.innerHTML = '';
+            if (metadata.attestationTypes) {
+                metadata.attestationTypes.forEach(type => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = type;
+                    attestationTypesList.appendChild(listItem);
+                });
+            }
+
+            // User Verification Details
+            const userVerificationList = document.getElementById('modalUserVerificationDetails');
+            userVerificationList.innerHTML = '';
+            if (item.metadataStatement && item.metadataStatement.userVerificationDetails) {
+                item.metadataStatement.userVerificationDetails.forEach((group, groupIndex) => {
+                    const groupItem = document.createElement('li');
+                    groupItem.innerHTML = `<strong>Group ${groupIndex + 1}:</strong>`;
+                    const detailsList = document.createElement('ul');
+
+                    group.forEach(detail => {
+                        const detailItem = document.createElement('li');
+                        detailItem.innerText = `Method: ${detail.userVerificationMethod}`;
+
+                        // Handle caDesc
+                        if (detail.caDesc) {
+                            const caDescList = document.createElement('ul');
+                            for (const [key, value] of Object.entries(detail.caDesc)) {
+                                const caDescItem = document.createElement('li');
+                                caDescItem.innerText = `${key}: ${value}`;
+                                caDescList.appendChild(caDescItem);
+                            }
+                            detailItem.appendChild(caDescList);
+                        }
+
+                        // Handle baDesc
+                        if (detail.baDesc) {
+                            const baDescList = document.createElement('ul');
+                            for (const [key, value] of Object.entries(detail.baDesc)) {
+                                const baDescItem = document.createElement('li');
+                                baDescItem.innerText = `${key}: ${value}`;
+                                baDescList.appendChild(baDescItem);
+                            }
+                            detailItem.appendChild(baDescList);
+                        }
+
+                        // Handle other descriptors if any
+                        // You can add similar blocks for paDesc, tdDesc, or any other descriptor types
+
+                        detailsList.appendChild(detailItem);
+                    });
+
+                    groupItem.appendChild(detailsList);
+                    userVerificationList.appendChild(groupItem);
+                });
+            }
+
+            // Key Protection
+            const keyProtectionList = document.getElementById('modalKeyProtection');
+            keyProtectionList.innerHTML = '';
+            if (metadata.keyProtection) {
+                metadata.keyProtection.forEach(protection => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = protection;
+                    keyProtectionList.appendChild(listItem);
+                });
+            }
+
+            // Matcher Protection
+            const matcherProtectionList = document.getElementById('modalMatcherProtection');
+            matcherProtectionList.innerHTML = '';
+            if (metadata.matcherProtection) {
+                metadata.matcherProtection.forEach(protection => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = protection;
+                    matcherProtectionList.appendChild(listItem);
+                });
+            }
+
+            // Crypto Strength
+            document.getElementById('modalCryptoStrength').innerText = metadata.cryptoStrength || '';
+
+            // Attachment Hint
+            document.getElementById('modalAttachmentHint').innerText = metadata.attachmentHint ? metadata.attachmentHint.join(', ') : '';
+
+            // Authenticator Get Info
+            const authGetInfo = metadata.authenticatorGetInfo || {};
+
+            // Versions
+            const authGetInfoVersionsList = document.getElementById('modalAuthGetInfoVersions');
+            authGetInfoVersionsList.innerHTML = '';
+            if (authGetInfo.versions) {
+                authGetInfo.versions.forEach(version => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = version;
+                    authGetInfoVersionsList.appendChild(listItem);
+                });
+            }
+
+            // Extensions
+            const authGetInfoExtensionsList = document.getElementById('modalAuthGetInfoExtensions');
+            authGetInfoExtensionsList.innerHTML = '';
+            if (authGetInfo.extensions) {
+                authGetInfo.extensions.forEach(extension => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = extension;
+                    authGetInfoExtensionsList.appendChild(listItem);
+                });
+            }
+
+            // Options
+            const authGetInfoOptionsList = document.getElementById('modalAuthGetInfoOptions');
+            authGetInfoOptionsList.innerHTML = '';
+            if (authGetInfo.options) {
+                for (const [key, value] of Object.entries(authGetInfo.options)) {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = `${key}: ${value}`;
+                    authGetInfoOptionsList.appendChild(listItem);
+                }
+            }
+
+            // Max Credential Count In List
+            document.getElementById('modalMaxCredentialCountInList').innerText = authGetInfo.maxCredentialCountInList || '';
+
+            // Max Credential ID Length
+            document.getElementById('modalMaxCredentialIdLength').innerText = authGetInfo.maxCredentialIdLength || '';
+
+            // Transports
+            const transportsList = document.getElementById('modalTransports');
+            transportsList.innerHTML = '';
+            if (authGetInfo.transports) {
+                authGetInfo.transports.forEach(transport => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = transport;
+                    transportsList.appendChild(listItem);
+                });
+            }
+
+            // Min PIN Length
+            document.getElementById('modalMinPINLength').innerText = authGetInfo.minPINLength || '';
+
+            // Firmware Version
+            document.getElementById('modalFirmwareVersion').innerText = authGetInfo.firmwareVersion || '';
+
+            // Max Cred Blob Length
+            document.getElementById('modalMaxCredBlobLength').innerText = authGetInfo.maxCredBlobLength || '';
+
+            // Max RP IDs For Set Min PIN Length
+            document.getElementById('modalMaxRPIDsForSetMinPINLength').innerText = authGetInfo.maxRPIDsForSetMinPINLength || '';
+
+            // Status Reports
+            const statusReportsList = document.getElementById('modalStatusReports');
+            statusReportsList.innerHTML = '';
+            if (item.statusReports) {
+                item.statusReports.forEach(report => {
+                    const listItem = document.createElement('li');
+                    listItem.innerText = `${report.status} (Effective Date: ${report.effectiveDate})`;
+                    
+                    const reportDetailsList = document.createElement('ul');
+                    if (report.authenticatorVersion) {
+                        const authVerItem = document.createElement('li');
+                        authVerItem.innerText = `Authenticator Version: ${report.authenticatorVersion}`;
+                        reportDetailsList.appendChild(authVerItem);
+                    }
+                    if (report.url) {
+                        const urlItem = document.createElement('li');
+                        urlItem.innerHTML = `URL: <a href="${report.url}" target="_blank">${report.url}</a>`;
+                        reportDetailsList.appendChild(urlItem);
+                    }
+                    if (report.certificationDescriptor) {
+                        const certDescItem = document.createElement('li');
+                        certDescItem.innerText = `Certification Descriptor: ${report.certificationDescriptor}`;
+                        reportDetailsList.appendChild(certDescItem);
+                    }
+                    if (report.certificateNumber) {
+                        const certNumItem = document.createElement('li');
+                        certNumItem.innerText = `Certificate Number: ${report.certificateNumber}`;
+                        reportDetailsList.appendChild(certNumItem);
+                    }
+                    if (report.certificationPolicyVersion) {
+                        const certPolicyItem = document.createElement('li');
+                        certPolicyItem.innerText = `Certification Policy Version: ${report.certificationPolicyVersion}`;
+                        reportDetailsList.appendChild(certPolicyItem);
+                    }
+                    if (report.certificationRequirementsVersion) {
+                        const certReqItem = document.createElement('li');
+                        certReqItem.innerText = `Certification Requirements Version: ${report.certificationRequirementsVersion}`;
+                        reportDetailsList.appendChild(certReqItem);
+                    }
+                    listItem.appendChild(reportDetailsList);
+                    statusReportsList.appendChild(listItem);
+                });
+            }
+
+            // Populate the raw data section
+            const rawDataContent = document.getElementById('rawDataContent');
+            rawDataContent.innerText = JSON.stringify(item, null, 2);
+
+            // Show the modal
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        // Get the modal
+        const modal = document.getElementById('myModal');
+
+        // Get the <span> element that closes the modal
+        const span = document.getElementsByClassName('close')[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
