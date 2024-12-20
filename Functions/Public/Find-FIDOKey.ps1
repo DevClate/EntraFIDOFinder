@@ -113,7 +113,7 @@ function Find-FIDOKey {
         }
 
         # If AAGUIDFile is provided, import the AAGUIDs from the file
-        if ($AAGUIDFile) {
+         if ($AAGUIDFile) {
             if (-Not (Test-Path -Path $AAGUIDFile)) {
                 Write-Error "The AAGUID file was not found at path: $AAGUIDFile"
                 return
@@ -128,7 +128,18 @@ function Find-FIDOKey {
                         $fileContent = Import-Csv -Path $AAGUIDFile | Select-Object -ExpandProperty AAGUID
                     }
                     '.xlsx' {
-                        $fileContent = Import-Excel -Path $AAGUIDFile | Select-Object -ExpandProperty AAGUID
+                        # Check if ImportExcel module is installed
+                        if (-not (Get-Module -ListAvailable -Name ImportExcel)) {
+                            Write-Host "The 'ImportExcel' module is required to import .xlsx files."
+                            Write-Host "Please install it by running 'Install-PSResource -Name ImportExcel -Scope CurrentUser'"
+                            return
+                        }
+                        else {
+                            # Import the module
+                            Import-Module ImportExcel -ErrorAction Stop
+                            # Import data from the .xlsx file
+                            $fileContent = Import-Excel -Path $AAGUIDFile | Select-Object -ExpandProperty AAGUID
+                        }
                     }
                     default {
                         Write-Error "Unsupported file extension: $extension. Supported extensions are .txt, .csv, .xlsx."
