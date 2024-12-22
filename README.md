@@ -5,7 +5,27 @@ PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
 **Database Last Updated:** 2024-12-02
 
-Here are some cmdlets to get you started:
+## Features
+
+* View and filter standard properties
+* See all properties in nicely formatted JSON
+* Import AAGUIDs from .TXT, .CSV, and .XLSX file
+* Accepts pipeline input for AAGUIDs
+* See all standard properties then pick out which properties you want to see - For some of the properties you will have to format because of nesting
+* Merge FIDO Alliance and Microsoft Data together through GitHub Action
+* Web Version to see and filter all AAGUIDs
+
+## Getting Started
+
+```PowerShell
+# Run first if you need to set Execution Policy
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+# Install EntraFIDOFinder
+Install-PSResource -Name EntraFIDOFinder -Scope CurrentUser
+```
+
+## Starter Cmdlets
 
 ```powershell
 # Find all compatible keys
