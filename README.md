@@ -38,7 +38,7 @@ Find-FIDOKey -DetailedProperties | Select-Object Vendor, Description, @{Name="Pr
 # Find information on more than 1 AAGUID
 "973446ca-e21c-9a9b-99f5-9b985a67af0f", "50a45b0c-80e7-f944-bf29-f552bfa2e048" | Find-FIDOKey
 
-# Import multiple AAGUID from a file (.xslx, .csv, and .txt)
+# Import multiple AAGUID from a file (.xlsx, .csv, and .txt)
 Find-FIDOKey -AAGUIDFile "aaguid.xlsx"
 
 # Find your databse version and compare to newest version
