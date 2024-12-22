@@ -3,8 +3,8 @@
     Find FIDO keys eligible for attestation with Entra ID.
 .DESCRIPTION
     This function retrieves FIDO keys from a JSON file and filters them based on the provided criteria.
-    The function supports filtering by Brand, Type (Bio, USB, NFC, BLE), AAGUID, TypeFilterMode, and AllProperties.
-    The results can be displayed in a table or list format.
+    The function supports filtering by Brand, Type (Bio, USB, NFC, BLE), AAGUID, TypeFilterMode, DetailedProperties, and AllProperties.
+    The results can be displayed in a table, list format, or pipe.
 .PARAMETER Brand
     Filter the FIDO keys by Brand. The available brands are listed in the ValidateSet.
 .PARAMETER Type
@@ -37,7 +37,7 @@
 function Find-FIDOKey {
     [CmdletBinding()]
     param (
-        # Parameter for filtering by Brand
+
         [Parameter()]
         [ValidateSet("ACS", "Allthenticator", "Arculus", "AuthenTrend", "Atos", "authenton1", "Chunghwa Telecom",
             "Crayonic", "Cryptnox", "Egomet", "Ensurity", "eWBM", "Excelsecu", "Feitian", "FIDO KeyPass", "FT-JCOS",
@@ -48,7 +48,6 @@ function Find-FIDOKey {
             "VinCSS", "WiSECURE")]
         [string[]]$Brand,
 
-        # Parameter for filtering by Type (Bio, USB, NFC, BLE)
         [Parameter()]
         [ValidateSet("Bio", "USB", "NFC", "BLE")]
         [string[]]$Type,
@@ -62,12 +61,11 @@ function Find-FIDOKey {
         [Parameter()]
         [string[]]$AAGUIDFile,
 
-        # Parameter for specifying the view format (Table or List)
+
         [Parameter()]
         [ValidateSet("Table", "List")]
         [string]$View,
 
-        # Parameter for specifying the type filter mode (AtLeastTwo, AtLeastOne, AtLeastThree, All)
         [Parameter()]
         [ValidateSet("AtLeastTwo", "AtLeastOne", "AtLeastThree", "All")]
         [string]$TypeFilterMode = "AtLeastOne",
@@ -83,17 +81,7 @@ function Find-FIDOKey {
     # Begin block for initialization
     Begin {
         # Initialize an array to collect all AAGUIDs
-        $allAAGUIDs = @()
-
-<#
-        # Ensure ImportExcel module is installed for .xlsx support
-        if (-not (Get-Module -ListAvailable -Name ImportExcel)) {
-            Install-Module -Name ImportExcel -Force -Scope CurrentUser
-        }
-
-        # Import the module
-        Import-Module ImportExcel -ErrorAction Stop
-#> 
+        $allAAGUIDs = @() 
     }
 
 
