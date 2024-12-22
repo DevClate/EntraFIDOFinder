@@ -2,6 +2,19 @@
 
 Here you will find all changes per version
 
+## v0.0.14
+
+**Improvements**
+
+* Find-FIDOKey -DetailedProperties gives you access to all of the JSON properties, so you can select your own output
+* When importing an Excel file if you don’t have ImportExcel imported, it will warn you
+* GitHub Action to automatically pull FIDO Alliance info and merge it with the JSON data
+*  Web Version: If you click on a key it will show more of the info, and there is also a button to show the full JSON
+
+**Changes**
+
+ * Find-FIDOkey -AllProperties now shows a nice configured JSON file of the key(s) you want to see. You can use -DetailedProperties if you want to create your own custom view
+
 ## v0.0.13
 
 **Enhancements**
