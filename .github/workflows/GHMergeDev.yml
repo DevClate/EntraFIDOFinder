@@ -1,4 +1,4 @@
-name: development Merge
+name: development - Merge
 
 on:
   workflow_dispatch:
