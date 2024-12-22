@@ -1,4 +1,4 @@
-name: Update FidoKeys in gh-pages
+name: Main - Update FidoKeys in gh-pages
 
 on:
   workflow_run:
