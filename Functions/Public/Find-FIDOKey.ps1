@@ -61,7 +61,6 @@ function Find-FIDOKey {
         [Parameter()]
         [string[]]$AAGUIDFile,
 
-
         [Parameter()]
         [ValidateSet("Table", "List")]
         [string]$View,
@@ -77,13 +76,11 @@ function Find-FIDOKey {
         [switch]$DetailedProperties
     )
 
-
     # Begin block for initialization
     Begin {
         # Initialize an array to collect all AAGUIDs
         $allAAGUIDs = @() 
     }
-
 
     # Process block to handle pipeline input
     Process {
