@@ -48,6 +48,8 @@ Show-FIDODbVersion
 Get-FIDODbLog
 ```
 
+## Properties
+
 Brands:
 This parameter is validated so if you start typing in a brand and press tab it will fill the rest of the brand name in if it is available.
 
@@ -60,6 +62,64 @@ Shows all properties from the FIDO Alliance in JSON format
 DetailedProperties:
 Allows you to pull any property from the FIDO Alliance, but some you may have to play with depending on how nested they are.
 
+## Sample Outputs
+```Powershell
+"50a45b0c-80e7-f944-bf29-f552bfa2e048", "973446ca-e21c-9a9b-99f5-9b985a67af0f" | Find-FIDOKey
+
+Vendor      : ACS
+Description : ACS FIDO Authenticator
+AAGUID      : 50a45b0c-80e7-f944-bf29-f552bfa2e048
+Bio         : No
+USB         : Yes
+NFC         : No
+BLE         : No
+Version     : FIDO 2.1 PRE
+ValidVendor : Yes
+
+Vendor      : ACS
+Description : ACS FIDO Authenticator Card
+AAGUID      : 973446ca-e21c-9a9b-99f5-9b985a67af0f
+Bio         : No
+USB         : No
+NFC         : Yes
+BLE         : No
+Version     : FIDO 2.1 PRE
+ValidVendor : Yes
+
+"50a45b0c-80e7-f944-bf29-f552bfa2e048" | Find-FIDOKey -AllProperties
+{
+  "Vendor": "ACS",
+  "Description": "ACS FIDO Authenticator",
+  "AAGUID": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
+  "Bio": "No",
+  "USB": "Yes",
+  "NFC": "No",
+  "BLE": "No",
+  "Version": "FIDO 2.1 PRE",
+  "ValidVendor": "Yes",
+  "metadataStatement": {
+    "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
+    "aaguid": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
+    "description": "ACS FIDO Authenticator",
+    "authenticatorVersion": 10000,
+    "protocolFamily": "fido2",
+    "schema": 3,
+    "upv": [
+      {
+        "major": 1,
+        "minor": 1
+      },
+      {
+        "major": 1,
+        "minor": 0
+      }
+    ], and more data below
+```
+
 If you are curious on the FIDO Alliance data, I've now added that into the metadata and it will be compared once a month when the FIDO Alliance publishes the newest version. It is accessible in the PowerShell version using the -AllProperties parameter, or in the web version by clicking on the actual key, then clicking on "Show Raw Data."
 
-Also check out the web version: [https://devclate.github.io/EntraFIDOFinder/Explorer/](https://devclate.github.io/EntraFIDOFinder/Explorer/)
+## Web Version
+
+[https://devclate.github.io/EntraFIDOFinder/Explorer/](https://devclate.github.io/EntraFIDOFinder/Explorer/)
+![Alt Screenshot of web version](https://github.com/DevClate/EntraFIDOFinder/blob/main/Assets/Webss1.png?raw=true)
+
