@@ -1,4 +1,4 @@
-name: Merge FIDO Metadata
+name: Main - Merge FIDO Metadata
 
 on:
   workflow_dispatch:
