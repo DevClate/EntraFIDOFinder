@@ -1,46 +1,56 @@
 <#
 .SYNOPSIS
-    Finds and filters FIDO keys based on specified criteria.
+    Find FIDO keys eligible for attestation with Entra ID.
 
 .DESCRIPTION
-    This function loads FIDO key data from a JSON file and filters the keys based on the provided parameters such as Brand, Type, FIDO Version, and Type Filter Mode. The results can be displayed in either Table or List format.
+    This function retrieves FIDO keys from a JSON file and filters them based on the provided criteria.
+    The function supports filtering by Brand, Type (Bio, USB, NFC, BLE), AAGUID, TypeFilterMode, DetailedProperties, and AllProperties.
+    The results can be displayed in a table, list format, or pipe.
 
 .PARAMETER Brand
-    Specifies the brand(s) of the FIDO keys to filter. Accepts multiple values.
+    Filter the FIDO keys by Brand. The available brands are listed in the ValidateSet.
 
 .PARAMETER Type
-    Specifies the type(s) of the FIDO keys to filter (Bio, USB, NFC, BLE). Accepts multiple values.
+    Filter the FIDO keys by Type. The available types are Bio, USB, NFC, and BLE.
+
+.PARAMETER AAGUID
+    Filter the FIDO keys by AAGUID. The AAGUIDs can be provided as an array of strings.
+
+.PARAMETER AAGUIDFile
+    Filter the FIDO keys by AAGUIDs imported from a file. Supported file formats are .txt, .csv, and .xlsx.
 
 .PARAMETER View
-    Specifies the format of the output view. Can be either 'Table' or 'List'. Default is 'List'.
+    Specify the view format for the results. The available options are Table and List
 
 .PARAMETER TypeFilterMode
-    Specifies the mode for filtering by Type. Can be 'AtLeastTwo', 'AtLeastOne', 'AtLeastThree', or 'All'. Default is 'AtLeastOne'.
-
-.PARAMETER FIDOVersion
-    Specifies the FIDO version to filter the keys by.
+    Specify the type filter mode. The available options are AtLeastTwo, AtLeastOne, AtLeastThree, and All.
 
 .PARAMETER AllProperties
-    Switch to include all properties in the output.
+    Include all properties of the FIDO keys in the output as Json.
+
+.PARAMETER DetailedProperties
+    Include detailed properties of the FIDO keys in the output.
 
 .EXAMPLE
     Find-FIDOKey -Brand "Yubico" -Type "USB" -View "Table"
-
-    Finds and displays all Yubico FIDO keys that support USB in a table format.
+    Find FIDO keys from the Yubico brand that support USB and display the results in a table format.
 
 .EXAMPLE
-    Find-FIDOKey -Type "Bio", "NFC" -TypeFilterMode "AtLeastTwo"
+    Find-FIDOKey -AAGUID "12345678" -View "List"
+    Find FIDO keys with the specified AAGUID and display the results in a list format.
 
-    Finds and displays all FIDO keys that support at least Bio and NFC.
+.EXAMPLE    
+    Find-FIDOKey -AAGUIDFile "AAGUIDs.txt" -View "Table"
+    Find FIDO keys with AAGUIDs imported from a text file and display the results in a table format.
 
-.NOTES
-    The function expects a JSON file named 'FidoKeys.json' in the 'Assets' directory located two levels up from the script's directory.
-
-#>
+.EXAMPLE
+    Find-FIDOKey -DetailedProperties | Select-Object Vendor, Description, @{Name="ProtocolFamily";Expression={$_.metadataStatement.protocolFamily}} | fl
+    Find FIDO keys and show the standard properties  with version from FIDO Alliance metadata.
+    #>
 function Find-FIDOKey {
     [CmdletBinding()]
     param (
-        # Parameter for filtering by Brand
+
         [Parameter()]
         [ValidateSet("ACS", "Allthenticator", "Arculus", "AuthenTrend", "Atos", "authenton1", "Chunghwa Telecom",
             "Crayonic", "Cryptnox", "Egomet", "Ensurity", "eWBM", "Excelsecu", "Feitian", "FIDO KeyPass", "FT-JCOS",
@@ -51,134 +61,183 @@ function Find-FIDOKey {
             "VinCSS", "WiSECURE")]
         [string[]]$Brand,
 
-        # Parameter for filtering by Type (Bio, USB, NFC, BLE)
         [Parameter()]
         [ValidateSet("Bio", "USB", "NFC", "BLE")]
         [string[]]$Type,
 
-        # Parameter for specifying the view format (Table or List)
+        [Parameter(
+            Position = 0,
+            ValueFromPipeline = $true
+        )]
+        [string[]]$AAGUID,
+
+        [Parameter()]
+        [string[]]$AAGUIDFile,
+
         [Parameter()]
         [ValidateSet("Table", "List")]
-        [string]$View = "List",
+        [string]$View,
 
-        # Parameter for specifying the type filter mode (AtLeastTwo, AtLeastOne, AtLeastThree, All)
         [Parameter()]
         [ValidateSet("AtLeastTwo", "AtLeastOne", "AtLeastThree", "All")]
         [string]$TypeFilterMode = "AtLeastOne",
 
-        # Parameter for filtering by FIDO Version
-        [Parameter()]
-        [ValidateSet("FIDO U2F", "FIDO 2.0", "FIDO 2.1", "FIDO 2.1 PRE")]
-        [string]$FIDOVersion,
+        [parameter()]
+        [switch]$AllProperties,
 
-        # Switch to include all properties in the output
         [Parameter()]
-        [switch]$AllProperties
+        [switch]$DetailedProperties
     )
 
-    # Construct the path to the JSON file
-    $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
-    $JsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FidoKeys.json"
-    
-    # Check if the file exists
-    if (-not (Test-Path -Path $jsonFilePath)) {
-        Write-Error "The JSON file was not found at path: $jsonFilePath"
-        return
+    # Begin block for initialization
+    Begin {
+        # Initialize an array to collect all AAGUIDs
+        $allAAGUIDs = @() 
     }
 
-    # Load the data
-    $data = Get-Content -Raw $jsonFilePath | ConvertFrom-Json -AsHashtable
-    $results = $data.keys
-
-    # Filter by Brand if provided
-    if ($Brand) {
-        $results = $results | Where-Object {
-            $Brand -contains $_.Vendor
+    # Process block to handle pipeline input
+    Process {
+        # Collect the pipeline input AAGUIDs
+        if ($AAGUID) {
+            $allAAGUIDs += $AAGUID
         }
     }
 
-    # Filter by FIDO Version if provided
-    if ($FIDOVersion) {
-        $results = $results | Where-Object {
-            $_.Version -eq $FIDOVersion
+    # End block for processing and output
+    End {
+        # Include AAGUIDs provided via the -AAGUID parameter
+        if ($PSBoundParameters.ContainsKey('AAGUID')) {
+            $allAAGUIDs += $PSBoundParameters['AAGUID']
         }
-    }
 
-    # Filter by Type if provided
-    if ($Type) {
-        $results = $results | Where-Object {
-            $typeCount = 0
-            if ($Type -contains "Bio" -and $_.Bio -eq "Yes") { $typeCount++ }
-            if ($Type -contains "USB" -and $_.USB -eq "Yes") { $typeCount++ }
-            if ($Type -contains "NFC" -and $_.NFC -eq "Yes") { $typeCount++ }
-            if ($Type -contains "BLE" -and $_.BLE -eq "Yes") { $typeCount++ }
+        # If AAGUIDFile is provided, import the AAGUIDs from the file
+         if ($AAGUIDFile) {
+            if (-Not (Test-Path -Path $AAGUIDFile)) {
+                Write-Error "The AAGUID file was not found at path: $AAGUIDFile"
+                return
+            }
+            else {
+                $extension = [IO.Path]::GetExtension($AAGUIDFile).ToLowerInvariant()
+                switch ($extension) {
+                    '.txt' {
+                        $fileContent = Get-Content -Path $AAGUIDFile
+                    }
+                    '.csv' {
+                        $fileContent = Import-Csv -Path $AAGUIDFile | Select-Object -ExpandProperty AAGUID
+                    }
+                    '.xlsx' {
+                        # Check if ImportExcel module is installed
+                        if (-not (Get-Module -ListAvailable -Name ImportExcel)) {
+                            Write-Host "The 'ImportExcel' module is required to import .xlsx files."
+                            Write-Host "Please install it by running 'Install-PSResource -Name ImportExcel -Scope CurrentUser'"
+                            return
+                        }
+                        else {
+                            # Import the module
+                            Import-Module ImportExcel -ErrorAction Stop
+                            # Import data from the .xlsx file
+                            $fileContent = Import-Excel -Path $AAGUIDFile | Select-Object -ExpandProperty AAGUID
+                        }
+                    }
+                    default {
+                        Write-Error "Unsupported file extension: $extension. Supported extensions are .txt, .csv, .xlsx."
+                        return
+                    }
+                }
 
-            switch ($TypeFilterMode) {
-                "AtLeastTwo" { $typeCount -ge 2 }
-                "AtLeastThree" { $typeCount -ge 3 }
-                "All" { $typeCount -eq $Type.Count }
-                default { $typeCount -ge 1 }
+                $fileAAGUIDs = $fileContent | Where-Object { -Not [string]::IsNullOrWhiteSpace($_) } | ForEach-Object { $_.Trim() }
+
+                # Combine AAGUIDs from file with any existing AAGUIDs
+                $allAAGUIDs += $fileAAGUIDs
             }
         }
-    }
 
-    # Sort the results by Vendor in alphabetical order
-    $results = $results | Sort-Object -Property Vendor
+        # Remove duplicate AAGUIDs if any
+        $allAAGUIDs = $allAAGUIDs | Select-Object -Unique
 
-    # Helper function to convert nested hashtables to JSON strings recursively
-    function Convert-HashtableToJson {
-        param ([PSCustomObject]$Object)
-        foreach ($property in $Object.PSObject.Properties) {
-            if ($property.Value -is [System.Collections.Hashtable]) {
-                $Object | Add-Member -MemberType NoteProperty -Name $property.Name -Value ($property.Value | ConvertTo-Json -Compress -Depth 10) -Force
-            }
-            elseif ($property.Value -is [System.Collections.IEnumerable] -and -not ($property.Value -is [string])) {
-                $Object | Add-Member -MemberType NoteProperty -Name $property.Name -Value ($property.Value | ForEach-Object { if ($_ -is [System.Collections.Hashtable]) { $_ | ConvertTo-Json -Compress -Depth 10 } else { $_ } }) -Force
-            }
+        # Load existing FIDO keys from JSON file
+        $parentDir = Split-Path -Path (Split-Path -Path $PSScriptRoot -Parent) -Parent
+        $jsonFilePath = Join-Path -Path $parentDir -ChildPath "Assets/FidoKeys.json"
+
+        if (-Not (Test-Path -Path $jsonFilePath)) {
+            Write-Error "The JSON file was not found at path: $jsonFilePath"
+            return
         }
-        return $Object
-    }
 
-    # Build a PSCustomObject for each device
-    function Build-CustomObject {
-        param ([PSCustomObject]$Device)
-        $customObject = [PSCustomObject]@{
-            Vendor                 = $Device.Vendor
-            Description            = $Device.Description
-            AAGUID                 = $Device.AAGUID
-            Bio                    = $Device.Bio
-            USB                    = $Device.USB
-            NFC                    = $Device.NFC
-            BLE                    = $Device.BLE
-            Version                = $Device.Version
-            ValidVendor            = $Device.ValidVendor
-            TimeOfLastStatusChange = $Device.timeOfLastStatusChange
-            # Going to add more properties here
-        }
-        return $customObject
-    }
+        $data = Get-Content -Raw $jsonFilePath | ConvertFrom-Json
+        $metadata = $data.metadata
+        $results = $data.keys
 
-    # Output results based on the specified view format
-    if ($results.Count -gt 0) {
-        if ($AllProperties) {
-            # Convert nested hashtables to JSON strings and build custom objects
-            $output = $results | ForEach-Object {
-                $converted = Convert-HashtableToJson -Object $_
-                Build-CustomObject -Device $converted
+        # Filter by AAGUID if provided
+        if ($allAAGUIDs) {
+            $results = $results | Where-Object {
+                $allAAGUIDs -contains $_.AAGUID
             }
         }
-        else {
-            $output = $results | Select-Object Vendor, Description, AAGUID, Bio, USB, NFC, BLE, Version, ValidVendor
+        
+        # Filter by Brand if provided
+        if ($Brand) {
+            $results = $results | Where-Object {
+                $Brand -contains $_.Vendor -or ($Brand | ForEach-Object { $_ -in $_.Description })
+            }
         }
 
-        if ($View -eq "Table") {
-            $output | Format-Table -AutoSize
+        # Filter by Type if provided
+        if ($Type) {
+            $results = $results | Where-Object {
+                $typeCount = 0
+                if ($Type -contains "Bio" -and $_.Bio -eq "Yes") { $typeCount++ }
+                if ($Type -contains "USB" -and $_.USB -eq "Yes") { $typeCount++ }
+                if ($Type -contains "NFC" -and $_.NFC -eq "Yes") { $typeCount++ }
+                if ($Type -contains "BLE" -and $_.BLE -eq "Yes") { $typeCount++ }
+
+                switch ($TypeFilterMode) {
+                    "AtLeastTwo" { $typeCount -ge 2 }
+                    "AtLeastThree" { $typeCount -ge 3 }
+                    "All" { $typeCount -eq $Type.Count }
+                    default { $typeCount -ge 1 }
+                }
+            }
         }
-        else {
-            $output | Format-List -Property * -Force
+
+        # Sort the results by Vendor in alphabetical order
+       $results = $results | Sort-Object -Property Vendor
+
+        if ($View) {
+            if ($results.Count -gt 0) {
+                Write-Host "FIDO Devices eligible for attestation with Entra ID: $($results.Count)"
+                Write-Host "Database Last Updated: $($metadata.databaseLastUpdated)"
+                if ($View -eq "Table") {
+                    if ($DetailedProperties -or $FormattedProperties) {
+                        # Directly output the results
+                        $results | Format-Table -AutoSize
+                    } elseif ($AllProperties) {
+                        $results | ConvertTo-Json -Depth 10 | Out-String | Write-Host
+                    } else {
+                        $results | Format-Table -Property Vendor, Description, AAGUID, Bio, USB, NFC, BLE, Version, ValidVendor -AutoSize
+                    }
+                } else {
+                    if ($DetailedProperties) {
+                        # Directly output the results
+                        $results | Format-List
+                    } elseif ($AllProperties) {
+                        $results | ConvertTo-Json -Depth 10 | Out-String | Write-Host
+                    } else {
+                        $results | Select-Object Vendor, Description, AAGUID, Bio, USB, NFC, BLE, Version, ValidVendor
+                    }
+                }
+            } else {
+                Write-Host "No devices found matching the criteria."
+            }
+        } else {
+            if ($DetailedProperties) {
+                # Return the results directly
+                return $results
+            } elseif ($AllProperties) {
+                return $results | ConvertTo-Json -Depth 10
+            } else {
+                return $results | Select-Object Vendor, Description, AAGUID, Bio, USB, NFC, BLE, Version, ValidVendor
+            }
         }
-    }
-    else {
-        Write-Warning "No FIDO devices found matching the specified criteria."
     }
 }
