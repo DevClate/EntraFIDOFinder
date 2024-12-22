@@ -2,7 +2,7 @@ name: Update FidoKeys in gh-pages
 
 on:
   workflow_run:
-    workflows: ["Main Merge"]
+    workflows: ["Main - Merge"]
     types:
       - completed
     branches:
