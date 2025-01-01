@@ -1,4 +1,14 @@
 
+===== Script Run on 2025-01-01 04:03:28 UTC =====
+2025-01-01 04:03:27 - AAGUID: eabb46cc-e241-80bf-ae9e-96fa6d2975cf
+Updating timeOfLastStatusChange
+Old Value:
+2024-01-30
+
+New Value:
+2024-12-30
+
+
 ===== Script Run on 2024-12-16 11:59:28 UTC =====
 No changes have been detected since last run.
 
@@ -55,4 +65,5 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
