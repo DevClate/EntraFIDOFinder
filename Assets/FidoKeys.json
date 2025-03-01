@@ -13068,7 +13068,7 @@
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "83c47309-aabb-4108-8470-8be838b573cb",
-        "description": "YubiKey Bio Series (Enterprise Profile)",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -13459,7 +13459,7 @@
           "authenticatorVersion": 329474
         }
       ],
-      "timeOfLastStatusChange": "2024-08-13"
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -14073,7 +14073,7 @@
           "authenticatorVersion": 329474
         }
       ],
-      "timeOfLastStatusChange": "2024-08-13"
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -15218,7 +15218,7 @@
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "dd86a2da-86a0-4cbe-b462-4bd31f57bc6f",
-        "description": "YubiKey Bio FIDO Edition",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 329474,
         "protocolFamily": "fido2",
         "schema": 3,
@@ -15407,7 +15407,7 @@
           "authenticatorVersion": 329474
         }
       ],
-      "timeOfLastStatusChange": "2024-08-13"
+      "timeOfLastStatusChange": "2025-02-07"
     },
     {
       "Vendor": "Yubico",
@@ -16711,7 +16711,7 @@
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d8522d9f-575b-4866-88a9-ba99fa02f35b",
-        "description": "YubiKey Bio Series",
+        "description": "YubiKey Bio Series - FIDO Edition",
         "authenticatorVersion": 328965,
         "protocolFamily": "fido2",
         "schema": 3,

@@ -1,4 +1,33 @@
 
+===== Script Run on 2025-03-01 04:03:05 UTC =====
+2025-03-01 04:03:04 - Updating AAGUID 83c47309-aabb-4108-8470-8be838b573cb : description : "YubiKey Bio Series (Enterprise Profile)" -> "YubiKey Bio Series - FIDO Edition (Enterprise Profile)"
+2025-03-01 04:03:04 - AAGUID: 90636e1f-ef82-43bf-bdcf-5255f139d12f
+Updating timeOfLastStatusChange
+Old Value:
+2024-08-13
+
+New Value:
+2025-02-06
+
+2025-03-01 04:03:05 - AAGUID: 58276709-bb4b-4bb3-baf1-60eea99282a7
+Updating timeOfLastStatusChange
+Old Value:
+2024-08-13
+
+New Value:
+2025-02-06
+
+2025-03-01 04:03:05 - AAGUID: dd86a2da-86a0-4cbe-b462-4bd31f57bc6f
+Updating timeOfLastStatusChange
+Old Value:
+2024-08-13
+
+New Value:
+2025-02-07
+
+2025-03-01 04:03:05 - Updating AAGUID dd86a2da-86a0-4cbe-b462-4bd31f57bc6f : description : "YubiKey Bio FIDO Edition" -> "YubiKey Bio Series - FIDO Edition"
+2025-03-01 04:03:05 - Updating AAGUID d8522d9f-575b-4866-88a9-ba99fa02f35b : description : "YubiKey Bio Series" -> "YubiKey Bio Series - FIDO Edition"
+
 ===== Script Run on 2025-02-01 04:03:02 UTC =====
 No changes have been detected since last run.
 
@@ -74,6 +103,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
