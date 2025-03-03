@@ -16083,6 +16083,15 @@
       },
       "statusReports": [
         {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474,
+          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition 1VDJSN",
+          "certificateNumber": "FIDO20020250201005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
           "status": "FIDO_CERTIFIED_L1",
           "effectiveDate": "2024-08-12",
           "authenticatorVersion": 329474,
