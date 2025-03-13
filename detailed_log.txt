@@ -1,3 +1,49 @@
+DETAILED LOG - 2025-03-13 00:14:20
+
+Added new entry for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9b' with description 'Ensurity AUTH BioPro' and vendor 'Ensurity'.
+
+Added new entry for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' with description 'Hideez Key 3 FIDO2' and vendor 'Hideez'.
+
+Updated 'Description' for AAGUID '83c47309-aabb-4108-8470-8be838b573cb' from 'YubiKey Bio Series (Enterprise Profile)' to 'YubiKey Bio Series - FIDO Edition (Enterprise Profile)'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from 'Yes' to 'No'.
+
+Added new entry for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' with description 'Feitian ePass FIDO2-NFC Plus Authenticator' and vendor 'Feitian'.
+
+Added new entry for AAGUID '2bff89f2-323a-48fc-b7c8-9ff7fe87c07e' with description 'Feitian BioPass FIDO2 Pro (Enterprise Profile)' and vendor 'Feitian'.
+
+Added new entry for AAGUID '1d1b4e33-76a1-47fb-97a0-14b10d0933f1' with description 'Cryptnox FIDO2.1' and vendor 'Cryptnox'.
+
+Updated 'Description' for AAGUID '5ca1ab1e-1337-fa57-f1d0-a117e71ca702' from 'Allthenticator App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers' to 'Allthenticator iOS App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers'.
+
+Added new entry for AAGUID '12755c32-8ad1-46eb-881c-e0b38d848b09' with description 'Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)' and vendor 'Feitian'.
+
+Added new entry for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' with description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' and vendor 'OCTATCO'.
+
+Added new entry for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' with description 'WiSECURE Blentity FIDO2 Authenticator' and vendor 'WiSECURE'.
+
+Added new entry for AAGUID 'a02140b7-0cbd-42e1-a9b5-a39da2545114' with description 'Feitian BioPass FIDO2 Plus (Enterprise Profile)' and vendor 'Feitian'.
+
+Added new entry for AAGUID '4c0cf95d-2f40-43b5-ba42-4c83a11c04ba' with description 'Feitian BioPass FIDO2 Pro Authenticator' and vendor 'Feitian'.
+
+Added new entry for AAGUID '59f85fe7-faa5-4c92-9f52-697b9d4d5473' with description 'RSA Authenticator 4 for Android' and vendor 'RSA'.
+
+Updated 'Description' for AAGUID 'dd86a2da-86a0-4cbe-b462-4bd31f57bc6f' from 'YubiKey Bio FIDO Edition' to 'YubiKey Bio Series - FIDO Edition'.
+
+Added new entry for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' with description 'eWBM eFA500 FIDO2 Authenticator' and vendor 'eWBM'.
+
+Added new entry for AAGUID '8681a073-5f50-4d52-bce4-e21658d207b3' with description 'RSA Authenticator 4 for iOS' and vendor 'RSA'.
+
+Added new entry for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' with description 'Allthenticator Android App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers' and vendor 'Allthenticator'.
+
+Added new entry for AAGUID '42df17de-06ba-4177-a2bb-6701be1380d6' with description 'Feitian BioPass FIDO2 Plus Authenticator' and vendor 'Feitian'.
+
+Added new entry for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' with description 'Feitian FIDO Smart Card' and vendor 'Feitian'.
+
+Updated 'Description' for AAGUID 'd8522d9f-575b-4866-88a9-ba99fa02f35b' from 'YubiKey Bio Series' to 'YubiKey Bio Series - FIDO Edition'.
+
+
+
 DETAILED LOG - 2025-03-12 00:13:46
 
 No changes have been detected since last run.
@@ -882,6 +928,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
