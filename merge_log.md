@@ -1,3 +1,188 @@
+# Merge Log - 2025-03-14 00:13:32
+
+Vendor '' for description 'ZTPass SmartAuth' has become invalid.
+
+Vendor '' for description 'TruU Windows Authenticator' has become invalid.
+
+Vendor '' for description 'WinMagic FIDO Eazy - TPM' has become invalid.
+
+Vendor 'Hideez' for description 'Hideez Key 3 FIDO2' has become valid.
+
+Vendor '' for description 'eToken Fusion FIPS' has become invalid.
+
+Vendor '' for description 'Security Key NFC by Yubico - Enterprise Edition Preview' has become invalid.
+
+Vendor '' for description 'Ledger Nano X FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'IIST FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'ID-One Card' has become invalid.
+
+Vendor 'Ensurity' for description 'Ensurity AUTH BioPro' has become valid.
+
+Vendor 'RSA' for description 'RSA Authenticator 4 for Android' has become valid.
+
+Vendor '' for description 'Security Key NFC by Yubico Preview' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian FIDO Smart Card' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC Preview' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Series - Multi-protocol Edition' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian BioPass FIDO2 Plus Authenticator' has become valid.
+
+Vendor '' for description 'KeyVault Secp256R1 FIDO2 CTAP2 Authenticator' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with Lightning' has become invalid.
+
+Vendor '' for description 'Foongtone FIDO Authenticator' has become invalid.
+
+Vendor '' for description 'VeroCard FIDO2 Authenticator' has become invalid.
+
+Vendor 'Allthenticator' for description 'Allthenticator Android App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers' has become valid.
+
+Vendor '' for description 'ellipticSecure MIRkey USB Authenticator' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian BioPass FIDO2 Plus (Enterprise Profile)' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series (RC Preview)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with Lightning (RC Preview)' has become invalid.
+
+Vendor '' for description 'Veridium Android SDK' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with Lightning (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'OneKey FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'Samsung Pass' has become invalid.
+
+Vendor 'OCTATCO' for description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' has become valid.
+
+Vendor '' for description 'Android Authenticator with SafetyNet Attestation' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC' has become invalid.
+
+Vendor '' for description 'ID-One Key' has become invalid.
+
+Vendor '' for description 'HID Crescendo Key V3' has become invalid.
+
+Vendor '' for description 'Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with Lightning Preview' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)' has become valid.
+
+Vendor '' for description 'ESS Smart Card Inc. Authenticator' has become invalid.
+
+Vendor 'WiSECURE' for description 'WiSECURE Blentity FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'VivoKey Apex FIDO2' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Series - FIDO Edition (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series' has become invalid.
+
+Vendor '' for description 'Veridium iOS SDK' has become invalid.
+
+Vendor '' for description 'Ledger Nano S FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'GSTAG OAK FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'ID-One Key' has become invalid.
+
+Vendor '' for description 'eToken Fusion NFC PIV Enterprise' has become invalid.
+
+Vendor '' for description 'Security Key NFC by Yubico - Enterprise Edition' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Series - FIDO Edition' has become invalid.
+
+Vendor '' for description 'eToken Fusion NFC FIPS' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian BioPass FIDO2 Pro Authenticator' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with Lightning Preview' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with Lightning (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with Lightning (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'CardOS FIDO2 Token' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO2-NFC Plus Authenticator' has become valid.
+
+Vendor '' for description 'ZTPass SmartAuth' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian BioPass FIDO2 Pro (Enterprise Profile)' has become valid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'USB/NFC Passcode Authenticator' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC (RC Preview)' has become invalid.
+
+Vendor '' for description 'Pone Biometrics OFFPAD Authenticator' has become invalid.
+
+Vendor '' for description 'OneKey FIDO2 Bluetooth Authenticator' has become invalid.
+
+Vendor '' for description 'Security Key NFC by Yubico' has become invalid.
+
+Vendor 'eWBM' for description 'eWBM eFA500 FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'WinMagic FIDO Eazy - Software' has become invalid.
+
+Vendor 'RSA' for description 'RSA Authenticator 4 for iOS' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with Lightning' has become invalid.
+
+Vendor '' for description 'Nitrokey 3 AM' has become invalid.
+
+Vendor '' for description 'Ledger Nano S Plus FIDO2 Authenticator' has become invalid.
+
+Vendor 'Cryptnox' for description 'Cryptnox FIDO2.1' has become valid.
+
+Vendor '' for description 'Token Ring 3 FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'eToken Fusion NFC PIV' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Series - FIDO Edition' has become invalid.
+
+Vendor '' for description 'TruU Windows Authenticator' has become invalid.
+
+Vendor '' for description 'WinMagic FIDO Eazy - Phone' has become invalid.
+
+Vendor '' for description 'TEST (DUMMY RECORD)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC Preview' has become invalid.
+
+Vendor '' for description 'Dapple Authenticator from Dapple Security Inc.' has become invalid.
+
+Vendor '' for description 'HID Crescendo 4000' has become invalid.
+
+
 # Merge Log - 2025-03-13 00:14:20
 
 Invalid vendor detected for AAGUID 'ff4dac45-ede8-4ec2-aced-cf66103f4335' with description 'YubiKey 5 Series'. Vendor '' is not in the list of valid vendors.
