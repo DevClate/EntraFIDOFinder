@@ -4,6 +4,8 @@ PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
 **Database Last Updated:** 2025-01-23
 
+Microsoft made a change on 2025-03-12 and I have to see why its not seeing the majority of the brands. Should be fixed this weekend though.
+
 ## Features
 
 * View and filter standard properties
