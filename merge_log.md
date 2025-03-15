@@ -1,3 +1,60 @@
+# Merge Log - 2025-03-15 10:16:14
+
+Vendor 'ZTPass' for description 'ZTPass SmartAuth' has become invalid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - TPM' has become invalid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Bluetooth Authenticator' has become invalid.
+
+Vendor 'Foongton' for description 'Foongtone FIDO Authenticator' has become invalid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become invalid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become invalid.
+
+Vendor 'Eviden' for description 'CardOS FIDO2 Token' has become invalid.
+
+Vendor '' for description 'ZTPass SmartAuth' has become invalid.
+
+Vendor 'Samsung' for description 'Samsung Pass' has become invalid.
+
+Vendor 'TruU' for description 'TruU Windows Authenticator' has become invalid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - Phone' has become invalid.
+
+Vendor 'Ledger' for description 'Ledger Nano S FIDO2 Authenticator' has become invalid.
+
+Vendor 'Veridium' for description 'Veridium iOS SDK' has become invalid.
+
+Vendor 'GSTAG' for description 'GSTAG OAK FIDO2 Authenticator' has become invalid.
+
+Vendor 'Securité Carte à Puce' for description 'ESS Smart Card Inc. Authenticator' has become invalid.
+
+Vendor 'Ledger' for description 'Ledger Nano S Plus FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'OneKey FIDO2 Authenticator' has become invalid.
+
+Vendor 'Infineon Technologies AG' for description 'USB/NFC Passcode Authenticator' has become invalid.
+
+Vendor 'VeroCard' for description 'VeroCard FIDO2 Authenticator' has become invalid.
+
+Vendor 'TruU' for description 'TruU Windows Authenticator' has become invalid.
+
+Vendor 'Ledger' for description 'Ledger Nano X FIDO2 Authenticator' has become invalid.
+
+Vendor 'ellipticSecure' for description 'ellipticSecure MIRkey USB Authenticator' has become invalid.
+
+Vendor 'Winmagic' for description 'WinMagic FIDO Eazy - Software' has become invalid.
+
+Vendor '' for description 'ID-One Card' has become invalid.
+
+Vendor 'IIST' for description 'IIST FIDO2 Authenticator' has become invalid.
+
+Vendor 'Nitrokey' for description 'Nitrokey 3 AM' has become invalid.
+
+Vendor 'Veridium' for description 'Veridium Android SDK' has become invalid.
+
+
 # Merge Log - 2025-03-14 00:13:32
 
 Vendor '' for description 'ZTPass SmartAuth' has become invalid.
