@@ -1,7 +1,7 @@
 {
   "keys": [
     {
-      "Vendor": "",
+      "Vendor": "ID-One",
       "Description": "ID-One Key",
       "AAGUID": "f2145e86-211e-4931-b874-e22bba7d01cc",
       "Bio": "No",
@@ -15,7 +15,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "Security Key NFC by Yubico Preview",
       "AAGUID": "760eda36-00aa-4d29-855b-4012a182cdeb",
       "Bio": "No",
@@ -29,7 +29,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Nitrokey",
       "Description": "Nitrokey 3 AM",
       "AAGUID": "2cd2f727-f6ca-44da-8f48-5c2e5da000a2",
       "Bio": "No",
@@ -43,7 +43,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
       "AAGUID": "6ec5cff2-a0f9-4169-945b-f33b563f7b99",
       "Bio": "Yes",
@@ -57,7 +57,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series",
       "AAGUID": "ff4dac45-ede8-4ec2-aced-cf66103f4335",
       "Bio": "No",
@@ -71,7 +71,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Series - FIDO Edition",
       "AAGUID": "ad08c78a-4e41-49b9-86a2-ac15b06899e2",
       "Bio": "Yes",
@@ -85,7 +85,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
       "AAGUID": "97e6a830-c952-4740-95fc-7c78dc97ce47",
       "Bio": "Yes",
@@ -99,7 +99,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "HID Global",
       "Description": "HID Crescendo 4000",
       "AAGUID": "2a55aee6-27cb-42c0-bc6e-04efe999e88a",
       "Bio": "No",
@@ -113,7 +113,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series (Enterprise Profile)",
       "AAGUID": "4599062e-6926-4fe7-9566-9e8fb1aedaa0",
       "Bio": "No",
@@ -127,7 +127,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "ID-One",
       "Description": "ID-One Key",
       "AAGUID": "82b0a720-127a-4788-b56d-d1d4b2d82eac",
       "Bio": "No",
@@ -141,7 +141,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Ledger",
       "Description": "Ledger Nano X FIDO2 Authenticator",
       "AAGUID": "fcb1bcb4-f370-078c-6993-bc24d0ae3fbe",
       "Bio": "No",
@@ -155,7 +155,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "WinMagic",
       "Description": "WinMagic FIDO Eazy - Phone",
       "AAGUID": "f56f58b3-d711-4afc-ba7d-6ac05f88cb19",
       "Bio": "Yes",
@@ -183,7 +183,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "ZTPass",
       "Description": "ZTPass SmartAuth",
       "AAGUID": "b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4",
       "Bio": "No",
@@ -197,7 +197,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with NFC (RC Preview)",
       "AAGUID": "ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1",
       "Bio": "No",
@@ -211,7 +211,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "Security Key NFC by Yubico - Enterprise Edition Preview",
       "AAGUID": "2772ce93-eb4b-4090-8b73-330f48477d73",
       "Bio": "No",
@@ -225,7 +225,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Samsung",
       "Description": "Samsung Pass",
       "AAGUID": "53414d53-554e-4700-0000-000000000000",
       "Bio": "Yes",
@@ -239,7 +239,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Veridium",
       "Description": "Veridium Android SDK",
       "AAGUID": "5ea308b2-7ac7-48b9-ac09-7e2da9015f8c",
       "Bio": "Yes",
@@ -253,7 +253,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Thales",
       "Description": "eToken Fusion NFC PIV",
       "AAGUID": "146e77ef-11eb-4423-b847-ce77864e9411",
       "Bio": "No",
@@ -267,7 +267,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "HID Global",
       "Description": "HID Crescendo Key V3",
       "AAGUID": "7991798a-a7f3-487f-98c0-3faf7a458a04",
       "Bio": "No",
@@ -281,7 +281,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series (RC Preview)",
       "AAGUID": "d2fbd093-ee62-488d-9dad-1e36389f8826",
       "Bio": "No",
@@ -295,7 +295,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with Lightning",
       "AAGUID": "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432",
       "Bio": "No",
@@ -309,7 +309,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Eviden",
       "Description": "CardOS FIDO2 Token",
       "AAGUID": "8da0e4dc-164b-454e-972e-88f362b23d59",
       "Bio": "No",
@@ -323,7 +323,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Thales",
       "Description": "eToken Fusion FIPS",
       "AAGUID": "050dd0bc-ff20-4265-8d5d-305c4b215192",
       "Bio": "No",
@@ -337,7 +337,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Foongton",
       "Description": "Foongtone FIDO Authenticator",
       "AAGUID": "46544d5d-8f5d-4db4-89ac-ea8977073fff",
       "Bio": "No",
@@ -351,7 +351,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "IIST",
       "Description": "IIST FIDO2 Authenticator",
       "AAGUID": "4b89f401-464e-4745-a520-486ddfc5d80e",
       "Bio": "No",
@@ -365,7 +365,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Winmagic",
       "Description": "WinMagic FIDO Eazy - Software",
       "AAGUID": "31c3f7ff-bf15-4327-83ec-9336abcbcd34",
       "Bio": "No",
@@ -379,7 +379,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with Lightning (RC Preview)",
       "AAGUID": "9e66c661-e428-452a-a8fb-51f7ed088acf",
       "Bio": "No",
@@ -393,7 +393,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with Lightning Preview",
       "AAGUID": "3124e301-f14e-4e38-876d-fbeeb090e7bf",
       "Bio": "No",
@@ -407,7 +407,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Securité Carte à Puce",
       "Description": "ESS Smart Card Inc. Authenticator",
       "AAGUID": "5343502d-5343-5343-6172-644649444f32",
       "Bio": "No",
@@ -421,7 +421,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Thales",
       "Description": "eToken Fusion NFC PIV Enterprise",
       "AAGUID": "c3f47802-de73-4dfc-ba22-671fe3304f90",
       "Bio": "No",
@@ -435,7 +435,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
       "AAGUID": "3b24bf49-1d45-4484-a917-13175df0867b",
       "Bio": "No",
@@ -449,7 +449,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "TruU",
       "Description": "TruU Windows Authenticator",
       "AAGUID": "95e4d58c-056e-4a65-866d-f5a69659e880",
       "Bio": "No",
@@ -463,7 +463,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Ledger",
       "Description": "Ledger Nano S FIDO2 Authenticator",
       "AAGUID": "341e4da9-3c2e-8103-5a9f-aad887135200",
       "Bio": "No",
@@ -477,7 +477,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "Security Key NFC by Yubico - Enterprise Edition",
       "AAGUID": "ed042a3a-4b22-4455-bb69-a267b652ae7e",
       "Bio": "No",
@@ -505,7 +505,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Series - Multi-protocol Edition",
       "AAGUID": "34744913-4f57-4e6e-a527-e9ec3c4b94e6",
       "Bio": "Yes",
@@ -519,7 +519,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with NFC Preview",
       "AAGUID": "62e54e98-c209-4df3-b692-de71bb6a8528",
       "Bio": "No",
@@ -533,7 +533,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC",
       "AAGUID": "d7781e5d-e353-46aa-afe2-3ca49f13332a",
       "Bio": "No",
@@ -547,7 +547,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "GSTAG",
       "Description": "GSTAG OAK FIDO2 Authenticator",
       "AAGUID": "773c30d9-5919-4e96-a4f5-db65e95cf890",
       "Bio": "No",
@@ -561,7 +561,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Veridium",
       "Description": "Veridium iOS SDK",
       "AAGUID": "6e8d1eae-8d40-4c25-bcf8-4633959afc71",
       "Bio": "Yes",
@@ -575,7 +575,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "TruU",
       "Description": "TruU Windows Authenticator",
       "AAGUID": "ba86dc56-635f-4141-aef6-00227b1b9af6",
       "Bio": "No",
@@ -589,7 +589,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC (Enterprise Profile)",
       "AAGUID": "6ab56fad-881f-4a43-acb2-0be065924522",
       "Bio": "No",
@@ -603,7 +603,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Thales",
       "Description": "eToken Fusion NFC FIPS",
       "AAGUID": "10c70715-2a9a-4de1-b0aa-3cff6d496d39",
       "Bio": "No",
@@ -617,7 +617,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Infineon Technologies AG",
       "Description": "USB/NFC Passcode Authenticator",
       "AAGUID": "cfcb13a2-244f-4b36-9077-82b79d6a7de7",
       "Bio": "No",
@@ -631,7 +631,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Ledger",
       "Description": "Ledger Nano S Plus FIDO2 Authenticator",
       "AAGUID": "58b44d0b-0a7c-f33a-fd48-f7153c871352",
       "Bio": "No",
@@ -645,7 +645,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
       "AAGUID": "3a662962-c6d4-4023-bebb-98ae92e78e20",
       "Bio": "No",
@@ -659,7 +659,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "Security Key NFC by Yubico",
       "AAGUID": "b7d3f68e-88a6-471e-9ecf-2df26d041ede",
       "Bio": "No",
@@ -673,7 +673,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
       "AAGUID": "9ff4cc65-6154-4fff-ba09-9e2af7882ad2",
       "Bio": "No",
@@ -687,7 +687,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC Preview",
       "AAGUID": "34f5766d-1536-4a24-9033-0e294e510fb0",
       "Bio": "Yes",
@@ -701,7 +701,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "OneKey",
       "Description": "OneKey FIDO2 Bluetooth Authenticator",
       "AAGUID": "70e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
       "Bio": "No",
@@ -715,7 +715,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with NFC",
       "AAGUID": "fcc0118f-cd45-435b-8da1-9782b2da0715",
       "Bio": "No",
@@ -729,7 +729,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with Lightning",
       "AAGUID": "24673149-6c86-42e7-98d9-433fb5b73296",
       "Bio": "No",
@@ -743,7 +743,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
       "AAGUID": "8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee",
       "Bio": "Yes",
@@ -757,7 +757,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "VeroCard",
       "Description": "VeroCard FIDO2 Authenticator",
       "AAGUID": "99ed6c29-4573-4847-816d-78ad8f1c75ef",
       "Bio": "No",
@@ -771,7 +771,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "WinMagic",
       "Description": "WinMagic FIDO Eazy - TPM",
       "AAGUID": "970c8d9c-19d2-46af-aa32-3f448db49e35",
       "Bio": "No",
@@ -785,7 +785,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series (Enterprise Profile)",
       "AAGUID": "20ac7a17-c814-4833-93fe-539f0d5e3389",
       "Bio": "No",
@@ -799,7 +799,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
       "AAGUID": "b90e7dc1-316e-4fee-a25a-56a666a670fe",
       "Bio": "No",
@@ -813,7 +813,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "ellipticSecure",
       "Description": "ellipticSecure MIRkey USB Authenticator",
       "AAGUID": "eb3b131e-59dc-536a-d176-cb7306da10f5",
       "Bio": "No",
@@ -841,7 +841,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series (Enterprise Profile)",
       "AAGUID": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
       "Bio": "No",
