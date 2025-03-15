@@ -1,3 +1,14 @@
+# Merge Log - 2025-03-15 10:32:33
+
+Vendor 'Android' for description 'Android Authenticator with SafetyNet Attestation' has become valid.
+
+Vendor 'VivoKey' for description 'VivoKey Apex FIDO2' has become valid.
+
+Vendor 'KeyVault' for description 'KeyVault Secp256R1 FIDO2 CTAP2 Authenticator' has become valid.
+
+Vendor 'Dapple Security' for description 'Dapple Authenticator from Dapple Security Inc.' has become valid.
+
+
 # Merge Log - 2025-03-15 10:27:41
 
 Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with NFC (Enterprise Profile)' has become valid.
