@@ -1,3 +1,28 @@
+# Merge Log - 2025-03-15 10:27:41
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with NFC (Enterprise Profile)' has become valid.
+
+Vendor 'ID-One' for description 'ID-One Card' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with Lightning Preview' has become valid.
+
+Vendor 'Yubico' for description 'Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)' has become valid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Authenticator' has become valid.
+
+Vendor 'ZTPass' for description 'ZTPass SmartAuth' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey Bio Series - FIDO Edition' has become valid.
+
+Vendor 'Token Ring' for description 'Token Ring 3 FIDO2 Authenticator' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series' has become valid.
+
+Vendor 'Pone Biometrics' for description 'Pone Biometrics OFFPAD Authenticator' has become valid.
+
+
 # Merge Log - 2025-03-15 10:10:40
 
 Vendor 'IIST' for description 'IIST FIDO2 Authenticator' has become valid.
