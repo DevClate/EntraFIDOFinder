@@ -1,3 +1,74 @@
+# Merge Log - 2025-03-15 09:59:57
+
+Vendor 'Yubico' for description 'YubiKey 5 Series (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey Bio Series - Multi-protocol Edition' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey Bio Series - FIDO Edition (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with Lightning' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with NFC (RC Preview)' has become valid.
+
+Vendor 'Thales' for description 'eToken Fusion NFC FIPS' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with Lightning (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'Security Key NFC by Yubico - Enterprise Edition' has become valid.
+
+Vendor 'Yubico' for description 'Security Key NFC by Yubico' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with Lightning (Enterprise Profile)' has become valid.
+
+Vendor 'Thales' for description 'eToken Fusion FIPS' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with Lightning (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with Lightning' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey Bio Series - FIDO Edition' has become valid.
+
+Vendor 'Yubico' for description 'Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC Preview' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series (RC Preview)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with Lightning (RC Preview)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with NFC' has become valid.
+
+Vendor 'Yubico' for description 'Security Key NFC by Yubico - Enterprise Edition Preview' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC' has become valid.
+
+Vendor 'Yubico' for description 'Security Key NFC by Yubico Preview' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC (Enterprise Profile)' has become valid.
+
+Vendor 'Thales' for description 'eToken Fusion NFC PIV' has become valid.
+
+Vendor 'Thales' for description 'eToken Fusion NFC PIV Enterprise' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with NFC Preview' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with Lightning Preview' has become valid.
+
+Vendor 'HID Global' for description 'HID Crescendo Key V3' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series (Enterprise Profile)' has become valid.
+
+Vendor 'HID Global' for description 'HID Crescendo 4000' has become valid.
+
+
 # Merge Log - 2025-03-14 00:21:36
 
 Vendor 'eWBM' for description 'eWBM eFA500 FIDO2 Authenticator' has become valid.
