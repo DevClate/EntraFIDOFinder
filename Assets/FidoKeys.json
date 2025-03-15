@@ -1,7 +1,7 @@
 {
   "keys": [
     {
-      "Vendor": "",
+      "Vendor": "VivoKey",
       "Description": "VivoKey Apex FIDO2",
       "AAGUID": "d7a423ad-3e19-4492-9200-78137dccc136",
       "Bio": "No",
@@ -15,7 +15,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Dapple Security",
       "Description": "Dapple Authenticator from Dapple Security Inc.",
       "AAGUID": "6dae43be-af9c-417b-8b9f-1b611168ec60",
       "Bio": "No",
@@ -29,7 +29,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
       "AAGUID": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
       "Bio": "No",
@@ -43,7 +43,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Token Ring",
       "Description": "Token Ring 3 FIDO2 Authenticator",
       "AAGUID": "c62100de-759b-4bf8-b22b-63b3e3a80401",
       "Bio": "Yes",
@@ -71,7 +71,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Pone Biometrics",
       "Description": "Pone Biometrics OFFPAD Authenticator",
       "AAGUID": "09591fc6-9811-48f7-8f57-b9f23df6413f",
       "Bio": "Yes",
@@ -85,7 +85,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series",
       "AAGUID": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
       "Bio": "No",
@@ -99,7 +99,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
       "AAGUID": "72c6b72d-8512-4c66-8359-9d3d10d9222f",
       "Bio": "No",
@@ -113,7 +113,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "OneKey",
       "Description": "OneKey FIDO2 Authenticator",
       "AAGUID": "69e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
       "Bio": "No",
@@ -127,7 +127,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Android",
       "Description": "Android Authenticator with SafetyNet Attestation",
       "AAGUID": "b93fd961-f2e6-462f-b122-82002247de78",
       "Bio": "Yes",
@@ -155,7 +155,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "KeyVault",
       "Description": "KeyVault Secp256R1 FIDO2 CTAP2 Authenticator",
       "AAGUID": "d61d3b87-3e7c-4aea-9c50-441c371903ad",
       "Bio": "Yes",
@@ -169,7 +169,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Series - FIDO Edition",
       "AAGUID": "7409272d-1ff9-4e10-9fc9-ac0019c124fd",
       "Bio": "Yes",
@@ -183,7 +183,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "ZTPass",
       "Description": "ZTPass SmartAuth",
       "AAGUID": "99bf4610-ec26-4252-b31f-7380ccd59db5",
       "Bio": "No",
@@ -197,7 +197,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC (Enterprise Profile)",
       "AAGUID": "1ac71f64-468d-4fe0-bef1-0e5f2f551f18",
       "Bio": "No",
@@ -211,7 +211,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "ID-One",
       "Description": "ID-One Card",
       "AAGUID": "bb405265-40cf-4115-93e5-a332c1968d8c",
       "Bio": "No",
@@ -225,7 +225,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 FIPS Series with Lightning Preview",
       "AAGUID": "5b0e46ba-db02-44ac-b979-ca9b84f5e335",
       "Bio": "No",
