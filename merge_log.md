@@ -1,3 +1,54 @@
+# Merge Log - 2025-03-15 10:10:40
+
+Vendor 'IIST' for description 'IIST FIDO2 Authenticator' has become valid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Bluetooth Authenticator' has become valid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become valid.
+
+Vendor 'TruU' for description 'TruU Windows Authenticator' has become valid.
+
+Vendor 'VeroCard' for description 'VeroCard FIDO2 Authenticator' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Nano S FIDO2 Authenticator' has become valid.
+
+Vendor 'Veridium' for description 'Veridium iOS SDK' has become valid.
+
+Vendor 'Nitrokey' for description 'Nitrokey 3 AM' has become valid.
+
+Vendor 'ellipticSecure' for description 'ellipticSecure MIRkey USB Authenticator' has become valid.
+
+Vendor 'Veridium' for description 'Veridium Android SDK' has become valid.
+
+Vendor 'Foongton' for description 'Foongtone FIDO Authenticator' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Nano S Plus FIDO2 Authenticator' has become valid.
+
+Vendor 'TruU' for description 'TruU Windows Authenticator' has become valid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - Phone' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Nano X FIDO2 Authenticator' has become valid.
+
+Vendor 'Securité Carte à Puce' for description 'ESS Smart Card Inc. Authenticator' has become valid.
+
+Vendor 'Eviden' for description 'CardOS FIDO2 Token' has become valid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become valid.
+
+Vendor 'Infineon Technologies AG' for description 'USB/NFC Passcode Authenticator' has become valid.
+
+Vendor 'Samsung' for description 'Samsung Pass' has become valid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - TPM' has become valid.
+
+Vendor 'ZTPass' for description 'ZTPass SmartAuth' has become valid.
+
+Vendor 'Winmagic' for description 'WinMagic FIDO Eazy - Software' has become valid.
+
+Vendor 'GSTAG' for description 'GSTAG OAK FIDO2 Authenticator' has become valid.
+
+
 # Merge Log - 2025-03-15 09:59:57
 
 Vendor 'Yubico' for description 'YubiKey 5 Series (Enterprise Profile)' has become valid.
