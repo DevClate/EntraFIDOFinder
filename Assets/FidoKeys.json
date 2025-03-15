@@ -17719,7 +17719,7 @@
       "NFC": "Yes",
       "BLE": "No",
       "Version": null,
-      "ValidVendor": "Yes",
+      "ValidVendor": "No",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
