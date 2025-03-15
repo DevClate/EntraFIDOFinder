@@ -1,3 +1,8 @@
+# Merge Log - 2025-03-15 11:00:03
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC (Enterprise Profile)' has become valid.
+
+
 # Merge Log - 2025-03-15 10:55:24
 
 Vendor 'Yubico' for description 'YubiKey 5 Series (Enterprise Profile)' has become valid.
