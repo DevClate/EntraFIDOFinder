@@ -1,3 +1,8 @@
+# Merge Log - 2025-03-15 10:55:24
+
+Vendor 'Yubico' for description 'YubiKey 5 Series (Enterprise Profile)' has become valid.
+
+
 # Merge Log - 2025-03-15 10:34:48
 
 Vendor 'Veridium' for description 'Veridium iOS SDK' has become valid.
