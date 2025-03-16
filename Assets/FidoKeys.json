@@ -5,7 +5,7 @@
   },
   "keys": [
     {
-      "Vendor": "",
+      "Vendor": "TruU",
       "Description": "FIDO Alliance TruU Sample FIDO2 Authenticator",
       "AAGUID": "ca87cb70-4c1b-4579-a8e8-4efdd7c007e0",
       "Bio": "Yes",
@@ -14,9 +14,8 @@
       "BLE": "No",
       "Version": null,
       "ValidVendor": "No",
-      "authenticatorGetInfo": null,
-      "statusReports": null,
-      "timeOfLastStatusChange": null
+      "metadataStatement": {
+    
     },
     {
       "Vendor": "",
