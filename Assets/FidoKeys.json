@@ -879,9 +879,8 @@
       "BLE": "No",
       "Version": null,
       "ValidVendor": "Yes",
-      "authenticatorGetInfo": null,
-      "statusReports": null,
-      "timeOfLastStatusChange": null
+       "metadataStatement": {
+        "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
     },
     {
       "Vendor": "Arculus",
