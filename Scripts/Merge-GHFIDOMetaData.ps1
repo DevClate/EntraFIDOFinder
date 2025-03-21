@@ -167,8 +167,11 @@ foreach ($AAGUID in $CommonAAGUIDs) {
     $FAAAKey = $FIDOAKeys.entries | Where-Object { $_.aaguid -eq $AAGUID }
 
     if ($EXXXKey -and $FAAAKey) {
+        # Check if timeOfLastStatusChange property exists, and add it if it doesn't
+        $hasProperty = $EXXXKey.PSObject.Properties.Name -contains "timeOfLastStatusChange"
+
         # Update timeOfLastStatusChange if different
-        if ($EXXXKey.timeOfLastStatusChange -ne $FAAAKey.timeOfLastStatusChange) {
+        if ($hasProperty -and $EXXXKey.timeOfLastStatusChange -ne $FAAAKey.timeOfLastStatusChange) {
             $timestamp = Get-Timestamp
             $logMessage = @"
 $timestamp - AAGUID: $AAGUID
@@ -186,13 +189,38 @@ $($FAAAKey.timeOfLastStatusChange)
             # Set the changes made flag to true
             $script:ChangesMade = $true
         }
+        # If property doesn't exist but FAAA has it, add it
+        elseif (-not $hasProperty -and $FAAAKey.timeOfLastStatusChange) {
+            $timestamp = Get-Timestamp
+            $logMessage = @"
+$timestamp - AAGUID: $AAGUID
+Adding timeOfLastStatusChange property
+New Value:
+$($FAAAKey.timeOfLastStatusChange)
 
-        # Normalize versions
-        $EXXXKey.metadataStatement = Normalize-Versions $EXXXKey.metadataStatement
-        $FAAAKey.metadataStatement = Normalize-Versions $FAAAKey.metadataStatement
+"@
+            Write-Output $logMessage
+            Add-ToLogBuffer -Value $logMessage
+            
+            # Add the property to the object
+            $EXXXKey | Add-Member -MemberType NoteProperty -Name "timeOfLastStatusChange" -Value $FAAAKey.timeOfLastStatusChange
+            
+            # Set the changes made flag to true
+            $script:ChangesMade = $true
+        }
+
+        # Normalize versions if metadataStatement exists
+        if ($EXXXKey.PSObject.Properties.Name -contains "metadataStatement" -and $EXXXKey.metadataStatement) {
+            $EXXXKey.metadataStatement = Normalize-Versions $EXXXKey.metadataStatement
+        }
+        
+        if ($FAAAKey.PSObject.Properties.Name -contains "metadataStatement" -and $FAAAKey.metadataStatement) {
+            $FAAAKey.metadataStatement = Normalize-Versions $FAAAKey.metadataStatement
+        }
         
         # Check if EXXX entry has no metadataStatement but FAAA does
-        if ((-not $EXXXKey.metadataStatement -or $EXXXKey.metadataStatement -eq $null) -and $FAAAKey.metadataStatement) {
+        $hasMetadataStatement = $EXXXKey.PSObject.Properties.Name -contains "metadataStatement"
+        if ((-not $hasMetadataStatement -or $EXXXKey.metadataStatement -eq $null) -and $FAAAKey.metadataStatement) {
             $timestamp = Get-Timestamp
             $logMessage = @"
 $timestamp - AAGUID: $AAGUID
@@ -204,8 +232,12 @@ Description: $($EXXXKey.Description)
             Write-Output $logMessage
             Add-ToLogBuffer -Value $logMessage
             
-            # Copy the metadataStatement from FAAA to EXXX
-            $EXXXKey.metadataStatement = $FAAAKey.metadataStatement
+            # Add or set metadataStatement property
+            if (-not $hasMetadataStatement) {
+                $EXXXKey | Add-Member -MemberType NoteProperty -Name "metadataStatement" -Value $FAAAKey.metadataStatement
+            } else {
+                $EXXXKey.metadataStatement = $FAAAKey.metadataStatement
+            }
             
             # Set the changes made flag to true
             $script:ChangesMade = $true
@@ -229,20 +261,29 @@ Description: $($EXXXKey.Description)
         }
         
         # If timeOfLastStatusChange is null but exists in FAAA, copy it over
-        if ($EXXXKey.timeOfLastStatusChange -eq $null -and $FAAAKey.timeOfLastStatusChange) {
+        if ($EXXXKey.PSObject.Properties.Name -contains "timeOfLastStatusChange" -and 
+            $EXXXKey.timeOfLastStatusChange -eq $null -and 
+            $FAAAKey.timeOfLastStatusChange) {
             $EXXXKey.timeOfLastStatusChange = $FAAAKey.timeOfLastStatusChange
             $script:ChangesMade = $true
         }
 
-        # Compare and update metadataStatement
-        Compare-Objects -obj1 ([ref]$EXXXKey.metadataStatement) -obj2 ([ref]$FAAAKey.metadataStatement) -update -AAGUID $AAGUID
+        # Compare and update metadataStatement if both exist
+        if ($EXXXKey.PSObject.Properties.Name -contains "metadataStatement" -and 
+            $EXXXKey.metadataStatement -and 
+            $FAAAKey.metadataStatement) {
+            Compare-Objects -obj1 ([ref]$EXXXKey.metadataStatement) -obj2 ([ref]$FAAAKey.metadataStatement) -update -AAGUID $AAGUID
+        }
 
-        # Compare and update statusReports
-        if ($EXXXKey.statusReports -and $FAAAKey.statusReports) {
+        # Compare and update statusReports if both exist
+        if ($EXXXKey.PSObject.Properties.Name -contains "statusReports" -and 
+            $FAAAKey.PSObject.Properties.Name -contains "statusReports" -and
+            $EXXXKey.statusReports -and 
+            $FAAAKey.statusReports) {
             Compare-Objects -obj1 ([ref]$EXXXKey.statusReports) -obj2 ([ref]$FAAAKey.statusReports) -path 'statusReports' -update -AAGUID $AAGUID
         }
-    } # This closing brace was missing - it closes the if ($EXXXKey -and $FAAAKey) block
-} # This closes the foreach loop
+    } # End of if ($EXXXKey -and $FAAAKey) block
+} # End of foreach loop
 
 # Enforce that 'versions' properties are always arrays
 foreach ($key in $existingFIDOKeys.keys) {
