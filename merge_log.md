@@ -1,3 +1,8 @@
+# Merge Log - 2025-03-21 08:37:35
+
+Updated 'Version' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from '' to 'FIDO 2.1 PRE'.
+
+
 # Merge Log - 2025-03-21 08:22:15
 
 Updated 'Version' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6' from '' to 'FIDO_2_1'.
