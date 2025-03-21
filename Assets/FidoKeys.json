@@ -879,9 +879,6 @@
       "BLE": "No",
       "Version": null,
       "ValidVendor": "Yes",
-      "metadataStatement": {
-        "legalHeader": "Submeement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
-        "aaguid": "b93fd961-f2e6-462f-b122-82002247de78"
     },
     {
       "Vendor": "Arculus",
