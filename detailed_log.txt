@@ -1,3 +1,11 @@
+DETAILED LOG - 2025-03-21 08:22:15
+
+Updated 'Version' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6' from '' to 'FIDO_2_1'.
+
+Updated 'Version' for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0' from '' to 'FIDO_2_0'.
+
+
+
 DETAILED LOG - 2025-03-21 00:22:11
 
 No changes detected during this run.
@@ -1561,6 +1569,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
