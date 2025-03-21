@@ -1,4 +1,1274 @@
 
+===== Script Run on 2025-03-21 10:36:33 UTC =====
+2025-03-21 10:36:28 - AAGUID: 5ca1ab1e-fa57-1337-f1d0-a117371ca702
+Updating timeOfLastStatusChange
+Old Value:
+2023-01-18
+
+New Value:
+2024-10-11
+
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : description : "ACS FIDO Authenticator" -> "Allthenticator Android App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers"
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorVersion : 10000 -> 5
+2025-03-21 10:36:28 - AAGUID: 5ca1ab1e-fa57-1337-f1d0-a117371ca702
+Path: upv
+Old Value:
+[
+  {
+    "major": 1,
+    "minor": 1
+  },
+  {
+    "major": 1,
+    "minor": 0
+  }
+]
+
+New Value:
+{
+  "major": 1,
+  "minor": 0
+}
+
+2025-03-21 10:36:28 - AAGUID: 5ca1ab1e-fa57-1337-f1d0-a117371ca702
+Path: authenticationAlgorithms
+Old Value:
+"secp256r1_ecdsa_sha256_raw"
+
+New Value:
+[
+  "rsassa_pkcsv15_sha256_raw",
+  "secp256r1_ecdsa_sha256_raw"
+]
+
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : icon : "data:image/png;base64,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" -> "data:image/png;base64,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"
+2025-03-21 10:36:28 - AAGUID: 5ca1ab1e-fa57-1337-f1d0-a117371ca702
+Path: authenticatorGetInfo.extensions
+Old Value:
+[
+  "credBlob",
+  "credProtect",
+  "hmac-secret",
+  "minPinLength"
+]
+
+New Value:
+[
+  "credProtect",
+  "hmac-secret"
+]
+
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.aaguid : "5ca1ab1e-fa57-1337-f1d0-a117371ca702" -> "5ca1ab1efa571337f1d0a117371ca702"
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.plat : false -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.pinUvAuthToken : true -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.noMcGaPermissionsWithClientPin : false -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.authnrCfg : true -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.credMgmt : true -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.credentialMgmtPreview : true -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.setMinPINLength : true -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.options.makeCredUvNotRqd : true -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.maxMsgSize : 2048 -> 1200
+2025-03-21 10:36:28 - AAGUID: 5ca1ab1e-fa57-1337-f1d0-a117371ca702
+Path: authenticatorGetInfo.pinUvAuthProtocols
+Old Value:
+[
+  1,
+  2
+]
+
+New Value:
+1
+
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.maxCredentialCountInList : 20 -> 16
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.maxCredentialIdLength : 104 -> 128
+2025-03-21 10:36:28 - AAGUID: 5ca1ab1e-fa57-1337-f1d0-a117371ca702
+Path: authenticatorGetInfo.algorithms
+Old Value:
+{
+  "type": "public-key",
+  "alg": -7
+}
+
+New Value:
+[
+  {
+    "type": "public-key",
+    "alg": -7
+  },
+  {
+    "type": "public-key",
+    "alg": -257
+  }
+]
+
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.minPINLength : 4 -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.firmwareVersion : 10000 -> 5
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.maxCredBlobLength : 128 -> null
+2025-03-21 10:36:28 - Updating AAGUID 5ca1ab1e-fa57-1337-f1d0-a117371ca702 : authenticatorGetInfo.maxRPIDsForSetMinPINLength : 20 -> null
+2025-03-21 10:36:28 - AAGUID: b93fd961-f2e6-462f-b122-82002247de78
+Adding timeOfLastStatusChange property
+New Value:
+2020-12-17
+
+2025-03-21 10:36:28 - AAGUID: b93fd961-f2e6-462f-b122-82002247de78
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Android
+Description: Android Authenticator with SafetyNet Attestation
+
+2025-03-21 10:36:28 - AAGUID: 1d1b4e33-76a1-47fb-97a0-14b10d0933f1
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-23
+
+2025-03-21 10:36:28 - AAGUID: 1d1b4e33-76a1-47fb-97a0-14b10d0933f1
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Cryptnox
+Description: Cryptnox FIDO2.1
+
+2025-03-21 10:36:28 - AAGUID: 6dae43be-af9c-417b-8b9f-1b611168ec60
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-06-05
+
+2025-03-21 10:36:28 - AAGUID: 6dae43be-af9c-417b-8b9f-1b611168ec60
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Dapple Security
+Description: Dapple Authenticator from Dapple Security Inc.
+
+2025-03-21 10:36:28 - AAGUID: eb3b131e-59dc-536a-d176-cb7306da10f5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2019-10-28
+
+2025-03-21 10:36:28 - AAGUID: eb3b131e-59dc-536a-d176-cb7306da10f5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ellipticSecure
+Description: ellipticSecure MIRkey USB Authenticator
+
+2025-03-21 10:36:28 - AAGUID: 454e5346-4944-4ffd-6c93-8e9267193e9b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-05
+
+2025-03-21 10:36:28 - AAGUID: 454e5346-4944-4ffd-6c93-8e9267193e9b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ensurity
+Description: Ensurity AUTH BioPro
+
+2025-03-21 10:36:28 - AAGUID: 8da0e4dc-164b-454e-972e-88f362b23d59
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-18
+
+2025-03-21 10:36:28 - AAGUID: 8da0e4dc-164b-454e-972e-88f362b23d59
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Eviden
+Description: CardOS FIDO2 Token
+
+2025-03-21 10:36:28 - AAGUID: 361a3082-0278-4583-a16f-72a527f973e4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2019-07-18
+
+2025-03-21 10:36:28 - AAGUID: 361a3082-0278-4583-a16f-72a527f973e4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: eWBM
+Description: eWBM eFA500 FIDO2 Authenticator
+
+2025-03-21 10:36:29 - AAGUID: a02140b7-0cbd-42e1-a9b5-a39da2545114
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-20
+
+2025-03-21 10:36:29 - AAGUID: a02140b7-0cbd-42e1-a9b5-a39da2545114
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian BioPass FIDO2 Plus (Enterprise Profile)
+
+2025-03-21 10:36:29 - AAGUID: 2bff89f2-323a-48fc-b7c8-9ff7fe87c07e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-20
+
+2025-03-21 10:36:29 - AAGUID: 2bff89f2-323a-48fc-b7c8-9ff7fe87c07e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian BioPass FIDO2 Pro (Enterprise Profile)
+
+2025-03-21 10:36:29 - AAGUID: 260e3021-482d-442d-838c-7edfbe153b7e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-07-19
+
+2025-03-21 10:36:29 - AAGUID: 260e3021-482d-442d-838c-7edfbe153b7e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian ePass FIDO2-NFC Plus Authenticator
+
+2025-03-21 10:36:29 - AAGUID: 2c0df832-92de-4be1-8412-88a8f074df4a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-04-24
+
+2025-03-21 10:36:29 - AAGUID: 2c0df832-92de-4be1-8412-88a8f074df4a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian FIDO Smart Card
+
+2025-03-21 10:36:29 - AAGUID: 12ded745-4bed-47d4-abaa-e713f51d6393
+Path: attestationRootCertificates
+Old Value:
+[
+  "MIIB2DCCAX6gAwIBAgIQGBUrQbdDrm20FZnDsX2CBTAKBggqhkjOPQQDAjBLMQswCQYDVQQGEwJVUzEdMBsGA1UECgwURmVpdGlhbiBUZWNobm9sb2dpZXMxHTAbBgNVBAMMFEZlaXRpYW4gRklETyBSb290IENBMCAXDTE4MDQwMTAwMDAwMFoYDzIwNDgwMzMxMjM1OTU5WjBLMQswCQYDVQQGEwJVUzEdMBsGA1UECgwURmVpdGlhbiBUZWNobm9sb2dpZXMxHTAbBgNVBAMMFEZlaXRpYW4gRklETyBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCTf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzqNCMEAwHQYDVR0OBBYEFEu9hyYRrRyJzwRYvnDSCIxrFiO3MA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMCA0gAMEUCIDHSb2mbNDAUNXvpPU0oWKeNye0fQ2l9D01AR2+sLZdhAiEAo3wz684IFMVsCCRmuJqxH6FQRESNqezuo1E+KkGxWuM=",
+  "MIIB2DCCAX6gAwIBAgIQFZ97ws2JGPEoa5NI+p8z1jAKBggqhkjOPQQDAjBLMQswCQYDVQQGEwJDTjEdMBsGA1UECgwURmVpdGlhbiBUZWNobm9sb2dpZXMxHTAbBgNVBAMMFEZlaXRpYW4gRklETyBSb290IENBMCAXDTE4MDQwMTAwMDAwMFoYDzIwNDgwMzMxMjM1OTU5WjBLMQswCQYDVQQGEwJDTjEdMBsGA1UECgwURmVpdGlhbiBUZWNobm9sb2dpZXMxHTAbBgNVBAMMFEZlaXRpYW4gRklETyBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9JgGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs86NCMEAwHQYDVR0OBBYEFNGhmE2Bf8O5a/YHZ71QEv6QRfFUMA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMCA0gAMEUCIQC3sT1lBjGeF+xKTpzV1KYU2ckahTd4mLJyzYOhaHv4igIgD2JYkfyH5Q4Bpo8rroO0It7oYjF2kgy/eSZ3U9Glaqw=",
+  "MIIB2TCCAX6gAwIBAgIQFQNKW+7zbg/7d+lTyrIWwDAKBggqhkjOPQQDAjBLMQswCQYDVQQGEwJVUzEdMBsGA1UECgwURmVpdGlhbiBUZWNobm9sb2dpZXMxHTAbBgNVBAMMFEZlaXRpYW4gRklETyBSb290IENBMCAXDTIyMDYwODAwMDAwMFoYDzIwNTIwNjA3MjM1OTU5WjBLMQswCQYDVQQGEwJVUzEdMBsGA1UECgwURmVpdGlhbiBUZWNobm9sb2dpZXMxHTAbBgNVBAMMFEZlaXRpYW4gRklETyBSb290IENBMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCTf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzqNCMEAwHQYDVR0OBBYEFEu9hyYRrRyJzwRYvnDSCIxrFiO3MA8GA1UdEwEB/wQFMAMBAf8wDgYDVR0PAQH/BAQDAgEGMAoGCCqGSM49BAMCA0kAMEYCIQCB0NFQSN0z4lWz/yc36ewrTCzttK/qFvlaPOKh+T1o6wIhAP0oKKA+cicsDy3Y3n+VlP8eB3PBzMkhvW/9ISXCw+VB",
+  "MIIB2DCCAX+gAwIBAgIRAMs8YXVBoBNuXUjqfCoX7y4wCgYIKoZIzj0EAwIwSzELMAkGA1UEBhMCVVMxHTAbBgNVBAoMFEZlaXRpYW4gVGVjaG5vbG9naWVzMR0wGwYDVQQDDBRGZWl0aWFuIEZJRE8gRUEgUm9vdDAgFw0yMzAxMDEwMDAwMDBaGA8yMDUyMTIzMTIzNTk1OVowSzELMAkGA1UEBhMCVVMxHTAbBgNVBAoMFEZlaXRpYW4gVGVjaG5vbG9naWVzMR0wGwYDVQQDDBRGZWl0aWFuIEZJRE8gRUEgUm9vdDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABD2LHHAQqYbdR1WZluertM30rWhorYavWmMVa4ndX9PZwuREpLQ4m1nElqQKMnRE8/4C+Rqwiav+mpI4kxd5e5ujQjBAMB0GA1UdDgQWBBS3ZZjyGlhZ99N1vLoTPXVUa4ZEYDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAKBggqhkjOPQQDAgNHADBEAiAoD+R6kolIWaNJz4hz03D3ges3GbMBjAWpkOUg9ayFgwIgbEw7AYSyk68OvxgXezgndTRTEuSWT+fdRnLaBNsaTw0=",
+  "MIIBfjCCASWgAwIBAgIBATAKBggqhkjOPQQDAjAXMRUwEwYDVQQDDAxGVCBGSURPIDAyMDAwIBcNMTYwNTAxMDAwMDAwWhgPMjA1MDA1MDEwMDAwMDBaMBcxFTATBgNVBAMMDEZUIEZJRE8gMDIwMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABNBmrRqVOxztTJVN19vtdqcL7tKQeol2nnM2/yYgvksZnr50SKbVgIEkzHQVOu80LVEE3lVheO1HjggxAlT6o4WjYDBeMB0GA1UdDgQWBBRJFWQt1bvG3jM6XgmV/IcjNtO/CzAfBgNVHSMEGDAWgBRJFWQt1bvG3jM6XgmV/IcjNtO/CzAMBgNVHRMEBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAKBggqhkjOPQQDAgNHADBEAiAwfPqgIWIUB+QBBaVGsdHy0s5RMxlkzpSX/zSyTZmUpQIgB2wJ6nZRM8oX/nA43Rh6SJovM2XwCCH//+LirBAbB0M="
+]
+
+New Value:
+[
+  "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"
+]
+
+2025-03-21 10:36:29 - AAGUID: 12755c32-8ad1-46eb-881c-e0b38d848b09
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-19
+
+2025-03-21 10:36:29 - AAGUID: 12755c32-8ad1-46eb-881c-e0b38d848b09
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)
+
+2025-03-21 10:36:29 - AAGUID: 42df17de-06ba-4177-a2bb-6701be1380d6
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-20
+
+2025-03-21 10:36:29 - AAGUID: 42df17de-06ba-4177-a2bb-6701be1380d6
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian BioPass FIDO2 Plus Authenticator
+
+2025-03-21 10:36:29 - AAGUID: 4c0cf95d-2f40-43b5-ba42-4c83a11c04ba
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-20
+
+2025-03-21 10:36:29 - AAGUID: 4c0cf95d-2f40-43b5-ba42-4c83a11c04ba
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian BioPass FIDO2 Pro Authenticator
+
+2025-03-21 10:36:29 - AAGUID: 46544d5d-8f5d-4db4-89ac-ea8977073fff
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-26
+
+2025-03-21 10:36:29 - AAGUID: 46544d5d-8f5d-4db4-89ac-ea8977073fff
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Foongton
+Description: Foongtone FIDO Authenticator
+
+2025-03-21 10:36:29 - AAGUID: 773c30d9-5919-4e96-a4f5-db65e95cf890
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-29
+
+2025-03-21 10:36:29 - AAGUID: 773c30d9-5919-4e96-a4f5-db65e95cf890
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: GSTAG
+Description: GSTAG OAK FIDO2 Authenticator
+
+2025-03-21 10:36:29 - AAGUID: 7991798a-a7f3-487f-98c0-3faf7a458a04
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-23
+
+2025-03-21 10:36:29 - AAGUID: 7991798a-a7f3-487f-98c0-3faf7a458a04
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID Global
+Description: HID Crescendo Key V3
+
+2025-03-21 10:36:29 - AAGUID: 2a55aee6-27cb-42c0-bc6e-04efe999e88a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-02
+
+2025-03-21 10:36:29 - AAGUID: 2a55aee6-27cb-42c0-bc6e-04efe999e88a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID Global
+Description: HID Crescendo 4000
+
+2025-03-21 10:36:29 - AAGUID: 3e078ffd-4c54-4586-8baa-a77da113aec5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-07-11
+
+2025-03-21 10:36:29 - AAGUID: 3e078ffd-4c54-4586-8baa-a77da113aec5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Hideez
+Description: Hideez Key 3 FIDO2
+
+2025-03-21 10:36:29 - AAGUID: f2145e86-211e-4931-b874-e22bba7d01cc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-09
+
+2025-03-21 10:36:29 - AAGUID: f2145e86-211e-4931-b874-e22bba7d01cc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Key
+
+2025-03-21 10:36:29 - AAGUID: bb405265-40cf-4115-93e5-a332c1968d8c
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-20
+
+2025-03-21 10:36:29 - AAGUID: bb405265-40cf-4115-93e5-a332c1968d8c
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Card
+
+2025-03-21 10:36:29 - AAGUID: 82b0a720-127a-4788-b56d-d1d4b2d82eac
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-28
+
+2025-03-21 10:36:29 - AAGUID: 82b0a720-127a-4788-b56d-d1d4b2d82eac
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Key
+
+2025-03-21 10:36:30 - AAGUID: 4b89f401-464e-4745-a520-486ddfc5d80e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-25
+
+2025-03-21 10:36:30 - AAGUID: 4b89f401-464e-4745-a520-486ddfc5d80e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: IIST
+Description: IIST FIDO2 Authenticator
+
+2025-03-21 10:36:30 - AAGUID: cfcb13a2-244f-4b36-9077-82b79d6a7de7
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-04-16
+
+2025-03-21 10:36:30 - AAGUID: cfcb13a2-244f-4b36-9077-82b79d6a7de7
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Infineon Technologies AG
+Description: USB/NFC Passcode Authenticator
+
+2025-03-21 10:36:30 - AAGUID: d61d3b87-3e7c-4aea-9c50-441c371903ad
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-12-12
+
+2025-03-21 10:36:30 - AAGUID: d61d3b87-3e7c-4aea-9c50-441c371903ad
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: KeyVault
+Description: KeyVault Secp256R1 FIDO2 CTAP2 Authenticator
+
+2025-03-21 10:36:30 - AAGUID: 58b44d0b-0a7c-f33a-fd48-f7153c871352
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-09-18
+
+2025-03-21 10:36:30 - AAGUID: 58b44d0b-0a7c-f33a-fd48-f7153c871352
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Nano S Plus FIDO2 Authenticator
+
+2025-03-21 10:36:30 - AAGUID: 341e4da9-3c2e-8103-5a9f-aad887135200
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-04
+
+2025-03-21 10:36:30 - AAGUID: 341e4da9-3c2e-8103-5a9f-aad887135200
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Nano S FIDO2 Authenticator
+
+2025-03-21 10:36:30 - AAGUID: fcb1bcb4-f370-078c-6993-bc24d0ae3fbe
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-09-18
+
+2025-03-21 10:36:30 - AAGUID: fcb1bcb4-f370-078c-6993-bc24d0ae3fbe
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Nano X FIDO2 Authenticator
+
+2025-03-21 10:36:30 - AAGUID: 2cd2f727-f6ca-44da-8f48-5c2e5da000a2
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-29
+
+2025-03-21 10:36:30 - AAGUID: 2cd2f727-f6ca-44da-8f48-5c2e5da000a2
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Nitrokey
+Description: Nitrokey 3 AM
+
+2025-03-21 10:36:30 - AAGUID: bc2fe499-0d8e-4ffe-96f3-94a82840cf8c
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2021-08-10
+
+2025-03-21 10:36:30 - AAGUID: bc2fe499-0d8e-4ffe-96f3-94a82840cf8c
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OCTATCO
+Description: OCTATCO EzQuant FIDO2 AUTHENTICATOR
+
+2025-03-21 10:36:30 - AAGUID: 69e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-08-02
+
+2025-03-21 10:36:30 - AAGUID: 69e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneKey
+Description: OneKey FIDO2 Authenticator
+
+2025-03-21 10:36:30 - AAGUID: 70e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-12-16
+
+2025-03-21 10:36:30 - AAGUID: 70e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneKey
+Description: OneKey FIDO2 Bluetooth Authenticator
+
+2025-03-21 10:36:30 - AAGUID: 09591fc6-9811-48f7-8f57-b9f23df6413f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-11-10
+
+2025-03-21 10:36:30 - AAGUID: 09591fc6-9811-48f7-8f57-b9f23df6413f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Pone Biometrics
+Description: Pone Biometrics OFFPAD Authenticator
+
+2025-03-21 10:36:30 - AAGUID: 59f85fe7-faa5-4c92-9f52-697b9d4d5473
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-10
+
+2025-03-21 10:36:30 - AAGUID: 59f85fe7-faa5-4c92-9f52-697b9d4d5473
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: RSA
+Description: RSA Authenticator 4 for Android
+
+2025-03-21 10:36:30 - AAGUID: 8681a073-5f50-4d52-bce4-e21658d207b3
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-10
+
+2025-03-21 10:36:30 - AAGUID: 8681a073-5f50-4d52-bce4-e21658d207b3
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: RSA
+Description: RSA Authenticator 4 for iOS
+
+2025-03-21 10:36:30 - AAGUID: 53414d53-554e-4700-0000-000000000000
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-03-12
+
+2025-03-21 10:36:30 - AAGUID: 53414d53-554e-4700-0000-000000000000
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Samsung
+Description: Samsung Pass
+
+2025-03-21 10:36:31 - AAGUID: 5343502d-5343-5343-6172-644649444f32
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-07-01
+
+2025-03-21 10:36:31 - AAGUID: 5343502d-5343-5343-6172-644649444f32
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Securité Carte à Puce
+Description: ESS Smart Card Inc. Authenticator
+
+2025-03-21 10:36:31 - AAGUID: 050dd0bc-ff20-4265-8d5d-305c4b215192
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-27
+
+2025-03-21 10:36:31 - AAGUID: 050dd0bc-ff20-4265-8d5d-305c4b215192
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thales
+Description: eToken Fusion FIPS
+
+2025-03-21 10:36:31 - AAGUID: 10c70715-2a9a-4de1-b0aa-3cff6d496d39
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-27
+
+2025-03-21 10:36:31 - AAGUID: 10c70715-2a9a-4de1-b0aa-3cff6d496d39
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thales
+Description: eToken Fusion NFC FIPS
+
+2025-03-21 10:36:31 - AAGUID: c3f47802-de73-4dfc-ba22-671fe3304f90
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-06-12
+
+2025-03-21 10:36:31 - AAGUID: c3f47802-de73-4dfc-ba22-671fe3304f90
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thales
+Description: eToken Fusion NFC PIV Enterprise
+
+2025-03-21 10:36:31 - AAGUID: 146e77ef-11eb-4423-b847-ce77864e9411
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:31 - AAGUID: 146e77ef-11eb-4423-b847-ce77864e9411
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thales
+Description: eToken Fusion NFC PIV
+
+2025-03-21 10:36:31 - AAGUID: c62100de-759b-4bf8-b22b-63b3e3a80401
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-27
+
+2025-03-21 10:36:31 - AAGUID: c62100de-759b-4bf8-b22b-63b3e3a80401
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Token Ring
+Description: Token Ring 3 FIDO2 Authenticator
+
+2025-03-21 10:36:31 - AAGUID: 95e4d58c-056e-4a65-866d-f5a69659e880
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-11-01
+
+2025-03-21 10:36:31 - AAGUID: 95e4d58c-056e-4a65-866d-f5a69659e880
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: TruU Windows Authenticator
+
+2025-03-21 10:36:31 - AAGUID: ba86dc56-635f-4141-aef6-00227b1b9af6
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-12-20
+
+2025-03-21 10:36:31 - AAGUID: ba86dc56-635f-4141-aef6-00227b1b9af6
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: TruU Windows Authenticator
+
+2025-03-21 10:36:31 - AAGUID: 6e8d1eae-8d40-4c25-bcf8-4633959afc71
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-23
+
+2025-03-21 10:36:31 - AAGUID: 6e8d1eae-8d40-4c25-bcf8-4633959afc71
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Veridium
+Description: Veridium iOS SDK
+
+2025-03-21 10:36:31 - AAGUID: 5ea308b2-7ac7-48b9-ac09-7e2da9015f8c
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-23
+
+2025-03-21 10:36:31 - AAGUID: 5ea308b2-7ac7-48b9-ac09-7e2da9015f8c
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Veridium
+Description: Veridium Android SDK
+
+2025-03-21 10:36:31 - AAGUID: 99ed6c29-4573-4847-816d-78ad8f1c75ef
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-20
+
+2025-03-21 10:36:31 - AAGUID: 99ed6c29-4573-4847-816d-78ad8f1c75ef
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeroCard
+Description: VeroCard FIDO2 Authenticator
+
+2025-03-21 10:36:31 - AAGUID: d7a423ad-3e19-4492-9200-78137dccc136
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-08-14
+
+2025-03-21 10:36:31 - AAGUID: d7a423ad-3e19-4492-9200-78137dccc136
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VivoKey
+Description: VivoKey Apex FIDO2
+
+2025-03-21 10:36:31 - AAGUID: 31c3f7ff-bf15-4327-83ec-9336abcbcd34
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-26
+
+2025-03-21 10:36:31 - AAGUID: 31c3f7ff-bf15-4327-83ec-9336abcbcd34
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Winmagic
+Description: WinMagic FIDO Eazy - Software
+
+2025-03-21 10:36:31 - AAGUID: 970c8d9c-19d2-46af-aa32-3f448db49e35
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-26
+
+2025-03-21 10:36:31 - AAGUID: 970c8d9c-19d2-46af-aa32-3f448db49e35
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WinMagic
+Description: WinMagic FIDO Eazy - TPM
+
+2025-03-21 10:36:31 - AAGUID: f56f58b3-d711-4afc-ba7d-6ac05f88cb19
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-26
+
+2025-03-21 10:36:31 - AAGUID: f56f58b3-d711-4afc-ba7d-6ac05f88cb19
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WinMagic
+Description: WinMagic FIDO Eazy - Phone
+
+2025-03-21 10:36:31 - AAGUID: 5753362b-4e6b-6345-7b2f-255438404c75
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-02-23
+
+2025-03-21 10:36:31 - AAGUID: 5753362b-4e6b-6345-7b2f-255438404c75
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WiSECURE
+Description: WiSECURE Blentity FIDO2 Authenticator
+
+2025-03-21 10:36:31 - AAGUID: fcc0118f-cd45-435b-8da1-9782b2da0715
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:31 - AAGUID: fcc0118f-cd45-435b-8da1-9782b2da0715
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with NFC
+
+2025-03-21 10:36:31 - AAGUID: 9ff4cc65-6154-4fff-ba09-9e2af7882ad2
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-12
+
+2025-03-21 10:36:31 - AAGUID: 9ff4cc65-6154-4fff-ba09-9e2af7882ad2
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 4599062e-6926-4fe7-9566-9e8fb1aedaa0
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 4599062e-6926-4fe7-9566-9e8fb1aedaa0
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with Lightning
+
+2025-03-21 10:36:32 - AAGUID: 62e54e98-c209-4df3-b692-de71bb6a8528
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2025-03-21 10:36:32 - AAGUID: 62e54e98-c209-4df3-b692-de71bb6a8528
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with NFC Preview
+
+2025-03-21 10:36:32 - AAGUID: d7781e5d-e353-46aa-afe2-3ca49f13332a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: d7781e5d-e353-46aa-afe2-3ca49f13332a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC
+
+2025-03-21 10:36:32 - AAGUID: 3b24bf49-1d45-4484-a917-13175df0867b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 3b24bf49-1d45-4484-a917-13175df0867b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 6ec5cff2-a0f9-4169-945b-f33b563f7b99
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-03-21 10:36:32 - AAGUID: 6ec5cff2-a0f9-4169-945b-f33b563f7b99
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 5b0e46ba-db02-44ac-b979-ca9b84f5e335
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2025-03-21 10:36:32 - AAGUID: 5b0e46ba-db02-44ac-b979-ca9b84f5e335
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with Lightning Preview
+
+2025-03-21 10:36:32 - AAGUID: 8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-03-21 10:36:32 - AAGUID: 8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Series - FIDO Edition (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 72c6b72d-8512-4c66-8359-9d3d10d9222f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 72c6b72d-8512-4c66-8359-9d3d10d9222f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 97e6a830-c952-4740-95fc-7c78dc97ce47
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-03-21 10:36:32 - AAGUID: 97e6a830-c952-4740-95fc-7c78dc97ce47
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 1ac71f64-468d-4fe0-bef1-0e5f2f551f18
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-29
+
+2025-03-21 10:36:32 - AAGUID: 1ac71f64-468d-4fe0-bef1-0e5f2f551f18
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: d2fbd093-ee62-488d-9dad-1e36389f8826
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-15
+
+2025-03-21 10:36:32 - AAGUID: d2fbd093-ee62-488d-9dad-1e36389f8826
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series (RC Preview)
+
+2025-03-21 10:36:32 - AAGUID: 7409272d-1ff9-4e10-9fc9-ac0019c124fd
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-03-21 10:36:32 - AAGUID: 7409272d-1ff9-4e10-9fc9-ac0019c124fd
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Series - FIDO Edition
+
+2025-03-21 10:36:32 - AAGUID: 20ac7a17-c814-4833-93fe-539f0d5e3389
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-25
+
+2025-03-21 10:36:32 - AAGUID: 20ac7a17-c814-4833-93fe-539f0d5e3389
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: b7d3f68e-88a6-471e-9ecf-2df26d041ede
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: b7d3f68e-88a6-471e-9ecf-2df26d041ede
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico
+
+2025-03-21 10:36:32 - AAGUID: ff4dac45-ede8-4ec2-aced-cf66103f4335
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: ff4dac45-ede8-4ec2-aced-cf66103f4335
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series
+
+2025-03-21 10:36:32 - AAGUID: ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-15
+
+2025-03-21 10:36:32 - AAGUID: ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with NFC (RC Preview)
+
+2025-03-21 10:36:32 - AAGUID: 34f5766d-1536-4a24-9033-0e294e510fb0
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-09-17
+
+2025-03-21 10:36:32 - AAGUID: 34f5766d-1536-4a24-9033-0e294e510fb0
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC Preview
+
+2025-03-21 10:36:32 - AAGUID: ad08c78a-4e41-49b9-86a2-ac15b06899e2
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-03-21 10:36:32 - AAGUID: ad08c78a-4e41-49b9-86a2-ac15b06899e2
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Series - FIDO Edition
+
+2025-03-21 10:36:32 - AAGUID: 3a662962-c6d4-4023-bebb-98ae92e78e20
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 3a662962-c6d4-4023-bebb-98ae92e78e20
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with Lightning (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 57f7de54-c807-4eab-b1c6-1c9be7984e92
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 57f7de54-c807-4eab-b1c6-1c9be7984e92
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series
+
+2025-03-21 10:36:32 - AAGUID: ed042a3a-4b22-4455-bb69-a267b652ae7e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: ed042a3a-4b22-4455-bb69-a267b652ae7e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico - Enterprise Edition
+
+2025-03-21 10:36:32 - AAGUID: 2772ce93-eb4b-4090-8b73-330f48477d73
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2025-03-21 10:36:32 - AAGUID: 2772ce93-eb4b-4090-8b73-330f48477d73
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico - Enterprise Edition Preview
+
+2025-03-21 10:36:32 - AAGUID: 9e66c661-e428-452a-a8fb-51f7ed088acf
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-15
+
+2025-03-21 10:36:32 - AAGUID: 9e66c661-e428-452a-a8fb-51f7ed088acf
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with Lightning (RC Preview)
+
+2025-03-21 10:36:32 - AAGUID: b90e7dc1-316e-4fee-a25a-56a666a670fe
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-11-12
+
+2025-03-21 10:36:32 - AAGUID: b90e7dc1-316e-4fee-a25a-56a666a670fe
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 24673149-6c86-42e7-98d9-433fb5b73296
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 24673149-6c86-42e7-98d9-433fb5b73296
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning
+
+2025-03-21 10:36:32 - AAGUID: 6ab56fad-881f-4a43-acb2-0be065924522
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 6ab56fad-881f-4a43-acb2-0be065924522
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC (Enterprise Profile)
+
+2025-03-21 10:36:32 - AAGUID: 79f3c8ba-9e35-484b-8f47-53a5a0f5c630
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-10
+
+2025-03-21 10:36:32 - AAGUID: 79f3c8ba-9e35-484b-8f47-53a5a0f5c630
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with NFC (Enterprise Profile)
+
+2025-03-21 10:36:33 - AAGUID: 3124e301-f14e-4e38-876d-fbeeb090e7bf
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2025-03-21 10:36:33 - AAGUID: 3124e301-f14e-4e38-876d-fbeeb090e7bf
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning Preview
+
+2025-03-21 10:36:33 - AAGUID: 760eda36-00aa-4d29-855b-4012a182cdeb
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2025-03-21 10:36:33 - AAGUID: 760eda36-00aa-4d29-855b-4012a182cdeb
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico Preview
+
+2025-03-21 10:36:33 - AAGUID: 34744913-4f57-4e6e-a527-e9ec3c4b94e6
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-03-21 10:36:33 - AAGUID: 34744913-4f57-4e6e-a527-e9ec3c4b94e6
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Series - Multi-protocol Edition
+
+2025-03-21 10:36:33 - AAGUID: b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-06
+
+2025-03-21 10:36:33 - AAGUID: b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ZTPass
+Description: ZTPass SmartAuth
+
+2025-03-21 10:36:33 - AAGUID: 99bf4610-ec26-4252-b31f-7380ccd59db5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-11-24
+
+2025-03-21 10:36:33 - AAGUID: 99bf4610-ec26-4252-b31f-7380ccd59db5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ZTPass
+Description: ZTPass SmartAuth
+
+
 ===== Script Run on 2025-03-07 10:13:07 UTC =====
 2025-03-07 10:13:06 - AAGUID: 30b5035e-d297-4ff1-b00b-addc96ba6a98
 Path: attestationRootCertificates
@@ -116,6 +1386,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
