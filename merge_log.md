@@ -1,3 +1,10 @@
+# Merge Log - 2025-03-27 00:13:56
+
+Entry removed for description 'TEST (DUMMY RECORD)' with AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6'.
+
+Entry removed for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' with AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0'.
+
+
 # Merge Log - 2025-03-15 11:04:08
 
 Vendor 'Yubico' for description 'YubiKey Bio Series - Multi-protocol Edition 1VDJSN' has become valid.
