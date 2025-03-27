@@ -1,3 +1,10 @@
+# Merge Log - 2025-03-27 00:22:15
+
+Entry removed for description 'TEST (DUMMY RECORD)' with AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6'.
+
+Entry removed for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' with AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0'.
+
+
 # Merge Log - 2025-03-21 11:06:14
 
 Updated 'Version' for AAGUID 'bb405265-40cf-4115-93e5-a332c1968d8c' from '' to 'FIDO 2.1'.
