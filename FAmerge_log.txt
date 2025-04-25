@@ -1,4 +1,84 @@
 
+===== Script Run on 2025-04-25 11:04:18 UTC =====
+2025-04-25 11:04:14 - AAGUID: 175cd298-83d2-4a26-b637-313c07a6434e
+Path: attachmentHint
+Old Value:
+[
+  "external",
+  "wireless",
+  "nfc"
+]
+
+New Value:
+[
+  "external",
+  "nfc"
+]
+
+2025-04-25 11:04:14 - AAGUID: be727034-574a-f799-5c76-0929e0430973
+Path: attachmentHint
+Old Value:
+[
+  "external",
+  "wireless",
+  "nfc"
+]
+
+New Value:
+[
+  "external",
+  "wired",
+  "nfc",
+  "bluetooth"
+]
+
+2025-04-25 11:04:14 - AAGUID: 1d1b4e33-76a1-47fb-97a0-14b10d0933f1
+Path: attachmentHint
+Old Value:
+[
+  "external",
+  "wireless",
+  "nfc"
+]
+
+New Value:
+[
+  "external",
+  "nfc"
+]
+
+2025-04-25 11:04:16 - AAGUID: 092277e5-8437-46b5-b911-ea64b294acb7
+Path: attachmentHint
+Old Value:
+[
+  "external",
+  "wireless",
+  "nfc"
+]
+
+New Value:
+[
+  "external",
+  "nfc"
+]
+
+2025-04-25 11:04:16 - AAGUID: 7d2afadd-bf6b-44a2-a66b-e831fceb8eff
+Path: attachmentHint
+Old Value:
+[
+  "external",
+  "wireless",
+  "nfc"
+]
+
+New Value:
+[
+  "external",
+  "nfc"
+]
+
+2025-04-25 11:04:18 - Updating AAGUID ad08c78a-4e41-49b9-86a2-ac15b06899e2 : description : "YubiKey Bio Series - FIDO Edition" -> "YubiKey Bio Series - FIDO Edition (Enterprise Profile)"
+
 ===== Script Run on 2025-04-01 04:03:44 UTC =====
 2025-04-01 04:03:42 - Updating AAGUID 341e4da9-3c2e-8103-5a9f-aad887135200 : authenticatorVersion : 10500 -> 10605
 2025-04-01 04:03:42 - AAGUID: 341e4da9-3c2e-8103-5a9f-aad887135200
@@ -1424,6 +1504,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 

@@ -2234,7 +2234,6 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -2429,8 +2428,9 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wireless",
-          "nfc"
+          "wired",
+          "nfc",
+          "bluetooth"
         ],
         "tcDisplay": [
           "hardware"
@@ -2683,7 +2683,6 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -16045,7 +16044,6 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -16186,7 +16184,6 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -27258,7 +27255,7 @@
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ad08c78a-4e41-49b9-86a2-ac15b06899e2",
-        "description": "YubiKey Bio Series - FIDO Edition",
+        "description": "YubiKey Bio Series - FIDO Edition (Enterprise Profile)",
         "authenticatorVersion": 329476,
         "protocolFamily": "fido2",
         "schema": 3,
