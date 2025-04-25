@@ -631,7 +631,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "timeOfLastStatusChange": "2020-12-17",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b93fd961-f2e6-462f-b122-82002247de78",
@@ -751,7 +750,9 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [],
+      "timeOfLastStatusChange": "2020-12-17"
     },
     {
       "Vendor": "Arculus",
@@ -2233,6 +2234,7 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
+          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -2427,9 +2429,8 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wired",
-          "nfc",
-          "bluetooth"
+          "wireless",
+          "nfc"
         ],
         "tcDisplay": [
           "hardware"
@@ -2504,23 +2505,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2025-01-16",
-          "authenticatorVersion": 10,
-          "certificationDescriptor": "cryptovision ePasslet Suite FIDO Authenticator v1.0",
-          "certificateNumber": "FIDO20020250116002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-01-16",
-          "authenticatorVersion": 10
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-23",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1d1b4e33-76a1-47fb-97a0-14b10d0933f1",
@@ -2576,6 +2560,7 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
+          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -2628,7 +2613,24 @@
           "maxRPIDsForSetMinPINLength": 4,
           "remainingDiscoverableCredentials": 64
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2025-01-16",
+          "authenticatorVersion": 10,
+          "certificationDescriptor": "cryptovision ePasslet Suite FIDO Authenticator v1.0",
+          "certificateNumber": "FIDO20020250116002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-16",
+          "authenticatorVersion": 10
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-23"
     },
     {
       "Vendor": "Cryptnox",
@@ -2763,13 +2765,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-05"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-06-05",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6dae43be-af9c-417b-8b9f-1b611168ec60",
@@ -2853,7 +2848,14 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-05"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-06-05"
     },
     {
       "Vendor": "Egomet",
@@ -2975,20 +2977,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2019-10-28",
-          "certificateNumber": "FIDO20020190926001",
-          "certificationPolicyVersion": "1.3.6",
-          "certificationRequirementsVersion": "1.0.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-10-01"
-        }
-      ],
-      "timeOfLastStatusChange": "2019-10-28",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "eb3b131e-59dc-536a-d176-cb7306da10f5",
@@ -3052,7 +3040,21 @@
           ],
           "aaguid": "eb3b131e-59dc-536a-d176-cb7306da10f5"
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2019-10-28",
+          "certificateNumber": "FIDO20020190926001",
+          "certificationPolicyVersion": "1.3.6",
+          "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-10-01"
+        }
+      ],
+      "timeOfLastStatusChange": "2019-10-28"
     },
     {
       "Vendor": "Ensurity",
@@ -3187,26 +3189,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-04-16",
-          "authenticatorVersion": 2,
-          "certificationDescriptor": "Ensurity AUTH BioPro",
-          "certificateNumber": "FIDO20020240416001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationProfiles": [
-            "consumer"
-          ],
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-16",
-          "authenticatorVersion": 2
-        }
-      ],
-      "timeOfLastStatusChange": "2024-09-05",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "454e5346-4944-4ffd-6c93-8e9267193e9b",
@@ -3340,7 +3322,27 @@
           "maxRPIDsForSetMinPINLength": 10,
           "uvModality": 2
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-04-16",
+          "authenticatorVersion": 2,
+          "certificationDescriptor": "Ensurity AUTH BioPro",
+          "certificateNumber": "FIDO20020240416001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-16",
+          "authenticatorVersion": 2
+        }
+      ],
+      "timeOfLastStatusChange": "2024-09-05"
     },
     {
       "Vendor": "Eviden",
@@ -3352,23 +3354,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-10-01",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "CardOS FIDO2 Token",
-          "certificateNumber": "FIDO20020241001001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-01",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-18",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8da0e4dc-164b-454e-972e-88f362b23d59",
@@ -3470,7 +3455,24 @@
             "nfc"
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-10-01",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "CardOS FIDO2 Token",
+          "certificateNumber": "FIDO20020241001001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-01",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-18"
     },
     {
       "Vendor": "eWBM",
@@ -3607,21 +3609,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2019-07-18",
-          "certificationDescriptor": "eWBM eFA500 FIDO2 Authenticator",
-          "certificateNumber": "FIDO20020190709001",
-          "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2019-07-18"
-        }
-      ],
-      "timeOfLastStatusChange": "2019-07-18",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "361a3082-0278-4583-a16f-72a527f973e4",
@@ -3679,7 +3666,22 @@
           ],
           "aaguid": "361a3082-0278-4583-a16f-72a527f973e4"
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2019-07-18",
+          "certificationDescriptor": "eWBM eFA500 FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020190709001",
+          "certificationPolicyVersion": "1.3.4",
+          "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2019-07-18"
+        }
+      ],
+      "timeOfLastStatusChange": "2019-07-18"
     },
     {
       "Vendor": "eWBM",
@@ -5111,13 +5113,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-07-19"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-07-19",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "260e3021-482d-442d-838c-7edfbe153b7e",
@@ -5221,7 +5216,14 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-07-19"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-07-19"
     },
     {
       "Vendor": "Feitian",
@@ -5233,23 +5235,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "BioPass FIDO2 Pro (Consumer Profile)",
-          "certificateNumber": "FIDO20020240926004",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4c0cf95d-2f40-43b5-ba42-4c83a11c04ba",
@@ -5384,7 +5369,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 128
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "BioPass FIDO2 Pro (Consumer Profile)",
+          "certificateNumber": "FIDO20020240926004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-20"
     },
     {
       "Vendor": "Feitian",
@@ -5523,13 +5525,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-24"
-        }
-      ],
-      "timeOfLastStatusChange": "2020-04-24",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2c0df832-92de-4be1-8412-88a8f074df4a",
@@ -5631,7 +5626,14 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2020-04-24"
+        }
+      ],
+      "timeOfLastStatusChange": "2020-04-24"
     },
     {
       "Vendor": "Feitian",
@@ -5643,23 +5645,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2022-07-18",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)",
-          "certificateNumber": "FIDO20020220718002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-18",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-19",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "12755c32-8ad1-46eb-881c-e0b38d848b09",
@@ -5784,7 +5769,24 @@
           "maxRPIDsForSetMinPINLength": 2,
           "remainingDiscoverableCredentials": 128
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-07-18",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)",
+          "certificateNumber": "FIDO20020220718002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-07-18",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-19"
     },
     {
       "Vendor": "Feitian",
@@ -5796,23 +5798,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "Feitian BioPass FIDO2 Plus Authenticator",
-          "certificateNumber": "FIDO20020240926005",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "42df17de-06ba-4177-a2bb-6701be1380d6",
@@ -5947,7 +5932,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 128
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Feitian BioPass FIDO2 Plus Authenticator",
+          "certificateNumber": "FIDO20020240926005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-20"
     },
     {
       "Vendor": "Feitian",
@@ -6086,23 +6088,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "Feitian BioPass FIDO2 Plus (Enterprise Profile)",
-          "certificateNumber": "FIDO20020240926003",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "a02140b7-0cbd-42e1-a9b5-a39da2545114",
@@ -6238,7 +6223,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 128
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Feitian BioPass FIDO2 Plus (Enterprise Profile)",
+          "certificateNumber": "FIDO20020240926003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-20"
     },
     {
       "Vendor": "Feitian",
@@ -6250,23 +6252,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "BioPass FIDO2 Pro (Enterprise Profile)",
-          "certificateNumber": "FIDO20020240926002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-26",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2bff89f2-323a-48fc-b7c8-9ff7fe87c07e",
@@ -6402,7 +6387,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 128
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "BioPass FIDO2 Pro (Enterprise Profile)",
+          "certificateNumber": "FIDO20020240926002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-26",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-20"
     },
     {
       "Vendor": "Feitian",
@@ -7050,23 +7052,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-11-04",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "Foongtone FIDO Authenticator",
-          "certificateNumber": "FIDO20020241104001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-04",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-26",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "46544d5d-8f5d-4db4-89ac-ea8977073fff",
@@ -7176,7 +7161,24 @@
           "firmwareVersion": 1,
           "remainingDiscoverableCredentials": 6
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-11-04",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Foongtone FIDO Authenticator",
+          "certificateNumber": "FIDO20020241104001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-04",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-26"
     },
     {
       "Vendor": "FT-JCOS",
@@ -7702,23 +7704,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-12-30",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "GSTAG OAK FIDO2 Authenticator",
-          "certificateNumber": "FIDO20020241230001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-30",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-29",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "773c30d9-5919-4e96-a4f5-db65e95cf890",
@@ -7851,7 +7836,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 40
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-12-30",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "GSTAG OAK FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020241230001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-30",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-29"
     },
     {
       "Vendor": "HID Global",
@@ -7863,26 +7865,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-08-29",
-          "authenticatorVersion": 262144,
-          "certificationDescriptor": "HID Crescendo 4000",
-          "certificateNumber": "FIDO20020240829001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationProfiles": [
-            "consumer"
-          ],
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-29",
-          "authenticatorVersion": 262144
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-02",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2a55aee6-27cb-42c0-bc6e-04efe999e88a",
@@ -7977,7 +7959,27 @@
           "firmwareVersion": 262144,
           "remainingDiscoverableCredentials": 30
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-29",
+          "authenticatorVersion": 262144,
+          "certificationDescriptor": "HID Crescendo 4000",
+          "certificateNumber": "FIDO20020240829001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-29",
+          "authenticatorVersion": 262144
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-02"
     },
     {
       "Vendor": "HID Global",
@@ -8545,23 +8547,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2025-01-13",
-          "authenticatorVersion": 262144,
-          "certificationDescriptor": "HID Crescendo Key V3",
-          "certificateNumber": "FIDO20020250113001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-01-13",
-          "authenticatorVersion": 262144
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-23",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7991798a-a7f3-487f-98c0-3faf7a458a04",
@@ -8659,7 +8644,24 @@
           "firmwareVersion": 262144,
           "remainingDiscoverableCredentials": 30
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2025-01-13",
+          "authenticatorVersion": 262144,
+          "certificationDescriptor": "HID Crescendo Key V3",
+          "certificateNumber": "FIDO20020250113001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-13",
+          "authenticatorVersion": 262144
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-23"
     },
     {
       "Vendor": "Hideez",
@@ -8791,13 +8793,6 @@
       "BLE": "Yes",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-11"
-        }
-      ],
-      "timeOfLastStatusChange": "2022-07-11",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3e078ffd-4c54-4586-8baa-a77da113aec5",
@@ -8896,7 +8891,14 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2022-07-11"
+        }
+      ],
+      "timeOfLastStatusChange": "2022-07-11"
     },
     {
       "Vendor": "Hypersecu",
@@ -9313,26 +9315,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-09-06",
-          "authenticatorVersion": 16777216,
-          "certificationDescriptor": "ID-One Card",
-          "certificateNumber": "FIDO20020240906001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationProfiles": [
-            "enterprise"
-          ],
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-06",
-          "authenticatorVersion": 16777216
-        }
-      ],
-      "timeOfLastStatusChange": "2024-09-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
@@ -9465,7 +9447,27 @@
           "firmwareVersion": 16777216,
           "remainingDiscoverableCredentials": 51
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-09-06",
+          "authenticatorVersion": 16777216,
+          "certificationDescriptor": "ID-One Card",
+          "certificateNumber": "FIDO20020240906001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-06",
+          "authenticatorVersion": 16777216
+        }
+      ],
+      "timeOfLastStatusChange": "2024-09-20"
     },
     {
       "Vendor": "ID-One",
@@ -9477,13 +9479,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-28"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-28",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "82b0a720-127a-4788-b56d-d1d4b2d82eac",
@@ -9620,7 +9615,14 @@
           },
           "remainingDiscoverableCredentials": 51
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-28"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-28"
     },
     {
       "Vendor": "ID-One",
@@ -9632,13 +9634,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-09"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-09-09",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f2145e86-211e-4931-b874-e22bba7d01cc",
@@ -9775,7 +9770,14 @@
           },
           "remainingDiscoverableCredentials": 51
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-09"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-09-09"
     },
     {
       "Vendor": "IDCore",
@@ -10124,7 +10126,7 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
-          "wired",
+          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -10407,13 +10409,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-09-25"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-09-25",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4b89f401-464e-4745-a520-486ddfc5d80e",
@@ -10515,7 +10510,14 @@
             "usb"
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-09-25"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-09-25"
     },
     {
       "Vendor": "ImproveID",
@@ -10664,21 +10666,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2020-04-16",
-          "certificationDescriptor": "SLE78 CTAP USB/NFC Ref Design",
-          "certificateNumber": "FIDO20020180926015",
-          "certificationPolicyVersion": "1.3.4",
-          "certificationRequirementsVersion": "1.0.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-04-16"
-        }
-      ],
-      "timeOfLastStatusChange": "2020-04-16",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "cfcb13a2-244f-4b36-9077-82b79d6a7de7",
@@ -10737,7 +10724,22 @@
           ],
           "aaguid": "cfcb13a2-244f-4b36-9077-82b79d6a7de7"
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2020-04-16",
+          "certificationDescriptor": "SLE78 CTAP USB/NFC Ref Design",
+          "certificateNumber": "FIDO20020180926015",
+          "certificationPolicyVersion": "1.3.4",
+          "certificationRequirementsVersion": "1.0.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-04-16"
+        }
+      ],
+      "timeOfLastStatusChange": "2020-04-16"
     },
     {
       "Vendor": "Kensington",
@@ -10995,22 +10997,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2020-12-12",
-          "url": "https://crayonic.com/keyvault",
-          "certificationDescriptor": "Crayonic KeyVault",
-          "certificateNumber": "FIDO20020201110001",
-          "certificationPolicyVersion": "1.3.7",
-          "certificationRequirementsVersion": "1.3"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2020-12-12"
-        }
-      ],
-      "timeOfLastStatusChange": "2020-12-12",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d61d3b87-3e7c-4aea-9c50-441c371903ad",
@@ -11089,7 +11075,23 @@
           ],
           "aaguid": "d61d3b87-3e7c-4aea-9c50-441c371903ad"
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2020-12-12",
+          "url": "https://crayonic.com/keyvault",
+          "certificationDescriptor": "Crayonic KeyVault",
+          "certificateNumber": "FIDO20020201110001",
+          "certificationPolicyVersion": "1.3.7",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2020-12-12"
+        }
+      ],
+      "timeOfLastStatusChange": "2020-12-12"
     },
     {
       "Vendor": "KeyXentic",
@@ -11624,13 +11626,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-04"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-01-04",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "341e4da9-3c2e-8103-5a9f-aad887135200",
@@ -11747,7 +11742,14 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-01-04"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-01-04"
     },
     {
       "Vendor": "Ledger",
@@ -11759,13 +11761,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-18"
-        }
-      ],
-      "timeOfLastStatusChange": "2023-09-18",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "58b44d0b-0a7c-f33a-fd48-f7153c871352",
@@ -11883,7 +11878,14 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2023-09-18"
+        }
+      ],
+      "timeOfLastStatusChange": "2023-09-18"
     },
     {
       "Vendor": "Ledger",
@@ -11895,13 +11897,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-09-18"
-        }
-      ],
-      "timeOfLastStatusChange": "2023-09-18",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fcb1bcb4-f370-078c-6993-bc24d0ae3fbe",
@@ -12019,7 +12014,14 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2023-09-18"
+        }
+      ],
+      "timeOfLastStatusChange": "2023-09-18"
     },
     {
       "Vendor": "NEOWAVE",
@@ -12244,26 +12246,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-06-13",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "Nitrokey 3A Mini",
-          "certificateNumber": "FIDO20020240613001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationProfiles": [
-            "consumer"
-          ],
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-13",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-29",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2cd2f727-f6ca-44da-8f48-5c2e5da000a2",
@@ -12365,7 +12347,27 @@
             "usb"
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-06-13",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "Nitrokey 3A Mini",
+          "certificateNumber": "FIDO20020240613001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "consumer"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-13",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-29"
     },
     {
       "Vendor": "NXP Semiconductors",
@@ -12661,24 +12663,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2021-06-08",
-          "authenticatorVersion": 1,
-          "url": "www.octatco.com",
-          "certificationDescriptor": "EzQuant FIDO2 Fingerprint",
-          "certificateNumber": "FIDO20020210608001",
-          "certificationPolicyVersion": "1.3",
-          "certificationRequirementsVersion": "1.3"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2021-06-08",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2021-08-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "bc2fe499-0d8e-4ffe-96f3-94a82840cf8c",
@@ -12750,7 +12734,25 @@
           },
           "firmwareVersion": 5
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2021-06-08",
+          "authenticatorVersion": 1,
+          "url": "www.octatco.com",
+          "certificationDescriptor": "EzQuant FIDO2 Fingerprint",
+          "certificateNumber": "FIDO20020210608001",
+          "certificationPolicyVersion": "1.3",
+          "certificationRequirementsVersion": "1.3"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2021-06-08",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2021-08-10"
     },
     {
       "Vendor": "OneKey",
@@ -12762,13 +12764,6 @@
       "BLE": "Yes",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-16"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-12-16",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "70e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
@@ -12871,7 +12866,14 @@
           ],
           "firmwareVersion": 5
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-16"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-12-16"
     },
     {
       "Vendor": "OneKey",
@@ -12883,13 +12885,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-02"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-08-02",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "69e7c36f-f2f6-9e0d-07a6-bcc243262e6b",
@@ -12992,7 +12987,14 @@
           ],
           "firmwareVersion": 5
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-02"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-08-02"
     },
     {
       "Vendor": "OneSpan",
@@ -13872,13 +13874,6 @@
       "BLE": "Yes",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-11-10"
-        }
-      ],
-      "timeOfLastStatusChange": "2022-11-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "09591fc6-9811-48f7-8f57-b9f23df6413f",
@@ -13952,7 +13947,14 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2022-11-10"
+        }
+      ],
+      "timeOfLastStatusChange": "2022-11-10"
     },
     {
       "Vendor": "Pone Biometrics",
@@ -14227,23 +14229,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-08-22",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "RSA Authenticator for iOS",
-          "certificateNumber": "FIDO20020240822003",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-22",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-09-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8681a073-5f50-4d52-bce4-e21658d207b3",
@@ -14325,7 +14310,24 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "RSA Authenticator for iOS",
+          "certificateNumber": "FIDO20020240822003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-09-10"
     },
     {
       "Vendor": "RSA",
@@ -14444,23 +14446,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-08-22",
-          "authenticatorVersion": 1,
-          "certificationDescriptor": "RSA Authenticator for Android",
-          "certificateNumber": "FIDO20020240822002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-08-22",
-          "authenticatorVersion": 1
-        }
-      ],
-      "timeOfLastStatusChange": "2024-09-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "59f85fe7-faa5-4c92-9f52-697b9d4d5473",
@@ -14542,7 +14527,24 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1,
+          "certificationDescriptor": "RSA Authenticator for Android",
+          "certificateNumber": "FIDO20020240822002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-08-22",
+          "authenticatorVersion": 1
+        }
+      ],
+      "timeOfLastStatusChange": "2024-09-10"
     },
     {
       "Vendor": "SafeNet",
@@ -14913,13 +14915,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-03-12"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-03-12",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "53414d53-554e-4700-0000-000000000000",
@@ -14983,7 +14978,14 @@
             "pinUvAuthToken": true
           }
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-03-12"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-03-12"
     },
     {
       "Vendor": "Securité Carte à Puce",
@@ -14995,13 +14997,6 @@
       "BLE": "No",
       "Version": "U2F V2",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-07-01"
-        }
-      ],
-      "timeOfLastStatusChange": "2022-07-01",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5343502d-5343-5343-6172-644649444f32",
@@ -15113,7 +15108,14 @@
           "minPINLength": 6,
           "firmwareVersion": 2
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2022-07-01"
+        }
+      ],
+      "timeOfLastStatusChange": "2022-07-01"
     },
     {
       "Vendor": "Sentry Enterprises",
@@ -16043,6 +16045,7 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
+          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -16183,6 +16186,7 @@
         "cryptoStrength": 128,
         "attachmentHint": [
           "external",
+          "wireless",
           "nfc"
         ],
         "tcDisplay": [],
@@ -16546,23 +16550,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-10-23",
-          "authenticatorVersion": 5,
-          "certificationDescriptor": "eToken Fusion FIPS",
-          "certificateNumber": "FIDO20020241023002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-23",
-          "authenticatorVersion": 5
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-27",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "050dd0bc-ff20-4265-8d5d-305c4b215192",
@@ -16693,7 +16680,24 @@
           "maxRPIDsForSetMinPINLength": 4,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5,
+          "certificationDescriptor": "eToken Fusion FIPS",
+          "certificateNumber": "FIDO20020241023002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "Vendor": "Thales",
@@ -16705,23 +16709,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-10-23",
-          "authenticatorVersion": 5,
-          "certificationDescriptor": "eToken Fusion NFC FIPS",
-          "certificateNumber": "FIDO20020241023001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-23",
-          "authenticatorVersion": 5
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-27",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "10c70715-2a9a-4de1-b0aa-3cff6d496d39",
@@ -16854,7 +16841,24 @@
           "maxRPIDsForSetMinPINLength": 4,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5,
+          "certificationDescriptor": "eToken Fusion NFC FIPS",
+          "certificateNumber": "FIDO20020241023001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-23",
+          "authenticatorVersion": 5
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "Vendor": "Thales",
@@ -17128,13 +17132,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-06-12"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-06-12",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c3f47802-de73-4dfc-ba22-671fe3304f90",
@@ -17267,7 +17264,14 @@
           "maxRPIDsForSetMinPINLength": 4,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-06-12"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-06-12"
     },
     {
       "Vendor": "Thales",
@@ -17279,23 +17283,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-11-07",
-          "authenticatorVersion": 6,
-          "certificationDescriptor": "eToken Fusion NFC PIV",
-          "certificateNumber": "FIDO20020241107001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-07",
-          "authenticatorVersion": 6
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "146e77ef-11eb-4423-b847-ce77864e9411",
@@ -17430,7 +17417,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-11-07",
+          "authenticatorVersion": 6,
+          "certificationDescriptor": "eToken Fusion NFC PIV",
+          "certificateNumber": "FIDO20020241107001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-07",
+          "authenticatorVersion": 6
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Thales",
@@ -17643,23 +17647,6 @@
       "BLE": "No",
       "Version": "U2F V2",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2024-11-25",
-          "authenticatorVersion": 2,
-          "certificationDescriptor": "Token Ring 3 FIDO2 Authenticator",
-          "certificateNumber": "FIDO20020241125001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-11-25",
-          "authenticatorVersion": 2
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-27",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c62100de-759b-4bf8-b22b-63b3e3a80401",
@@ -17765,7 +17752,24 @@
           "maxSerializedLargeBlobArray": 4096,
           "maxCredBlobLength": 64
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2024-11-25",
+          "authenticatorVersion": 2,
+          "certificationDescriptor": "Token Ring 3 FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020241125001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-11-25",
+          "authenticatorVersion": 2
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-27"
     },
     {
       "Vendor": "TOKEN2",
@@ -18081,13 +18085,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-01"
-        }
-      ],
-      "timeOfLastStatusChange": "2023-11-01",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "95e4d58c-056e-4a65-866d-f5a69659e880",
@@ -18183,7 +18180,14 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2023-11-01"
+        }
+      ],
+      "timeOfLastStatusChange": "2023-11-01"
     },
     {
       "Vendor": "TruU",
@@ -18195,18 +18199,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "REVOKED",
-          "effectiveDate": "2023-12-20",
-          "authenticatorVersion": 1
-        },
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-07"
-        }
-      ],
-      "timeOfLastStatusChange": "2023-12-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ba86dc56-635f-4141-aef6-00227b1b9af6",
@@ -18301,7 +18293,19 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "REVOKED",
+          "effectiveDate": "2023-12-20",
+          "authenticatorVersion": 1
+        },
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2023-11-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2023-12-20"
     },
     {
       "Vendor": "VALMIDO",
@@ -18449,13 +18453,6 @@
       "BLE": "Yes",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2025-01-23"
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-23",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5ea308b2-7ac7-48b9-ac09-7e2da9015f8c",
@@ -18547,7 +18544,14 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-23"
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-23"
     },
     {
       "Vendor": "Veridium",
@@ -18559,13 +18563,6 @@
       "BLE": "Yes",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2025-01-23"
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-23",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6e8d1eae-8d40-4c25-bcf8-4633959afc71",
@@ -18657,7 +18654,14 @@
           ],
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-23"
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-23"
     },
     {
       "Vendor": "VeroCard",
@@ -18669,23 +18673,6 @@
       "BLE": "Yes",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2022-04-21",
-          "authenticatorVersion": 2,
-          "certificationDescriptor": "VeroCard FIDO2 Authenticator",
-          "certificateNumber": "FIDO20020220419001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2022-04-21",
-          "authenticatorVersion": 2
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-20",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "99ed6c29-4573-4847-816d-78ad8f1c75ef",
@@ -18773,7 +18760,24 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2022-04-21",
+          "authenticatorVersion": 2,
+          "certificationDescriptor": "VeroCard FIDO2 Authenticator",
+          "certificateNumber": "FIDO20020220419001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2022-04-21",
+          "authenticatorVersion": 2
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-20"
     },
     {
       "Vendor": "VinCSS",
@@ -18880,13 +18884,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2022-08-14"
-        }
-      ],
-      "timeOfLastStatusChange": "2022-08-14",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d7a423ad-3e19-4492-9200-78137dccc136",
@@ -18959,7 +18956,14 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2022-08-14"
+        }
+      ],
+      "timeOfLastStatusChange": "2022-08-14"
     },
     {
       "Vendor": "Winmagic",
@@ -18971,13 +18975,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-26"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-01-26",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "31c3f7ff-bf15-4327-83ec-9336abcbcd34",
@@ -19059,7 +19056,14 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-01-26"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-01-26"
     },
     {
       "Vendor": "WinMagic",
@@ -19071,13 +19075,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-26"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-01-26",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f56f58b3-d711-4afc-ba7d-6ac05f88cb19",
@@ -19160,7 +19157,14 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-01-26"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-01-26"
     },
     {
       "Vendor": "WinMagic",
@@ -19172,13 +19176,6 @@
       "BLE": "No",
       "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-01-26"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-01-26",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "970c8d9c-19d2-46af-aa32-3f448db49e35",
@@ -19261,7 +19258,14 @@
             }
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-01-26"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-01-26"
     },
     {
       "Vendor": "WiSECURE",
@@ -19413,13 +19417,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-02-23"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-02-23",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5753362b-4e6b-6345-7b2f-255438404c75",
@@ -19527,7 +19524,14 @@
           ],
           "firmwareVersion": 2
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-02-23"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-02-23"
     },
     {
       "Vendor": "Yubico",
@@ -19539,23 +19543,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241221006",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3a662962-c6d4-4023-bebb-98ae92e78e20",
@@ -19707,7 +19694,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241221006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -19932,23 +19936,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 Series with NFC (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241222002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6ab56fad-881f-4a43-acb2-0be065924522",
@@ -20099,7 +20086,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with NFC (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -20111,23 +20115,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241221001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
@@ -20281,7 +20268,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241221001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -20293,23 +20297,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241222004",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "72c6b72d-8512-4c66-8359-9d3d10d9222f",
@@ -20460,7 +20447,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -20472,13 +20476,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-15"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-15",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d2fbd093-ee62-488d-9dad-1e36389f8826",
@@ -20624,7 +20621,14 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-15"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-15"
     },
     {
       "Vendor": "Yubico",
@@ -21071,23 +21075,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473,
-          "certificationDescriptor": "YubiKey 5 Series with Lightning (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241012009",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-12",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b90e7dc1-316e-4fee-a25a-56a666a670fe",
@@ -21232,7 +21219,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473,
+          "certificationDescriptor": "YubiKey 5 Series with Lightning (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241012009",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-12"
     },
     {
       "Vendor": "Yubico",
@@ -21244,26 +21248,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473,
-          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241012001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationProfiles": [
-            "enterprise"
-          ],
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-25",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "20ac7a17-c814-4833-93fe-539f0d5e3389",
@@ -21407,7 +21391,27 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473,
+          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241012001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationProfiles": [
+            "enterprise"
+          ],
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-25"
     },
     {
       "Vendor": "Yubico",
@@ -21726,13 +21730,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2020-09-17"
-        }
-      ],
-      "timeOfLastStatusChange": "2020-09-17",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "34f5766d-1536-4a24-9033-0e294e510fb0",
@@ -21880,7 +21877,14 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 10
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2020-09-17"
+        }
+      ],
+      "timeOfLastStatusChange": "2020-09-17"
     },
     {
       "Vendor": "Yubico",
@@ -21892,13 +21896,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-15"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-15",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1",
@@ -22047,7 +22044,14 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-15"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-15"
     },
     {
       "Vendor": "Yubico",
@@ -22059,13 +22063,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-04-07",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "760eda36-00aa-4d29-855b-4012a182cdeb",
@@ -22209,7 +22206,14 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-04-07"
     },
     {
       "Vendor": "Yubico",
@@ -22575,13 +22579,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-04-07",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "5b0e46ba-db02-44ac-b979-ca9b84f5e335",
@@ -22726,7 +22723,14 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-04-07"
     },
     {
       "Vendor": "Yubico",
@@ -22738,23 +22742,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241222001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "4599062e-6926-4fe7-9566-9e8fb1aedaa0",
@@ -22902,7 +22889,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -22914,13 +22918,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-04-07",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3124e301-f14e-4e38-876d-fbeeb090e7bf",
@@ -23063,7 +23060,14 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-04-07"
     },
     {
       "Vendor": "Yubico",
@@ -23360,23 +23364,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 Series with Lightning (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241222003",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3b24bf49-1d45-4484-a917-13175df0867b",
@@ -23525,7 +23512,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with Lightning (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241222003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -23537,23 +23541,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 Series with NFC",
-          "certificateNumber": "FIDO20020241222006",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d7781e5d-e353-46aa-afe2-3ca49f13332a",
@@ -23703,7 +23690,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with NFC",
+          "certificateNumber": "FIDO20020241222006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -23715,23 +23719,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 FIPS Series",
-          "certificateNumber": "FIDO20020241221003",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
@@ -23881,7 +23868,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series",
+          "certificateNumber": "FIDO20020241221003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -23893,23 +23897,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey Bio Series",
-          "certificateNumber": "FIDO20020250201002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ad08c78a-4e41-49b9-86a2-ac15b06899e2",
@@ -24090,7 +24077,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey Bio Series",
+          "certificateNumber": "FIDO20020250201002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -24102,13 +24106,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-04-07",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "2772ce93-eb4b-4090-8b73-330f48477d73",
@@ -24252,7 +24249,14 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-04-07"
     },
     {
       "Vendor": "Yubico",
@@ -24264,13 +24268,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-04-07"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-04-07",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "62e54e98-c209-4df3-b692-de71bb6a8528",
@@ -24416,7 +24413,14 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-04-07"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-04-07"
     },
     {
       "Vendor": "Yubico",
@@ -24428,23 +24432,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
-          "certificateNumber": "FIDO20020241222009",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ed042a3a-4b22-4455-bb69-a267b652ae7e",
@@ -24594,7 +24581,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition",
+          "certificateNumber": "FIDO20020241222009",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -24767,23 +24771,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
-          "certificateNumber": "FIDO20020250201003",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "34744913-4f57-4e6e-a527-e9ec3c4b94e6",
@@ -24963,7 +24950,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition",
+          "certificateNumber": "FIDO20020250201003",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -24975,23 +24979,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey Bio Series",
-          "certificateNumber": "FIDO20020250201001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7409272d-1ff9-4e10-9fc9-ac0019c124fd",
@@ -25171,7 +25158,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey Bio Series",
+          "certificateNumber": "FIDO20020250201001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -25396,23 +25400,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473,
-          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241012006",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473
-        }
-      ],
-      "timeOfLastStatusChange": "2024-11-12",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9ff4cc65-6154-4fff-ba09-9e2af7882ad2",
@@ -25557,7 +25544,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473,
+          "certificationDescriptor": "Security Key NFC by Yubico - Enterprise Edition (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241012006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473
+        }
+      ],
+      "timeOfLastStatusChange": "2024-11-12"
     },
     {
       "Vendor": "Yubico",
@@ -26053,23 +26057,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 Series",
-          "certificateNumber": "FIDO20020241222005",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "ff4dac45-ede8-4ec2-aced-cf66103f4335",
@@ -26216,7 +26203,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series",
+          "certificateNumber": "FIDO20020241222005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -26228,23 +26232,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "Security Key NFC by Yubico",
-          "certificateNumber": "FIDO20020241222008",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b7d3f68e-88a6-471e-9ecf-2df26d041ede",
@@ -26394,7 +26381,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "Security Key NFC by Yubico",
+          "certificateNumber": "FIDO20020241222008",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -26750,23 +26754,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 FIPS Series (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241221004",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
@@ -26917,7 +26904,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241221004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -26929,23 +26933,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning",
-          "certificateNumber": "FIDO20020241221005",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432",
@@ -27096,7 +27083,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with Lightning",
+          "certificateNumber": "FIDO20020241221005",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -27312,23 +27316,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC",
-          "certificateNumber": "FIDO20020241221002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-21",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "fcc0118f-cd45-435b-8da1-9782b2da0715",
@@ -27481,7 +27468,24 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 FIPS Series with NFC",
+          "certificateNumber": "FIDO20020241221002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-21",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -27814,13 +27818,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-15"
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-15",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "9e66c661-e428-452a-a8fb-51f7ed088acf",
@@ -27967,7 +27964,14 @@
           },
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-15"
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-15"
     },
     {
       "Vendor": "Yubico",
@@ -27979,23 +27983,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329474,
-          "certificationDescriptor": "YubiKey Bio Series (Enterprise Profile)",
-          "certificateNumber": "FIDO20020250201007",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329474
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee",
@@ -28172,7 +28159,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474,
+          "certificationDescriptor": "YubiKey Bio Series (Enterprise Profile)",
+          "certificateNumber": "FIDO20020250201007",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -28838,23 +28842,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
-          "certificateNumber": "FIDO20020250201004",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6ec5cff2-a0f9-4169-945b-f33b563f7b99",
@@ -29035,7 +29022,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
+          "certificateNumber": "FIDO20020250201004",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "Yubico",
@@ -29227,23 +29231,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473,
-          "certificationDescriptor": "YubiKey 5 Series with NFC (Enterprise Profile)",
-          "certificateNumber": "FIDO20020241012002",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-10-12",
-          "authenticatorVersion": 329473
-        }
-      ],
-      "timeOfLastStatusChange": "2024-10-29",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1ac71f64-468d-4fe0-bef1-0e5f2f551f18",
@@ -29388,7 +29375,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473,
+          "certificationDescriptor": "YubiKey 5 Series with NFC (Enterprise Profile)",
+          "certificateNumber": "FIDO20020241012002",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-10-12",
+          "authenticatorVersion": 329473
+        }
+      ],
+      "timeOfLastStatusChange": "2024-10-29"
     },
     {
       "Vendor": "Yubico",
@@ -29400,23 +29404,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476,
-          "certificationDescriptor": "YubiKey 5 Series with Lightning",
-          "certificateNumber": "FIDO20020241222007",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2024-12-22",
-          "authenticatorVersion": 329476
-        }
-      ],
-      "timeOfLastStatusChange": "2025-01-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "24673149-6c86-42e7-98d9-433fb5b73296",
@@ -29564,7 +29551,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476,
+          "certificationDescriptor": "YubiKey 5 Series with Lightning",
+          "certificateNumber": "FIDO20020241222007",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2024-12-22",
+          "authenticatorVersion": 329476
+        }
+      ],
+      "timeOfLastStatusChange": "2025-01-10"
     },
     {
       "Vendor": "Yubico",
@@ -29576,23 +29580,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L2",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329474,
-          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
-          "certificateNumber": "FIDO20020250201006",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-02-01",
-          "authenticatorVersion": 329474
-        }
-      ],
-      "timeOfLastStatusChange": "2025-02-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "97e6a830-c952-4740-95fc-7c78dc97ce47",
@@ -29769,7 +29756,24 @@
           "uvModality": 2,
           "remainingDiscoverableCredentials": 100
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L2",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474,
+          "certificationDescriptor": "YubiKey Bio Series - Multi-protocol Edition (Enterprise Profile)",
+          "certificateNumber": "FIDO20020250201006",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-02-01",
+          "authenticatorVersion": 329474
+        }
+      ],
+      "timeOfLastStatusChange": "2025-02-06"
     },
     {
       "Vendor": "ZTPass",
@@ -29781,13 +29785,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2023-11-24"
-        }
-      ],
-      "timeOfLastStatusChange": "2023-11-24",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "99bf4610-ec26-4252-b31f-7380ccd59db5",
@@ -29895,7 +29892,14 @@
           "maxCredBlobLength": 32,
           "maxRPIDsForSetMinPINLength": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2023-11-24"
+        }
+      ],
+      "timeOfLastStatusChange": "2023-11-24"
     },
     {
       "Vendor": "ZTPass",
@@ -29907,23 +29911,6 @@
       "BLE": "No",
       "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "FIDO_CERTIFIED_L1",
-          "effectiveDate": "2025-01-16",
-          "authenticatorVersion": 21,
-          "certificationDescriptor": "ZTPass SmartAuth",
-          "certificateNumber": "FIDO20020250116001",
-          "certificationPolicyVersion": "1.4.0",
-          "certificationRequirementsVersion": "1.5.0"
-        },
-        {
-          "status": "FIDO_CERTIFIED",
-          "effectiveDate": "2025-01-16",
-          "authenticatorVersion": 21
-        }
-      ],
-      "timeOfLastStatusChange": "2025-03-06",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4",
@@ -30034,7 +30021,24 @@
           "maxRPIDsForSetMinPINLength": 1,
           "remainingDiscoverableCredentials": 500
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "FIDO_CERTIFIED_L1",
+          "effectiveDate": "2025-01-16",
+          "authenticatorVersion": 21,
+          "certificationDescriptor": "ZTPass SmartAuth",
+          "certificateNumber": "FIDO20020250116001",
+          "certificationPolicyVersion": "1.4.0",
+          "certificationRequirementsVersion": "1.5.0"
+        },
+        {
+          "status": "FIDO_CERTIFIED",
+          "effectiveDate": "2025-01-16",
+          "authenticatorVersion": 21
+        }
+      ],
+      "timeOfLastStatusChange": "2025-03-06"
     }
   ],
   "metadata": {
