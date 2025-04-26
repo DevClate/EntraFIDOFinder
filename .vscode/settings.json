@@ -1,0 +1,16 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "db-keys.json"
+            ],
+            "url": "./.vscode/db-keys.schema.json"
+        },
+        {
+            "fileMatch": [
+                "FidoKeys.json"
+            ],
+            "url": "./.vscode/fido2-metadata.schema.json"
+        }
+    ]
+}

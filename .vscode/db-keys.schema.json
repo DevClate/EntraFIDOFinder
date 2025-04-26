@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Database-of-Keys",
+    "type": "object",
+    "properties": {
+      "metadata": {
+        "type": "object",
+        "properties": {
+          "databaseLastUpdated": { "type": "string", "format": "date-time" },
+          "databaseLastChecked": { "type": "string", "format": "date-time" }
+        },
+        "required": [ "databaseLastUpdated", "databaseLastChecked" ],
+        "additionalProperties": false
+      },
+      "keys": {
+        "type": "array",
+        "items": {
+          "$ref": "./fido2-metadata.schema.json"
+        }
+      }
+    },
+    "required": [ "metadata", "keys" ],
+    "additionalProperties": false
+  }
+  
