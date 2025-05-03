@@ -1,3 +1,24 @@
+# Merge Log - 2025-05-03 08:18:42
+
+Vendor 'SafeKey' for description 'SafeKey/Classic (FP)' has become valid.
+
+Vendor 'GoldKey' for description 'GoldKey Security Token' has become valid.
+
+Vendor 'VeridiumID' for description 'VeridiumID Passkey iOS SDK' has become valid.
+
+Vendor 'HID' for description 'HID Crescendo Fusion' has become valid.
+
+Vendor 'VeridiumID' for description 'VeridiumID Passkey Android SDK' has become valid.
+
+Vendor 'Deepnet' for description 'Deepnet SafeKey/Classic (USB)' has become valid.
+
+Vendor 'SHALO' for description 'SHALO AUTH' has become valid.
+
+Vendor 'SafeKey' for description 'SafeKey/Classic (NFC)' has become valid.
+
+Vendor 'T-Shield' for description 'T-Shield TrustSec FIDO2 Bio and client PIN version' has become valid.
+
+
 # Merge Log - 2025-05-03 08:11:01
 
 Vendor 'ACS' for description 'ACS FIDO Authenticator NFC' has become valid.
