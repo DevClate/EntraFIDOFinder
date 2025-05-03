@@ -23,29 +23,29 @@
                     "Bio": {
                         "type": "string",
                         "enum": [
-                            "Yes",
-                            "No"
+                            "✅",
+                            "❌"
                         ]
                     },
                     "USB": {
                         "type": "string",
                         "enum": [
-                            "Yes",
-                            "No"
+                            "✅",
+                            "❌"
                         ]
                     },
                     "NFC": {
                         "type": "string",
                         "enum": [
-                            "Yes",
-                            "No"
+                            "✅",
+                            "❌"
                         ]
                     },
                     "BLE": {
                         "type": "string",
                         "enum": [
-                            "Yes",
-                            "No"
+                            "✅",
+                            "❌"
                         ]
                     },
                     "Version": {
@@ -358,4 +358,4 @@
         }
     },
     "additionalProperties": false
-}
+  }
