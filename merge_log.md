@@ -1,3 +1,26 @@
+# Merge Log - 2025-05-03 08:11:01
+
+Vendor 'ACS' for description 'ACS FIDO Authenticator NFC' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2' has become valid.
+
+Vendor '' for description 'SafeKey/Classic (NFC)' has become invalid.
+
+Vendor '' for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'SafeKey/Classic (FP)' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO-NFC(CTAP2.1, CTAP2.0, U2F)' has become valid.
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO-NFC (Enterprise Profile) (CTAP2.1, CTAP2.0, U2F)' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2 FIPS' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2 FIPS Enterprise' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2 Enterprise' has become valid.
+
+
 # Merge Log - 2025-05-03 00:22:49
 
 Updated 'Bio' for AAGUID '833b721a-ff5f-4d00-bb2e-bdda3ec01e29' from 'No' to '❌'.
