@@ -1,3 +1,41 @@
+DETAILED LOG - 2025-05-03 08:34:18
+
+Updated 'Version' for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'e400ef8c-711d-4692-af46-7f2cf7da23ad' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '817cdab8-0d51-4de1-a821-e25b88519cf3' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'c89e6a38-6c00-5426-5aa5-c9cbf48f0382' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '39589099-9a75-49fc-afaa-801ca211c62a' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '5eaff75a-dd43-451f-af9f-87c9eeae293e' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '7787a482-13e8-4784-8a06-c7ed49a7aaf4' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'c4ddaf11-3032-4e77-b3b9-3a340369b9ad' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '78ba3993-d784-4f44-8d6e-cc0a8ad5230e' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '882adaf5-3aa9-4708-8e7d-3957103775b4' from '' to 'U2F V2'.
+
+Updated 'Version' for AAGUID '57235694-51a5-4a4d-a81a-f42185df6502' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286' from '' to 'FIDO 2.1'.
+
+
+
 DETAILED LOG - 2025-05-03 08:18:42
 
 Vendor 'SafeKey' for description 'SafeKey/Classic (FP)' has become valid.
@@ -3817,6 +3855,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
