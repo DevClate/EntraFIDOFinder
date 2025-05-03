@@ -15502,7 +15502,7 @@
       "timeOfLastStatusChange": "2024-09-10"
     },
     {
-      "Vendor": "SafeKey",
+      "Vendor": "Deepnet",
       "Description": "SafeKey/Classic (NFC)",
       "AAGUID": "b12eac35-586c-4809-a4b1-d81af6c305cf",
       "Bio": "❌",
@@ -15632,7 +15632,7 @@
       "timeOfLastStatusChange": "2025-04-29"
     },
     {
-      "Vendor": "SafeKey",
+      "Vendor": "Deepnet",
       "Description": "SafeKey/Classic (FP)",
       "AAGUID": "e41b42a3-60ac-4afb-8757-a98f2d7f6c9f",
       "Bio": "✅",
