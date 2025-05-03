@@ -1,25 +1,361 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Database-of-Keys",
-    "type": "object",
-    "properties": {
-      "metadata": {
-        "type": "object",
-        "properties": {
-          "databaseLastUpdated": { "type": "string", "format": "date-time" },
-          "databaseLastChecked": { "type": "string", "format": "date-time" }
-        },
-        "required": [ "databaseLastUpdated", "databaseLastChecked" ],
-        "additionalProperties": false
-      },
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FIDO2 Metadata Collection",
+  "type": "object",
+  "required": ["keys", "metadata"],
+  "properties": {
       "keys": {
-        "type": "array",
-        "items": {
-          "$ref": "./fido2-metadata.schema.json"
-        }
+          "type": "array",
+          "description": "Collection of FIDO2 authenticator metadata entries",
+          "items": {
+              "type": "object",
+              "properties": {
+                  "Vendor": {
+                      "type": "string"
+                  },
+                  "Description": {
+                      "type": "string"
+                  },
+                  "AAGUID": {
+                      "type": "string",
+                      "pattern": "^[0-9a-fA-F-]{36}$"
+                  },
+                  "Bio": {
+                      "type": "string",
+                      "enum": [
+                          "✅",
+                          "❌"
+                      ]
+                  },
+                  "USB": {
+                      "type": "string",
+                      "enum": [
+                          "✅",
+                          "❌"
+                      ]
+                  },
+                  "NFC": {
+                      "type": "string",
+                      "enum": [
+                          "✅",
+                          "❌"
+                      ]
+                  },
+                  "BLE": {
+                      "type": "string",
+                      "enum": [
+                          "✅",
+                          "❌"
+                      ]
+                  },
+                  "Version": {
+                      "type": "string"
+                  },
+                  "ValidVendor": {
+                      "type": "string",
+                      "enum": [
+                          "Yes",
+                          "No"
+                      ]
+                  },
+                  "metadataStatement": {
+                      "type": "object",
+                      "properties": {
+                          "legalHeader": {
+                              "type": "string"
+                          },
+                          "aaguid": {
+                              "type": "string",
+                              "pattern": "^[0-9a-fA-F-]{36}$"
+                          },
+                          "description": {
+                              "type": "string"
+                          },
+                          "alternativeDescriptions": {
+                              "type": "object",
+                              "patternProperties": {
+                                  "^[a-z]{2}(?:-[A-Z]{2})?$": {
+                                      "type": "string"
+                                  }
+                              },
+                              "additionalProperties": false
+                          },
+                          "authenticatorVersion": {
+                              "type": "integer"
+                          },
+                          "protocolFamily": {
+                              "type": "string"
+                          },
+                          "schema": {
+                              "type": "integer"
+                          },
+                          "upv": {
+                              "type": "array",
+                              "items": {
+                                  "type": "object",
+                                  "properties": {
+                                      "major": {
+                                          "type": "integer"
+                                      },
+                                      "minor": {
+                                          "type": "integer"
+                                      }
+                                  }
+                              }
+                          },
+                          "authenticationAlgorithms": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "publicKeyAlgAndEncodings": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "attestationTypes": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "userVerificationDetails": {
+                              "type": "array",
+                              "items": {
+                                  "type": "array",
+                                  "items": {
+                                      "type": "object",
+                                      "properties": {
+                                          "userVerificationMethod": {
+                                              "type": "string"
+                                          },
+                                          "caDesc": {
+                                              "type": "object",
+                                              "properties": {
+                                                  "base": {
+                                                      "type": "integer"
+                                                  },
+                                                  "minLength": {
+                                                      "type": "integer"
+                                                  },
+                                                  "maxRetries": {
+                                                      "type": "integer"
+                                                  },
+                                                  "blockSlowdown": {
+                                                      "type": "integer"
+                                                  }
+                                              }
+                                          },
+                                          "baDesc": {
+                                              "type": "object",
+                                              "properties": {
+                                                  "selfAttestedFRR": {
+                                                      "type": "integer"
+                                                  },
+                                                  "selfAttestedFAR": {
+                                                      "type": "integer"
+                                                  },
+                                                  "iAPARThreshold": {
+                                                      "type": "integer"
+                                                  },
+                                                  "maxTemplates": {
+                                                      "type": "integer"
+                                                  },
+                                                  "maxRetries": {
+                                                      "type": "integer"
+                                                  },
+                                                  "blockSlowdown": {
+                                                      "type": "integer"
+                                                  }
+                                              }
+                                          }
+                                      }
+                                  }
+                              }
+                          },
+                          "keyProtection": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "isKeyRestricted": {
+                              "type": "boolean"
+                          },
+                          "matcherProtection": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "cryptoStrength": {
+                              "type": "integer"
+                          },
+                          "attachmentHint": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "tcDisplay": {
+                              "type": "array"
+                          },
+                          "attestationRootCertificates": {
+                              "type": "array",
+                              "items": {
+                                  "type": "string"
+                              }
+                          },
+                          "icon": {
+                              "type": "string"
+                          },
+                          "authenticatorGetInfo": {
+                              "type": "object",
+                              "properties": {
+                                  "versions": {
+                                      "type": "array",
+                                      "items": {
+                                          "type": "string"
+                                      }
+                                  },
+                                  "extensions": {
+                                      "type": "array",
+                                      "items": {
+                                          "type": "string"
+                                      }
+                                  },
+                                  "aaguid": {
+                                      "type": "string"
+                                  },
+                                  "options": {
+                                      "type": "object"
+                                  },
+                                  "maxMsgSize": {
+                                      "type": "integer"
+                                  },
+                                  "pinUvAuthProtocols": {
+                                      "type": "array",
+                                      "items": {
+                                          "type": "integer"
+                                      }
+                                  },
+                                  "maxCredentialCountInList": {
+                                      "type": "integer"
+                                  },
+                                  "maxCredentialIdLength": {
+                                      "type": "integer"
+                                  },
+                                  "transports": {
+                                      "type": "array",
+                                      "items": {
+                                          "type": "string"
+                                      }
+                                  },
+                                  "algorithms": {
+                                      "type": "array"
+                                  },
+                                  "minPINLength": {
+                                      "type": ["integer", "null"]
+                                  },
+                                  "firmwareVersion": {
+                                      "type": "integer"
+                                  },
+                                  "maxCredBlobLength": {
+                                      "type": ["integer", "null"]
+                                  },
+                                  "maxRPIDsForSetMinPINLength": {
+                                      "type": ["integer", "null"]
+                                  },
+                                  "forcePINChange": {
+                                      "type": "boolean"
+                                  }
+                              }
+                          }
+                      }
+                  },
+                  "statusReports": {
+                      "type": "array",
+                      "items": {
+                          "type": "object",
+                          "properties": {
+                              "status": {
+                                  "type": "string"
+                              },
+                              "effectiveDate": {
+                                  "type": "string"
+                              },
+                              "authenticatorVersion": {
+                                  "type": "integer"
+                              },
+                              "url": {
+                                  "type": "string"
+                              },
+                              "certificationDescriptor": {
+                                  "type": "string"
+                              },
+                              "certificateNumber": {
+                                  "type": "string"
+                              },
+                              "certificationPolicyVersion": {
+                                  "type": "string"
+                              },
+                              "certificationRequirementsVersion": {
+                                  "type": "string"
+                              }
+                          }
+                      }
+                  },
+                  "timeOfLastStatusChange": {
+                      "type": "string"
+                  }
+              },
+              "required": [
+                  "Vendor",
+                  "Description",
+                  "AAGUID",
+                  "Bio",
+                  "USB",
+                  "NFC",
+                  "BLE",
+                  "Version",
+                  "ValidVendor"
+              ],
+              "additionalProperties": false,
+              "propertyOrder": [
+                  "Vendor",
+                  "Description",
+                  "AAGUID",
+                  "Bio",
+                  "USB",
+                  "NFC",
+                  "BLE",
+                  "Version",
+                  "ValidVendor",
+                  "metadataStatement",
+                  "statusReports",
+                  "timeOfLastStatusChange"
+              ]
+          }
+      },
+      "metadata": {
+          "type": "object",
+          "properties": {
+              "databaseLastChecked": {
+                  "type": "string",
+                  "description": "Date and time when the FIDO database was last checked",
+                  "format": "date-time"
+              },
+              "databaseLastUpdated": {
+                  "type": "string",
+                  "description": "Date and time when the FIDO database was last updated",
+                  "format": "date-time" 
+              }
+          },
+          "required": ["databaseLastChecked", "databaseLastUpdated"],
+          "additionalProperties": false
       }
-    },
-    "required": [ "metadata", "keys" ],
-    "additionalProperties": false
-  }
-  
+  },
+  "additionalProperties": false
+}
