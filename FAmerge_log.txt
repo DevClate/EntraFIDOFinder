@@ -1,4 +1,227 @@
 
+===== Script Run on 2025-05-03 08:22:58 UTC =====
+2025-05-03 08:22:53 - AAGUID: ca87cb70-4c1b-4579-a8e8-4efdd7c007e0
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-10-06
+
+2025-05-03 08:22:53 - AAGUID: ca87cb70-4c1b-4579-a8e8-4efdd7c007e0
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: 
+Description: FIDO Alliance TruU Sample FIDO2 Authenticator
+
+2025-05-03 08:22:53 - AAGUID: c89e6a38-6c00-5426-5aa5-c9cbf48f0382
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-06
+
+2025-05-03 08:22:53 - AAGUID: c89e6a38-6c00-5426-5aa5-c9cbf48f0382
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ACS
+Description: ACS FIDO Authenticator NFC
+
+2025-05-03 08:22:54 - AAGUID: b9f6b7b6-f929-4189-bca9-dd951240c132
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-25
+
+2025-05-03 08:22:54 - AAGUID: b9f6b7b6-f929-4189-bca9-dd951240c132
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Deepnet
+Description: Deepnet SafeKey/Classic (USB)
+
+2025-05-03 08:22:54 - AAGUID: 78ba3993-d784-4f44-8d6e-cc0a8ad5230e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-09
+
+2025-05-03 08:22:54 - AAGUID: 78ba3993-d784-4f44-8d6e-cc0a8ad5230e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian ePass FIDO-NFC(CTAP2.1, CTAP2.0, U2F)
+
+2025-05-03 08:22:54 - AAGUID: 39589099-9a75-49fc-afaa-801ca211c62a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-08
+
+2025-05-03 08:22:54 - AAGUID: 39589099-9a75-49fc-afaa-801ca211c62a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian ePass FIDO-NFC (Enterprise Profile) (CTAP2.1, CTAP2.0, U2F)
+
+2025-05-03 08:22:55 - AAGUID: 0db01cd6-5618-455b-bb46-1ec203d3213e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-08
+
+2025-05-03 08:22:55 - AAGUID: 0db01cd6-5618-455b-bb46-1ec203d3213e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: GoldKey
+Description: GoldKey Security Token
+
+2025-05-03 08:22:55 - AAGUID: c4ddaf11-3032-4e77-b3b9-3a340369b9ad
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-02
+
+2025-05-03 08:22:55 - AAGUID: c4ddaf11-3032-4e77-b3b9-3a340369b9ad
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo Fusion
+
+2025-05-03 08:22:56 - AAGUID: e41b42a3-60ac-4afb-8757-a98f2d7f6c9f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-25
+
+2025-05-03 08:22:56 - AAGUID: e41b42a3-60ac-4afb-8757-a98f2d7f6c9f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SafeKey
+Description: SafeKey/Classic (FP)
+
+2025-05-03 08:22:56 - AAGUID: b12eac35-586c-4809-a4b1-d81af6c305cf
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-29
+
+2025-05-03 08:22:56 - AAGUID: b12eac35-586c-4809-a4b1-d81af6c305cf
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SafeKey
+Description: SafeKey/Classic (NFC)
+
+2025-05-03 08:22:56 - AAGUID: 57235694-51a5-4a4d-a81a-f42185df6502
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-26
+
+2025-05-03 08:22:56 - AAGUID: 57235694-51a5-4a4d-a81a-f42185df6502
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SHALO
+Description: SHALO AUTH
+
+2025-05-03 08:22:57 - AAGUID: 7787a482-13e8-4784-8a06-c7ed49a7aaf4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-25
+
+2025-05-03 08:22:57 - AAGUID: 7787a482-13e8-4784-8a06-c7ed49a7aaf4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Swissbit
+Description: Swissbit iShield Key 2
+
+2025-05-03 08:22:57 - AAGUID: 5eaff75a-dd43-451f-af9f-87c9eeae293e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-25
+
+2025-05-03 08:22:57 - AAGUID: 5eaff75a-dd43-451f-af9f-87c9eeae293e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Swissbit
+Description: Swissbit iShield Key 2 FIPS Enterprise
+
+2025-05-03 08:22:57 - AAGUID: e400ef8c-711d-4692-af46-7f2cf7da23ad
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-25
+
+2025-05-03 08:22:57 - AAGUID: e400ef8c-711d-4692-af46-7f2cf7da23ad
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Swissbit
+Description: Swissbit iShield Key 2 Enterprise
+
+2025-05-03 08:22:57 - AAGUID: 817cdab8-0d51-4de1-a821-e25b88519cf3
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-25
+
+2025-05-03 08:22:57 - AAGUID: 817cdab8-0d51-4de1-a821-e25b88519cf3
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Swissbit
+Description: Swissbit iShield Key 2 FIPS
+
+2025-05-03 08:22:57 - AAGUID: 882adaf5-3aa9-4708-8e7d-3957103775b4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-06
+
+2025-05-03 08:22:57 - AAGUID: 882adaf5-3aa9-4708-8e7d-3957103775b4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: T-Shield
+Description: T-Shield TrustSec FIDO2 Bio and client PIN version
+
+2025-05-03 08:22:57 - AAGUID: 1e906e14-77af-46bc-ae9f-fe6ef18257e4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-11
+
+2025-05-03 08:22:57 - AAGUID: 1e906e14-77af-46bc-ae9f-fe6ef18257e4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeridiumID
+Description: VeridiumID Passkey iOS SDK
+
+2025-05-03 08:22:57 - AAGUID: 8d4378b0-725d-4432-b3c2-01fcdaf46286
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-11
+
+2025-05-03 08:22:57 - AAGUID: 8d4378b0-725d-4432-b3c2-01fcdaf46286
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeridiumID
+Description: VeridiumID Passkey Android SDK
+
+
 ===== Script Run on 2025-05-01 09:21:47 UTC =====
 No changes have been detected since last run.
 
@@ -1510,6 +1733,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
