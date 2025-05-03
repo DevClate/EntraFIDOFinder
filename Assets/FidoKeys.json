@@ -1,7 +1,7 @@
 {
   "keys": [
     {
-      "Vendor": "",
+      "Vendor": "VeridiumID",
       "Description": "VeridiumID Passkey iOS SDK",
       "AAGUID": "1e906e14-77af-46bc-ae9f-fe6ef18257e4",
       "Bio": "✅",
@@ -15,7 +15,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "Deepnet",
       "Description": "Deepnet SafeKey/Classic (USB)",
       "AAGUID": "b9f6b7b6-f929-4189-bca9-dd951240c132",
       "Bio": "❌",
@@ -29,7 +29,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "GoldKey",
       "Description": "GoldKey Security Token",
       "AAGUID": "0db01cd6-5618-455b-bb46-1ec203d3213e",
       "Bio": "❌",
@@ -43,7 +43,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "SafeKey",
       "Description": "SafeKey/Classic (NFC)",
       "AAGUID": "b12eac35-586c-4809-a4b1-d81af6c305cf",
       "Bio": "❌",
@@ -57,7 +57,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "VeridiumID",
       "Description": "VeridiumID Passkey Android SDK",
       "AAGUID": "8d4378b0-725d-4432-b3c2-01fcdaf46286",
       "Bio": "✅",
@@ -71,7 +71,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "T-Shield",
       "Description": "T-Shield TrustSec FIDO2 Bio and client PIN version",
       "AAGUID": "882adaf5-3aa9-4708-8e7d-3957103775b4",
       "Bio": "✅",
@@ -85,7 +85,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "HID",
       "Description": "HID Crescendo Fusion",
       "AAGUID": "c4ddaf11-3032-4e77-b3b9-3a340369b9ad",
       "Bio": "❌",
@@ -99,7 +99,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "SHALO",
       "Description": "SHALO AUTH",
       "AAGUID": "57235694-51a5-4a4d-a81a-f42185df6502",
       "Bio": "❌",
@@ -113,7 +113,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "",
+      "Vendor": "SafeKey",
       "Description": "SafeKey/Classic (FP)",
       "AAGUID": "e41b42a3-60ac-4afb-8757-a98f2d7f6c9f",
       "Bio": "✅",
