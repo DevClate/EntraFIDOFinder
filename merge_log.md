@@ -1,3 +1,1738 @@
+# Merge Log - 2025-05-03 00:22:49
+
+Updated 'Bio' for AAGUID '833b721a-ff5f-4d00-bb2e-bdda3ec01e29' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '833b721a-ff5f-4d00-bb2e-bdda3ec01e29' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '833b721a-ff5f-4d00-bb2e-bdda3ec01e29' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '833b721a-ff5f-4d00-bb2e-bdda3ec01e29' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'f4c63eff-d26c-4248-801c-3736c7eaa93a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'f4c63eff-d26c-4248-801c-3736c7eaa93a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'f4c63eff-d26c-4248-801c-3736c7eaa93a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'f4c63eff-d26c-4248-801c-3736c7eaa93a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4c50ff10-1057-4fc6-b8ed-43a529530c3c' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '4c50ff10-1057-4fc6-b8ed-43a529530c3c' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '4c50ff10-1057-4fc6-b8ed-43a529530c3c' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '4c50ff10-1057-4fc6-b8ed-43a529530c3c' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '7d1351a6-e097-4852-b8bf-c9ac5c9ce4a3' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '73402251-f2a8-4f03-873e-3cb6db604b03' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '73402251-f2a8-4f03-873e-3cb6db604b03' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '73402251-f2a8-4f03-873e-3cb6db604b03' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '73402251-f2a8-4f03-873e-3cb6db604b03' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'a02140b7-0cbd-42e1-a9b5-a39da2545114' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'a02140b7-0cbd-42e1-a9b5-a39da2545114' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'a02140b7-0cbd-42e1-a9b5-a39da2545114' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'a02140b7-0cbd-42e1-a9b5-a39da2545114' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'f8a011f3-8c0a-4d15-8006-17111f9edc7d' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'f8a011f3-8c0a-4d15-8006-17111f9edc7d' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'f8a011f3-8c0a-4d15-8006-17111f9edc7d' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'f8a011f3-8c0a-4d15-8006-17111f9edc7d' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '77010bd7-212a-4fc9-b236-d2ca5e9d4084' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '77010bd7-212a-4fc9-b236-d2ca5e9d4084' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '77010bd7-212a-4fc9-b236-d2ca5e9d4084' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '77010bd7-212a-4fc9-b236-d2ca5e9d4084' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd8522d9f-575b-4866-88a9-ba99fa02f35b' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'd8522d9f-575b-4866-88a9-ba99fa02f35b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'd8522d9f-575b-4866-88a9-ba99fa02f35b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd8522d9f-575b-4866-88a9-ba99fa02f35b' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID '882adaf5-3aa9-4708-8e7d-3957103775b4' with description 'T-Shield TrustSec FIDO2 Bio and client PIN version'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132' with description 'Deepnet SafeKey/Classic (USB)'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '6ab56fad-881f-4a43-acb2-0be065924522' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '6ab56fad-881f-4a43-acb2-0be065924522' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '6ab56fad-881f-4a43-acb2-0be065924522' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '6ab56fad-881f-4a43-acb2-0be065924522' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'fa2b99dc-9e39-4257-8f92-4a30d23c4118' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'fa2b99dc-9e39-4257-8f92-4a30d23c4118' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'fa2b99dc-9e39-4257-8f92-4a30d23c4118' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'fa2b99dc-9e39-4257-8f92-4a30d23c4118' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '46544d5d-8f5d-4db4-89ac-ea8977073fff' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '46544d5d-8f5d-4db4-89ac-ea8977073fff' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '46544d5d-8f5d-4db4-89ac-ea8977073fff' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '46544d5d-8f5d-4db4-89ac-ea8977073fff' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3b24bf49-1d45-4484-a917-13175df0867b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3b24bf49-1d45-4484-a917-13175df0867b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '3b24bf49-1d45-4484-a917-13175df0867b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3b24bf49-1d45-4484-a917-13175df0867b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '9c835346-796b-4c27-8898-d6032f515cc5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9c835346-796b-4c27-8898-d6032f515cc5' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '9c835346-796b-4c27-8898-d6032f515cc5' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '9c835346-796b-4c27-8898-d6032f515cc5' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'fbefdf68-fe86-0106-213e-4d5fa24cbe2e' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'fbefdf68-fe86-0106-213e-4d5fa24cbe2e' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'fbefdf68-fe86-0106-213e-4d5fa24cbe2e' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'fbefdf68-fe86-0106-213e-4d5fa24cbe2e' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5343502d-5343-5343-6172-644649444f32' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '5343502d-5343-5343-6172-644649444f32' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '5343502d-5343-5343-6172-644649444f32' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '5343502d-5343-5343-6172-644649444f32' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '504d7149-4e4c-3841-4555-55445a677357' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '504d7149-4e4c-3841-4555-55445a677357' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '504d7149-4e4c-3841-4555-55445a677357' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '504d7149-4e4c-3841-4555-55445a677357' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5ca1ab1e-1337-fa57-f1d0-a117e71ca702' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '5ca1ab1e-1337-fa57-f1d0-a117e71ca702' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '5ca1ab1e-1337-fa57-f1d0-a117e71ca702' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5ca1ab1e-1337-fa57-f1d0-a117e71ca702' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b50d5e0a-7f81-4959-9b12-f45407407503' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'b50d5e0a-7f81-4959-9b12-f45407407503' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'b50d5e0a-7f81-4959-9b12-f45407407503' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'b50d5e0a-7f81-4959-9b12-f45407407503' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '0d9b2e56-566b-c393-2940-f821b7f15d6d' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '0d9b2e56-566b-c393-2940-f821b7f15d6d' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '0d9b2e56-566b-c393-2940-f821b7f15d6d' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '0d9b2e56-566b-c393-2940-f821b7f15d6d' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '30b5035e-d297-4ff1-010b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '30b5035e-d297-4ff1-010b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-010b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '30b5035e-d297-4ff1-010b-addc96ba6a98' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '6ec5cff2-a0f9-4169-945b-f33b563f7b99' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '6ec5cff2-a0f9-4169-945b-f33b563f7b99' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '6ec5cff2-a0f9-4169-945b-f33b563f7b99' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '6ec5cff2-a0f9-4169-945b-f33b563f7b99' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '1c086528-58d5-f211-823c-356786e36140' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '1c086528-58d5-f211-823c-356786e36140' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '1c086528-58d5-f211-823c-356786e36140' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '1c086528-58d5-f211-823c-356786e36140' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '30b5035e-d297-4fc1-b00b-addc96ba6a97' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '30b5035e-d297-4fc1-b00b-addc96ba6a97' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4fc1-b00b-addc96ba6a97' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '30b5035e-d297-4fc1-b00b-addc96ba6a97' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4e768f2c-5fab-48b3-b300-220eb487752b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '4e768f2c-5fab-48b3-b300-220eb487752b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '4e768f2c-5fab-48b3-b300-220eb487752b' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '4e768f2c-5fab-48b3-b300-220eb487752b' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '12ded745-4bed-47d4-abaa-e713f51d6393' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '12ded745-4bed-47d4-abaa-e713f51d6393' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '12ded745-4bed-47d4-abaa-e713f51d6393' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '12ded745-4bed-47d4-abaa-e713f51d6393' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '42df17de-06ba-4177-a2bb-6701be1380d6' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '42df17de-06ba-4177-a2bb-6701be1380d6' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '42df17de-06ba-4177-a2bb-6701be1380d6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '42df17de-06ba-4177-a2bb-6701be1380d6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '7409272d-1ff9-4e10-9fc9-ac0019c124fd' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '7409272d-1ff9-4e10-9fc9-ac0019c124fd' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '7409272d-1ff9-4e10-9fc9-ac0019c124fd' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '7409272d-1ff9-4e10-9fc9-ac0019c124fd' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'e416201b-afeb-41ca-a03d-2281c28322aa' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'e416201b-afeb-41ca-a03d-2281c28322aa' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'e416201b-afeb-41ca-a03d-2281c28322aa' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'e416201b-afeb-41ca-a03d-2281c28322aa' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286' with description 'VeridiumID Passkey Android SDK'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5626bed4-e756-430b-a7ff-ca78c8b12738' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '5626bed4-e756-430b-a7ff-ca78c8b12738' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '5626bed4-e756-430b-a7ff-ca78c8b12738' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5626bed4-e756-430b-a7ff-ca78c8b12738' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '19083c3d-8383-4b18-bc03-8f1c9ab2fd1b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '19083c3d-8383-4b18-bc03-8f1c9ab2fd1b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '19083c3d-8383-4b18-bc03-8f1c9ab2fd1b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '19083c3d-8383-4b18-bc03-8f1c9ab2fd1b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '998f358b-2dd2-4cbe-a43a-e8107438dfb3' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '998f358b-2dd2-4cbe-a43a-e8107438dfb3' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '998f358b-2dd2-4cbe-a43a-e8107438dfb3' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '998f358b-2dd2-4cbe-a43a-e8107438dfb3' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2194b428-9397-4046-8f39-007a1605a482' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2194b428-9397-4046-8f39-007a1605a482' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '2194b428-9397-4046-8f39-007a1605a482' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '2194b428-9397-4046-8f39-007a1605a482' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'fec067a1-f1d0-4c5e-b4c0-cc3237475461' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'fec067a1-f1d0-4c5e-b4c0-cc3237475461' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'fec067a1-f1d0-4c5e-b4c0-cc3237475461' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'fec067a1-f1d0-4c5e-b4c0-cc3237475461' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '23786452-f02d-4344-87ed-aaf703726881' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '23786452-f02d-4344-87ed-aaf703726881' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '23786452-f02d-4344-87ed-aaf703726881' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '23786452-f02d-4344-87ed-aaf703726881' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '8da0e4dc-164b-454e-972e-88f362b23d59' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '8da0e4dc-164b-454e-972e-88f362b23d59' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '8da0e4dc-164b-454e-972e-88f362b23d59' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '8da0e4dc-164b-454e-972e-88f362b23d59' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID 'ba76a271-6eb6-4171-874d-b6428dbe3437' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'ba76a271-6eb6-4171-874d-b6428dbe3437' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ba76a271-6eb6-4171-874d-b6428dbe3437' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ba76a271-6eb6-4171-874d-b6428dbe3437' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '54d9fee8-e621-4291-8b18-7157b99c5bec' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '54d9fee8-e621-4291-8b18-7157b99c5bec' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '54d9fee8-e621-4291-8b18-7157b99c5bec' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '54d9fee8-e621-4291-8b18-7157b99c5bec' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b92c3f9a-c014-4056-887f-140a2501163b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'b92c3f9a-c014-4056-887f-140a2501163b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'b92c3f9a-c014-4056-887f-140a2501163b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'b92c3f9a-c014-4056-887f-140a2501163b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b90e7dc1-316e-4fee-a25a-56a666a670fe' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'b90e7dc1-316e-4fee-a25a-56a666a670fe' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'b90e7dc1-316e-4fee-a25a-56a666a670fe' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'b90e7dc1-316e-4fee-a25a-56a666a670fe' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'e1a96183-5016-4f24-b55b-e3ae23614cc6' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'e1a96183-5016-4f24-b55b-e3ae23614cc6' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'e1a96183-5016-4f24-b55b-e3ae23614cc6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'e1a96183-5016-4f24-b55b-e3ae23614cc6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ed042a3a-4b22-4455-bb69-a267b652ae7e' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ed042a3a-4b22-4455-bb69-a267b652ae7e' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ed042a3a-4b22-4455-bb69-a267b652ae7e' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'ed042a3a-4b22-4455-bb69-a267b652ae7e' from 'No' to '❌'.
+
+Added new entry for AAGUID '7787a482-13e8-4784-8a06-c7ed49a7aaf4' with description 'Swissbit iShield Key 2' and vendor 'Swissbit'.
+
+Updated 'Bio' for AAGUID '9ff4cc65-6154-4fff-ba09-9e2af7882ad2' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9ff4cc65-6154-4fff-ba09-9e2af7882ad2' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '9ff4cc65-6154-4fff-ba09-9e2af7882ad2' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '9ff4cc65-6154-4fff-ba09-9e2af7882ad2' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '973446ca-e21c-9a9b-99f5-9b985a67af0f' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '973446ca-e21c-9a9b-99f5-9b985a67af0f' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '973446ca-e21c-9a9b-99f5-9b985a67af0f' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '973446ca-e21c-9a9b-99f5-9b985a67af0f' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '95442b2e-f15e-4def-b270-efb106facb4e' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '95442b2e-f15e-4def-b270-efb106facb4e' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '95442b2e-f15e-4def-b270-efb106facb4e' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '95442b2e-f15e-4def-b270-efb106facb4e' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b7d3f68e-88a6-471e-9ecf-2df26d041ede' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'b7d3f68e-88a6-471e-9ecf-2df26d041ede' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'b7d3f68e-88a6-471e-9ecf-2df26d041ede' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'b7d3f68e-88a6-471e-9ecf-2df26d041ede' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2bff89f2-323a-48fc-b7c8-9ff7fe87c07e' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '2bff89f2-323a-48fc-b7c8-9ff7fe87c07e' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '2bff89f2-323a-48fc-b7c8-9ff7fe87c07e' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '2bff89f2-323a-48fc-b7c8-9ff7fe87c07e' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4' with description 'VeridiumID Passkey iOS SDK'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID '092277e5-8437-46b5-b911-ea64b294acb7' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '092277e5-8437-46b5-b911-ea64b294acb7' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '092277e5-8437-46b5-b911-ea64b294acb7' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '092277e5-8437-46b5-b911-ea64b294acb7' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '516d3969-5a57-5651-5958-4e7a49434167' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '516d3969-5a57-5651-5958-4e7a49434167' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '516d3969-5a57-5651-5958-4e7a49434167' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '516d3969-5a57-5651-5958-4e7a49434167' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '5d629218-d3a5-11ed-afa1-0242ac120002' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '5d629218-d3a5-11ed-afa1-0242ac120002' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '5d629218-d3a5-11ed-afa1-0242ac120002' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '5d629218-d3a5-11ed-afa1-0242ac120002' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'a4e9fc6d-4cbe-4758-b8ba-37598bb5bbaa' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b267239b-954f-4041-a01b-ee4f33c145b6' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'b267239b-954f-4041-a01b-ee4f33c145b6' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'b267239b-954f-4041-a01b-ee4f33c145b6' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'b267239b-954f-4041-a01b-ee4f33c145b6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '7991798a-a7f3-487f-98c0-3faf7a458a04' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '7991798a-a7f3-487f-98c0-3faf7a458a04' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '7991798a-a7f3-487f-98c0-3faf7a458a04' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '7991798a-a7f3-487f-98c0-3faf7a458a04' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '24673149-6c86-42e7-98d9-433fb5b73296' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '24673149-6c86-42e7-98d9-433fb5b73296' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '24673149-6c86-42e7-98d9-433fb5b73296' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '24673149-6c86-42e7-98d9-433fb5b73296' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'c5ef55ff-ad9a-4b9f-b580-adebafe026d0' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'c5ef55ff-ad9a-4b9f-b580-adebafe026d0' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'c5ef55ff-ad9a-4b9f-b580-adebafe026d0' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'c5ef55ff-ad9a-4b9f-b580-adebafe026d0' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '8c39ee86-7f9a-4a95-9ba3-f6b097e5c2ee' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '59f85fe7-faa5-4c92-9f52-697b9d4d5473' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '59f85fe7-faa5-4c92-9f52-697b9d4d5473' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '59f85fe7-faa5-4c92-9f52-697b9d4d5473' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '59f85fe7-faa5-4c92-9f52-697b9d4d5473' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'be727034-574a-f799-5c76-0929e0430973' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'be727034-574a-f799-5c76-0929e0430973' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'be727034-574a-f799-5c76-0929e0430973' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'be727034-574a-f799-5c76-0929e0430973' from 'Yes' to '✅'.
+
+Added new entry for AAGUID '39589099-9a75-49fc-afaa-801ca211c62a' with description 'Feitian ePass FIDO-NFC (Enterprise Profile) (CTAP2.1, CTAP2.0, U2F)' and vendor 'Feitian'.
+
+Updated 'Bio' for AAGUID '72c6b72d-8512-4c66-8359-9d3d10d9222f' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '72c6b72d-8512-4c66-8359-9d3d10d9222f' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '72c6b72d-8512-4c66-8359-9d3d10d9222f' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '72c6b72d-8512-4c66-8359-9d3d10d9222f' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'bbf4b6a7-679d-f6fc-c4f2-8ac0ddf9015a' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '7e3f3d30-3557-4442-bdae-139312178b39' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '7e3f3d30-3557-4442-bdae-139312178b39' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '7e3f3d30-3557-4442-bdae-139312178b39' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '7e3f3d30-3557-4442-bdae-139312178b39' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '9876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '9876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '9876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'f7c558a0-f465-11e8-b568-0800200c9a66' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'f7c558a0-f465-11e8-b568-0800200c9a66' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'f7c558a0-f465-11e8-b568-0800200c9a66' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'f7c558a0-f465-11e8-b568-0800200c9a66' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'cb69481e-8ff7-4039-93ec-0a2729a154a8' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'cb69481e-8ff7-4039-93ec-0a2729a154a8' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'cb69481e-8ff7-4039-93ec-0a2729a154a8' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'cb69481e-8ff7-4039-93ec-0a2729a154a8' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ee882879-721c-4913-9775-3dfcce97072a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ee882879-721c-4913-9775-3dfcce97072a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ee882879-721c-4913-9775-3dfcce97072a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ee882879-721c-4913-9775-3dfcce97072a' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID '57235694-51a5-4a4d-a81a-f42185df6502' with description 'SHALO AUTH'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID '89b19028-256b-4025-8872-255358d950e4' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '89b19028-256b-4025-8872-255358d950e4' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '89b19028-256b-4025-8872-255358d950e4' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '89b19028-256b-4025-8872-255358d950e4' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '8c97a730-3f7b-41a6-87d6-1e9b62bda6f0' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '8c97a730-3f7b-41a6-87d6-1e9b62bda6f0' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '8c97a730-3f7b-41a6-87d6-1e9b62bda6f0' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '8c97a730-3f7b-41a6-87d6-1e9b62bda6f0' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ca4cff1b-5a81-4404-8194-59aabcf1660b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ca4cff1b-5a81-4404-8194-59aabcf1660b' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'ca4cff1b-5a81-4404-8194-59aabcf1660b' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'ca4cff1b-5a81-4404-8194-59aabcf1660b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'aeb6569c-f8fb-4950-ac60-24ca2bbe2e52' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'aeb6569c-f8fb-4950-ac60-24ca2bbe2e52' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'aeb6569c-f8fb-4950-ac60-24ca2bbe2e52' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'aeb6569c-f8fb-4950-ac60-24ca2bbe2e52' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '8876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '8876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '8876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '8876631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '7d2afadd-bf6b-44a2-a66b-e831fceb8eff' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '7d2afadd-bf6b-44a2-a66b-e831fceb8eff' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '7d2afadd-bf6b-44a2-a66b-e831fceb8eff' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '7d2afadd-bf6b-44a2-a66b-e831fceb8eff' from 'No' to '❌'.
+
+Added new entry for AAGUID 'e400ef8c-711d-4692-af46-7f2cf7da23ad' with description 'Swissbit iShield Key 2 Enterprise' and vendor 'Swissbit'.
+
+Updated 'Bio' for AAGUID '931327dd-c89b-406c-a81e-ed7058ef36c6' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '931327dd-c89b-406c-a81e-ed7058ef36c6' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '931327dd-c89b-406c-a81e-ed7058ef36c6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '931327dd-c89b-406c-a81e-ed7058ef36c6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '8976631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '8976631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '8976631b-d4a0-427f-5773-0ec71c9e0279' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '8976631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'a1f52be5-dfab-4364-b51c-2bd496b14a56' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'a1f52be5-dfab-4364-b51c-2bd496b14a56' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'a1f52be5-dfab-4364-b51c-2bd496b14a56' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'a1f52be5-dfab-4364-b51c-2bd496b14a56' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '1105e4ed-af1d-02ff-ffff-ffffffffffff' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '1105e4ed-af1d-02ff-ffff-ffffffffffff' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '1105e4ed-af1d-02ff-ffff-ffffffffffff' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '1105e4ed-af1d-02ff-ffff-ffffffffffff' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '90636e1f-ef82-43bf-bdcf-5255f139d12f' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '90636e1f-ef82-43bf-bdcf-5255f139d12f' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '90636e1f-ef82-43bf-bdcf-5255f139d12f' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '90636e1f-ef82-43bf-bdcf-5255f139d12f' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'c80dbd9a-533f-4a17-b941-1a2f1c7cedff' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'c80dbd9a-533f-4a17-b941-1a2f1c7cedff' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'c80dbd9a-533f-4a17-b941-1a2f1c7cedff' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'c80dbd9a-533f-4a17-b941-1a2f1c7cedff' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'c5703116-972b-4851-a3e7-ae1259843399' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'c5703116-972b-4851-a3e7-ae1259843399' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'c5703116-972b-4851-a3e7-ae1259843399' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'c5703116-972b-4851-a3e7-ae1259843399' from 'No' to '❌'.
+
+Updated 'Description' for AAGUID 'ad08c78a-4e41-49b9-86a2-ac15b06899e2' from 'YubiKey Bio Series - FIDO Edition' to 'YubiKey Bio Series - FIDO Edition (Enterprise Profile)'.
+
+Updated 'Bio' for AAGUID 'ad08c78a-4e41-49b9-86a2-ac15b06899e2' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'ad08c78a-4e41-49b9-86a2-ac15b06899e2' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ad08c78a-4e41-49b9-86a2-ac15b06899e2' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ad08c78a-4e41-49b9-86a2-ac15b06899e2' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'eabb46cc-e241-80bf-ae9e-96fa6d2975cf' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'eabb46cc-e241-80bf-ae9e-96fa6d2975cf' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'eabb46cc-e241-80bf-ae9e-96fa6d2975cf' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'eabb46cc-e241-80bf-ae9e-96fa6d2975cf' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'c62100de-759b-4bf8-b22b-63b3e3a80401' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'c62100de-759b-4bf8-b22b-63b3e3a80401' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'c62100de-759b-4bf8-b22b-63b3e3a80401' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'c62100de-759b-4bf8-b22b-63b3e3a80401' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4c0cf95d-2f40-43b5-ba42-4c83a11c04ba' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '4c0cf95d-2f40-43b5-ba42-4c83a11c04ba' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '4c0cf95d-2f40-43b5-ba42-4c83a11c04ba' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '4c0cf95d-2f40-43b5-ba42-4c83a11c04ba' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '20f0be98-9af9-986a-4b42-8eca4acb28e4' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '20f0be98-9af9-986a-4b42-8eca4acb28e4' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '20f0be98-9af9-986a-4b42-8eca4acb28e4' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '20f0be98-9af9-986a-4b42-8eca4acb28e4' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4599062e-6926-4fe7-9566-9e8fb1aedaa0' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '4599062e-6926-4fe7-9566-9e8fb1aedaa0' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '4599062e-6926-4fe7-9566-9e8fb1aedaa0' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '4599062e-6926-4fe7-9566-9e8fb1aedaa0' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '6002f033-3c07-ce3e-d0f7-0ffe5ed42543' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '6002f033-3c07-ce3e-d0f7-0ffe5ed42543' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '6002f033-3c07-ce3e-d0f7-0ffe5ed42543' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '6002f033-3c07-ce3e-d0f7-0ffe5ed42543' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'e86addcd-7711-47e5-b42a-c18257b0bf61' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'e86addcd-7711-47e5-b42a-c18257b0bf61' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'e86addcd-7711-47e5-b42a-c18257b0bf61' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'e86addcd-7711-47e5-b42a-c18257b0bf61' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' with description 'SafeKey/Classic (NFC)'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '57f7de54-c807-4eab-b1c6-1c9be7984e92' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '57f7de54-c807-4eab-b1c6-1c9be7984e92' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '57f7de54-c807-4eab-b1c6-1c9be7984e92' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '57f7de54-c807-4eab-b1c6-1c9be7984e92' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4d41190c-7beb-4a84-8018-adf265a6352d' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '4d41190c-7beb-4a84-8018-adf265a6352d' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '4d41190c-7beb-4a84-8018-adf265a6352d' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '4d41190c-7beb-4a84-8018-adf265a6352d' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '8d1b1fcb-3c76-49a9-9129-5515b346aa02' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '8d1b1fcb-3c76-49a9-9129-5515b346aa02' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '8d1b1fcb-3c76-49a9-9129-5515b346aa02' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '8d1b1fcb-3c76-49a9-9129-5515b346aa02' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '61250591-b2bc-4456-b719-0b17be90bb30' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '61250591-b2bc-4456-b719-0b17be90bb30' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '61250591-b2bc-4456-b719-0b17be90bb30' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '61250591-b2bc-4456-b719-0b17be90bb30' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'a25342c0-3cdc-4414-8e46-f4807fca511c' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'a25342c0-3cdc-4414-8e46-f4807fca511c' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'a25342c0-3cdc-4414-8e46-f4807fca511c' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'a25342c0-3cdc-4414-8e46-f4807fca511c' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'c1f9a0bc-1dd2-404a-b27f-8e29047a43fd' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'c1f9a0bc-1dd2-404a-b27f-8e29047a43fd' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'c1f9a0bc-1dd2-404a-b27f-8e29047a43fd' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'c1f9a0bc-1dd2-404a-b27f-8e29047a43fd' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '4b3f8944-d4f2-4d21-bb19-764a986ec160' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '4b3f8944-d4f2-4d21-bb19-764a986ec160' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '4b3f8944-d4f2-4d21-bb19-764a986ec160' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '4b3f8944-d4f2-4d21-bb19-764a986ec160' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'cdbdaea2-c415-5073-50f7-c04e968640b6' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'cdbdaea2-c415-5073-50f7-c04e968640b6' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'cdbdaea2-c415-5073-50f7-c04e968640b6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'cdbdaea2-c415-5073-50f7-c04e968640b6' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '74820b05-a6c9-40f9-8fb0-9f86aca93998' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '74820b05-a6c9-40f9-8fb0-9f86aca93998' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '74820b05-a6c9-40f9-8fb0-9f86aca93998' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '74820b05-a6c9-40f9-8fb0-9f86aca93998' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '73bb0cd4-e502-49b8-9c6f-b59445bf720b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '73bb0cd4-e502-49b8-9c6f-b59445bf720b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '73bb0cd4-e502-49b8-9c6f-b59445bf720b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '73bb0cd4-e502-49b8-9c6f-b59445bf720b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7' from 'No' to '❌'.
+
+Added new entry for AAGUID '5eaff75a-dd43-451f-af9f-87c9eeae293e' with description 'Swissbit iShield Key 2 FIPS Enterprise' and vendor 'Swissbit'.
+
+Updated 'Bio' for AAGUID 'ff4dac45-ede8-4ec2-aced-cf66103f4335' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ff4dac45-ede8-4ec2-aced-cf66103f4335' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ff4dac45-ede8-4ec2-aced-cf66103f4335' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ff4dac45-ede8-4ec2-aced-cf66103f4335' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '12755c32-8ad1-46eb-881c-e0b38d848b09' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '12755c32-8ad1-46eb-881c-e0b38d848b09' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '12755c32-8ad1-46eb-881c-e0b38d848b09' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '12755c32-8ad1-46eb-881c-e0b38d848b09' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9b' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '175cd298-83d2-4a26-b637-313c07a6434e' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '175cd298-83d2-4a26-b637-313c07a6434e' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '175cd298-83d2-4a26-b637-313c07a6434e' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '175cd298-83d2-4a26-b637-313c07a6434e' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '773c30d9-5919-4e96-a4f5-db65e95cf890' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '773c30d9-5919-4e96-a4f5-db65e95cf890' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '773c30d9-5919-4e96-a4f5-db65e95cf890' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '773c30d9-5919-4e96-a4f5-db65e95cf890' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '20ac7a17-c814-4833-93fe-539f0d5e3389' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '20ac7a17-c814-4833-93fe-539f0d5e3389' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '20ac7a17-c814-4833-93fe-539f0d5e3389' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '20ac7a17-c814-4833-93fe-539f0d5e3389' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '149a2021-8ef6-4133-96b8-81f8d5b7f1f5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '149a2021-8ef6-4133-96b8-81f8d5b7f1f5' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '149a2021-8ef6-4133-96b8-81f8d5b7f1f5' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '149a2021-8ef6-4133-96b8-81f8d5b7f1f5' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '0acf3011-bc60-f375-fb53-6f05f43154e0' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '0acf3011-bc60-f375-fb53-6f05f43154e0' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '0acf3011-bc60-f375-fb53-6f05f43154e0' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '0acf3011-bc60-f375-fb53-6f05f43154e0' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '99ed6c29-4573-4847-816d-78ad8f1c75ef' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '99ed6c29-4573-4847-816d-78ad8f1c75ef' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '99ed6c29-4573-4847-816d-78ad8f1c75ef' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '99ed6c29-4573-4847-816d-78ad8f1c75ef' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '58276709-bb4b-4bb3-baf1-60eea99282a7' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '58276709-bb4b-4bb3-baf1-60eea99282a7' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '58276709-bb4b-4bb3-baf1-60eea99282a7' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '58276709-bb4b-4bb3-baf1-60eea99282a7' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2d3bec26-15ee-4f5d-88b2-53622490270b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2d3bec26-15ee-4f5d-88b2-53622490270b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '2d3bec26-15ee-4f5d-88b2-53622490270b' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '2d3bec26-15ee-4f5d-88b2-53622490270b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '146e77ef-11eb-4423-b847-ce77864e9411' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '146e77ef-11eb-4423-b847-ce77864e9411' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '146e77ef-11eb-4423-b847-ce77864e9411' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '146e77ef-11eb-4423-b847-ce77864e9411' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '7b96457d-e3cd-432b-9ceb-c9fdd7ef7432' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '7b96457d-e3cd-432b-9ceb-c9fdd7ef7432' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '7b96457d-e3cd-432b-9ceb-c9fdd7ef7432' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '7b96457d-e3cd-432b-9ceb-c9fdd7ef7432' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3789da91-f943-46bc-95c3-50ea2012f03a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3789da91-f943-46bc-95c3-50ea2012f03a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '3789da91-f943-46bc-95c3-50ea2012f03a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3789da91-f943-46bc-95c3-50ea2012f03a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '0bb43545-fd2c-4185-87dd-feb0b2916ace' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '0bb43545-fd2c-4185-87dd-feb0b2916ace' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '0bb43545-fd2c-4185-87dd-feb0b2916ace' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '0bb43545-fd2c-4185-87dd-feb0b2916ace' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '50a45b0c-80e7-f944-bf29-f552bfa2e048' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '50a45b0c-80e7-f944-bf29-f552bfa2e048' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '50a45b0c-80e7-f944-bf29-f552bfa2e048' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '50a45b0c-80e7-f944-bf29-f552bfa2e048' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd7781e5d-e353-46aa-afe2-3ca49f13332a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'd7781e5d-e353-46aa-afe2-3ca49f13332a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'd7781e5d-e353-46aa-afe2-3ca49f13332a' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'd7781e5d-e353-46aa-afe2-3ca49f13332a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2cd2f727-f6ca-44da-8f48-5c2e5da000a2' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2cd2f727-f6ca-44da-8f48-5c2e5da000a2' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '2cd2f727-f6ca-44da-8f48-5c2e5da000a2' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '2cd2f727-f6ca-44da-8f48-5c2e5da000a2' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from 'No' to '❌'.
+
+Added new entry for AAGUID '817cdab8-0d51-4de1-a821-e25b88519cf3' with description 'Swissbit iShield Key 2 FIPS' and vendor 'Swissbit'.
+
+Updated 'Bio' for AAGUID 'bb405265-40cf-4115-93e5-a332c1968d8c' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'bb405265-40cf-4115-93e5-a332c1968d8c' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'bb405265-40cf-4115-93e5-a332c1968d8c' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'bb405265-40cf-4115-93e5-a332c1968d8c' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'a02167b9-ae71-4ac7-9a07-06432ebb6f1c' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'a02167b9-ae71-4ac7-9a07-06432ebb6f1c' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'a02167b9-ae71-4ac7-9a07-06432ebb6f1c' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'a02167b9-ae71-4ac7-9a07-06432ebb6f1c' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e' with description 'GoldKey Security Token'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID '97e6a830-c952-4740-95fc-7c78dc97ce47' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '97e6a830-c952-4740-95fc-7c78dc97ce47' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '97e6a830-c952-4740-95fc-7c78dc97ce47' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '97e6a830-c952-4740-95fc-7c78dc97ce47' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '2ffd6452-01da-471f-821b-ea4bf6c8676a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2ffd6452-01da-471f-821b-ea4bf6c8676a' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '2ffd6452-01da-471f-821b-ea4bf6c8676a' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '2ffd6452-01da-471f-821b-ea4bf6c8676a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'dd86a2da-86a0-4cbe-b462-4bd31f57bc6f' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'dd86a2da-86a0-4cbe-b462-4bd31f57bc6f' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'dd86a2da-86a0-4cbe-b462-4bd31f57bc6f' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'dd86a2da-86a0-4cbe-b462-4bd31f57bc6f' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '83c47309-aabb-4108-8470-8be838b573cb' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '83c47309-aabb-4108-8470-8be838b573cb' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '83c47309-aabb-4108-8470-8be838b573cb' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '83c47309-aabb-4108-8470-8be838b573cb' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '53414d53-554e-4700-0000-000000000000' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '53414d53-554e-4700-0000-000000000000' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '53414d53-554e-4700-0000-000000000000' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '53414d53-554e-4700-0000-000000000000' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ec31b4cc-2acc-4b8e-9c01-bade00ccbe26' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'ec31b4cc-2acc-4b8e-9c01-bade00ccbe26' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ec31b4cc-2acc-4b8e-9c01-bade00ccbe26' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'ec31b4cc-2acc-4b8e-9c01-bade00ccbe26' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'ee041bce-25e5-4cdb-8f86-897fd6418464' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'ee041bce-25e5-4cdb-8f86-897fd6418464' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'ee041bce-25e5-4cdb-8f86-897fd6418464' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'ee041bce-25e5-4cdb-8f86-897fd6418464' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '85203421-48f9-4355-9bc8-8a53846e5083' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '85203421-48f9-4355-9bc8-8a53846e5083' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '85203421-48f9-4355-9bc8-8a53846e5083' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '85203421-48f9-4355-9bc8-8a53846e5083' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'da1fa263-8b25-42b6-a820-c0036f21ba7f' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'da1fa263-8b25-42b6-a820-c0036f21ba7f' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'da1fa263-8b25-42b6-a820-c0036f21ba7f' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'da1fa263-8b25-42b6-a820-c0036f21ba7f' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '8681a073-5f50-4d52-bce4-e21658d207b3' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '8681a073-5f50-4d52-bce4-e21658d207b3' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '8681a073-5f50-4d52-bce4-e21658d207b3' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '8681a073-5f50-4d52-bce4-e21658d207b3' from 'No' to '❌'.
+
+Added new entry for AAGUID 'c89e6a38-6c00-5426-5aa5-c9cbf48f0382' with description 'ACS FIDO Authenticator NFC' and vendor 'ACS'.
+
+Updated 'Bio' for AAGUID '91ad6b93-264b-4987-8737-3a690cad6917' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '91ad6b93-264b-4987-8737-3a690cad6917' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '91ad6b93-264b-4987-8737-3a690cad6917' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '91ad6b93-264b-4987-8737-3a690cad6917' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '07a9f89c-6407-4594-9d56-621d5f1e358b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '07a9f89c-6407-4594-9d56-621d5f1e358b' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '07a9f89c-6407-4594-9d56-621d5f1e358b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '07a9f89c-6407-4594-9d56-621d5f1e358b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2fc0579f-8113-47ea-b116-bb5a8db9202a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2fc0579f-8113-47ea-b116-bb5a8db9202a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '2fc0579f-8113-47ea-b116-bb5a8db9202a' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '2fc0579f-8113-47ea-b116-bb5a8db9202a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'Bio' for AAGUID '79f3c8ba-9e35-484b-8f47-53a5a0f5c630' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '79f3c8ba-9e35-484b-8f47-53a5a0f5c630' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '79f3c8ba-9e35-484b-8f47-53a5a0f5c630' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '79f3c8ba-9e35-484b-8f47-53a5a0f5c630' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'd91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'd91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd91c5288-0ef0-49b7-b8ae-21ca0aa6b3f3' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID 'c4ddaf11-3032-4e77-b3b9-3a340369b9ad' with description 'HID Crescendo Fusion'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID 'a3975549-b191-fd67-b8fb-017e2917fdb3' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'a3975549-b191-fd67-b8fb-017e2917fdb3' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'a3975549-b191-fd67-b8fb-017e2917fdb3' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'a3975549-b191-fd67-b8fb-017e2917fdb3' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '664d9f67-84a2-412a-9ff7-b4f7d8ee6d05' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '664d9f67-84a2-412a-9ff7-b4f7d8ee6d05' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '664d9f67-84a2-412a-9ff7-b4f7d8ee6d05' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '664d9f67-84a2-412a-9ff7-b4f7d8ee6d05' from 'No' to '❌'.
+
+Invalid vendor detected for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0' with description 'FIDO Alliance TruU Sample FIDO2 Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '30b5035e-d297-4ff7-b00b-addc96ba6a98' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '692db549-7ae5-44d5-a1e5-dd20a493b723' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '692db549-7ae5-44d5-a1e5-dd20a493b723' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '692db549-7ae5-44d5-a1e5-dd20a493b723' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '692db549-7ae5-44d5-a1e5-dd20a493b723' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '34744913-4f57-4e6e-a527-e9ec3c4b94e6' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '34744913-4f57-4e6e-a527-e9ec3c4b94e6' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '34744913-4f57-4e6e-a527-e9ec3c4b94e6' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '34744913-4f57-4e6e-a527-e9ec3c4b94e6' from 'No' to '❌'.
+
+Added new entry for AAGUID '78ba3993-d784-4f44-8d6e-cc0a8ad5230e' with description 'Feitian ePass FIDO-NFC(CTAP2.1, CTAP2.0, U2F)' and vendor 'Feitian'.
+
+Updated 'Bio' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9a' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '454e5346-4944-4ffd-6c93-8e9267193e9a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '0076631b-d4a0-427f-5773-0ec71c9e0279' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '0076631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '0076631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '0076631b-d4a0-427f-5773-0ec71c9e0279' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '1d1b4e33-76a1-47fb-97a0-14b10d0933f1' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '1d1b4e33-76a1-47fb-97a0-14b10d0933f1' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '1d1b4e33-76a1-47fb-97a0-14b10d0933f1' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '1d1b4e33-76a1-47fb-97a0-14b10d0933f1' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'fcc0118f-cd45-435b-8da1-9782b2da0715' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'fcc0118f-cd45-435b-8da1-9782b2da0715' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'fcc0118f-cd45-435b-8da1-9782b2da0715' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'fcc0118f-cd45-435b-8da1-9782b2da0715' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '10c70715-2a9a-4de1-b0aa-3cff6d496d39' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '10c70715-2a9a-4de1-b0aa-3cff6d496d39' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '10c70715-2a9a-4de1-b0aa-3cff6d496d39' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '10c70715-2a9a-4de1-b0aa-3cff6d496d39' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '234cd403-35a2-4cc2-8015-77ea280c77f5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '234cd403-35a2-4cc2-8015-77ea280c77f5' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '234cd403-35a2-4cc2-8015-77ea280c77f5' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '234cd403-35a2-4cc2-8015-77ea280c77f5' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd94a29d9-52dd-4247-9c2d-8b818b610389' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'd94a29d9-52dd-4247-9c2d-8b818b610389' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'd94a29d9-52dd-4247-9c2d-8b818b610389' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd94a29d9-52dd-4247-9c2d-8b818b610389' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '6d44ba9b-f6ec-2e49-b930-0c8fe920cb73' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '6d44ba9b-f6ec-2e49-b930-0c8fe920cb73' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '6d44ba9b-f6ec-2e49-b930-0c8fe920cb73' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '6d44ba9b-f6ec-2e49-b930-0c8fe920cb73' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '2a55aee6-27cb-42c0-bc6e-04efe999e88a' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '2a55aee6-27cb-42c0-bc6e-04efe999e88a' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '2a55aee6-27cb-42c0-bc6e-04efe999e88a' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID '2a55aee6-27cb-42c0-bc6e-04efe999e88a' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '1ac71f64-468d-4fe0-bef1-0e5f2f551f18' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '1ac71f64-468d-4fe0-bef1-0e5f2f551f18' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '1ac71f64-468d-4fe0-bef1-0e5f2f551f18' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '1ac71f64-468d-4fe0-bef1-0e5f2f551f18' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3a662962-c6d4-4023-bebb-98ae92e78e20' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3a662962-c6d4-4023-bebb-98ae92e78e20' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '3a662962-c6d4-4023-bebb-98ae92e78e20' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3a662962-c6d4-4023-bebb-98ae92e78e20' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' from 'Yes' to '✅'.
+
+Invalid vendor detected for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f' with description 'SafeKey/Classic (FP)'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Bio' for AAGUID '050dd0bc-ff20-4265-8d5d-305c4b215192' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '050dd0bc-ff20-4265-8d5d-305c4b215192' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '050dd0bc-ff20-4265-8d5d-305c4b215192' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '050dd0bc-ff20-4265-8d5d-305c4b215192' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b6ede29c-3772-412c-8a78-539c1f4c62d2' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'b6ede29c-3772-412c-8a78-539c1f4c62d2' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'b6ede29c-3772-412c-8a78-539c1f4c62d2' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'b6ede29c-3772-412c-8a78-539c1f4c62d2' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '47ab2fb4-66ac-4184-9ae1-86be814012d5' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '47ab2fb4-66ac-4184-9ae1-86be814012d5' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '47ab2fb4-66ac-4184-9ae1-86be814012d5' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '47ab2fb4-66ac-4184-9ae1-86be814012d5' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '5fdb81b8-53f0-4967-a881-f5ec26fe4d18' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '5fdb81b8-53f0-4967-a881-f5ec26fe4d18' from 'No' to '❌'.
+
+Updated 'NFC' for AAGUID '5fdb81b8-53f0-4967-a881-f5ec26fe4d18' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '5fdb81b8-53f0-4967-a881-f5ec26fe4d18' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'd384db22-4d50-ebde-2eac-5765cf1e2a44' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID 'd384db22-4d50-ebde-2eac-5765cf1e2a44' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'd384db22-4d50-ebde-2eac-5765cf1e2a44' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID 'd384db22-4d50-ebde-2eac-5765cf1e2a44' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID 'b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4' from 'No' to '❌'.
+
+Updated 'USB' for AAGUID 'b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID 'b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4' from 'Yes' to '✅'.
+
+Updated 'BLE' for AAGUID 'b415094c-49d3-4c8b-b3fe-7d0ad28a6bc4' from 'No' to '❌'.
+
+Updated 'Bio' for AAGUID '88bbd2f0-342a-42e7-9729-dd158be5407a' from 'Yes' to '✅'.
+
+Updated 'USB' for AAGUID '88bbd2f0-342a-42e7-9729-dd158be5407a' from 'Yes' to '✅'.
+
+Updated 'NFC' for AAGUID '88bbd2f0-342a-42e7-9729-dd158be5407a' from 'No' to '❌'.
+
+Updated 'BLE' for AAGUID '88bbd2f0-342a-42e7-9729-dd158be5407a' from 'No' to '❌'.
+
+
 # Merge Log - 2025-03-27 00:22:15
 
 Entry removed for description 'TEST (DUMMY RECORD)' with AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6'.
