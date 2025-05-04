@@ -1,3 +1,40 @@
+# Merge Log - 2025-05-04 00:16:38
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO-NFC (Enterprise Profile) (CTAP2.1, CTAP2.0, U2F)' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2 Enterprise' has become valid.
+
+Vendor '' for description 'VeridiumID Passkey iOS SDK' has become invalid.
+
+Vendor '' for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'VeridiumID Passkey Android SDK' has become invalid.
+
+Vendor 'ACS' for description 'ACS FIDO Authenticator NFC' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2 FIPS' has become valid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2' has become valid.
+
+Vendor '' for description 'GoldKey Security Token' has become invalid.
+
+Vendor 'Swissbit' for description 'Swissbit iShield Key 2 FIPS Enterprise' has become valid.
+
+Vendor '' for description 'T-Shield TrustSec FIDO2 Bio and client PIN version' has become invalid.
+
+Vendor '' for description 'HID Crescendo Fusion' has become invalid.
+
+Vendor '' for description 'SafeKey/Classic (NFC)' has become invalid.
+
+Vendor '' for description 'SafeKey/Classic (FP)' has become invalid.
+
+Vendor '' for description 'SHALO AUTH' has become invalid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (USB)' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO-NFC(CTAP2.1, CTAP2.0, U2F)' has become valid.
+
+
 # Merge Log - 2025-05-03 00:14:32
 
 Updated 'Bio' for AAGUID '3b24bf49-1d45-4484-a917-13175df0867b' from 'No' to '❌'.
