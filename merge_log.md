@@ -1,3 +1,14 @@
+# Merge Log - 2025-05-08 00:15:19
+
+Updated 'NFC' for AAGUID '47ab2fb4-66ac-4184-9ae1-86be814012d5' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '1ac71f64-468d-4fe0-bef1-0e5f2f551f18' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '9ff4cc65-6154-4fff-ba09-9e2af7882ad2' from '❌' to '✅'.
+
+
 # Merge Log - 2025-05-04 00:16:38
 
 Vendor 'Feitian' for description 'Feitian ePass FIDO-NFC (Enterprise Profile) (CTAP2.1, CTAP2.0, U2F)' has become valid.
