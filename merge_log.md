@@ -1,3 +1,10 @@
+# Merge Log - 2025-05-14 10:55:27
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+Vendor 'SI0X' for description 'SI0X FIDO CL WRIST v1.0' has become valid.
+
+
 # Merge Log - 2025-05-14 10:52:58
 
 Vendor 'StarSign' for description 'StarSign Key Fob' has become valid.
