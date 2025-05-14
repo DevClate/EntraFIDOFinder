@@ -1,429 +1,155 @@
-<#
-.SYNOPSIS
-    Merges FIDO key data from a URL with existing JSON data and logs any changes.
+function Test-GHValidVendor {
+    <#
+    .SYNOPSIS
+    Tests if a vendor is valid based on a list of valid vendors.
 
-.DESCRIPTION
-    Fetches FIDO key data from the specified URL and merges it with local JSON data.
-    Handles updates, additions, and removals of keys, validates vendors, and logs changes.
-    Updates metadata and environment variables for GitHub Actions.
+    .DESCRIPTION
+    This function checks if the provided vendor is in the list of valid vendors. If not, it attempts to use the first word of the description as the vendor. 
+    If the vendor is still invalid and it's a new entry, it logs the invalid vendor and prepares an issue entry.
 
-.PARAMETER Url
-    The URL to fetch FIDO key data from.
-    Defaults to Microsoft's hardware vendor page.
+    .PARAMETER vendor
+    [ref] The vendor to be validated.
 
-.PARAMETER JsonFilePath
-    The path to the local JSON file containing existing FIDO key data.
-    Default is 'Assets/FidoKeys.json'.
+    .PARAMETER description
+    [string] The description associated with the vendor.
 
-.PARAMETER MarkdownFilePath
-    The path to the markdown file for logging merge results.
-    Default is 'merge_log.md'.
+    .PARAMETER aaguid
+    [string] The AAGUID associated with the vendor.
 
-.PARAMETER DetailedLogFilePath
-    The path to the detailed log file.
-    Default is 'detailed_log.txt'.
+    .PARAMETER ValidVendors
+    [string[]] The list of valid vendors.
 
-.PARAMETER ValidVendorsFilePath
-    The path to the JSON file containing valid vendors.
-    Default is 'Assets/valid_vendors.json'.
+    .PARAMETER markdownContent
+    [System.Collections.ArrayList] The collection to store markdown log entries.
 
-.EXAMPLE
-    Merge-GHFidoData
+    .PARAMETER detailedLogContent
+    [System.Collections.ArrayList] The collection to store detailed log entries.
 
-.NOTES
-    Author: Clayton Tyger
-    Date: 12-01-2024
-#>
+    .PARAMETER loggedInvalidVendors
+    [System.Collections.ArrayList] The collection to store logged invalid vendors.
 
-Function Merge-GHFidoData {
-    [CmdletBinding()]
+    .PARAMETER issueEntries
+    [System.Collections.ArrayList] The collection to store issue entries.
+
+    .PARAMETER existingLogEntries
+    [string[]] The list of existing log entries.
+
+    .PARAMETER changesDetected
+    [ref] Indicates if any changes were detected.
+
+    .PARAMETER IsNewEntry
+    [bool] Indicates if the entry is new.
+
+    .PARAMETER currentLogEntries
+    [System.Collections.ArrayList] The collection to store current log entries.
+
+    .OUTPUTS
+    [string] Returns "Yes" if the vendor is valid or corrected, otherwise returns "No".
+
+    .EXAMPLE
+    $vendor = [ref] "SomeVendor"
+    $description = "Some description"
+    $aaguid = "1234-5678-9012"
+    $ValidVendors = @("ValidVendor1", "ValidVendor2")
+    $markdownContent = [System.Collections.ArrayList]::new()
+    $detailedLogContent = [System.Collections.ArrayList]::new()
+    $loggedInvalidVendors = [System.Collections.ArrayList]::new()
+    $issueEntries = [System.Collections.ArrayList]::new()
+    $existingLogEntries = @()
+    $changesDetected = [ref] $false
+    $IsNewEntry = $true
+    $currentLogEntries = [System.Collections.ArrayList]::new()
+
+    Test-GHValidVendor -vendor $vendor -description $description -aaguid $aaguid -ValidVendors $ValidVendors -markdownContent $markdownContent -detailedLogContent $detailedLogContent -loggedInvalidVendors $loggedInvalidVendors -issueEntries $issueEntries -existingLogEntries $existingLogEntries -changesDetected $changesDetected -IsNewEntry $IsNewEntry -currentLogEntries $currentLogEntries
+    #>
+
     param (
-        [Parameter()]
-        [string]$Url = "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor",
-        [Parameter()]
-        [string]$JsonFilePath = "Assets/FidoKeys.json",
-        [Parameter()]
-        [string]$MarkdownFilePath = "merge_log.md",
-        [Parameter()]
-        [string]$DetailedLogFilePath = "detailed_log.txt",
-        [Parameter()]
-        [string]$ValidVendorsFilePath = "Assets/valid_vendors.json"
+        [Parameter(Mandatory = $true)]
+        [ref]$vendor,
+        [Parameter(Mandatory = $true)]
+        [string]$description,
+        [Parameter(Mandatory = $true)]
+        [string]$aaguid,
+        [string[]]$ValidVendors,
+        [System.Collections.ArrayList]$markdownContent,
+        [System.Collections.ArrayList]$detailedLogContent,
+        [System.Collections.ArrayList]$loggedInvalidVendors,
+        [System.Collections.ArrayList]$issueEntries,
+        [string[]]$existingLogEntries,
+        [ref]$changesDetected,
+        [bool]$IsNewEntry,
+        [System.Collections.ArrayList]$currentLogEntries
     )
 
-    $ErrorActionPreference = 'Stop'
-    
-    # Load existing JSON data
-    try {
-        if (-not (Test-Path -Path $JsonFilePath)) {
-            $jsonData = @{
-                metadata = @{
-                    databaseLastChecked = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
-                    databaseLastUpdated = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
-                }
-                keys     = @()
-            }
-        }
-        else {
-            $jsonData = Get-Content -Raw -Path $JsonFilePath | ConvertFrom-Json
-        }
-    }
-    catch {
-        Write-Error "Failed to load JSON data: $_"
-        return
-    }
-
-    # Load valid vendors data
-    try {
-        $ValidVendors = (Get-Content -Raw -Path $ValidVendorsFilePath | ConvertFrom-Json).vendors
-    }
-    catch {
-        Write-Error "Failed to load valid vendors data: $_"
-        return
-    }
-
-    # Initialize variables
-    $changesDetected = [ref]$false
-    $updateDatabaseLastUpdated = $false
-    $changesAreSame = $false
-    $keysNowValid = New-Object System.Collections.ArrayList
-    $issueEntries = New-Object System.Collections.ArrayList
-    $loggedInvalidVendors = New-Object System.Collections.ArrayList
-    $currentLogEntries = New-Object System.Collections.ArrayList
-
-    # Import the Test-GHValidVendor function
-    . "$PSScriptRoot\Test-GHValidVendor.ps1"
-
-    # Initialize merged data
-    $mergedData = @{
-        metadata = @{
-            databaseLastChecked = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
-            databaseLastUpdated = $jsonData.metadata.databaseLastUpdated
-        }
-        keys     = @()
-    }
-
-    # Initialize an empty hashtable
-    $jsonDataByAAGUID = @{}
-
-    # Populate the hashtable with AAGUIDs as keys and single items as values
-    foreach ($key in $jsonData.keys) {
-        $jsonDataByAAGUID[$key.AAGUID] = $key
-    }
-
-    # Fetch data from URL
-    try {
-        $urlData = Export-GHEntraFido -Url $Url
-    }
-    catch {
-        Write-Error "Failed to fetch data from URL: $_"
-        return
-    }
-
-    # Index URL data by AAGUID
-    $urlDataByAAGUID = $urlData | Group-Object -AsHashTable -Property AAGUID
-
-    # Prepare for logging
-    $logDate = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
-
-    # Parse existing log content
-    $existingMarkdownContent = if (Test-Path -Path $MarkdownFilePath) {
-        Get-Content -Raw -Path $MarkdownFilePath
+    # Check if the vendor is valid
+    if ($ValidVendors -contains $vendor.Value) {
+        return "Yes"
     }
     else {
-        ""
-    }
-
-    $existingDetailedLogContent = if (Test-Path -Path $DetailedLogFilePath) {
-        Get-Content -Raw -Path $DetailedLogFilePath
-    }
-    else {
-        ""
-    }
-
-    # Initialize content
-    $markdownContent = New-Object System.Collections.ArrayList
-    $detailedLogContent = New-Object System.Collections.ArrayList
-    $detailedLogContent.Add("Detailed Log - $logDate") # Initialize with the log date
-    $envFilePath = "$PSScriptRoot/env_vars.txt"
-
-    # Parse existing markdown content to extract last log entries
-    if ($existingMarkdownContent -ne "") {
-        # Regex to match each log entry
-        $pattern = "(?ms)^# Merge Log - \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\s*(.*?)(?=^# Merge Log - \d{4}-\d{2}-\d{2}|\z)"
-        $matches = [regex]::Matches($existingMarkdownContent, $pattern)
-        if ($matches.Count -gt 0) {
-            # The first match is the most recent log entries
-            $lastLogEntriesSection = $matches[0].Groups[1].Value
-            $existingLogEntries = $lastLogEntriesSection -split "`r?`n" | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne "" }
-        }
-    }
-
-    # Initialize existingLogEntries as an array even if it's null or empty
-    $existingLogEntries = @($existingLogEntries)
-
-    # Collect changes in a separate variable
-    $detailedChanges = @()
-
-    # Merge data and handle vendors
-    foreach ($aaguid in $urlDataByAAGUID.Keys) {
-        $urlItem = $urlDataByAAGUID[$aaguid]
-        $description = $urlItem.Description
-        $vendor = ""
-
-        if ($jsonDataByAAGUID.ContainsKey($aaguid)) {
-            # Existing entry
-            $existingItem = $jsonDataByAAGUID[$aaguid]
-            $vendor = $existingItem.Vendor
-            $vendorRef = [ref]$vendor
-
-            # Create a hashtable with parameters
-            $ValidVendorParams = @{
-                vendor               = $vendorRef
-                description          = $description
-                aaguid               = $aaguid
-                ValidVendors         = $ValidVendors
-                markdownContent      = $markdownContent
-                detailedLogContent   = $detailedLogContent
-                loggedInvalidVendors = $loggedInvalidVendors
-                issueEntries         = $issueEntries
-                existingLogEntries   = $existingLogEntries
-                changesDetected      = $changesDetected
-                IsNewEntry           = $false
-                currentLogEntries    = $currentLogEntries
-            }
-
-            # Call the function with splatting
-            $validVendor = Test-GHValidVendor @ValidVendorParams
-            $vendor = $vendorRef.Value
-
-            # Access $existingItem.Version
-            $existingVersion = $existingItem.Version
-
-            # Get the latest version from metadataStatement.authenticatorGetInfo.versions
-            $latestVersion = $null
-            if ($existingItem.metadataStatement?.authenticatorGetInfo?.versions) {
-                $latestVersion = $existingItem.metadataStatement.authenticatorGetInfo.versions[-1]
-            }
-
-            # Compare and update the Version property if needed
-            if ($latestVersion -and $existingVersion -ne $latestVersion) {
-                # Update the Version property
-                $existingItem.Version = $latestVersion
+        # Attempt to use the first word of the description as the vendor
+        $firstWord = ($description -split ' ')[0]
+        if ($firstWord -and $firstWord -ne $vendor.Value) {
+            Write-Host "Vendor '$($vendor.Value)' is invalid. Trying first word of description '$firstWord' as vendor."
+            if ($ValidVendors -contains $firstWord) {
+                # Update vendor to first word and return Yes
+                Write-Host "Vendor '$firstWord' is valid."
+                $oldVendor = $vendor.Value
+                $vendor.Value = $firstWord
+                $logEntry = "Vendor corrected for AAGUID '$aaguid': '$oldVendor' to '$firstWord'."
+                $detailedLogContent.Add("")
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for vendor correction: $logEntry"
                 $changesDetected.Value = $true
-                $updateDatabaseLastUpdated = $true
-
-                # Log the change
-                $logEntry = "Updated 'Version' for AAGUID '$aaguid' from '$existingVersion' to '$latestVersion'."
+                
+                # Add the log entry to current log entries
                 $currentLogEntries.Add($logEntry)
-                $detailedChanges += $logEntry  # Collect changes separately
+                
+                return "Yes"
             }
-
-            # Check for changes in specific properties
-            $propertiesToCheck = @('Description', 'Bio', 'USB', 'NFC', 'BLE')
-            foreach ($property in $propertiesToCheck) {
-                $existingValue = $existingItem.$property
-                $newValue = $urlItem.$property
-                if ($existingValue -ne $newValue) {
-                    $existingItem.$property = $newValue
-                    $changesDetected.Value = $true
-                    $updateDatabaseLastUpdated = $true
-                    $logEntry = "Updated '$property' for AAGUID '$aaguid' from '$existingValue' to '$newValue'."
-                    $currentLogEntries.Add($logEntry)
-                    $detailedChanges += $logEntry  # Collect changes separately
-                }
-            }
-
-            # Normalize ValidVendor values to strings
-            $existingValidVendor = [string]$existingItem.ValidVendor
-            $newValidVendor = [string]$validVendor
-
-            # Update ValidVendor status if changed
-            if ($existingValidVendor -ne $newValidVendor) {
-                $existingItem.ValidVendor = $newValidVendor
+        }
+        
+        # Try to find any valid vendor in the description
+        foreach ($validVendorName in $ValidVendors) {
+            if ($description -match $validVendorName) {
+                Write-Host "Found valid vendor '$validVendorName' in description for AAGUID '$aaguid'."
+                $oldVendor = $vendor.Value
+                $vendor.Value = $validVendorName
+                $logEntry = "Vendor updated for AAGUID '$aaguid': '$oldVendor' to '$validVendorName' from description match."
+                $detailedLogContent.Add("")
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for vendor correction: $logEntry"
                 $changesDetected.Value = $true
-                $updateDatabaseLastUpdated = $true
-
-                if ($newValidVendor -eq 'Yes') {
-                    $keysNowValid.Add($aaguid)
-                    $logEntry = "Vendor '$vendor' for description '$description' has become valid."
-                    $currentLogEntries.Add($logEntry)
-                    $detailedChanges += $logEntry
-                    # Add logic to close the corresponding GitHub issue if it exists
-                    $issueTitle = "Invalid Vendor Detected for AAGUID $aaguid : $vendor"
-                    $existingIssue = $issueEntries | Where-Object { $_ -match [regex]::Escape($issueTitle) }
-                    if ($existingIssue) {
-                        $issueEntries.Add("$issueTitle|CLOSE")
-                    }
-                }
-                elseif ($newValidVendor -eq 'No') {
-                    $logEntry = "Vendor '$vendor' for description '$description' has become invalid."
-                    $currentLogEntries.Add($logEntry)
-                    $detailedChanges += $logEntry
-                    # Create an issue when a vendor becomes invalid
-                    $issueTitle = "Vendor Became Invalid for AAGUID $aaguid : $vendor"
-                    $issueBody = $logEntry
-
-                    # Check if the issue already exists
-                    $existingIssue = $issueEntries | Where-Object { $_ -match [regex]::Escape($issueTitle) }
-                    if (-not $existingIssue) {
-                        $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
-                    }
-                }
-            }
-
-            # Add updated item to merged data
-            $mergedData.keys += $existingItem
-        }
-        else {
-            # New entry
-            $vendorRef = [ref]$vendor
-            $ValidVendorParams = @{
-                vendor               = $vendorRef
-                description          = $description
-                aaguid               = $aaguid
-                ValidVendors         = $ValidVendors
-                markdownContent      = $markdownContent
-                detailedLogContent   = $detailedLogContent
-                loggedInvalidVendors = $loggedInvalidVendors
-                issueEntries         = $issueEntries
-                existingLogEntries   = $existingLogEntries
-                changesDetected      = $changesDetected
-                IsNewEntry           = $true
-                currentLogEntries    = $currentLogEntries
-            }
-
-            # Call the function with splatting
-            $validVendor = Test-GHValidVendor @ValidVendorParams
-            $vendor = $vendorRef.Value
-
-            $newItem = [pscustomobject]@{
-                Vendor                 = $vendor
-                Description            = $description
-                AAGUID                 = $aaguid
-                Bio                    = $urlItem.Bio
-                USB                    = $urlItem.USB
-                NFC                    = $urlItem.NFC
-                BLE                    = $urlItem.BLE
-                Version                = $urlItem.Version
-                ValidVendor            = $validVendor
-                authenticatorGetInfo   = $urlItem.authenticatorGetInfo
-                statusReports          = $urlItem.statusReports
-                timeOfLastStatusChange = $urlItem.timeOfLastStatusChange
-            }
-            $mergedData.keys += $newItem
-            $changesDetected.Value = $true
-            $updateDatabaseLastUpdated = $true
-
-            # Log new entry if vendor is valid
-            if ($validVendor -eq 'Yes') {
-                $logEntry = "Added new entry for AAGUID '$aaguid' with description '$description' and vendor '$vendor'."
+                
+                # Add the log entry to current log entries
                 $currentLogEntries.Add($logEntry)
-                $detailedChanges += $logEntry  # Collect changes separately
-            }
-            # Note: Invalid vendor logging for new entries is handled inside Test-GHValidVendor
-        }
-    }
-
-    # Handle removed entries
-    foreach ($aaguid in $jsonDataByAAGUID.Keys) {
-        if (-not $urlDataByAAGUID.ContainsKey($aaguid)) {
-            $removedItem = $jsonDataByAAGUID[$aaguid]
-            $logEntry = "Entry removed for description '$($removedItem.Description)' with AAGUID '$aaguid'."
-            $currentLogEntries.Add($logEntry)
-            $detailedChanges += $logEntry  # Collect changes separately
-            $changesDetected.Value = $true
-            $updateDatabaseLastUpdated = $true
-        }
-    }
-
-    # Update metadata
-    if ($updateDatabaseLastUpdated) {
-        $mergedData.metadata.databaseLastUpdated = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
-    }
-    $mergedData.metadata.databaseLastChecked = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
-
-    # Sort and write the merged data
-    $mergedData.keys = $mergedData.keys | Sort-Object Vendor
-    $jsonOutput = $mergedData | ConvertTo-Json -Depth 10
-    Set-Content -Path $JsonFilePath -Value $jsonOutput -Encoding utf8
-
-    # Compare current log entries with last run's log entries
-    if ($changesDetected.Value) {
-        # Ensure both arrays are initialized
-        $normalizedExistingLogEntries = @($existingLogEntries | ForEach-Object { $_.Trim() })
-        $normalizedCurrentLogEntries = @($currentLogEntries | ForEach-Object { $_.Trim() })
-
-        $differences = Compare-Object -ReferenceObject $normalizedExistingLogEntries -DifferenceObject $normalizedCurrentLogEntries | Where-Object { $_.SideIndicator -ne '==' }
-
-        if ($differences.Count -eq 0) {
-            $changesAreSame = $true
-        }
-    }
-
-    # Adjust logging based on whether changes are the same as last run
-    if ($changesDetected.Value -and -not $changesAreSame) {
-        # Only update merge_log.md when there are new changes different from last run
-        Write-Host "New changes detected. Updating merge_log.md."
-        # Update merge_log.md
-        $newMergeContent = "# Merge Log - $logDate`n`n" + 
-                            ($currentLogEntries -join "`n`n") + 
-        "`n`n`n" + 
-        $existingMarkdownContent.Trim()
-        Set-Content -Path $MarkdownFilePath -Value $newMergeContent -Encoding utf8
-        # Update detailed_log.txt
-        # Clear the existing content
-        $detailedLogContent.Clear()
-        $detailedLogContent.Add("DETAILED LOG - $logDate")
-        $detailedLogContent.Add("")
-        # Ensure collected changes are added to $detailedLogContent
-        for ($i = 0; $i -lt $detailedChanges.Count; $i++) {
-            $detailedLogContent.Add($detailedChanges[$i])
-            if ($i -lt ($detailedChanges.Count - 1)) {
-                $detailedLogContent.Add("")  # Add an empty line between entries
+                
+                return "Yes"
             }
         }
-        $detailedLogContent = $detailedLogContent | ForEach-Object { $_.TrimEnd("`n", "`r") }
-        # Add extra newline between entries
-        $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
-        Set-Content -Path $DetailedLogFilePath -Value $newDetailedContent -Encoding utf8
-    }
-    else {
-        # Do not update merge_log.md
-        if (-not $changesDetected.Value) {
-            Write-Host "No changes detected. Not updating merge_log.md."
-        }
-        elseif ($changesAreSame) {
-            Write-Host "Changes are the same as the last run. Not updating merge_log.md."
-        }
-        # Update detailed_log.txt with "No changes detected during this run."
-        $detailedLogContent.Clear()
-        $detailedLogContent.Add("DETAILED LOG - $logDate")
-        $detailedLogContent.Add("")
-        $detailedLogContent.Add("No changes detected during this run.")
-        # Add consistent spacing between entries
-        $newDetailedContent = ($detailedLogContent -join "`n") + "`n`n`n`n" + $existingDetailedLogContent.TrimStart("`n", "`r")
-        Set-Content -Path $DetailedLogFilePath -Value $newDetailedContent -Encoding utf8
-    }
 
-    # Update environment variables for GitHub Actions
-    if ($issueEntries -and $issueEntries.Count -gt 0) {
-        $issueEntriesString = $issueEntries -join "`n"
-        # Escape special characters for GitHub Actions
-        if ($null -ne $issueEntriesString -and $issueEntriesString -ne "") {
-            $issueEntriesEscaped = $issueEntriesString.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A').Replace("'", '%27').Replace('"', '%22')
-            "ISSUE_ENTRIES=$issueEntriesEscaped" | Out-File -FilePath $envFilePath -Encoding utf8 -Append
-        }
-    }
+        # Log invalid vendor for the specific key if it's a new entry
+        if ($IsNewEntry) {
+            $logEntry = "Invalid vendor detected for AAGUID '$aaguid' with description '$description'. Vendor '$($vendor.Value)' is not in the list of valid vendors."
+            $logEntryTrimmed = $logEntry.Trim()
+        
+            if (-not ($existingLogEntries -contains $logEntryTrimmed)) {
+                $markdownContent.Add($logEntry)
+                $detailedLogContent.Add("")
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for invalid vendor: $logEntry"
 
-    # Write keys now valid to the environment variables file
-    if ($keysNowValid -and $keysNowValid.Count -gt 0) {
-        $keysNowValidString = $keysNowValid | Select-Object -Unique | Sort-Object
-        $keysNowValidString = $keysNowValidString -join "`n"
-        # Escape special characters for GitHub Actions
-        if ($null -ne $keysNowValidString -and $keysNowValidString -ne "") {
-            $keysNowValidEscaped = $keysNowValidString.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A').Replace("'", '%27').Replace('"', '%22')
-            "KEYS_NOW_VALID=$keysNowValidEscaped" | Out-File -FilePath $envFilePath -Encoding utf8 -Append
+                # Add log entry to currentLogEntries
+                $currentLogEntries.Add($logEntry)
+
+                # Set changesDetected to true
+                $changesDetected.Value = $true
+        
+                # Prepare issue entry with AAGUID included in the title
+                $issueTitle = "Invalid Vendor Detected for AAGUID $aaguid : $($vendor.Value)"
+                $issueBody = $logEntry
+                $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
+            }
         }
+        return "No"
     }
 }
-Merge-GHFidoData
