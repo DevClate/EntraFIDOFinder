@@ -1,3 +1,14 @@
+# Merge Log - 2025-05-14 10:38:10
+
+Vendor corrected for AAGUID 'f8d5c4e9-e539-4c06-8662-ec2a4155a555': '' to 'StarSign'.
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC' has become valid.
+
+Vendor corrected for AAGUID '912435d9-4a88-42f3-972d-1244b0d51420': '' to 'SI0X'.
+
+
 # Merge Log - 2025-05-14 10:32:23
 
 Vendor corrected for AAGUID '912435d9-4a88-42f3-972d-1244b0d51420': '' to 'SI0X'.
