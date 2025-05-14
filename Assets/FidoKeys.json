@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "databaseLastChecked": "2025-05-14 08:07:28",
+    "databaseLastUpdated": "2025-05-14 08:07:28"
+  },
   "keys": [
     {
       "Vendor": "",
@@ -10,13 +14,6 @@
       "BLE": "❌",
       "Version": null,
       "ValidVendor": "5 6 Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-12-13"
-        }
-      ],
-      "timeOfLastStatusChange": "2021-12-13",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c89674e3-a765-4b07-888a-7c086fbdf04b",
@@ -92,7 +89,14 @@
           },
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2021-12-13"
+        }
+      ],
+      "timeOfLastStatusChange": "2021-12-13"
     },
     {
       "Vendor": "",
@@ -235,13 +239,6 @@
       "BLE": "❌",
       "Version": null,
       "ValidVendor": "3 4 Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-12-13"
-        }
-      ],
-      "timeOfLastStatusChange": "2021-12-13",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "912435d9-4a88-42f3-972d-1244b0d51420",
@@ -317,7 +314,14 @@
           },
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2021-12-13"
+        }
+      ],
+      "timeOfLastStatusChange": "2021-12-13"
     },
     {
       "Vendor": "",
@@ -329,13 +333,6 @@
       "BLE": "✅",
       "Version": null,
       "ValidVendor": "1 2 Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2021-12-10"
-        }
-      ],
-      "timeOfLastStatusChange": "2021-12-10",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "f8d5c4e9-e539-4c06-8662-ec2a4155a555",
@@ -421,7 +418,14 @@
           },
           "firmwareVersion": 1
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2021-12-10"
+        }
+      ],
+      "timeOfLastStatusChange": "2021-12-10"
     },
     {
       "Vendor": "ACS",
@@ -11440,13 +11444,6 @@
       "BLE": "❌",
       "Version": null,
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2025-04-22"
-        }
-      ],
-      "timeOfLastStatusChange": "2025-04-22",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "3fd410dc-8ab7-4b86-a1cb-c7174620b2dc",
@@ -11578,7 +11575,14 @@
           "firmwareVersion": 16777216,
           "remainingDiscoverableCredentials": 51
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2025-04-22"
+        }
+      ],
+      "timeOfLastStatusChange": "2025-04-22"
     },
     {
       "Vendor": "IDEMIA",
@@ -13295,13 +13299,6 @@
       "BLE": "❌",
       "Version": null,
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2025-03-27"
-        }
-      ],
-      "timeOfLastStatusChange": "2025-03-27",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "6e24d385-004a-16a0-7bfe-efd963845b34",
@@ -13419,7 +13416,14 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2025-03-27"
+        }
+      ],
+      "timeOfLastStatusChange": "2025-03-27"
     },
     {
       "Vendor": "Ledger",
@@ -13567,13 +13571,6 @@
       "BLE": "❌",
       "Version": null,
       "ValidVendor": "Yes",
-      "statusReports": [
-        {
-          "status": "NOT_FIDO_CERTIFIED",
-          "effectiveDate": "2025-03-27"
-        }
-      ],
-      "timeOfLastStatusChange": "2025-03-27",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "1d8cac46-47a1-3386-af50-e88ae46fe802",
@@ -13691,7 +13688,14 @@
             1
           ]
         }
-      }
+      },
+      "statusReports": [
+        {
+          "status": "NOT_FIDO_CERTIFIED",
+          "effectiveDate": "2025-03-27"
+        }
+      ],
+      "timeOfLastStatusChange": "2025-03-27"
     },
     {
       "Vendor": "Ledger",
@@ -33191,9 +33195,5 @@
       ],
       "timeOfLastStatusChange": "2025-03-06"
     }
-  ],
-  "metadata": {
-    "databaseLastChecked": "2025-05-14 08:07:28",
-    "databaseLastUpdated": "2025-05-14 08:07:28"
-  }
+  ]
 }
