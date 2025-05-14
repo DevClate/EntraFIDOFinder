@@ -13,7 +13,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": "FIDO 2.0",
-      "ValidVendor": "5 6 Yes",
+      "ValidVendor": "Yes",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "c89674e3-a765-4b07-888a-7c086fbdf04b",
