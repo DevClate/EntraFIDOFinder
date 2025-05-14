@@ -159,7 +159,7 @@ Function Merge-GHFidoData {
     }
 
     # Initialize existingLogEntries as an array even if it's null or empty
-    $existingLogEntries = @($existingLogEntries)
+    $existingLogEntries = if ($null -ne $existingLogEntries) { @($existingLogEntries) } else { @() }
 
     # Collect changes in a separate variable
     $detailedChanges = @()
@@ -244,12 +244,9 @@ Function Merge-GHFidoData {
                 $updateDatabaseLastUpdated = $true
 
                 if ($newValidVendor -eq 'Yes') {
-                    # Check if the valid vendor name is in the vendor value
-                    $matchedValidVendor = $ValidVendors | Where-Object { $vendor -match $_ }
-                    
-                    # If no valid vendor name is found in the current vendor value
-                    if ($null -eq $matchedValidVendor) {
-                        # Find the valid vendor that matches the description or is closest to the current vendor name
+                    # Always check if vendor is empty or doesn't match a valid vendor
+                    if ([string]::IsNullOrWhiteSpace($vendor) -or -not ($ValidVendors -contains $vendor)) {
+                        # Find the valid vendor that matches the description
                         $bestMatch = $ValidVendors | Where-Object { $description -match $_ } | Select-Object -First 1
                         
                         if ($null -ne $bestMatch) {
@@ -259,6 +256,32 @@ Function Merge-GHFidoData {
                             $logEntry = "Updated vendor name for AAGUID '$aaguid' from '$oldVendor' to '$vendor' based on validated vendor list."
                             $currentLogEntries.Add($logEntry)
                             $detailedChanges += $logEntry
+                        }
+                        # If still no match, try to find any valid vendor in our list to use
+                        elseif ([string]::IsNullOrWhiteSpace($vendor)) {
+                            # As a last resort, use the first valid vendor that appears in the description
+                            foreach ($validVendorName in $ValidVendors) {
+                                if ($description -match $validVendorName) {
+                                    $vendor = $validVendorName
+                                    $existingItem.Vendor = $vendor
+                                    $logEntry = "Set vendor name for AAGUID '$aaguid' to '$vendor' based on description match."
+                                    $currentLogEntries.Add($logEntry)
+                                    $detailedChanges += $logEntry
+                                    break
+                                }
+                            }
+                            
+                            # If still no vendor found, use the first word of the description
+                            if ([string]::IsNullOrWhiteSpace($vendor)) {
+                                $firstWord = ($description -split ' ')[0]
+                                if (-not [string]::IsNullOrWhiteSpace($firstWord)) {
+                                    $vendor = $firstWord
+                                    $existingItem.Vendor = $vendor
+                                    $logEntry = "Set vendor name for AAGUID '$aaguid' to '$vendor' based on first word of description."
+                                    $currentLogEntries.Add($logEntry)
+                                    $detailedChanges += $logEntry
+                                }
+                            }
                         }
                     }
                     
