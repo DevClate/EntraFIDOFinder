@@ -1,3 +1,12 @@
+# Merge Log - 2025-05-14 07:36:39
+
+Vendor 'Ledger' for description 'Ledger Flex FIDO2 Authenticator' has become valid.
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Stax FIDO2 Authenticator' has become valid.
+
+
 # Merge Log - 2025-05-14 00:24:07
 
 Invalid vendor detected for AAGUID 'c89674e3-a765-4b07-888a-7c086fbdf04b' with description 'StarSign FIDO Card'. Vendor '' is not in the list of valid vendors.
