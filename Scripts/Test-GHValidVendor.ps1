@@ -93,8 +93,9 @@ function Test-GHValidVendor {
             if ($ValidVendors -contains $firstWord) {
                 # Update vendor to first word and return Yes
                 Write-Host "Vendor '$firstWord' is valid."
+                $oldVendor = $vendor.Value
                 $vendor.Value = $firstWord
-                $logEntry = "Vendor corrected for AAGUID '$aaguid': '$($vendor.Value)' to '$firstWord'."
+                $logEntry = "Vendor corrected for AAGUID '$aaguid': '$oldVendor' to '$firstWord'."
                 $detailedLogContent.Add("")
                 $detailedLogContent.Add($logEntry)
                 Write-Host "Added log entry for vendor correction: $logEntry"
@@ -102,6 +103,23 @@ function Test-GHValidVendor {
                 return "Yes"
             }
         }
+        
+        # Try to match against valid vendors case-insensitively
+        foreach ($validVendor in $ValidVendors) {
+            if ($description -match $validVendor) {
+                # Found a valid vendor in the description
+                Write-Host "Found valid vendor '$validVendor' in description for AAGUID '$aaguid'."
+                $oldVendor = $vendor.Value
+                $vendor.Value = $validVendor
+                $logEntry = "Vendor updated for AAGUID '$aaguid': '$oldVendor' to '$validVendor' from description match."
+                $detailedLogContent.Add("")
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for vendor correction: $logEntry"
+                $changesDetected.Value = $true
+                return "Yes"
+            }
+        }
+
         # Log invalid vendor for the specific key if it's a new entry
         if ($IsNewEntry) {
             $logEntry = "Invalid vendor detected for AAGUID '$aaguid' with description '$description'. Vendor '$($vendor.Value)' is not in the list of valid vendors."
