@@ -28443,7 +28443,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": "FIDO 2.1",
-      "ValidVendor": "Yes",
+      "ValidVendor": "No",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
         "aaguid": "d7781e5d-e353-46aa-afe2-3ca49f13332a",
