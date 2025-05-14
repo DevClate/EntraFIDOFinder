@@ -244,24 +244,6 @@ Function Merge-GHFidoData {
                 $updateDatabaseLastUpdated = $true
 
                 if ($newValidVendor -eq 'Yes') {
-                    # Check if the valid vendor name is in the vendor value
-                    $matchedValidVendor = $ValidVendors | Where-Object { $vendor -match $_ }
-                    
-                    # If no valid vendor name is found in the current vendor value
-                    if ($null -eq $matchedValidVendor) {
-                        # Find the valid vendor that matches the description or is closest to the current vendor name
-                        $bestMatch = $ValidVendors | Where-Object { $description -match $_ } | Select-Object -First 1
-                        
-                        if ($null -ne $bestMatch) {
-                            $oldVendor = $vendor
-                            $vendor = $bestMatch
-                            $existingItem.Vendor = $vendor
-                            $logEntry = "Updated vendor name for AAGUID '$aaguid' from '$oldVendor' to '$vendor' based on validated vendor list."
-                            $currentLogEntries.Add($logEntry)
-                            $detailedChanges += $logEntry
-                        }
-                    }
-                    
                     $keysNowValid.Add($aaguid)
                     $logEntry = "Vendor '$vendor' for description '$description' has become valid."
                     $currentLogEntries.Add($logEntry)
