@@ -100,7 +100,7 @@ function Test-GHValidVendor {
                 $detailedLogContent.Add($logEntry)
                 Write-Host "Added log entry for vendor correction: $logEntry"
                 $changesDetected.Value = $true
-                return "Yes"
+                return "Yes"  # Return only "Yes", not the vendor value
             }
         }
         

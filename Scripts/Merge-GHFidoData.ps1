@@ -316,11 +316,9 @@ Function Merge-GHFidoData {
 
             # If vendor is valid, ensure it matches a valid vendor name from the list
             if ($validVendor -eq 'Yes') {
-                $matchedValidVendor = $ValidVendors | Where-Object { $vendor -match $_ }
-                
-                # If no valid vendor name is found in the current vendor value
-                if ($null -eq $matchedValidVendor) {
-                    # Find the valid vendor that matches the description or is closest to the current vendor name
+                # Now check if vendor is still empty or doesn't match a valid vendor name
+                if ([string]::IsNullOrWhiteSpace($vendor) -or -not ($ValidVendors -contains $vendor)) {
+                    # Find the valid vendor that matches the description
                     $bestMatch = $ValidVendors | Where-Object { $description -match $_ } | Select-Object -First 1
                     
                     if ($null -ne $bestMatch) {
@@ -342,7 +340,7 @@ Function Merge-GHFidoData {
                 NFC                    = $urlItem.NFC
                 BLE                    = $urlItem.BLE
                 Version                = $urlItem.Version
-                ValidVendor            = $validVendor
+                ValidVendor            = "Yes"  # Only put "Yes" here, not the vendor value
                 authenticatorGetInfo   = $urlItem.authenticatorGetInfo
                 statusReports          = $urlItem.statusReports
                 timeOfLastStatusChange = $urlItem.timeOfLastStatusChange
