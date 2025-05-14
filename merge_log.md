@@ -1,3 +1,20 @@
+# Merge Log - 2025-05-14 00:24:07
+
+Invalid vendor detected for AAGUID 'c89674e3-a765-4b07-888a-7c086fbdf04b' with description 'StarSign FIDO Card'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '912435d9-4a88-42f3-972d-1244b0d51420' with description 'SI0X FIDO CL WRIST v1.0'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' with description 'Ledger Stax FIDO2 Authenticator' and vendor 'Ledger'.
+
+Updated 'Description' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from 'SafeKey/Classic (NFC)' to 'Deepnet SafeKey/Classic (NFC)'.
+
+Added new entry for AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc' with description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' and vendor 'IDEMIA'.
+
+Invalid vendor detected for AAGUID 'f8d5c4e9-e539-4c06-8662-ec2a4155a555' with description 'StarSign Key Fob'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802' with description 'Ledger Flex FIDO2 Authenticator' and vendor 'Ledger'.
+
+
 # Merge Log - 2025-05-08 00:23:46
 
 Updated 'NFC' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from '❌' to '✅'.
