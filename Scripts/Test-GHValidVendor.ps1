@@ -314,23 +314,6 @@ Function Merge-GHFidoData {
             $validVendor = Test-GHValidVendor @ValidVendorParams
             $vendor = $vendorRef.Value
 
-            # If vendor is valid, ensure it matches a valid vendor name from the list
-            if ($validVendor -eq 'Yes') {
-                # Now check if vendor is still empty or doesn't match a valid vendor name
-                if ([string]::IsNullOrWhiteSpace($vendor) -or -not ($ValidVendors -contains $vendor)) {
-                    # Find the valid vendor that matches the description
-                    $bestMatch = $ValidVendors | Where-Object { $description -match $_ } | Select-Object -First 1
-                    
-                    if ($null -ne $bestMatch) {
-                        $oldVendor = $vendor
-                        $vendor = $bestMatch
-                        $logEntry = "Updated vendor name for new AAGUID '$aaguid' from '$oldVendor' to '$vendor' based on validated vendor list."
-                        $currentLogEntries.Add($logEntry)
-                        $detailedChanges += $logEntry
-                    }
-                }
-            }
-
             $newItem = [pscustomobject]@{
                 Vendor                 = $vendor
                 Description            = $description
@@ -340,7 +323,7 @@ Function Merge-GHFidoData {
                 NFC                    = $urlItem.NFC
                 BLE                    = $urlItem.BLE
                 Version                = $urlItem.Version
-                ValidVendor            = "Yes"  # Only put "Yes" here, not the vendor value
+                ValidVendor            = $validVendor
                 authenticatorGetInfo   = $urlItem.authenticatorGetInfo
                 statusReports          = $urlItem.statusReports
                 timeOfLastStatusChange = $urlItem.timeOfLastStatusChange
