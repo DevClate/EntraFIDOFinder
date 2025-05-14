@@ -1,3 +1,15 @@
+DETAILED LOG - 2025-05-14 00:15:19
+
+Added new entry for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' with description 'Ledger Stax FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc' with description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' and vendor 'IDEMIA'.
+
+Updated 'Description' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from 'SafeKey/Classic (NFC)' to 'Deepnet SafeKey/Classic (NFC)'.
+
+Added new entry for AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802' with description 'Ledger Flex FIDO2 Authenticator' and vendor 'Ledger'.
+
+
+
 DETAILED LOG - 2025-05-13 00:15:25
 
 No changes have been detected since last run.
@@ -3786,6 +3798,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
