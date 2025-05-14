@@ -1,3 +1,12 @@
+# Merge Log - 2025-05-14 10:52:58
+
+Vendor 'StarSign' for description 'StarSign Key Fob' has become valid.
+
+Vendor corrected for AAGUID '912435d9-4a88-42f3-972d-1244b0d51420': '' to 'SI0X'.
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+
 # Merge Log - 2025-05-14 10:40:37
 
 Vendor 'HID Global' for description 'HID Crescendo 4000' has become valid.
