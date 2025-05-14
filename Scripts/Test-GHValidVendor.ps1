@@ -100,22 +100,29 @@ function Test-GHValidVendor {
                 $detailedLogContent.Add($logEntry)
                 Write-Host "Added log entry for vendor correction: $logEntry"
                 $changesDetected.Value = $true
-                return "Yes"  # Return only "Yes", not the vendor value
+                
+                # Add the log entry to current log entries
+                $currentLogEntries.Add($logEntry)
+                
+                return "Yes"
             }
         }
         
-        # Try to match against valid vendors case-insensitively
-        foreach ($validVendor in $ValidVendors) {
-            if ($description -match $validVendor) {
-                # Found a valid vendor in the description
-                Write-Host "Found valid vendor '$validVendor' in description for AAGUID '$aaguid'."
+        # Try to find any valid vendor in the description
+        foreach ($validVendorName in $ValidVendors) {
+            if ($description -match $validVendorName) {
+                Write-Host "Found valid vendor '$validVendorName' in description for AAGUID '$aaguid'."
                 $oldVendor = $vendor.Value
-                $vendor.Value = $validVendor
-                $logEntry = "Vendor updated for AAGUID '$aaguid': '$oldVendor' to '$validVendor' from description match."
+                $vendor.Value = $validVendorName
+                $logEntry = "Vendor updated for AAGUID '$aaguid': '$oldVendor' to '$validVendorName' from description match."
                 $detailedLogContent.Add("")
                 $detailedLogContent.Add($logEntry)
                 Write-Host "Added log entry for vendor correction: $logEntry"
                 $changesDetected.Value = $true
+                
+                # Add the log entry to current log entries
+                $currentLogEntries.Add($logEntry)
+                
                 return "Yes"
             }
         }

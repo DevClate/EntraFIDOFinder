@@ -328,7 +328,38 @@ Function Merge-GHFidoData {
                         $currentLogEntries.Add($logEntry)
                         $detailedChanges += $logEntry
                     }
+                    # If still no match, try to find any valid vendor in our list to use
+                    elseif ([string]::IsNullOrWhiteSpace($vendor)) {
+                        # As a last resort, use the first valid vendor that appears in the description
+                        foreach ($validVendorName in $ValidVendors) {
+                            if ($description -match $validVendorName) {
+                                $vendor = $validVendorName
+                                $logEntry = "Set vendor name for AAGUID '$aaguid' to '$vendor' based on description match."
+                                $currentLogEntries.Add($logEntry)
+                                $detailedChanges += $logEntry
+                                break
+                            }
+                        }
+                        
+                        # If still no vendor found, use the first word of the description
+                        if ([string]::IsNullOrWhiteSpace($vendor)) {
+                            $firstWord = ($description -split ' ')[0]
+                            if (-not [string]::IsNullOrWhiteSpace($firstWord)) {
+                                $vendor = $firstWord
+                                $logEntry = "Set vendor name for AAGUID '$aaguid' to '$vendor' based on first word of description."
+                                $currentLogEntries.Add($logEntry)
+                                $detailedChanges += $logEntry
+                            }
+                        }
+                    }
                 }
+            }
+            # If vendor is still empty but validVendor is 'No', set to "Unknown"
+            elseif ([string]::IsNullOrWhiteSpace($vendor)) {
+                $vendor = "Unknown"
+                $logEntry = "Set vendor name for invalid AAGUID '$aaguid' to 'Unknown'."
+                $currentLogEntries.Add($logEntry)
+                $detailedChanges += $logEntry
             }
 
             $newItem = [pscustomobject]@{
@@ -340,7 +371,7 @@ Function Merge-GHFidoData {
                 NFC                    = $urlItem.NFC
                 BLE                    = $urlItem.BLE
                 Version                = $urlItem.Version
-                ValidVendor            = "Yes"  # Only put "Yes" here, not the vendor value
+                ValidVendor            = $validVendor  # This is now guaranteed to be just "Yes" or "No"
                 authenticatorGetInfo   = $urlItem.authenticatorGetInfo
                 statusReports          = $urlItem.statusReports
                 timeOfLastStatusChange = $urlItem.timeOfLastStatusChange
