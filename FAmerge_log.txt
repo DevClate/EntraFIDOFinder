@@ -1,4 +1,96 @@
 
+===== Script Run on 2025-05-14 08:14:03 UTC =====
+2025-05-14 08:13:58 - AAGUID: c89674e3-a765-4b07-888a-7c086fbdf04b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2021-12-13
+
+2025-05-14 08:13:58 - AAGUID: c89674e3-a765-4b07-888a-7c086fbdf04b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: 
+Description: StarSign FIDO Card
+
+2025-05-14 08:13:58 - AAGUID: 912435d9-4a88-42f3-972d-1244b0d51420
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2021-12-13
+
+2025-05-14 08:13:58 - AAGUID: 912435d9-4a88-42f3-972d-1244b0d51420
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: 
+Description: SI0X FIDO CL WRIST v1.0
+
+2025-05-14 08:13:58 - AAGUID: f8d5c4e9-e539-4c06-8662-ec2a4155a555
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2021-12-10
+
+2025-05-14 08:13:58 - AAGUID: f8d5c4e9-e539-4c06-8662-ec2a4155a555
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: 
+Description: StarSign Key Fob
+
+2025-05-14 08:13:58 - AAGUID: c89e6a38-6c00-5426-5aa5-c9cbf48f0382
+Updating timeOfLastStatusChange
+Old Value:
+2025-02-06
+
+New Value:
+2025-05-13
+
+2025-05-14 08:13:58 - Updating AAGUID e41b42a3-60ac-4afb-8757-a98f2d7f6c9f : description : "SafeKey/Classic (FP)" -> "Deepnet SafeKey/Classic (FP)"
+2025-05-14 08:13:58 - Updating AAGUID e41b42a3-60ac-4afb-8757-a98f2d7f6c9f : alternativeDescriptions.en-US : "SafeKey/Classic (FP)" -> "Deepnet SafeKey/Classic (FP)"
+2025-05-14 08:13:58 - Updating AAGUID e41b42a3-60ac-4afb-8757-a98f2d7f6c9f : upv[0].minor : 0 -> 1
+2025-05-14 08:13:58 - Updating AAGUID e41b42a3-60ac-4afb-8757-a98f2d7f6c9f : upv[1].minor : 1 -> 0
+2025-05-14 08:14:00 - AAGUID: 3fd410dc-8ab7-4b86-a1cb-c7174620b2dc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-22
+
+2025-05-14 08:14:00 - AAGUID: 3fd410dc-8ab7-4b86-a1cb-c7174620b2dc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: IDEMIA
+Description: IDEMIA SOLVO Fly 80 R1 FIDO Card Draft
+
+2025-05-14 08:14:00 - AAGUID: 6e24d385-004a-16a0-7bfe-efd963845b34
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-27
+
+2025-05-14 08:14:00 - AAGUID: 6e24d385-004a-16a0-7bfe-efd963845b34
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Stax FIDO2 Authenticator
+
+2025-05-14 08:14:00 - AAGUID: 1d8cac46-47a1-3386-af50-e88ae46fe802
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-27
+
+2025-05-14 08:14:00 - AAGUID: 1d8cac46-47a1-3386-af50-e88ae46fe802
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Flex FIDO2 Authenticator
+
+
 ===== Script Run on 2025-05-03 08:22:58 UTC =====
 2025-05-03 08:22:53 - AAGUID: ca87cb70-4c1b-4579-a8e8-4efdd7c007e0
 Updating timeOfLastStatusChange
@@ -1733,6 +1825,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
