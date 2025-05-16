@@ -1,3 +1,8 @@
+# Merge Log - 2025-05-16 00:24:06
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+
 # Merge Log - 2025-05-15 00:22:44
 
 Updated 'NFC' for AAGUID 'e77e3c64-05e3-428b-8824-0cbeb04b829d' from '✅' to '❌'.
