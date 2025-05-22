@@ -1,3 +1,20 @@
+# Merge Log - 2025-05-22 08:06:13
+
+Vendor 'SI0X' for description 'SI0X FIDO CL WRIST v1.0' has become valid.
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+Vendor 'Ledger' for description 'Ledger Flex FIDO2 Authenticator' has become valid.
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' has become valid.
+
+Vendor 'StarSign' for description 'StarSign FIDO Card' has become valid.
+
+Vendor 'StarSign' for description 'StarSign Key Fob' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Stax FIDO2 Authenticator' has become valid.
+
+
 # Merge Log - 2025-05-22 00:24:36
 
 Updated 'NFC' for AAGUID '1ac71f64-468d-4fe0-bef1-0e5f2f551f18' from '❌' to '✅'.
