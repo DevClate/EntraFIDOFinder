@@ -1,3 +1,8 @@
+# Merge Log - 2025-05-23 09:05:20
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+
 # Merge Log - 2025-05-23 09:01:50
 
 Updated 'Version' for AAGUID 'c89674e3-a765-4b07-888a-7c086fbdf04b' from '' to 'FIDO 2.0'.
