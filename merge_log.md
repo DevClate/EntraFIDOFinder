@@ -1,3 +1,12 @@
+# Merge Log - 2025-05-23 09:12:50
+
+Vendor 'StarSign' for description 'StarSign FIDO Card' has become valid.
+
+Vendor 'StarSign' for description 'StarSign Key Fob' has become valid.
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+
 # Merge Log - 2025-05-23 09:07:48
 
 Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
