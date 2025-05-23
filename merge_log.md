@@ -1,3 +1,10 @@
+# Merge Log - 2025-05-23 09:07:48
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+Vendor 'SI0X' for description 'SI0X FIDO CL WRIST v1.0' has become valid.
+
+
 # Merge Log - 2025-05-23 09:05:20
 
 Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
