@@ -1,3 +1,19 @@
+DETAILED LOG - 2025-05-23 00:15:34
+
+Vendor 'Ledger' for description 'Ledger Stax FIDO2 Authenticator' has become valid.
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' has become valid.
+
+Vendor '' for description 'StarSign FIDO Card' has become invalid.
+
+Vendor 'Ledger' for description 'Ledger Flex FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'SI0X FIDO CL WRIST v1.0' has become invalid.
+
+Vendor '' for description 'StarSign Key Fob' has become invalid.
+
+
+
 DETAILED LOG - 2025-05-22 00:16:42
 
 Added new entry for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' with description 'Ledger Stax FIDO2 Authenticator' and vendor 'Ledger'.
@@ -3880,6 +3896,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
