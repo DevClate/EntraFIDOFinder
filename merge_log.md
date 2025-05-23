@@ -1,3 +1,20 @@
+# Merge Log - 2025-05-23 09:01:50
+
+Updated 'Version' for AAGUID 'c89674e3-a765-4b07-888a-7c086fbdf04b' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'f8d5c4e9-e539-4c06-8662-ec2a4155a555' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '912435d9-4a88-42f3-972d-1244b0d51420' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' from '' to 'FIDO 2.0'.
+
+Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
+
+
 # Merge Log - 2025-05-23 00:24:18
 
 Vendor updated for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0': '' to 'TruU' from description match.
