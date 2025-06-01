@@ -1,4 +1,14 @@
 
+===== Script Run on 2025-06-01 04:14:20 UTC =====
+2025-06-01 04:14:17 - AAGUID: 4b89f401-464e-4745-a520-486ddfc5d80e
+Updating timeOfLastStatusChange
+Old Value:
+2024-09-25
+
+New Value:
+2025-05-27
+
+
 ===== Script Run on 2025-05-23 08:58:52 UTC =====
 2025-05-23 08:58:47 - Updating AAGUID b93fd961-f2e6-462f-b122-82002247de78 : description : "Android Authenticator with SafetyNet Attestation" -> "Android Authenticator"
 2025-05-23 08:58:48 - AAGUID: 4c0cf95d-2f40-43b5-ba42-4c83a11c04ba
@@ -1921,6 +1931,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
