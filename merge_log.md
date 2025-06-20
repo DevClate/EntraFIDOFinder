@@ -1,3 +1,148 @@
+# Merge Log - 2025-06-20 00:15:45
+
+Updated 'USB' for AAGUID '10c70715-2a9a-4de1-b0aa-3cff6d496d39' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID 'e1a96183-5016-4f24-b55b-e3ae23614cc6' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '61250591-b2bc-4456-b719-0b17be90bb30' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from '❌' to '✅'.
+
+Updated 'BLE' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.
+
+Updated 'BLE' for AAGUID 'b7d3f68e-88a6-471e-9ecf-2df26d041ede' from '❌' to '❌47ab2fb4-66ac'.
+
+Updated 'NFC' for AAGUID '931327dd-c89b-406c-a81e-ed7058ef36c6' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '146e77ef-11eb-4423-b847-ce77864e9411' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '998f358b-2dd2-4cbe-a43a-e8107438dfb3' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '95442b2e-f15e-4def-b270-efb106facb4e' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from '❌' to '✅'.
+
+Entry removed for description 'Ledger Nano S FIDO2 Authenticator' with AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200'.
+
+Entry removed for description 'Ledger Nano X FIDO2 Authenticator' with AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe'.
+
+Entry removed for description 'WinMagic FIDO Eazy - Phone' with AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19'.
+
+Entry removed for description 'VeridiumID Passkey iOS SDK' with AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4'.
+
+Entry removed for description 'YubiKey 5 Series with Lightning Preview' with AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf'.
+
+Entry removed for description 'Feitian FIDO Smart Card' with AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a'.
+
+Entry removed for description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' with AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc'.
+
+Entry removed for description 'ZTPass SmartAuth' with AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5'.
+
+Entry removed for description 'TruU Windows Authenticator' with AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880'.
+
+Entry removed for description 'WiSECURE Blentity FIDO2 Authenticator' with AAGUID '5753362b-4e6b-6345-7b2f-255438404c75'.
+
+Entry removed for description 'USB/NFC Passcode Authenticator' with AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7'.
+
+Entry removed for description 'eWBM eFA500 FIDO2 Authenticator' with AAGUID '361a3082-0278-4583-a16f-72a527f973e4'.
+
+Entry removed for description 'YubiKey 5 FIPS Series with Lightning Preview' with AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335'.
+
+Entry removed for description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' with AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c'.
+
+Entry removed for description 'OneKey FIDO2 Authenticator' with AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b'.
+
+Entry removed for description 'YubiKey 5 FIPS Series with NFC (RC Preview)' with AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1'.
+
+Entry removed for description 'VeridiumID Passkey Android SDK' with AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286'.
+
+Entry removed for description 'KeyVault Secp256R1 FIDO2 CTAP2 Authenticator' with AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad'.
+
+Entry removed for description 'WinMagic FIDO Eazy - Software' with AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34'.
+
+Entry removed for description 'TruU Windows Authenticator' with AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6'.
+
+Entry removed for description 'VivoKey Apex FIDO2' with AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136'.
+
+Entry removed for description 'ID-One Key' with AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac'.
+
+Entry removed for description 'Ledger Nano S Plus FIDO2 Authenticator' with AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352'.
+
+Entry removed for description 'Ledger Stax FIDO2 Authenticator' with AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34'.
+
+Entry removed for description 'ellipticSecure MIRkey USB Authenticator' with AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5'.
+
+Entry removed for description 'Veridium iOS SDK' with AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71'.
+
+Entry removed for description 'WinMagic FIDO Eazy - TPM' with AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35'.
+
+Entry removed for description 'eToken Fusion NFC PIV Enterprise' with AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90'.
+
+Entry removed for description 'OneKey FIDO2 Bluetooth Authenticator' with AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b'.
+
+Entry removed for description 'GoldKey Security Token' with AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e'.
+
+Entry removed for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' with AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0'.
+
+Entry removed for description 'Pone Biometrics OFFPAD Authenticator' with AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f'.
+
+Entry removed for description 'Android Authenticator with SafetyNet Attestation' with AAGUID 'b93fd961-f2e6-462f-b122-82002247de78'.
+
+Entry removed for description 'YubiKey 5 FIPS Series with NFC Preview' with AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528'.
+
+Entry removed for description 'Ledger Flex FIDO2 Authenticator' with AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802'.
+
+Entry removed for description 'Security Key NFC by Yubico - Enterprise Edition Preview' with AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73'.
+
+Entry removed for description 'ESS Smart Card Inc. Authenticator' with AAGUID '5343502d-5343-5343-6172-644649444f32'.
+
+Entry removed for description 'Feitian ePass FIDO2-NFC Plus Authenticator' with AAGUID '260e3021-482d-442d-838c-7edfbe153b7e'.
+
+Entry removed for description 'Hideez Key 3 FIDO2' with AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5'.
+
+Entry removed for description 'YubiKey 5 Series with NFC Preview' with AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0'.
+
+Entry removed for description 'YubiKey 5 FIPS Series (RC Preview)' with AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826'.
+
+Entry removed for description 'Dapple Authenticator from Dapple Security Inc.' with AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60'.
+
+Entry removed for description 'Deepnet SafeKey/Classic (USB)' with AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132'.
+
+Entry removed for description 'YubiKey 5 FIPS Series with Lightning (RC Preview)' with AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf'.
+
+Entry removed for description 'ID-One Key' with AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc'.
+
+Entry removed for description 'SafeKey/Classic (FP)' with AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f'.
+
+Entry removed for description 'Samsung Pass' with AAGUID '53414d53-554e-4700-0000-000000000000'.
+
+Entry removed for description 'Veridium Android SDK' with AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c'.
+
+Entry removed for description 'IIST FIDO2 Authenticator' with AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e'.
+
+Entry removed for description 'Security Key NFC by Yubico Preview' with AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb'.
+
+
 # Merge Log - 2025-05-23 00:15:34
 
 Vendor 'Ledger' for description 'Ledger Stax FIDO2 Authenticator' has become valid.
