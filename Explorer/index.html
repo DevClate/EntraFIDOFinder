@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,18 @@
             margin: 0;
             padding: 0;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         h1 {
             text-align: center;
             color: #4CAF50;
         }
+
         .filter-input {
             margin-bottom: 10px;
             padding: 10px;
@@ -29,27 +33,34 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
         }
-        th, td {
+
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: left;
         }
+
         th {
             background-color: #4CAF50;
             color: white;
         }
+
         tr:nth-child(even) {
             background-color: #f2f2f2;
         }
+
         tr:hover {
             background-color: #ddd;
             cursor: pointer;
         }
+
         .last-updated-container {
             display: flex;
             justify-content: center;
@@ -59,12 +70,15 @@
             font-size: 14px;
             color: #666;
         }
+
         .last-updated-container div {
             margin: 0 10px;
         }
+
         .divider {
             margin: 0 10px;
         }
+
         /* Modal styles */
         .modal {
             display: none;
@@ -78,6 +92,7 @@
             background-color: rgba(0, 0, 0, 0.4);
             padding-top: 60px;
         }
+
         .modal-content {
             background-color: #f4f4f9;
             margin: 5% auto;
@@ -86,45 +101,59 @@
             width: 80%;
             color: #333;
         }
+
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
+
         .close:hover,
         .close:focus {
             color: black;
             text-decoration: none;
             cursor: pointer;
         }
+
         /* Styles for modal tables */
         .modal-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
         }
-        .modal-table th, .modal-table td {
+
+        .modal-table th,
+        .modal-table td {
             border: 1px solid #ddd;
             padding: 8px;
         }
+
         .modal-table th {
-            background-color: #e2e2e2; /* Lighter background */
-            color: #333; /* Dark text color */
+            background-color: #e2e2e2;
+            /* Lighter background */
+            color: #333;
+            /* Dark text color */
             text-align: left;
             width: 30%;
         }
+
         .modal-table td {
             width: 70%;
         }
+
         .modal-table ul {
             margin: 0;
             padding-left: 20px;
         }
+
         /* Update modal header styles */
-        .modal-content h2, .modal-content h3 {
-            color: #4CAF50; /* Match the main page header color */
+        .modal-content h2,
+        .modal-content h3 {
+            color: #4CAF50;
+            /* Match the main page header color */
         }
+
         /* Button styles */
         #showRawDataBtn {
             background-color: #4CAF50;
@@ -139,11 +168,13 @@
             cursor: pointer;
             border-radius: 4px;
         }
+
         #showRawDataBtn:hover {
             background-color: #45a049;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Entra Compatible Attestation FIDO Key Explorer</h1>
@@ -152,27 +183,33 @@
             <div class="divider">|</div>
             <div id="lastChecked"></div>
         </div>
-        <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..." onkeyup="filterTable()">
+        <input type="text" id="searchVendor" class="filter-input" placeholder="Search for vendors..."
+            onkeyup="filterTable()">
+        <label for="filterBio">Bio Support:</label>
         <select id="filterBio" class="filter-input" onchange="filterTable()">
             <option value="">All Bio</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
+        <label for="filterUSB">USB Support:</label>
         <select id="filterUSB" class="filter-input" onchange="filterTable()">
             <option value="">All USB</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
+        <label for="filterNFC">NFC Support:</label>
         <select id="filterNFC" class="filter-input" onchange="filterTable()">
             <option value="">All NFC</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
+        <label for="filterBLE">BLE Support:</label>
         <select id="filterBLE" class="filter-input" onchange="filterTable()">
             <option value="">All BLE</option>
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>
+        <label for="filterVersion">Version:</label>
         <select id="filterVersion" class="filter-input" onchange="filterTable()">
             <option value="">All Versions</option>
             <option value="U2F V2">U2F V2</option>
@@ -284,7 +321,7 @@
                     <th>Attachment Hint</th>
                     <td id="modalAttachmentHint"></td>
                 </tr>
-                
+
                 <tr>
                     <th>Extensions</th>
                     <td>
@@ -351,7 +388,8 @@
             <!-- Add a new section to display raw data -->
             <div id="rawDataSection" style="display: none; margin-top: 20px;">
                 <h3>Raw Data</h3>
-                <pre id="rawDataContent" style="background-color: #f4f4f9; padding: 10px; border: 1px solid #ddd;"></pre>
+                <pre id="rawDataContent"
+                    style="background-color: #f4f4f9; padding: 10px; border: 1px solid #ddd;"></pre>
             </div>
         </div>
     </div>
@@ -367,7 +405,7 @@
                 })
                 .then(data => {
                     const tableBody = document.getElementById('fidoTable').getElementsByTagName('tbody')[0];
-                    
+
                     // Sort data by vendor
                     data.keys.sort((a, b) => a.Vendor.localeCompare(b.Vendor));
 
@@ -642,7 +680,7 @@
                 item.statusReports.forEach(report => {
                     const listItem = document.createElement('li');
                     listItem.innerText = `${report.status} (Effective Date: ${report.effectiveDate})`;
-                    
+
                     const reportDetailsList = document.createElement('ul');
                     if (report.authenticatorVersion) {
                         const authVerItem = document.createElement('li');
@@ -694,16 +732,17 @@
         const span = document.getElementsByClassName('close')[0];
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = 'none';
         }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = 'none';
             }
         }
     </script>
 </body>
+
 </html>
