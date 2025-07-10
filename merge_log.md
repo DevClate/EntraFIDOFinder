@@ -1,3 +1,52 @@
+# Merge Log - 2025-07-10 00:25:11
+
+Updated 'USB' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '931327dd-c89b-406c-a81e-ed7058ef36c6' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '95442b2e-f15e-4def-b270-efb106facb4e' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '10c70715-2a9a-4de1-b0aa-3cff6d496d39' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID 'e1a96183-5016-4f24-b55b-e3ae23614cc6' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from '✅' to '❌'.
+
+Updated 'BLE' for AAGUID 'd41f5a69-b817-4144-a13c-9ebd6d9254d6' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '61250591-b2bc-4456-b719-0b17be90bb30' from '✅' to '❌'.
+
+Vendor corrected for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e': '' to 'IIST'.
+
+Added new entry for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' with description 'IIST FIDO2 Authenticator' and vendor 'IIST'.
+
+Updated 'USB' for AAGUID '998f358b-2dd2-4cbe-a43a-e8107438dfb3' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '69700f79-d1fb-472e-bd9b-a3a3b9a9eda0' from '✅' to '❌'.
+
+Updated 'Bio' for AAGUID '516d3969-5a57-5651-5958-4e7a49434167' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '146e77ef-11eb-4423-b847-ce77864e9411' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from '✅' to '❌'.
+
+
 # Merge Log - 2025-06-20 09:34:21
 
 Updated 'BLE' for AAGUID 'b7d3f68e-88a6-471e-9ecf-2df26d041ede' from '❌47ab2fb4-66ac' to '❌'.
