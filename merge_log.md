@@ -1,3 +1,8 @@
+# Merge Log - 2025-07-10 11:24:35
+
+Vendor 'IIST' for description 'IIST FIDO2 Authenticator' has become valid.
+
+
 # Merge Log - 2025-07-10 00:25:11
 
 Updated 'USB' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db7' from '✅' to '❌'.
