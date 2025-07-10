@@ -6637,7 +6637,7 @@
       "Description": "Feitian BioPass FIDO2 Authenticator",
       "AAGUID": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
       "Bio": "✅",
-      "USB": "✅",
+      "USB": "❌",
       "NFC": "❌",
       "BLE": "❌",
       "Version": "FIDO 2.1 PRE",
