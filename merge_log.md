@@ -1,3 +1,8 @@
+# Merge Log - 2025-07-11 00:16:19
+
+Vendor 'IIST' for description 'IIST FIDO2 Authenticator' has become valid.
+
+
 # Merge Log - 2025-07-10 00:16:06
 
 Updated 'NFC' for AAGUID '30b5035e-d297-4ff1-b00b-addc96ba6a98' from '✅' to '❌'.
