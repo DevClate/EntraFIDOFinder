@@ -1,3 +1,8 @@
+# Merge Log - 2025-08-02 00:25:25
+
+Updated 'Version' for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' from '' to 'FIDO 2.0'.
+
+
 # Merge Log - 2025-07-17 00:26:28
 
 Updated 'USB' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '❌' to '✅'.
