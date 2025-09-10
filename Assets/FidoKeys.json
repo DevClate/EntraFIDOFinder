@@ -17893,7 +17893,7 @@
         "alternativeDescriptions": {
           "zh-TW": "WiSECURE AuthTron USB FIDO2 身份驗證器"
         },
-        "authenticatorVersion": 2,
+        "authenticatorVersion": 3,
         "protocolFamily": "fido2",
         "schema": 3,
         "upv": [
