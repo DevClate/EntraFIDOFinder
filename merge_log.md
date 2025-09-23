@@ -1,3 +1,26 @@
+# Merge Log - 2025-09-23 00:14:54
+
+Invalid vendor detected for AAGUID '662ef48a-95e2-4aaa-a6c1-5b9c40375824' with description 'YubiKey 5 Series with NFC - Enhanced PIN'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc' with description 'YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' with description 'ID-One Key' and vendor 'ID-One'.
+
+Added new entry for AAGUID '9012593f-43e4-4461-a97a-d92777b55d74' with description 'VinCSS FIDO2 Fingerprint' and vendor 'VinCSS'.
+
+Invalid vendor detected for AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286' with description 'VeridiumID Passkey Android SDK'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'aa79f476-ea00-417e-9628-1e8365123922' with description 'HID Crescendo 4000 FIDO'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' with description 'YubiKey 5 Series with NFC KVZR57'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4' with description 'VeridiumID Passkey iOS SDK'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb' with description 'Chipwon Clife Key'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' with description 'ID-One Key' and vendor 'ID-One'.
+
+
 # Merge Log - 2025-09-09 00:14:58
 
 Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.

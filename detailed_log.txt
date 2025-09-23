@@ -1,3 +1,13 @@
+DETAILED LOG - 2025-09-23 00:14:54
+
+Added new entry for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' with description 'ID-One Key' and vendor 'ID-One'.
+
+Added new entry for AAGUID '9012593f-43e4-4461-a97a-d92777b55d74' with description 'VinCSS FIDO2 Fingerprint' and vendor 'VinCSS'.
+
+Added new entry for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' with description 'ID-One Key' and vendor 'ID-One'.
+
+
+
 DETAILED LOG - 2025-09-22 00:16:21
 
 No changes have been detected since last run.
@@ -4814,6 +4824,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
