@@ -1,4 +1,136 @@
 
+===== Script Run on 2025-09-24 09:09:57 UTC =====
+2025-09-24 09:09:54 - AAGUID: aa79f476-ea00-417e-9628-1e8365123922
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-08-01
+
+2025-09-24 09:09:54 - AAGUID: aa79f476-ea00-417e-9628-1e8365123922
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo 4000 FIDO
+
+2025-09-24 09:09:54 - AAGUID: 82b0a720-127a-4788-b56d-d1d4b2d82eac
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-26
+
+2025-09-24 09:09:54 - AAGUID: 82b0a720-127a-4788-b56d-d1d4b2d82eac
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Key
+
+2025-09-24 09:09:54 - AAGUID: f2145e86-211e-4931-b874-e22bba7d01cc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-26
+
+2025-09-24 09:09:54 - AAGUID: f2145e86-211e-4931-b874-e22bba7d01cc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Key
+
+2025-09-24 09:09:56 - AAGUID: b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-24 09:09:56 - AAGUID: b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)
+
+2025-09-24 09:09:56 - AAGUID: 662ef48a-95e2-4aaa-a6c1-5b9c40375824
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-24 09:09:56 - AAGUID: 662ef48a-95e2-4aaa-a6c1-5b9c40375824
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: YubiKey 5 Series with NFC - Enhanced PIN
+
+2025-09-24 09:09:56 - AAGUID: 930b0c03-ef46-4ac4-935c-538dccd1fcdb
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-23
+
+2025-09-24 09:09:56 - AAGUID: 930b0c03-ef46-4ac4-935c-538dccd1fcdb
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: Chipwon Clife Key
+
+2025-09-24 09:09:56 - AAGUID: 9eb7eabc-9db5-49a1-b6c3-555a802093f4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-24 09:09:56 - AAGUID: 9eb7eabc-9db5-49a1-b6c3-555a802093f4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: YubiKey 5 Series with NFC KVZR57
+
+2025-09-24 09:09:56 - AAGUID: 8d4378b0-725d-4432-b3c2-01fcdaf46286
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-28
+
+2025-09-24 09:09:56 - AAGUID: 8d4378b0-725d-4432-b3c2-01fcdaf46286
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeridiumID
+Description: VeridiumID Passkey Android SDK
+
+2025-09-24 09:09:56 - AAGUID: 1e906e14-77af-46bc-ae9f-fe6ef18257e4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-28
+
+2025-09-24 09:09:56 - AAGUID: 1e906e14-77af-46bc-ae9f-fe6ef18257e4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeridiumID
+Description: VeridiumID Passkey iOS SDK
+
+2025-09-24 09:09:56 - AAGUID: 9012593f-43e4-4461-a97a-d92777b55d74
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-08-12
+
+2025-09-24 09:09:56 - AAGUID: 9012593f-43e4-4461-a97a-d92777b55d74
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VinCSS
+Description: VinCSS FIDO2 Fingerprint
+
+
 ===== Script Run on 2025-09-14 09:09:30 UTC =====
 No changes have been detected since last run.
 
@@ -1993,6 +2125,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
