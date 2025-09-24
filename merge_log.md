@@ -1,3 +1,12 @@
+# Merge Log - 2025-09-24 12:10:28
+
+Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
+
+Vendor corrected for AAGUID 'ee041bce-25e5-4cdb-8f86-897fd6418464': '' to 'Feitian'.
+
+Added new entry for AAGUID 'ee041bce-25e5-4cdb-8f86-897fd6418464' with description 'Feitian ePass FIDO2-NFC Authenticator' and vendor 'Feitian'.
+
+
 # Merge Log - 2025-09-24 09:13:30
 
 Updated 'Version' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from '' to 'FIDO 2.1'.
