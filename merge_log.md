@@ -1,3 +1,8 @@
+# Merge Log - 2025-09-24 09:06:51
+
+Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
+
+
 # Merge Log - 2025-09-24 00:23:09
 
 Vendor 'Unknown' for description 'YubiKey 5 Series with NFC - Enhanced PIN' has become invalid.
