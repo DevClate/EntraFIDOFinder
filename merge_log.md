@@ -1,3 +1,26 @@
+# Merge Log - 2025-09-24 00:14:44
+
+Vendor 'ID-One' for description 'ID-One Key' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'Chipwon Clife Key' has become invalid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC KVZR57' has become invalid.
+
+Vendor '' for description 'VeridiumID Passkey Android SDK' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC - Enhanced PIN' has become invalid.
+
+Vendor '' for description 'VeridiumID Passkey iOS SDK' has become invalid.
+
+Vendor 'VinCSS' for description 'VinCSS FIDO2 Fingerprint' has become valid.
+
+Vendor '' for description 'HID Crescendo 4000 FIDO' has become invalid.
+
+
 # Merge Log - 2025-09-23 00:14:54
 
 Invalid vendor detected for AAGUID '662ef48a-95e2-4aaa-a6c1-5b9c40375824' with description 'YubiKey 5 Series with NFC - Enhanced PIN'. Vendor '' is not in the list of valid vendors.
