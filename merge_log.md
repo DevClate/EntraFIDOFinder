@@ -1,3 +1,28 @@
+# Merge Log - 2025-09-24 09:13:30
+
+Updated 'Version' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from '' to 'FIDO 2.1'.
+
+Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
+
+Updated 'Version' for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '9012593f-43e4-4461-a97a-d92777b55d74' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'aa79f476-ea00-417e-9628-1e8365123922' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '662ef48a-95e2-4aaa-a6c1-5b9c40375824' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4' from '' to 'FIDO 2.1'.
+
+
 # Merge Log - 2025-09-24 09:06:51
 
 Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
