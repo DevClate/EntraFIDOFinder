@@ -1,3 +1,490 @@
+DETAILED LOG - 2025-09-24 09:13:30
+
+Updated 'Version' for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '9012593f-43e4-4461-a97a-d92777b55d74' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'aa79f476-ea00-417e-9628-1e8365123922' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '662ef48a-95e2-4aaa-a6c1-5b9c40375824' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4' from '' to 'FIDO 2.1'.
+
+
+
+DETAILED LOG - 2025-09-24 09:06:51
+
+
+
+
+DETAILED LOG - 2025-09-24 00:23:09
+
+Vendor 'Unknown' for description 'YubiKey 5 Series with NFC - Enhanced PIN' has become invalid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become valid.
+
+Vendor 'Unknown' for description 'YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)' has become invalid.
+
+Vendor 'VeridiumID' for description 'VeridiumID Passkey iOS SDK' has become valid.
+
+Vendor 'ID-One' for description 'ID-One Key' has become valid.
+
+Vendor 'Unknown' for description 'Chipwon Clife Key' has become invalid.
+
+Vendor 'VinCSS' for description 'VinCSS FIDO2 Fingerprint' has become valid.
+
+Vendor 'Unknown' for description 'YubiKey 5 Series with NFC KVZR57' has become invalid.
+
+Vendor 'HID' for description 'HID Crescendo 4000 FIDO' has become valid.
+
+Vendor 'VeridiumID' for description 'VeridiumID Passkey Android SDK' has become valid.
+
+
+
+DETAILED LOG - 2025-09-23 00:23:03
+
+Added new entry for AAGUID '8d4378b0-725d-4432-b3c2-01fcdaf46286' with description 'VeridiumID Passkey Android SDK' and vendor 'VeridiumID'.
+
+Added new entry for AAGUID '9012593f-43e4-4461-a97a-d92777b55d74' with description 'VinCSS FIDO2 Fingerprint' and vendor 'VinCSS'.
+
+Set vendor name for invalid AAGUID 'b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' to 'Unknown'.
+
+Added new entry for AAGUID '1e906e14-77af-46bc-ae9f-fe6ef18257e4' with description 'VeridiumID Passkey iOS SDK' and vendor 'VeridiumID'.
+
+Added new entry for AAGUID '82b0a720-127a-4788-b56d-d1d4b2d82eac' with description 'ID-One Key' and vendor 'ID-One'.
+
+Added new entry for AAGUID 'aa79f476-ea00-417e-9628-1e8365123922' with description 'HID Crescendo 4000 FIDO' and vendor 'HID'.
+
+Set vendor name for invalid AAGUID '662ef48a-95e2-4aaa-a6c1-5b9c40375824' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb' to 'Unknown'.
+
+Added new entry for AAGUID 'f2145e86-211e-4931-b874-e22bba7d01cc' with description 'ID-One Key' and vendor 'ID-One'.
+
+
+
+DETAILED LOG - 2025-09-22 00:25:16
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-21 00:25:20
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-20 00:21:46
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-19 00:23:22
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-18 00:21:57
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-17 00:23:07
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-16 00:22:29
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-15 00:24:59
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-14 09:13:12
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-14 00:24:28
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-13 00:21:03
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-12 00:22:25
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-11 00:22:50
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-10 08:21:45
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-10 00:22:08
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-09 00:23:27
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '❌' to '✅'.
+
+
+
+DETAILED LOG - 2025-09-08 00:24:43
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-07 00:24:53
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-06 00:22:08
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-05 00:23:01
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-04 00:22:04
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-03 00:22:02
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-02 00:23:20
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-09-01 00:28:51
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-31 00:25:34
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-30 00:22:01
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-29 00:23:23
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-28 00:23:35
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-27 00:23:40
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-26 00:23:46
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-25 00:25:01
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-24 00:26:26
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-23 00:23:07
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-22 00:23:44
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-21 00:22:51
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-20 00:23:30
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-19 00:24:25
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-18 00:27:22
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-17 00:27:21
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-16 00:24:01
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-15 00:25:52
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-14 00:24:55
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-13 00:25:17
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-12 00:24:41
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-11 00:27:42
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-10 00:29:04
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-09 00:24:30
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-08 00:26:55
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-07 00:27:02
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-06 00:27:11
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-05 00:27:07
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-04 00:29:10
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-03 10:13:40
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-03 00:29:34
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-08-02 00:25:25
+
+Updated 'Version' for AAGUID '4b89f401-464e-4745-a520-486ddfc5d80e' from '' to 'FIDO 2.0'.
+
+
+
+DETAILED LOG - 2025-08-01 00:30:25
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-31 00:26:08
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-30 00:26:36
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-29 00:28:38
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-28 00:28:18
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-27 00:29:17
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-26 00:25:10
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-25 00:26:23
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-24 00:26:36
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-23 00:26:18
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-22 00:26:30
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-21 00:28:20
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2025-07-20 00:28:55
+
+No changes detected during this run.
+
+
+
 DETAILED LOG - 2025-07-19 00:25:21
 
 No changes detected during this run.
@@ -6248,6 +6735,78 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

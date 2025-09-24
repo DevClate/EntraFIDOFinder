@@ -1,4 +1,189 @@
 
+===== Script Run on 2025-09-24 09:09:57 UTC =====
+2025-09-24 09:09:54 - AAGUID: aa79f476-ea00-417e-9628-1e8365123922
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-08-01
+
+2025-09-24 09:09:54 - AAGUID: aa79f476-ea00-417e-9628-1e8365123922
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo 4000 FIDO
+
+2025-09-24 09:09:54 - AAGUID: 82b0a720-127a-4788-b56d-d1d4b2d82eac
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-26
+
+2025-09-24 09:09:54 - AAGUID: 82b0a720-127a-4788-b56d-d1d4b2d82eac
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Key
+
+2025-09-24 09:09:54 - AAGUID: f2145e86-211e-4931-b874-e22bba7d01cc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-26
+
+2025-09-24 09:09:54 - AAGUID: f2145e86-211e-4931-b874-e22bba7d01cc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ID-One
+Description: ID-One Key
+
+2025-09-24 09:09:56 - AAGUID: b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-24 09:09:56 - AAGUID: b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)
+
+2025-09-24 09:09:56 - AAGUID: 662ef48a-95e2-4aaa-a6c1-5b9c40375824
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-24 09:09:56 - AAGUID: 662ef48a-95e2-4aaa-a6c1-5b9c40375824
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: YubiKey 5 Series with NFC - Enhanced PIN
+
+2025-09-24 09:09:56 - AAGUID: 930b0c03-ef46-4ac4-935c-538dccd1fcdb
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-23
+
+2025-09-24 09:09:56 - AAGUID: 930b0c03-ef46-4ac4-935c-538dccd1fcdb
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: Chipwon Clife Key
+
+2025-09-24 09:09:56 - AAGUID: 9eb7eabc-9db5-49a1-b6c3-555a802093f4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-24 09:09:56 - AAGUID: 9eb7eabc-9db5-49a1-b6c3-555a802093f4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: YubiKey 5 Series with NFC KVZR57
+
+2025-09-24 09:09:56 - AAGUID: 8d4378b0-725d-4432-b3c2-01fcdaf46286
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-28
+
+2025-09-24 09:09:56 - AAGUID: 8d4378b0-725d-4432-b3c2-01fcdaf46286
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeridiumID
+Description: VeridiumID Passkey Android SDK
+
+2025-09-24 09:09:56 - AAGUID: 1e906e14-77af-46bc-ae9f-fe6ef18257e4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-28
+
+2025-09-24 09:09:56 - AAGUID: 1e906e14-77af-46bc-ae9f-fe6ef18257e4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeridiumID
+Description: VeridiumID Passkey iOS SDK
+
+2025-09-24 09:09:56 - AAGUID: 9012593f-43e4-4461-a97a-d92777b55d74
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-08-12
+
+2025-09-24 09:09:56 - AAGUID: 9012593f-43e4-4461-a97a-d92777b55d74
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VinCSS
+Description: VinCSS FIDO2 Fingerprint
+
+
+===== Script Run on 2025-09-14 09:09:30 UTC =====
+No changes have been detected since last run.
+
+===== Script Run on 2025-09-10 08:19:14 UTC =====
+2025-09-10 08:19:13 - Updating AAGUID 504d7149-4e4c-3841-4555-55445a677357 : authenticatorVersion : 2 -> 3
+
+===== Script Run on 2025-09-01 04:08:56 UTC =====
+2025-09-01 04:08:55 - AAGUID: 146e77ef-11eb-4423-b847-ce77864e9411
+Updating timeOfLastStatusChange
+Old Value:
+2025-01-10
+
+New Value:
+2025-08-06
+
+
+===== Script Run on 2025-08-03 10:12:28 UTC =====
+No changes have been detected since last run.
+
+===== Script Run on 2025-08-01 04:24:39 UTC =====
+2025-08-01 04:24:36 - AAGUID: 4b89f401-464e-4745-a520-486ddfc5d80e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-05-27
+
+2025-08-01 04:24:36 - AAGUID: 4b89f401-464e-4745-a520-486ddfc5d80e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: IIST
+Description: IIST FIDO2 Authenticator
+
+2025-08-01 04:24:37 - AAGUID: 4d41190c-7beb-4a84-8018-adf265a6352d
+Updating timeOfLastStatusChange
+Old Value:
+2024-06-18
+
+New Value:
+2025-07-28
+
+2025-08-01 04:24:37 - AAGUID: 5fdb81b8-53f0-4967-a881-f5ec26fe4d18
+Path: attestationRootCertificates
+Old Value:
+"MIIB9TCCAZsCFDW44aglxZiY/J3DJFC4e5o74220MAoGCCqGSM49BAMCMHwxCzAJBgNVBAYTAlZOMRIwEAYDVQQIDAlIb0NoaU1pbmgxDzANBgNVBAoMBlZpbkNTUzEPMA0GA1UECwwGUm9vdENBMRYwFAYDVQQDDA1jYS52aW5jc3MubmV0MR8wHQYJKoZIhvcNAQkBFhBhZG1pbkB2aW5jc3MubmV0MCAXDTE5MTAyMzA0MTg1NFoYDzIwNjkxMDEwMDQxODU0WjB8MQswCQYDVQQGEwJWTjESMBAGA1UECAwJSG9DaGlNaW5oMQ8wDQYDVQQKDAZWaW5DU1MxDzANBgNVBAsMBlJvb3RDQTEWMBQGA1UEAwwNY2EudmluY3NzLm5ldDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AdmluY3NzLm5ldDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABO0ZlRMqkOPRqHNa4Xj7oTvEKHLtjWexvuAC8WLlK53TIGXc2JJ3GbEaVo10tFjnLHLXheKadZCj2HEz3NJSaUIwCgYIKoZIzj0EAwIDSAAwRQIhALHeqkcl8O7ky1iRXicVAC7x2zsU12vS3BOVyXCgedE3AiBlM++xnzOOEs2m3sF8/Ztbw6UL/AMT1ZXt5fyqUhIuWw=="
+
+New Value:
+[
+  "MIIB9TCCAZsCFDW44aglxZiY/J3DJFC4e5o74220MAoGCCqGSM49BAMCMHwxCzAJBgNVBAYTAlZOMRIwEAYDVQQIDAlIb0NoaU1pbmgxDzANBgNVBAoMBlZpbkNTUzEPMA0GA1UECwwGUm9vdENBMRYwFAYDVQQDDA1jYS52aW5jc3MubmV0MR8wHQYJKoZIhvcNAQkBFhBhZG1pbkB2aW5jc3MubmV0MCAXDTE5MTAyMzA0MTg1NFoYDzIwNjkxMDEwMDQxODU0WjB8MQswCQYDVQQGEwJWTjESMBAGA1UECAwJSG9DaGlNaW5oMQ8wDQYDVQQKDAZWaW5DU1MxDzANBgNVBAsMBlJvb3RDQTEWMBQGA1UEAwwNY2EudmluY3NzLm5ldDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AdmluY3NzLm5ldDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABO0ZlRMqkOPRqHNa4Xj7oTvEKHLtjWexvuAC8WLlK53TIGXc2JJ3GbEaVo10tFjnLHLXheKadZCj2HEz3NJSaUIwCgYIKoZIzj0EAwIDSAAwRQIhALHeqkcl8O7ky1iRXicVAC7x2zsU12vS3BOVyXCgedE3AiBlM++xnzOOEs2m3sF8/Ztbw6UL/AMT1ZXt5fyqUhIuWw==",
+  "MIIDHDCCAsKgAwIBAgIBATAKBggqhkjOPQQDAjB8MQswCQYDVQQGEwJWTjESMBAGA1UECAwJSG9DaGlNaW5oMQ8wDQYDVQQKDAZWaW5DU1MxDzANBgNVBAsMBlJvb3RDQTEWMBQGA1UEAwwNY2EudmluY3NzLm5ldDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AdmluY3NzLm5ldDAgFw0yMzEwMjUyMzUxNTNaGA8yMDczMTAxMjIzNTE1M1owgZIxCzAJBgNVBAYTAlZOMRIwEAYDVQQIDAlIb0NoaU1pbmgxDzANBgNVBAoMBlZpbkNTUzEiMCAGA1UECwwZQXV0aGVudGljYXRvciBBdHRlc3RhdGlvbjEZMBcGA1UEAwwQZmlkbzIudmluY3NzLm5ldDEfMB0GCSqGSIb3DQEJARYQYWRtaW5AdmluY3NzLm5ldDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABDcllSkNyy2ebVJuUh7EDR4o+pfFXtDRwCXun0L/2u1wV8QYopmrKvN2YmWU3xfEou9GYlg8FVSyiuI7XhsnVT2jggEaMIIBFjAdBgNVHQ4EFgQUtTmt+HkgBmiKKtxn5Afr521TIsEwgaQGA1UdIwSBnDCBmaGBgKR+MHwxCzAJBgNVBAYTAlZOMRIwEAYDVQQIDAlIb0NoaU1pbmgxDzANBgNVBAoMBlZpbkNTUzEPMA0GA1UECwwGUm9vdENBMRYwFAYDVQQDDA1jYS52aW5jc3MubmV0MR8wHQYJKoZIhvcNAQkBFhBhZG1pbkB2aW5jc3MubmV0ghQ1uOGoJcWYmPydwyRQuHuaO+NttDAJBgNVHRMEAjAAMAsGA1UdDwQEAwIE8DATBgsrBgEEAYLlHAIBAQQEAwIFIDAhBgsrBgEEAYLlHAEBBAQSBBBf24G4U/BJZ6iB9ewm/k0YMAoGCCqGSM49BAMCA0gAMEUCIQDzR0ha1bt1YA91JmBVKxTqBN7gAhhUlBunRNOugiJ2hQIgUmusQ0K6pzRn9zTgldNrywl6AUipPO8t1YzPwQlqJiM="
+]
+
+
 ===== Script Run on 2025-07-07 11:55:22 UTC =====
 No changes have been detected since last run.
 
@@ -1940,6 +2125,12 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
+
+
+
+
+
 
 
 
