@@ -17860,7 +17860,7 @@
       "timeOfLastStatusChange": "2024-12-30"
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC KVZR57",
       "AAGUID": "9eb7eabc-9db5-49a1-b6c3-555a802093f4",
       "Bio": "❌",
@@ -17874,7 +17874,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC - Enhanced PIN",
       "AAGUID": "662ef48a-95e2-4aaa-a6c1-5b9c40375824",
       "Bio": "❌",
@@ -18052,7 +18052,7 @@
       }
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Chipwon",
       "Description": "Chipwon Clife Key",
       "AAGUID": "930b0c03-ef46-4ac4-935c-538dccd1fcdb",
       "Bio": "❌",
