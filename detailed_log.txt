@@ -1,3 +1,11 @@
+DETAILED LOG - 2025-09-25 07:46:16
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)' has become valid.
+
+Vendor 'Unknown' for description 'YubiKey 5 Series with NFC KVZR57' has become invalid.
+
+
+
 DETAILED LOG - 2025-09-25 07:38:10
 
 Set vendor name for invalid AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' to 'Unknown'.
@@ -6753,6 +6761,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 

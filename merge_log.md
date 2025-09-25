@@ -1,3 +1,12 @@
+# Merge Log - 2025-09-25 07:46:16
+
+Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)' has become valid.
+
+Vendor 'Unknown' for description 'YubiKey 5 Series with NFC KVZR57' has become invalid.
+
+
 # Merge Log - 2025-09-25 07:38:10
 
 Invalid vendor detected for AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' with description 'YubiKey 5 Series with NFC KVZR57'. Vendor '' is not in the list of valid vendors.
