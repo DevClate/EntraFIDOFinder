@@ -1,3 +1,10 @@
+# Merge Log - 2025-09-25 00:23:01
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO2-NFC Authenticator' has become valid.
+
+Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
+
+
 # Merge Log - 2025-09-24 12:10:28
 
 Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
