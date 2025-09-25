@@ -1,3 +1,12 @@
+# Merge Log - 2025-09-25 07:38:10
+
+Invalid vendor detected for AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' with description 'YubiKey 5 Series with NFC KVZR57'. Vendor '' is not in the list of valid vendors.
+
+Set vendor name for invalid AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' to 'Unknown'.
+
+Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
+
+
 # Merge Log - 2025-09-25 00:23:01
 
 Vendor 'Feitian' for description 'Feitian ePass FIDO2-NFC Authenticator' has become valid.
