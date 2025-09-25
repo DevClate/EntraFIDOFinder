@@ -1,3 +1,12 @@
+# Merge Log - 2025-09-25 07:51:16
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC - Enhanced PIN' has become valid.
+
+Vendor 'Chipwon' for description 'Chipwon Clife Key' has become valid.
+
+Vendor 'Yubico' for description 'YubiKey 5 Series with NFC KVZR57' has become valid.
+
+
 # Merge Log - 2025-09-25 07:46:16
 
 Vendor corrected for AAGUID '930b0c03-ef46-4ac4-935c-538dccd1fcdb': 'Unknown' to 'Chipwon'.
