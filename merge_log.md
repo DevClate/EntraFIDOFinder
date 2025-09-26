@@ -1,3 +1,8 @@
+# Merge Log - 2025-09-26 08:59:10
+
+Updated 'Version' for AAGUID '9eb7eabc-9db5-49a1-b6c3-555a802093f4' from '' to 'FIDO 2.1'.
+
+
 # Merge Log - 2025-09-25 07:51:16
 
 Vendor 'Yubico' for description 'YubiKey 5 Series with NFC - Enhanced PIN' has become valid.
