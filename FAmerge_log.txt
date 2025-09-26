@@ -1,4 +1,116 @@
 
+===== Script Run on 2025-09-26 08:29:15 UTC =====
+2025-09-26 08:29:12 - Updating AAGUID 77010bd7-212a-4fc9-b236-d2ca5e9d4084 : aaguid : "ee041bce-25e5-4cdb-8f86-897fd6418464" -> "77010bd7-212a-4fc9-b236-d2ca5e9d4084"
+2025-09-26 08:29:12 - Updating AAGUID 77010bd7-212a-4fc9-b236-d2ca5e9d4084 : description : "Feitian ePass FIDO2-NFC Authenticator" -> "Feitian BioPass FIDO2 Authenticator"
+2025-09-26 08:29:12 - AAGUID: 77010bd7-212a-4fc9-b236-d2ca5e9d4084
+Path: userVerificationDetails
+Old Value:
+[
+  [
+    {
+      "userVerificationMethod": "presence_internal"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "passcode_external"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "none"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "presence_internal"
+    },
+    {
+      "userVerificationMethod": "passcode_external"
+    }
+  ]
+]
+
+New Value:
+[
+  [
+    {
+      "userVerificationMethod": "passcode_external"
+    },
+    {
+      "userVerificationMethod": "presence_internal"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "none"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "passcode_external"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "fingerprint_internal"
+    }
+  ],
+  [
+    {
+      "userVerificationMethod": "presence_internal"
+    }
+  ]
+]
+
+2025-09-26 08:29:12 - Updating AAGUID 77010bd7-212a-4fc9-b236-d2ca5e9d4084 : authenticatorGetInfo.aaguid : "ee041bce25e54cdb8f86897fd6418464" -> "77010bd7212a4fc9b236d2ca5e9d4084"
+2025-09-26 08:29:12 - Updating AAGUID 77010bd7-212a-4fc9-b236-d2ca5e9d4084 : authenticatorGetInfo.maxMsgSize : 1024 -> 2048
+2025-09-26 08:29:12 - Updating AAGUID 77010bd7-212a-4fc9-b236-d2ca5e9d4084 : authenticatorGetInfo.maxCredentialCountInList : 6 -> 10
+2025-09-26 08:29:12 - AAGUID: 77010bd7-212a-4fc9-b236-d2ca5e9d4084
+Path: authenticatorGetInfo.transports
+Old Value:
+[
+  "nfc",
+  "usb"
+]
+
+New Value:
+"usb"
+
+2025-09-26 08:29:12 - AAGUID: ee041bce-25e5-4cdb-8f86-897fd6418464
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2018-10-26
+
+2025-09-26 08:29:12 - AAGUID: ee041bce-25e5-4cdb-8f86-897fd6418464
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian ePass FIDO2-NFC Authenticator
+
+2025-09-26 08:29:15 - AAGUID: 9eb7eabc-9db5-49a1-b6c3-555a802093f4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-19
+
+2025-09-26 08:29:15 - AAGUID: 9eb7eabc-9db5-49a1-b6c3-555a802093f4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC KVZR57
+
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : aaguid : "9eb7eabc-9db5-49a1-b6c3-555a802093f4" -> "b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc"
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : description : "YubiKey 5 Series with NFC KVZR57" -> "YubiKey 5 Series with NFC - Enhanced PIN (Enterprise Profile)"
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : upv[0].minor : 1 -> 0
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : upv[1].minor : 0 -> 1
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : authenticatorGetInfo.aaguid : "9eb7eabc9db549a1b6c3555a802093f4" -> "b2c1a50bdad84dc7ba4d0ce9597904bc"
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : authenticatorGetInfo.options.alwaysUv : false -> true
+2025-09-26 08:29:15 - Updating AAGUID b2c1a50b-dad8-4dc7-ba4d-0ce9597904bc : authenticatorGetInfo.minPINLength : 4 -> 6
+
 ===== Script Run on 2025-09-24 09:09:57 UTC =====
 2025-09-24 09:09:54 - AAGUID: aa79f476-ea00-417e-9628-1e8365123922
 Updating timeOfLastStatusChange
@@ -2125,6 +2237,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
