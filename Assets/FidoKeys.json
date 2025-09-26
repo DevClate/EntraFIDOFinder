@@ -6411,7 +6411,7 @@
       "USB": "✅",
       "NFC": "✅",
       "BLE": "❌",
-      "Version": null,
+      "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
       "statusReports": [
         {
