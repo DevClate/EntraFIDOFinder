@@ -1,3 +1,30 @@
+# Merge Log - 2025-10-18 00:13:52
+
+Updated 'USB' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '❌' to '✅'.
+
+Updated 'BLE' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '✅' to '❌'.
+
+Invalid vendor detected for AAGUID '6999180d-630c-442d-b8f7-424b90a43fae' with description 'Hyper FIDO Pro (CTAP2.1, CTAP2.0, U2F)'. Vendor '' is not in the list of valid vendors.
+
+Updated 'USB' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '❌' to '✅'.
+
+Updated 'BLE' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.
+
+Added new entry for AAGUID 'def8ab1a-9f91-44f1-a103-088d8dc7d681' with description 'IDEMIA SOLVO Fly 80 R3 FIDO Card e' and vendor 'IDEMIA'.
+
+Invalid vendor detected for AAGUID '23195a52-62d9-40fa-8ee5-23b173f4fb52' with description 'Hyper FIDO Pro NFC'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID 'dda9aa35-aaf1-4d3c-b6db-7902fd7dbbbf' with description 'IDEMIA SOLVO Fly 80 R3 FIDO Card c' and vendor 'IDEMIA'.
+
+
 # Merge Log - 2025-09-24 00:14:44
 
 Vendor 'ID-One' for description 'ID-One Key' has become valid.
