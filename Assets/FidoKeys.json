@@ -18132,7 +18132,7 @@
       "timeOfLastStatusChange": "2023-03-01"
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Hypersecu",
       "Description": "Hyper FIDO Pro NFC",
       "AAGUID": "23195a52-62d9-40fa-8ee5-23b173f4fb52",
       "Bio": "❌",
@@ -18146,7 +18146,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Hypersecu",
       "Description": "Hyper FIDO Pro (CTAP2.1, CTAP2.0, U2F)",
       "AAGUID": "6999180d-630c-442d-b8f7-424b90a43fae",
       "Bio": "❌",
