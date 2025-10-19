@@ -2,7 +2,7 @@
 
 PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
-**Database Last Updated:** 2025-09-25
+**Database Last Updated:** 2025-10-19
 
 ## Features
 
