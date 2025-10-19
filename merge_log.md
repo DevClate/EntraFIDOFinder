@@ -1,3 +1,10 @@
+# Merge Log - 2025-10-19 07:55:27
+
+Vendor 'Hypersecu' for description 'Hyper FIDO Pro NFC' has become valid.
+
+Vendor 'Hypersecu' for description 'Hyper FIDO Pro (CTAP2.1, CTAP2.0, U2F)' has become valid.
+
+
 # Merge Log - 2025-10-19 00:26:13
 
 Vendor 'Unknown' for description 'Hyper FIDO Pro NFC' has become invalid.
