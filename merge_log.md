@@ -1,3 +1,14 @@
+# Merge Log - 2025-10-19 00:16:46
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R3 FIDO Card c' has become valid.
+
+Vendor '' for description 'Hyper FIDO Pro (CTAP2.1, CTAP2.0, U2F)' has become invalid.
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R3 FIDO Card e' has become valid.
+
+Vendor '' for description 'Hyper FIDO Pro NFC' has become invalid.
+
+
 # Merge Log - 2025-10-18 00:13:52
 
 Updated 'USB' for AAGUID 'b12eac35-586c-4809-a4b1-d81af6c305cf' from '✅' to '❌'.
