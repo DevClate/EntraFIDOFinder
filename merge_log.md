@@ -1,3 +1,14 @@
+# Merge Log - 2025-11-19 00:16:14
+
+Updated 'USB' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '✅' to '❌'.
+
+Updated 'BLE' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '✅' to '❌'.
+
+Updated 'USB' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '✅' to '❌'.
+
+Updated 'BLE' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '✅' to '❌'.
+
+
 # Merge Log - 2025-10-19 00:16:46
 
 Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R3 FIDO Card c' has become valid.
