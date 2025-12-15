@@ -24,7 +24,7 @@ Function Export-GHEntraFido {
     )
 
     # Fetch the webpage content
-    $response = Invoke-WebRequest -Uri $Url
+    $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
     $htmlContent = $response.Content
 
     # Load the HTML content into an HtmlDocument object
