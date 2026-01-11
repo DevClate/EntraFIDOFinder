@@ -2,9 +2,22 @@
 
 Here you will find all changes per version
 
-## v0.0.20
+## v0.0.21
 
-### 0.0.20 Working
+Updated Keys:
+
+- Updated 'USB' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '✅' to '❌'.
+- Updated 'BLE' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '✅' to '❌'.
+- Updated 'USB' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '✅' to '❌'.
+- Updated 'BLE' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '✅' to '❌'.
+- Updated 'USB' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '✅' to '❌'.
+- Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.
+- Updated 'USB' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.
+- Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '❌' to '✅'.
+- Updated 'USB' for AAGUID 'd821a7d4-e97c-4cb6-bd82-4237731fd4be' from '❌' to '✅'.
+- Updated 'USB' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from '❌' to '✅'.
+
+## v0.0.20
 
 **New Keys:**
 
