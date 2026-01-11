@@ -1,11 +1,26 @@
+$ErrorActionPreference = 'Stop'
+
+# Define parameters with defaults
+$ExistingKeyFile = 'Assets/FidoKeys.json'
+$LogFilePath = 'FAmerge_log.txt'
+$FIDOUri = 'https://mds3.fidoalliance.org/'
+
 # Load existing FIDO keys from local JSON file
-$existingKeyFile = "Assets/FidoKeys.json"
-$existingFIDOKeys = Get-Content $existingKeyFile -Raw | ConvertFrom-Json -Depth 10
+try {
+    $existingFIDOKeys = Get-Content -Path $ExistingKeyFile -Raw | ConvertFrom-Json -Depth 10
+}
+catch {
+    Write-Error "Failed to load FIDO keys from '$ExistingKeyFile': $_" -ErrorAction Stop
+}
 
 # Fetch FIDO Alliance keys from the MDS3 endpoint
-$FIDOUri = "https://mds3.fidoalliance.org/"
-$FIDOAURL = Invoke-WebRequest -Uri $FIDOUri
-$FIDOAKeys = $FIDOAURL | Get-JWTDetails
+try {
+    $FIDOAURL = Invoke-WebRequest -Uri $FIDOUri -ErrorAction Stop
+    $FIDOAKeys = $FIDOAURL | Get-JWTDetails
+}
+catch {
+    Write-Error "Failed to fetch FIDO Alliance data from '$FIDOUri': $_" -ErrorAction Stop
+}
 
 # Initialize the log buffer as an ArrayList
 $LogBuffer = New-Object System.Collections.ArrayList
@@ -33,6 +48,7 @@ function Add-ToLogBuffer {
         [string]$Value
     )
     $script:LogBuffer.Add($Value) | Out-Null
+}
 }
 
 # Function to normalize 'versions' property
@@ -203,7 +219,7 @@ $($FAAAKey.timeOfLastStatusChange)
             Add-ToLogBuffer -Value $logMessage
             
             # Add the property to the object
-            $EXXXKey | Add-Member -MemberType NoteProperty -Name "timeOfLastStatusChange" -Value $FAAAKey.timeOfLastStatusChange
+            $EXXXKey | Add-Member -MemberType NoteProperty -Name 'timeOfLastStatusChange' -Value $FAAAKey.timeOfLastStatusChange
             
             # Set the changes made flag to true
             $script:ChangesMade = $true
@@ -219,8 +235,8 @@ $($FAAAKey.timeOfLastStatusChange)
         }
         
         # Check if EXXX entry has no metadataStatement but FAAA does
-        $hasMetadataStatement = $EXXXKey.PSObject.Properties.Name -contains "metadataStatement"
-        if ((-not $hasMetadataStatement -or $EXXXKey.metadataStatement -eq $null) -and $FAAAKey.metadataStatement) {
+        $hasMetadataStatement = $EXXXKey.PSObject.Properties.Name -contains 'metadataStatement'
+        if ((-not $hasMetadataStatement -or -not $EXXXKey.metadataStatement) -and $FAAAKey.metadataStatement) {
             $timestamp = Get-Timestamp
             $logMessage = @"
 $timestamp - AAGUID: $AAGUID
@@ -234,7 +250,7 @@ Description: $($EXXXKey.Description)
             
             # Add or set metadataStatement property
             if (-not $hasMetadataStatement) {
-                $EXXXKey | Add-Member -MemberType NoteProperty -Name "metadataStatement" -Value $FAAAKey.metadataStatement
+                $EXXXKey | Add-Member -MemberType NoteProperty -Name 'metadataStatement' -Value $FAAAKey.metadataStatement
             } else {
                 $EXXXKey.metadataStatement = $FAAAKey.metadataStatement
             }
@@ -244,40 +260,40 @@ Description: $($EXXXKey.Description)
         }
         
         # Remove null properties that aren't needed
-        if ($EXXXKey.PSObject.Properties.Name -contains "authenticatorGetInfo" -and $EXXXKey.authenticatorGetInfo -eq $null) {
+        if ($EXXXKey.PSObject.Properties.Name -contains 'authenticatorGetInfo' -and -not $EXXXKey.authenticatorGetInfo) {
             $EXXXKey.PSObject.Properties.Remove("authenticatorGetInfo")
             $script:ChangesMade = $true
         }
         
-        if ($EXXXKey.PSObject.Properties.Name -contains "statusReports" -and $EXXXKey.statusReports -eq $null) {
+        if ($EXXXKey.PSObject.Properties.Name -contains 'statusReports' -and -not $EXXXKey.statusReports) {
             # If we have status reports in FAAA, copy them over
             if ($FAAAKey.statusReports) {
                 $EXXXKey.statusReports = $FAAAKey.statusReports
             } else {
                 # Otherwise, remove the null property
-                $EXXXKey.PSObject.Properties.Remove("statusReports")
+                $EXXXKey.PSObject.Properties.Remove('statusReports')
             }
             $script:ChangesMade = $true
         }
         
         # If timeOfLastStatusChange is null but exists in FAAA, copy it over
-        if ($EXXXKey.PSObject.Properties.Name -contains "timeOfLastStatusChange" -and 
-            $EXXXKey.timeOfLastStatusChange -eq $null -and 
+        if ($EXXXKey.PSObject.Properties.Name -contains 'timeOfLastStatusChange' -and 
+            -not $EXXXKey.timeOfLastStatusChange -and 
             $FAAAKey.timeOfLastStatusChange) {
             $EXXXKey.timeOfLastStatusChange = $FAAAKey.timeOfLastStatusChange
             $script:ChangesMade = $true
         }
 
         # Compare and update metadataStatement if both exist
-        if ($EXXXKey.PSObject.Properties.Name -contains "metadataStatement" -and 
+        if ($EXXXKey.PSObject.Properties.Name -contains 'metadataStatement' -and 
             $EXXXKey.metadataStatement -and 
             $FAAAKey.metadataStatement) {
             Compare-Objects -obj1 ([ref]$EXXXKey.metadataStatement) -obj2 ([ref]$FAAAKey.metadataStatement) -update -AAGUID $AAGUID
         }
 
         # Compare and update statusReports if both exist
-        if ($EXXXKey.PSObject.Properties.Name -contains "statusReports" -and 
-            $FAAAKey.PSObject.Properties.Name -contains "statusReports" -and
+        if ($EXXXKey.PSObject.Properties.Name -contains 'statusReports' -and 
+            $FAAAKey.PSObject.Properties.Name -contains 'statusReports' -and
             $EXXXKey.statusReports -and 
             $FAAAKey.statusReports) {
             Compare-Objects -obj1 ([ref]$EXXXKey.statusReports) -obj2 ([ref]$FAAAKey.statusReports) -path 'statusReports' -update -AAGUID $AAGUID
@@ -304,26 +320,46 @@ $separator = "===== Script Run on $(Get-Date -AsUTC -Format 'yyyy-MM-dd HH:mm:ss
 $LogBuffer.InsertRange(0, @('', $separator))
 
 # Prepend the collected log entries to the log file
-if (Test-Path $LogFilePath) {
-    $existingContent = Get-Content -Path $LogFilePath -Raw
-    $LogContent = ($LogBuffer -join "`n") + "`n" + $existingContent
-    Set-Content -Path $LogFilePath -Value $LogContent
-} else {
-    # If the file doesn't exist, create it with the log content
-    $LogContent = $LogBuffer -join "`n"
-    Set-Content -Path $LogFilePath -Value $LogContent
+try {
+    if (Test-Path -Path $LogFilePath) {
+        $existingContent = Get-Content -Path $LogFilePath -Raw
+        $LogContent = ($LogBuffer -join "`n") + "`n" + $existingContent
+        Set-Content -Path $LogFilePath -Value $LogContent -Encoding utf8
+    }
+    else {
+        # If the file doesn't exist, create it with the log content
+        $LogContent = $LogBuffer -join "`n"
+        Set-Content -Path $LogFilePath -Value $LogContent -Encoding utf8
+    }
+}
+catch {
+    Write-Error "Failed to write to log file '$LogFilePath': $_" -ErrorAction Stop
 }
 
 # Save the updated $existingFIDOKeys to the JSON file
-$UpdatedKeysJson = $existingFIDOKeys | ConvertTo-Json -Depth 100
-Set-Content -Path 'Assets/FidoKeys.json' -Value $UpdatedKeysJson
+try {
+    $UpdatedKeysJson = $existingFIDOKeys | ConvertTo-Json -Depth 100
+    Set-Content -Path 'Assets/FidoKeys.json' -Value $UpdatedKeysJson -Encoding utf8
+}
+catch {
+    Write-Error "Failed to save updated FIDO keys to 'Assets/FidoKeys.json': $_" -ErrorAction Stop
+}
 
 # Calculate counts
 $existingKeyCount = $existingFIDOKeys.keys.Count
 $FIDOAKeyCount = $FIDOAKeys.entries.Count
 
 # Set outputs for GitHub Actions
-$githubOutput = $env:GITHUB_OUTPUT
-Add-Content -Path $githubOutput -Value "existingKeyCount=$existingKeyCount"
-Add-Content -Path $githubOutput -Value "FIDOAKeyCount=$FIDOAKeyCount"
-Add-Content -Path $githubOutput -Value "changesMade=$ChangesMade"
+if ($env:GITHUB_OUTPUT) {
+    try {
+        Add-Content -Path $env:GITHUB_OUTPUT -Value "existingKeyCount=$existingKeyCount" -Encoding utf8
+        Add-Content -Path $env:GITHUB_OUTPUT -Value "FIDOAKeyCount=$FIDOAKeyCount" -Encoding utf8
+        Add-Content -Path $env:GITHUB_OUTPUT -Value "changesMade=$ChangesMade" -Encoding utf8
+    }
+    catch {
+        Write-Warning "Failed to write to GitHub Actions output file: $_"
+    }
+}
+else {
+    Write-Verbose "GITHUB_OUTPUT environment variable not set. Skipping GitHub Actions output."
+}
