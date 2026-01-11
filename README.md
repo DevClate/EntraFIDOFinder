@@ -1,4 +1,4 @@
-# EntraFIDOFinder ![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/EntraFIDOFinder?label=Downloads&style=flat-square) [![Platform](https://img.shields.io/badge/platform-Windows%20/%20Linux%20/%20Mac-blue)](https://github.com/DevClate/EntraFIDOFinder) [![Maintenance](https://img.shields.io/maintenance/yes/2025)](https://github.com/DevClate/EntraFIDOFinder)
+# EntraFIDOFinder ![PowerShell Gallery](https://img.shields.io/powershellgallery/dt/EntraFIDOFinder?label=Downloads&style=flat-square) [![Platform](https://img.shields.io/badge/platform-Windows%20/%20Linux%20/%20Mac-blue)](https://github.com/DevClate/EntraFIDOFinder) [![Maintenance](https://img.shields.io/maintenance/yes/2026)](https://github.com/DevClate/EntraFIDOFinder)
 
 PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
