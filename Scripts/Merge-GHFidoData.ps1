@@ -68,7 +68,7 @@ Function Merge-GHFidoData {
         }
     }
     catch {
-        Write-Error "Failed to load JSON data: $_"
+        Write-Error "Failed to load JSON data: $_" -ErrorAction Stop
         return
     }
 
@@ -77,7 +77,7 @@ Function Merge-GHFidoData {
         $ValidVendors = (Get-Content -Raw -Path $ValidVendorsFilePath | ConvertFrom-Json).vendors
     }
     catch {
-        Write-Error "Failed to load valid vendors data: $_"
+        Write-Error "Failed to load valid vendors data: $_" -ErrorAction Stop
         return
     }
 
@@ -91,7 +91,7 @@ Function Merge-GHFidoData {
     $currentLogEntries = New-Object System.Collections.ArrayList
 
     # Import the Test-GHValidVendor function
-    . "$PSScriptRoot\Test-GHValidVendor.ps1"
+    . (Join-Path -Path $PSScriptRoot -ChildPath 'Test-GHValidVendor.ps1')
 
     # Initialize merged data
     $mergedData = @{
@@ -115,7 +115,7 @@ Function Merge-GHFidoData {
         $urlData = Export-GHEntraFido -Url $Url
     }
     catch {
-        Write-Error "Failed to fetch data from URL: $_"
+        Write-Error "Failed to fetch data from URL: $_" -ErrorAction Stop
         return
     }
 
@@ -143,8 +143,8 @@ Function Merge-GHFidoData {
     # Initialize content
     $markdownContent = New-Object System.Collections.ArrayList
     $detailedLogContent = New-Object System.Collections.ArrayList
-    $detailedLogContent.Add("Detailed Log - $logDate") # Initialize with the log date
-    $envFilePath = "$PSScriptRoot/env_vars.txt"
+    $detailedLogContent.Add("Detailed Log - $logDate") | Out-Null # Initialize with the log date
+    $envFilePath = Join-Path -Path $PSScriptRoot -ChildPath 'env_vars.txt'
 
     # Parse existing markdown content to extract last log entries
     if ($existingMarkdownContent -ne "") {
@@ -233,9 +233,9 @@ Function Merge-GHFidoData {
                 }
             }
 
-            # Normalize ValidVendor values to strings
-            $existingValidVendor = [string]$existingItem.ValidVendor
-            $newValidVendor = [string]$validVendor
+            # Normalize ValidVendor values to strings for comparison
+            $existingValidVendor = $existingItem.ValidVendor -as [string]
+            $newValidVendor = $validVendor -as [string]
 
             # Update ValidVendor status if changed
             if ($existingValidVendor -ne $newValidVendor) {
@@ -248,11 +248,11 @@ Function Merge-GHFidoData {
                     $matchedValidVendor = $ValidVendors | Where-Object { $vendor -match $_ }
                     
                     # If no valid vendor name is found in the current vendor value
-                    if ($null -eq $matchedValidVendor) {
+                    if (-not $matchedValidVendor) {
                         # Find the valid vendor that matches the description or is closest to the current vendor name
                         $bestMatch = $ValidVendors | Where-Object { $description -match $_ } | Select-Object -First 1
                         
-                        if ($null -ne $bestMatch) {
+                        if ($bestMatch) {
                             $oldVendor = $vendor
                             $vendor = $bestMatch
                             $existingItem.Vendor = $vendor
@@ -270,7 +270,7 @@ Function Merge-GHFidoData {
                     $issueTitle = "Invalid Vendor Detected for AAGUID $aaguid : $vendor"
                     $existingIssue = $issueEntries | Where-Object { $_ -match [regex]::Escape($issueTitle) }
                     if ($existingIssue) {
-                        $issueEntries.Add("$issueTitle|CLOSE")
+                        $issueEntries.Add("$issueTitle|CLOSE") | Out-Null
                     }
                 }
                 elseif ($newValidVendor -eq 'No') {
@@ -284,7 +284,7 @@ Function Merge-GHFidoData {
                     # Check if the issue already exists
                     $existingIssue = $issueEntries | Where-Object { $_ -match [regex]::Escape($issueTitle) }
                     if (-not $existingIssue) {
-                        $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
+                        $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor") | Out-Null
                     }
                 }
             }
@@ -321,11 +321,11 @@ Function Merge-GHFidoData {
                     # Find the valid vendor that matches the description
                     $bestMatch = $ValidVendors | Where-Object { $description -match $_ } | Select-Object -First 1
                     
-                    if ($null -ne $bestMatch) {
+                    if ($bestMatch) {
                         $oldVendor = $vendor
                         $vendor = $bestMatch
                         $logEntry = "Updated vendor name for new AAGUID '$aaguid' from '$oldVendor' to '$vendor' based on validated vendor list."
-                        $currentLogEntries.Add($logEntry)
+                        $currentLogEntries.Add($logEntry) | Out-Null
                         $detailedChanges += $logEntry
                     }
                     # If still no match, try to find any valid vendor in our list to use
@@ -335,7 +335,7 @@ Function Merge-GHFidoData {
                             if ($description -match $validVendorName) {
                                 $vendor = $validVendorName
                                 $logEntry = "Set vendor name for AAGUID '$aaguid' to '$vendor' based on description match."
-                                $currentLogEntries.Add($logEntry)
+                                $currentLogEntries.Add($logEntry) | Out-Null
                                 $detailedChanges += $logEntry
                                 break
                             }
@@ -347,7 +347,7 @@ Function Merge-GHFidoData {
                             if (-not [string]::IsNullOrWhiteSpace($firstWord)) {
                                 $vendor = $firstWord
                                 $logEntry = "Set vendor name for AAGUID '$aaguid' to '$vendor' based on first word of description."
-                                $currentLogEntries.Add($logEntry)
+                                $currentLogEntries.Add($logEntry) | Out-Null
                                 $detailedChanges += $logEntry
                             }
                         }
@@ -358,7 +358,7 @@ Function Merge-GHFidoData {
             elseif ([string]::IsNullOrWhiteSpace($vendor)) {
                 $vendor = "Unknown"
                 $logEntry = "Set vendor name for invalid AAGUID '$aaguid' to 'Unknown'."
-                $currentLogEntries.Add($logEntry)
+                $currentLogEntries.Add($logEntry) | Out-Null
                 $detailedChanges += $logEntry
             }
 
@@ -376,14 +376,14 @@ Function Merge-GHFidoData {
                 statusReports          = $urlItem.statusReports
                 timeOfLastStatusChange = $urlItem.timeOfLastStatusChange
             }
-            $mergedData.keys += $newItem
+            $mergedData.keys += @($newItem)
             $changesDetected.Value = $true
             $updateDatabaseLastUpdated = $true
 
             # Log new entry if vendor is valid
             if ($validVendor -eq 'Yes') {
                 $logEntry = "Added new entry for AAGUID '$aaguid' with description '$description' and vendor '$vendor'."
-                $currentLogEntries.Add($logEntry)
+                $currentLogEntries.Add($logEntry) | Out-Null
                 $detailedChanges += $logEntry  # Collect changes separately
             }
             # Note: Invalid vendor logging for new entries is handled inside Test-GHValidVendor
@@ -395,7 +395,7 @@ Function Merge-GHFidoData {
         if (-not $urlDataByAAGUID.ContainsKey($aaguid)) {
             $removedItem = $jsonDataByAAGUID[$aaguid]
             $logEntry = "Entry removed for description '$($removedItem.Description)' with AAGUID '$aaguid'."
-            $currentLogEntries.Add($logEntry)
+            $currentLogEntries.Add($logEntry) | Out-Null
             $detailedChanges += $logEntry  # Collect changes separately
             $changesDetected.Value = $true
             $updateDatabaseLastUpdated = $true
@@ -475,7 +475,7 @@ Function Merge-GHFidoData {
     if ($issueEntries -and $issueEntries.Count -gt 0) {
         $issueEntriesString = $issueEntries -join "`n"
         # Escape special characters for GitHub Actions
-        if ($null -ne $issueEntriesString -and $issueEntriesString -ne "") {
+        if (-not [string]::IsNullOrWhiteSpace($issueEntriesString)) {
             $issueEntriesEscaped = $issueEntriesString.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A').Replace("'", '%27').Replace('"', '%22')
             "ISSUE_ENTRIES=$issueEntriesEscaped" | Out-File -FilePath $envFilePath -Encoding utf8 -Append
         }
@@ -486,7 +486,7 @@ Function Merge-GHFidoData {
         $keysNowValidString = $keysNowValid | Select-Object -Unique | Sort-Object
         $keysNowValidString = $keysNowValidString -join "`n"
         # Escape special characters for GitHub Actions
-        if ($null -ne $keysNowValidString -and $keysNowValidString -ne "") {
+        if (-not [string]::IsNullOrWhiteSpace($keysNowValidString)) {
             $keysNowValidEscaped = $keysNowValidString.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A').Replace("'", '%27').Replace('"', '%22')
             "KEYS_NOW_VALID=$keysNowValidEscaped" | Out-File -FilePath $envFilePath -Encoding utf8 -Append
         }
