@@ -49,7 +49,6 @@ function Add-ToLogBuffer {
     )
     $script:LogBuffer.Add($Value) | Out-Null
 }
-}
 
 # Function to normalize 'versions' property
 function Normalize-Versions {
