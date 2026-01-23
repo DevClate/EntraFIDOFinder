@@ -1,3 +1,8 @@
+# Merge Log - 2026-01-23 09:30:46
+
+Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with Lightning Preview' has become valid.
+
+
 # Merge Log - 2026-01-23 09:28:12
 
 Vendor 'Unknown' for description 'ESS Smart Card Inc. Authenticator' has become invalid.
