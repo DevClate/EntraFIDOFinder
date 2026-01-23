@@ -1,3 +1,91 @@
+DETAILED LOG - 2026-01-23 00:18:01
+
+Added new entry for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' with description 'Ledger Nano S Plus FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' with description 'WiSECURE Blentity FIDO2 Authenticator' and vendor 'WiSECURE'.
+
+Added new entry for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' with description 'Hideez Key 3 FIDO2' and vendor 'Hideez'.
+
+Added new entry for AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc' with description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' and vendor 'IDEMIA'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff7-020b-addc96ba6a98' with description 'OneSpan DIGIPASS FX7' and vendor 'OneSpan'.
+
+Added new entry for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' with description 'ZTPass SmartAuth' and vendor 'ZTPass'.
+
+Updated 'USB' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '✅' to '❌'.
+
+Added new entry for AAGUID '9eb85bb6-9625-4a72-815d-0487830ccab2' with description 'Ensurity AUTH BioPro Desktop' and vendor 'Ensurity'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff7-010b-addc96ba6a98' with description 'OneSpan DIGIPASS FX7-B' and vendor 'OneSpan'.
+
+Added new entry for AAGUID 'a7fc3f84-86a3-4da4-a3d7-eb6485a066d8' with description 'NEOWAVE Badgeo FIDO2 (CTAP 2.1)' and vendor 'NEOWAVE'.
+
+Added new entry for AAGUID '53414d53-554e-4700-0000-000000000000' with description 'Samsung Pass' and vendor 'Samsung'.
+
+Added new entry for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49' with description 'Ensurity AUTH TouchPro' and vendor 'Ensurity'.
+
+Added new entry for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' with description 'WinMagic FIDO Eazy - Software' and vendor 'WinMagic'.
+
+Added new entry for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Authenticator' and vendor 'OneKey'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff1-020b-addc96ba6a98' with description 'OneSpan DIGIPASS FX1-C' and vendor 'OneSpan'.
+
+Added new entry for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' with description 'Android Authenticator' and vendor 'Android'.
+
+Added new entry for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' with description 'Ledger Stax FIDO2 Authenticator' and vendor 'Ledger'.
+
+Updated 'USB' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff2-010b-addc96ba6a98' with description 'OneSpan DIGIPASS FX2-A' and vendor 'OneSpan'.
+
+Added new entry for AAGUID '2c2aeed8-8174-4159-814b-486e92a261d0' with description 'NEOWAVE WINKEO V2.0' and vendor 'NEOWAVE'.
+
+Added new entry for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' with description 'Veridium iOS SDK' and vendor 'Veridium'.
+
+Added new entry for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' with description 'Ledger Nano X FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' with description 'TruU Windows Authenticator' and vendor 'TruU'.
+
+Added new entry for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' with description 'Ledger Nano S FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' with description 'VivoKey Apex FIDO2' and vendor 'VivoKey'.
+
+Added new entry for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' with description 'eWBM eFA500 FIDO2 Authenticator' and vendor 'eWBM'.
+
+Added new entry for AAGUID 'bb878d7b-cf54-4784-b390-357030497043' with description 'TruU FIDO2 Authenticator' and vendor 'TruU'.
+
+Added new entry for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' with description 'Feitian FIDO Smart Card' and vendor 'Feitian'.
+
+Added new entry for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' with description 'Feitian ePass FIDO2-NFC Plus Authenticator' and vendor 'Feitian'.
+
+Added new entry for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' with description 'KeyVault Secp256R1 FIDO2 CTAP2 Authenticator' and vendor 'KeyVault'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff7-030b-addc96ba6a98' with description 'OneSpan DIGIPASS FX7-C' and vendor 'OneSpan'.
+
+Added new entry for AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802' with description 'Ledger Flex FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' with description 'Veridium Android SDK' and vendor 'Veridium'.
+
+Added new entry for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' with description 'WinMagic FIDO Eazy - TPM' and vendor 'WinMagic'.
+
+Added new entry for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' with description 'WinMagic FIDO Eazy - Phone' and vendor 'WinMagic'.
+
+Added new entry for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' with description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' and vendor 'OCTATCO'.
+
+Added new entry for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' with description 'ellipticSecure MIRkey USB Authenticator' and vendor 'ellipticSecure'.
+
+Added new entry for AAGUID 'f573f209-b7fb-b261-671a-d7cf624cc812' with description 'Excelsecu eSecu FIDO2 PRO+ Security Key' and vendor 'Excelsecu'.
+
+Added new entry for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Bluetooth Authenticator' and vendor 'OneKey'.
+
+Added new entry for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' with description 'TruU Windows Authenticator' and vendor 'TruU'.
+
+
+
 DETAILED LOG - 2026-01-22 00:18:06
 
 No changes have been detected since last run.
@@ -5606,6 +5694,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 

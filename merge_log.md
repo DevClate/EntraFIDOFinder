@@ -1,3 +1,160 @@
+# Merge Log - 2026-01-23 00:18:01
+
+Invalid vendor detected for AAGUID '5df66f62-5b47-43d3-aa1d-a6e31c8dbeb5' with description 'Securitag Assembly Group FIDO Authenticator NFC'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'cc45f64e-52a2-451b-831a-4edd8022a202' with description 'ToothPic Passkey Provider'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0' with description 'YubiKey 5 Series with NFC Preview'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' with description 'Ledger Nano S Plus FIDO2 Authenticator' and vendor 'Ledger'.
+
+Invalid vendor detected for AAGUID '8eec9bf9-486c-46da-9a67-1fbb4f66b9ed' with description 'HID Crescendo 4000 FIPS'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' with description 'WiSECURE Blentity FIDO2 Authenticator' and vendor 'WiSECURE'.
+
+Added new entry for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' with description 'Hideez Key 3 FIDO2' and vendor 'Hideez'.
+
+Added new entry for AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc' with description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' and vendor 'IDEMIA'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff7-020b-addc96ba6a98' with description 'OneSpan DIGIPASS FX7' and vendor 'OneSpan'.
+
+Added new entry for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' with description 'ZTPass SmartAuth' and vendor 'ZTPass'.
+
+Invalid vendor detected for AAGUID 'bb66c294-de08-47e4-b7aa-d12c2cd3fb20' with description 'Mettlesemi Vishwaas Hawk Authenticator using FIDO2'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f' with description 'Deepnet SafeKey/Classic (FP)'. Vendor '' is not in the list of valid vendors.
+
+Updated 'USB' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '✅' to '❌'.
+
+Invalid vendor detected for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e' with description 'GoldKey Security Token'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '9eb85bb6-9625-4a72-815d-0487830ccab2' with description 'Ensurity AUTH BioPro Desktop' and vendor 'Ensurity'.
+
+Invalid vendor detected for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf' with description 'YubiKey 5 FIPS Series with Lightning (RC Preview)'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '30b5035e-d297-4ff7-010b-addc96ba6a98' with description 'OneSpan DIGIPASS FX7-B' and vendor 'OneSpan'.
+
+Invalid vendor detected for AAGUID '13ac47cf-1d78-4fd5-9060-aedaabacf826' with description 'HID Crescendo Key V3 - Enterprise Edition'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f' with description 'Pone Biometrics OFFPAD Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '019614a3-2703-7e35-a453-285fd06c5d24' with description 'ATLKey Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID 'a7fc3f84-86a3-4da4-a3d7-eb6485a066d8' with description 'NEOWAVE Badgeo FIDO2 (CTAP 2.1)' and vendor 'NEOWAVE'.
+
+Invalid vendor detected for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' with description 'YubiKey 5 FIPS Series with NFC (RC Preview)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '5343502d-5343-5343-6172-644649444f32' with description 'ESS Smart Card Inc. Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '53414d53-554e-4700-0000-000000000000' with description 'Samsung Pass' and vendor 'Samsung'.
+
+Invalid vendor detected for AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7' with description 'USB/NFC Passcode Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132' with description 'Deepnet SafeKey/Classic (USB)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '49a15c1c-3f63-3f51-23a7-b9e00096edd1' with description 'IDEX CTAP2.1 Biometric, No pin'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49' with description 'Ensurity AUTH TouchPro' and vendor 'Ensurity'.
+
+Added new entry for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' with description 'WinMagic FIDO Eazy - Software' and vendor 'WinMagic'.
+
+Invalid vendor detected for AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60' with description 'Dapple Authenticator from Dapple Security Inc.'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Authenticator' and vendor 'OneKey'.
+
+Invalid vendor detected for AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb' with description 'Security Key NFC by Yubico Preview'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '489ff376-b48d-6640-bb69-782a860ca795' with description 'Mettlesemi Vishwaas Eagle Authenticator using FIDO2'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6' with description 'TEST (DUMMY RECORD)'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '30b5035e-d297-4ff1-020b-addc96ba6a98' with description 'OneSpan DIGIPASS FX1-C' and vendor 'OneSpan'.
+
+Invalid vendor detected for AAGUID 'd716019a-9f4e-4041-9750-17c78f8ae81a' with description 'eToken Fusion BIO'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' with description 'Android Authenticator' and vendor 'Android'.
+
+Added new entry for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' with description 'Ledger Stax FIDO2 Authenticator' and vendor 'Ledger'.
+
+Updated 'USB' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff2-010b-addc96ba6a98' with description 'OneSpan DIGIPASS FX2-A' and vendor 'OneSpan'.
+
+Invalid vendor detected for AAGUID 'ee7fa1e0-9539-432f-bd43-9c2fc6d4f311' with description 'VeriMark NFC+ USB-C Security Key'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '5e264d9d-28ef-4d34-95b4-5941e7a4faa8' with description 'Ideem ZSM FIDO2 Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf' with description 'YubiKey 5 Series with Lightning Preview'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '2c2aeed8-8174-4159-814b-486e92a261d0' with description 'NEOWAVE WINKEO V2.0' and vendor 'NEOWAVE'.
+
+Added new entry for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' with description 'Veridium iOS SDK' and vendor 'Veridium'.
+
+Invalid vendor detected for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826' with description 'YubiKey 5 FIPS Series (RC Preview)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe' with description 'SECORA ID V2 FIDO2.1 L1'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' with description 'Ledger Nano X FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' with description 'TruU Windows Authenticator' and vendor 'TruU'.
+
+Added new entry for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' with description 'Ledger Nano S FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' with description 'VivoKey Apex FIDO2' and vendor 'VivoKey'.
+
+Invalid vendor detected for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528' with description 'YubiKey 5 FIPS Series with NFC Preview'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' with description 'eWBM eFA500 FIDO2 Authenticator' and vendor 'eWBM'.
+
+Added new entry for AAGUID 'bb878d7b-cf54-4784-b390-357030497043' with description 'TruU FIDO2 Authenticator' and vendor 'TruU'.
+
+Added new entry for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' with description 'Feitian FIDO Smart Card' and vendor 'Feitian'.
+
+Added new entry for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' with description 'Feitian ePass FIDO2-NFC Plus Authenticator' and vendor 'Feitian'.
+
+Added new entry for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' with description 'KeyVault Secp256R1 FIDO2 CTAP2 Authenticator' and vendor 'KeyVault'.
+
+Added new entry for AAGUID '30b5035e-d297-4ff7-030b-addc96ba6a98' with description 'OneSpan DIGIPASS FX7-C' and vendor 'OneSpan'.
+
+Invalid vendor detected for AAGUID '76692dc1-c56a-48d9-8e7d-31b5ced430ac' with description 'VeriMark NFC+ USB-A Security Key'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08' with description 'Idem Key (Consumer profile)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '4fc84f16-2545-4e53-b8fc-7bf4d7282a10' with description 'YubiKey 5 CCN Series with NFC (Enterprise Profile)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' with description 'eToken Fusion NFC PIV Enterprise'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0' with description 'FIDO Alliance TruU Sample FIDO2 Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802' with description 'Ledger Flex FIDO2 Authenticator' and vendor 'Ledger'.
+
+Added new entry for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' with description 'Veridium Android SDK' and vendor 'Veridium'.
+
+Added new entry for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' with description 'WinMagic FIDO Eazy - TPM' and vendor 'WinMagic'.
+
+Added new entry for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' with description 'WinMagic FIDO Eazy - Phone' and vendor 'WinMagic'.
+
+Added new entry for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' with description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' and vendor 'OCTATCO'.
+
+Added new entry for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' with description 'ellipticSecure MIRkey USB Authenticator' and vendor 'ellipticSecure'.
+
+Added new entry for AAGUID 'f573f209-b7fb-b261-671a-d7cf624cc812' with description 'Excelsecu eSecu FIDO2 PRO+ Security Key' and vendor 'Excelsecu'.
+
+Added new entry for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Bluetooth Authenticator' and vendor 'OneKey'.
+
+Invalid vendor detected for AAGUID '3aa78eb1-ddd8-46a8-a821-8f8ec57a7bd5' with description 'YubiKey 5 CCN Series with NFC'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335' with description 'YubiKey 5 FIPS Series with Lightning Preview'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' with description 'TruU Windows Authenticator' and vendor 'TruU'.
+
+Invalid vendor detected for AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73' with description 'Security Key NFC by Yubico - Enterprise Edition Preview'. Vendor '' is not in the list of valid vendors.
+
+
 # Merge Log - 2026-01-08 00:17:25
 
 Updated 'USB' for AAGUID '9f77e279-a6e2-4d58-b700-31e5943c6a98' from '❌' to '✅'.
