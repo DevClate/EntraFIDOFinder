@@ -183,6 +183,11 @@ jobs:
         git add Assets/FidoKeys.json merge_log.md detailed_log.txt
         git commit -m "Update FidoKeys.json, merge_log.md, and detailed_log.txt" || echo "No changes to commit"
 
+    - name: Fetch and rebase origin/main
+      run: |
+        git fetch origin main
+        git rebase origin/main
+
     - name: Push changes
       uses: ad-m/github-push-action@v0.6.0
       with:
