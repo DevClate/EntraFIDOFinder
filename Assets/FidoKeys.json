@@ -1691,7 +1691,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.02,
-                "selfAttestedFAR": 2E-05,
+                "selfAttestedFAR": 0.00002,
                 "iAPARThreshold": 0,
                 "maxTemplates": 10,
                 "maxRetries": 5,
@@ -1861,7 +1861,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.02,
-                "selfAttestedFAR": 2E-05,
+                "selfAttestedFAR": 0.00002,
                 "iAPARThreshold": 0,
                 "maxTemplates": 10,
                 "maxRetries": 5,
@@ -2046,7 +2046,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.01,
-                "selfAttestedFAR": 4E-05,
+                "selfAttestedFAR": 0.00004,
                 "iAPARThreshold": 0,
                 "maxTemplates": 2,
                 "maxRetries": 15,
@@ -2518,7 +2518,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0,
-                "selfAttestedFAR": 1E-05,
+                "selfAttestedFAR": 0.00001,
                 "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 0,
@@ -2568,7 +2568,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0,
-                "selfAttestedFAR": 1E-05,
+                "selfAttestedFAR": 0.00001,
                 "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 0,
@@ -4846,7 +4846,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0,
-                "selfAttestedFAR": 1E-05,
+                "selfAttestedFAR": 0.00001,
                 "iAPARThreshold": 0,
                 "maxTemplates": 30,
                 "maxRetries": 5,
@@ -4861,7 +4861,7 @@
             {
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
-                "selfAttestedFRR": 1E-05,
+                "selfAttestedFRR": 0.00001,
                 "selfAttestedFAR": 0.01,
                 "iAPARThreshold": 0,
                 "maxTemplates": 30,
@@ -13336,7 +13336,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.03,
-                "selfAttestedFAR": 1E-05,
+                "selfAttestedFAR": 0.00001,
                 "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 3,
@@ -13842,7 +13842,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.03,
-                "selfAttestedFAR": 1E-05,
+                "selfAttestedFAR": 0.00001,
                 "iAPARThreshold": 0,
                 "maxTemplates": 5,
                 "maxRetries": 3,
@@ -16142,7 +16142,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
-                "selfAttestedFAR": 2E-06,
+                "selfAttestedFAR": 0.000002,
                 "iAPARThreshold": 0.0,
                 "maxTemplates": 20,
                 "maxRetries": 50,
@@ -17141,7 +17141,7 @@
               "userVerificationMethod": "fingerprint_internal",
               "baDesc": {
                 "selfAttestedFRR": 0.0,
-                "selfAttestedFAR": 2E-05,
+                "selfAttestedFAR": 0.00002,
                 "iAPARThreshold": 0.0,
                 "maxTemplates": 5,
                 "maxRetries": 5,
@@ -19485,7 +19485,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Idem",
       "Description": "Idem Key (Consumer profile)",
       "AAGUID": "c611b55c-77b2-4527-8082-590e931b2f08",
       "Bio": "❌",
@@ -19493,7 +19493,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
