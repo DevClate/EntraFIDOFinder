@@ -23848,7 +23848,7 @@
       }
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 CCN Series with NFC (Enterprise Profile)",
       "AAGUID": "4fc84f16-2545-4e53-b8fc-7bf4d7282a10",
       "Bio": "❌",
@@ -23856,7 +23856,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": "FIDO 2.1",
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "statusReports": [
         {
           "status": "FIDO_CERTIFIED_L2",
