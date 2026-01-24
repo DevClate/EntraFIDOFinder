@@ -209,7 +209,7 @@ jobs:
     
     - name: Upload Suggestions Artifact
       if: env.HAS_UNKNOWNS == 'true'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v6
       with:
         name: vendor-suggestions
         path: vendor-suggestions.json
