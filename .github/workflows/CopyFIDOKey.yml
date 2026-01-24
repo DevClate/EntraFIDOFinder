@@ -30,16 +30,19 @@ jobs:
           git fetch origin gh-pages
           git checkout gh-pages
   
-          # Copy the file from the main branch to the gh-pages branch
+          # Copy the FidoKeys.json from the main branch to the gh-pages branch
           git checkout main -- Assets/FidoKeys.json
   
           # Move the file to the desired location
           mv Assets/FidoKeys.json Explorer/FidoKeys.json
   
+          # Copy the index.html from the main branch to the gh-pages branch
+          git checkout main -- Explorer/index.html
+  
           # Commit and push the changes if there are any updates
           if [ -n "$(git status --porcelain)" ]; then
-            git add Explorer/FidoKeys.json
-            git commit -m "Update FidoKeys.json from main branch"
+            git add Explorer/FidoKeys.json Explorer/index.html
+            git commit -m "Update FidoKeys.json and index.html from main branch"
             git push origin gh-pages
           else
             echo "No changes to commit."
