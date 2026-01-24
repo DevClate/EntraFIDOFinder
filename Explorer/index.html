@@ -380,7 +380,70 @@
             overflow-x: auto;
             font-family: 'Courier New', monospace;
             font-size: 12px;
-            line-height: 1.5;
+            line-height: 1.8;
+            position: relative;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .raw-data .json-key {
+            color: #9cdcfe;
+        }
+
+        .raw-data .json-string {
+            color: #ce9178;
+        }
+
+        .raw-data .json-number {
+            color: #b5cea8;
+        }
+
+        .raw-data .json-boolean {
+            color: #569cd6;
+        }
+
+        .raw-data .json-null {
+            color: #569cd6;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            font-weight: 500;
+            z-index: 10;
+            transition: background 0.2s;
+        }
+
+        .copy-button:hover {
+            background: #059669;
+        }
+
+        .copy-button.copied {
+            background: #6366f1;
+        }
+
+        .json-collapse-btn {
+            color: #569cd6;
+            cursor: pointer;
+            user-select: none;
+            display: inline-block;
+            width: 12px;
+        }
+
+        .json-collapsed {
+            display: inline;
+        }
+
+        .json-collapsed-content {
+            display: none;
         }
 
         /* Responsive */
@@ -576,7 +639,10 @@
 
             <div class="modal-section">
                 <div class="modal-section-title">Raw Data (JSON)</div>
-                <div class="raw-data" id="rawDataContent"></div>
+                <div style="position: relative;">
+                    <button class="copy-button" onclick="copyToClipboard()">Copy JSON</button>
+                    <pre class="raw-data" id="rawDataContent"></pre>
+                </div>
             </div>
         </div>
     </div>
@@ -791,12 +857,50 @@
                     }
                 }
             } else {
-                metadataSection.style.display = 'none';
-            }
-
-            // Populate the raw data section
+                metadataSection.style.displa with syntax highlighting
             const rawDataContent = document.getElementById('rawDataContent');
-            rawDataContent.textContent = JSON.stringify(item, null, 2);
+            rawDataContent.innerHTML = syntaxHighlight(JSON.stringify(item, null, 2));
+
+            // Show the modal
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function syntaxHighlight(json) {
+            json = json.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+                let cls = 'json-number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'json-key';
+                    } else {
+                        cls = 'json-string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'json-boolean';
+                } else if (/null/.test(match)) {
+                    cls = 'json-null';
+                }
+                return '<span class="' + cls + '">' + match + '</span>';
+            });
+        }
+
+        function copyToClipboard() {
+            const rawData = document.getElementById('rawDataContent');
+            const text = rawData.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = document.querySelector('.copy-button');
+                const originalText = btn.textContent;
+                btn.textContent = '✓ Copied!';
+                btn.classList.add('copied');
+                
+                setTimeout(() => {
+                    btn.textContent = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+            });
 
             // Show the modal
             document.getElementById('myModal').style.display = 'block';
