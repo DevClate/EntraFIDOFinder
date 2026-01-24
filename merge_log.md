@@ -1,3 +1,24 @@
+# Merge Log - 2026-01-24 10:59:02
+
+Vendor corrected for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08': 'Unknown' to 'Idem'.
+
+Vendor corrected for AAGUID '4fc84f16-2545-4e53-b8fc-7bf4d7282a10': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '3aa78eb1-ddd8-46a8-a821-8f8ec57a7bd5': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826': 'Unknown' to 'Yubico'.
+
+
 # Merge Log - 2026-01-24 10:50:00
 
 Vendor corrected for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1': 'Unknown' to 'Yubico'.
