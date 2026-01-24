@@ -654,7 +654,12 @@
 
         // Fetch data
         fetch('../Assets/FidoKeys.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load FidoKeys.json');
+                }
+                return response.json();
+            })
             .then(data => {
                 allData = data.keys;
                 
@@ -689,6 +694,12 @@
                 document.getElementById('nfcFilter').addEventListener('change', filterTable);
                 document.getElementById('bleFilter').addEventListener('change', filterTable);
                 document.getElementById('versionFilter').addEventListener('change', filterTable);
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                // Show error message to user
+                const tableBody = document.getElementById('tableBody');
+                tableBody.innerHTML = '<tr><td colspan="9" style="text-align: center; padding: 40px; color: #ef4444;"><strong>⚠️ Error loading FIDO keys data</strong><br><span style="font-size: 14px; color: #666; margin-top: 8px; display: block;">Please open this file through a local web server (e.g., python -m http.server or VS Code Live Server extension)</span></td></tr>';
             });
 
         function filterTable() {
