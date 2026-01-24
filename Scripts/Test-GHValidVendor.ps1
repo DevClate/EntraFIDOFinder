@@ -88,6 +88,13 @@ function Test-GHValidVendor {
     else {
         # Attempt to use the first word of the description as the vendor
         $firstWord = ($description -split ' ')[0]
+        
+        # Exception: If first word is "Yubikey" (any casing), use "Yubico" as vendor
+        if ($firstWord -match "^Yubikey$") {
+            Write-Host "First word is '$firstWord', converting to 'Yubico' as vendor."
+            $firstWord = "Yubico"
+        }
+        
         if ($firstWord -and $firstWord -ne $vendor.Value) {
             Write-Host "Vendor '$($vendor.Value)' is invalid. Trying first word of description '$firstWord' as vendor."
             if ($ValidVendors -contains $firstWord) {
