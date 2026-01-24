@@ -1,0 +1,216 @@
+name: Review Unknown Vendors
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * 0'  # Weekly on Sunday at noon
+
+jobs:
+  analyze-unknown-vendors:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Analyze Unknown Vendors
+      id: analyze
+      shell: pwsh
+      run: |
+        # Load the JSON data
+        $jsonData = Get-Content -Path Assets/FidoKeys.json -Raw | ConvertFrom-Json
+        $validVendorsData = Get-Content -Path Assets/valid_vendors.json -Raw | ConvertFrom-Json
+        $ValidVendors = $validVendorsData.vendors
+        
+        # Find all Unknown vendors
+        $unknownKeys = $jsonData.keys | Where-Object { $_.Vendor -eq "Unknown" }
+        
+        Write-Host "Found $($unknownKeys.Count) keys with Unknown vendor"
+        
+        if ($unknownKeys.Count -eq 0) {
+          Write-Host "No Unknown vendors found!"
+          echo "HAS_UNKNOWNS=false" >> $env:GITHUB_ENV
+          exit 0
+        }
+        
+        # Analyze each unknown vendor and suggest a vendor
+        $suggestions = @()
+        
+        foreach ($key in $unknownKeys) {
+          $suggestedVendor = $null
+          $confidence = "Low"
+          $reason = ""
+          
+          # Try first word of description
+          $firstWord = ($key.Description -split ' ')[0]
+          
+          # Check if first word matches a valid vendor (case-insensitive)
+          $matchedVendor = $ValidVendors | Where-Object { $_ -ieq $firstWord } | Select-Object -First 1
+          
+          if ($matchedVendor) {
+            $suggestedVendor = $matchedVendor
+            $confidence = "High"
+            $reason = "First word matches valid vendor exactly"
+          }
+          else {
+            # Try to find any valid vendor in the description
+            foreach ($vendor in $ValidVendors) {
+              if ($key.Description -match [regex]::Escape($vendor)) {
+                $suggestedVendor = $vendor
+                $confidence = "Medium"
+                $reason = "Vendor name found in description"
+                break
+              }
+            }
+          }
+          
+          # If still no match, try partial matching
+          if (-not $suggestedVendor) {
+            foreach ($vendor in $ValidVendors) {
+              if ($firstWord -like "$vendor*" -or $vendor -like "$firstWord*") {
+                $suggestedVendor = $vendor
+                $confidence = "Low"
+                $reason = "Partial match with first word"
+                break
+              }
+            }
+          }
+          
+          # If still no match, suggest the first word as a new vendor
+          if (-not $suggestedVendor -and $firstWord) {
+            $suggestedVendor = $firstWord
+            $confidence = "Low"
+            $reason = "New vendor candidate (first word of description)"
+          }
+          
+          if ($suggestedVendor) {
+            $suggestions += [PSCustomObject]@{
+              AAGUID = $key.AAGUID
+              Description = $key.Description
+              SuggestedVendor = $suggestedVendor
+              Confidence = $confidence
+              Reason = $reason
+              IsNewVendor = -not ($ValidVendors -contains $suggestedVendor)
+            }
+          }
+        }
+        
+        Write-Host "Generated $($suggestions.Count) suggestions"
+        
+        # Save suggestions to JSON file
+        $suggestions | ConvertTo-Json -Depth 10 | Set-Content -Path suggestions.json
+        
+        echo "HAS_UNKNOWNS=true" >> $env:GITHUB_ENV
+        echo "SUGGESTION_COUNT=$($suggestions.Count)" >> $env:GITHUB_ENV
+    
+    - name: Create Issue with Suggestions
+      if: env.HAS_UNKNOWNS == 'true'
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const fs = require('fs');
+          const suggestions = JSON.parse(fs.readFileSync('suggestions.json', 'utf8'));
+          
+          if (suggestions.length === 0) {
+            console.log('No suggestions to create issue for');
+            return;
+          }
+          
+          // Group by confidence level
+          const highConfidence = suggestions.filter(s => s.Confidence === 'High');
+          const mediumConfidence = suggestions.filter(s => s.Confidence === 'Medium');
+          const lowConfidence = suggestions.filter(s => s.Confidence === 'Low');
+          
+          // Create issue body
+          let body = '## Unknown Vendor Analysis\n\n';
+          body += `Found **${suggestions.length}** keys with Unknown vendor. Below are suggested vendors for review.\n\n`;
+          body += '### How to Approve\n\n';
+          body += 'To approve suggestions, comment on this issue with:\n';
+          body += '- `approve all` - Approve all high confidence suggestions\n';
+          body += '- `approve <AAGUID>` - Approve a specific AAGUID (you can list multiple, one per line)\n';
+          body += '- `approve high` - Approve all high confidence suggestions\n';
+          body += '- `approve medium` - Approve all medium confidence suggestions\n\n';
+          body += '---\n\n';
+          
+          if (highConfidence.length > 0) {
+            body += '### ✅ High Confidence Suggestions\n\n';
+            body += '| AAGUID | Description | Suggested Vendor | New Vendor? | Reason |\n';
+            body += '|--------|-------------|------------------|-------------|--------|\n';
+            for (const s of highConfidence) {
+              const newVendorBadge = s.IsNewVendor ? '🆕 Yes' : 'No';
+              body += `| \`${s.AAGUID}\` | ${s.Description} | **${s.SuggestedVendor}** | ${newVendorBadge} | ${s.Reason} |\n`;
+            }
+            body += '\n';
+          }
+          
+          if (mediumConfidence.length > 0) {
+            body += '### ⚠️ Medium Confidence Suggestions\n\n';
+            body += '| AAGUID | Description | Suggested Vendor | New Vendor? | Reason |\n';
+            body += '|--------|-------------|------------------|-------------|--------|\n';
+            for (const s of mediumConfidence) {
+              const newVendorBadge = s.IsNewVendor ? '🆕 Yes' : 'No';
+              body += `| \`${s.AAGUID}\` | ${s.Description} | **${s.SuggestedVendor}** | ${newVendorBadge} | ${s.Reason} |\n`;
+            }
+            body += '\n';
+          }
+          
+          if (lowConfidence.length > 0) {
+            body += '### ⚡ Low Confidence Suggestions\n\n';
+            body += '| AAGUID | Description | Suggested Vendor | New Vendor? | Reason |\n';
+            body += '|--------|-------------|------------------|-------------|--------|\n';
+            for (const s of lowConfidence) {
+              const newVendorBadge = s.IsNewVendor ? '🆕 Yes' : 'No';
+              body += `| \`${s.AAGUID}\` | ${s.Description} | **${s.SuggestedVendor}** | ${newVendorBadge} | ${s.Reason} |\n`;
+            }
+            body += '\n';
+          }
+          
+          body += '---\n\n';
+          body += '**Note:** New vendors (marked with 🆕) will be added to `valid_vendors.json` if approved.\n';
+          
+          // Check if there's already an open issue for vendor review
+          const { data: existingIssues } = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: 'vendor-review',
+          });
+          
+          if (existingIssues.length > 0) {
+            // Update the existing issue
+            const issue = existingIssues[0];
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: body,
+            });
+            console.log(`Updated existing issue #${issue.number}`);
+          } else {
+            // Create a new issue
+            const { data: newIssue } = await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔍 Unknown Vendor Review - ${suggestions.length} suggestions`,
+              body: body,
+              labels: ['vendor-review', 'auto-generated'],
+              assignees: ['DevClate'],
+            });
+            console.log(`Created new issue #${newIssue.number}`);
+          }
+          
+          // Save suggestions as artifact for the approval workflow
+          const artifactData = {
+            suggestions: suggestions,
+            timestamp: new Date().toISOString()
+          };
+          fs.writeFileSync('vendor-suggestions.json', JSON.stringify(artifactData, null, 2));
+    
+    - name: Upload Suggestions Artifact
+      if: env.HAS_UNKNOWNS == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: vendor-suggestions
+        path: vendor-suggestions.json
+        retention-days: 90

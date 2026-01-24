@@ -1,0 +1,226 @@
+name: Apply Approved Vendors
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  process-approvals:
+    # Only run on vendor-review issues
+    if: contains(github.event.issue.labels.*.name, 'vendor-review') && startsWith(github.event.comment.body, 'approve')
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: main
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Download Latest Suggestions
+      uses: dawidd6/action-download-artifact@v3
+      with:
+        workflow: ReviewUnknownVendors.yml
+        name: vendor-suggestions
+        path: .
+        if_no_artifact_found: fail
+    
+    - name: Process Approvals
+      shell: pwsh
+      env:
+        COMMENT_BODY: ${{ github.event.comment.body }}
+        COMMENT_USER: ${{ github.event.comment.user.login }}
+      run: |
+        # Load suggestions
+        $suggestionsData = Get-Content -Path vendor-suggestions.json -Raw | ConvertFrom-Json
+        $suggestions = $suggestionsData.suggestions
+        
+        Write-Host "Loaded $($suggestions.Count) suggestions"
+        Write-Host "Comment: $env:COMMENT_BODY"
+        Write-Host "User: $env:COMMENT_USER"
+        
+        # Parse the approval command
+        $commentLines = $env:COMMENT_BODY -split "`n" | ForEach-Object { $_.Trim() }
+        
+        $approvedAAGUIDs = @()
+        
+        foreach ($line in $commentLines) {
+          if ($line -match '^approve\s+all\s*$') {
+            # Approve all high confidence
+            $approvedAAGUIDs += $suggestions | Where-Object { $_.Confidence -eq 'High' } | ForEach-Object { $_.AAGUID }
+            Write-Host "Approving all high confidence suggestions"
+          }
+          elseif ($line -match '^approve\s+high\s*$') {
+            # Approve all high confidence
+            $approvedAAGUIDs += $suggestions | Where-Object { $_.Confidence -eq 'High' } | ForEach-Object { $_.AAGUID }
+            Write-Host "Approving all high confidence suggestions"
+          }
+          elseif ($line -match '^approve\s+medium\s*$') {
+            # Approve all medium confidence
+            $approvedAAGUIDs += $suggestions | Where-Object { $_.Confidence -eq 'Medium' } | ForEach-Object { $_.AAGUID }
+            Write-Host "Approving all medium confidence suggestions"
+          }
+          elseif ($line -match '^approve\s+([a-f0-9-]{36})\s*$') {
+            # Approve specific AAGUID
+            $aaguid = $Matches[1]
+            $approvedAAGUIDs += $aaguid
+            Write-Host "Approving AAGUID: $aaguid"
+          }
+        }
+        
+        # Remove duplicates
+        $approvedAAGUIDs = $approvedAAGUIDs | Select-Object -Unique
+        
+        Write-Host "Total approved AAGUIDs: $($approvedAAGUIDs.Count)"
+        
+        if ($approvedAAGUIDs.Count -eq 0) {
+          Write-Host "No approvals found in comment"
+          echo "HAS_APPROVALS=false" >> $env:GITHUB_ENV
+          exit 0
+        }
+        
+        # Load current data
+        $jsonData = Get-Content -Path Assets/FidoKeys.json -Raw | ConvertFrom-Json
+        $validVendorsData = Get-Content -Path Assets/valid_vendors.json -Raw | ConvertFrom-Json
+        $currentVendors = [System.Collections.ArrayList]::new($validVendorsData.vendors)
+        
+        $updatedKeys = @()
+        $newVendors = @()
+        
+        # Apply approved changes
+        foreach ($aaguid in $approvedAAGUIDs) {
+          $suggestion = $suggestions | Where-Object { $_.AAGUID -eq $aaguid } | Select-Object -First 1
+          
+          if (-not $suggestion) {
+            Write-Host "Warning: No suggestion found for AAGUID $aaguid"
+            continue
+          }
+          
+          # Find the key in FidoKeys.json
+          $key = $jsonData.keys | Where-Object { $_.AAGUID -eq $aaguid } | Select-Object -First 1
+          
+          if ($key) {
+            $oldVendor = $key.Vendor
+            $key.Vendor = $suggestion.SuggestedVendor
+            $key.ValidVendor = "Yes"
+            
+            Write-Host "Updated AAGUID $aaguid : '$oldVendor' -> '$($suggestion.SuggestedVendor)'"
+            
+            $updatedKeys += [PSCustomObject]@{
+              AAGUID = $aaguid
+              Description = $key.Description
+              OldVendor = $oldVendor
+              NewVendor = $suggestion.SuggestedVendor
+            }
+            
+            # Add new vendor to list if needed
+            if ($suggestion.IsNewVendor -and -not ($currentVendors -contains $suggestion.SuggestedVendor)) {
+              $currentVendors.Add($suggestion.SuggestedVendor) | Out-Null
+              $newVendors += $suggestion.SuggestedVendor
+              Write-Host "Added new vendor: $($suggestion.SuggestedVendor)"
+            }
+          }
+        }
+        
+        if ($updatedKeys.Count -eq 0) {
+          Write-Host "No keys were updated"
+          echo "HAS_APPROVALS=false" >> $env:GITHUB_ENV
+          exit 0
+        }
+        
+        # Sort vendors alphabetically
+        $currentVendors = $currentVendors | Sort-Object
+        
+        # Save updated data
+        $jsonData | ConvertTo-Json -Depth 100 | Set-Content -Path Assets/FidoKeys.json
+        
+        $validVendorsData.vendors = @($currentVendors)
+        $validVendorsData | ConvertTo-Json -Depth 10 | Set-Content -Path Assets/valid_vendors.json
+        
+        Write-Host "Saved changes to FidoKeys.json and valid_vendors.json"
+        
+        # Create summary for comment
+        $summary = "✅ **Applied $($updatedKeys.Count) vendor updates**`n`n"
+        
+        if ($newVendors.Count -gt 0) {
+          $summary += "**New vendors added to valid_vendors.json:**`n"
+          foreach ($vendor in $newVendors) {
+            $summary += "- $vendor`n"
+          }
+          $summary += "`n"
+        }
+        
+        $summary += "**Updated keys:**`n"
+        $summary += "| AAGUID | Description | Old Vendor | New Vendor |`n"
+        $summary += "|--------|-------------|------------|------------|`n"
+        foreach ($update in $updatedKeys) {
+          $summary += "| ``$($update.AAGUID)`` | $($update.Description) | $($update.OldVendor) | **$($update.NewVendor)** |`n"
+        }
+        
+        # Save summary for GitHub comment
+        $summary | Out-File -FilePath approval-summary.txt -Encoding utf8
+        
+        echo "HAS_APPROVALS=true" >> $env:GITHUB_ENV
+        echo "UPDATE_COUNT=$($updatedKeys.Count)" >> $env:GITHUB_ENV
+        echo "NEW_VENDOR_COUNT=$($newVendors.Count)" >> $env:GITHUB_ENV
+    
+    - name: Configure Git
+      if: env.HAS_APPROVALS == 'true'
+      run: |
+        git config --global user.name 'DevClate'
+        git config --global user.email 'clate@clatent.com'
+    
+    - name: Commit and Push Changes
+      if: env.HAS_APPROVALS == 'true'
+      run: |
+        git add Assets/FidoKeys.json Assets/valid_vendors.json
+        git commit -m "Apply approved vendor updates from issue #${{ github.event.issue.number }}"
+        git push origin main
+    
+    - name: Comment on Issue
+      if: env.HAS_APPROVALS == 'true'
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const fs = require('fs');
+          const summary = fs.readFileSync('approval-summary.txt', 'utf8');
+          
+          await github.rest.issues.createComment({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+            body: summary
+          });
+    
+    - name: Close Issue if All Processed
+      if: env.HAS_APPROVALS == 'true'
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          // Check if there are any remaining Unknown vendors
+          const fs = require('fs');
+          const fidoKeysData = JSON.parse(fs.readFileSync('Assets/FidoKeys.json', 'utf8'));
+          const unknownCount = fidoKeysData.keys.filter(k => k.Vendor === 'Unknown').length;
+          
+          if (unknownCount === 0) {
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            });
+            
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: '🎉 All Unknown vendors have been resolved! Closing this issue.'
+            });
+            
+            console.log('Closed issue - no more Unknown vendors');
+          } else {
+            console.log(`${unknownCount} Unknown vendors remaining`);
+          }
