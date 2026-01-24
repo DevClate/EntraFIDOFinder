@@ -332,6 +332,46 @@
             word-break: break-all;
         }
 
+        .value-tag {
+            display: inline-block;
+            background: #f0f0f7;
+            color: #667eea;
+            padding: 4px 10px;
+            border-radius: 16px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-right: 6px;
+            margin-bottom: 6px;
+        }
+
+        .value-tag.secondary {
+            background: #faf1ff;
+            color: #764ba2;
+        }
+
+        .value-tag.success {
+            background: #d1fae5;
+            color: #10b981;
+        }
+
+        .verification-group {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            border-left: 3px solid #10b981;
+        }
+
+        .option-item {
+            background: #d1fae5;
+            color: #10b981;
+            padding: 6px 10px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
         .raw-data {
             background: #1e1e1e;
             color: #d4d4d4;
@@ -648,12 +688,134 @@
             document.getElementById('modalNFC').textContent = item.NFC;
             document.getElementById('modalBLE').textContent = item.BLE;
 
+            // Show/hide and populate metadata section
+            const metadataSection = document.getElementById('metadataSection');
+            const metadataContent = document.getElementById('metadataContent');
+            metadataContent.innerHTML = '';
+
+            if (item.metadataStatement) {
+                const ms = item.metadataStatement;
+                metadataSection.style.display = 'block';
+
+                // Protocol Family
+                if (ms.protocolFamily) {
+                    addMetadataProperty(metadataContent, 'Protocol Family', ms.protocolFamily);
+                }
+
+                // Authenticator Version
+                if (ms.authenticatorVersion) {
+                    addMetadataProperty(metadataContent, 'Authenticator Version', ms.authenticatorVersion.toString());
+                }
+
+                // Authentication Algorithms
+                if (ms.authenticationAlgorithms && ms.authenticationAlgorithms.length > 0) {
+                    const algos = ms.authenticationAlgorithms.map(a => `<span class="value-tag secondary">${a}</span>`).join(' ');
+                    addMetadataProperty(metadataContent, 'Authentication Algorithms', algos, true);
+                }
+
+                // Attestation Types
+                if (ms.attestationTypes && ms.attestationTypes.length > 0) {
+                    const types = ms.attestationTypes.map(t => `<span class="value-tag">${t}</span>`).join(' ');
+                    addMetadataProperty(metadataContent, 'Attestation Types', types, true);
+                }
+
+                // Key Protection
+                if (ms.keyProtection && ms.keyProtection.length > 0) {
+                    const keyProt = ms.keyProtection.map(k => `<span class="value-tag success">${k}</span>`).join(' ');
+                    addMetadataProperty(metadataContent, 'Key Protection', keyProt, true);
+                }
+
+                // Attachment Hint
+                if (ms.attachmentHint && ms.attachmentHint.length > 0) {
+                    const hints = ms.attachmentHint.map(h => `<span class="value-tag">${h}</span>`).join(' ');
+                    addMetadataProperty(metadataContent, 'Attachment Hint', hints, true);
+                }
+
+                // User Verification Details
+                if (ms.userVerificationDetails && ms.userVerificationDetails.length > 0) {
+                    let uvHtml = '<div style="margin-top: 8px;">';
+                    ms.userVerificationDetails.forEach((group, index) => {
+                        uvHtml += `<div class="verification-group" style="background: #f9f9f9; padding: 12px; border-radius: 6px; margin-bottom: 8px; border-left: 3px solid #10b981;">`;
+                        uvHtml += `<div style="font-weight: 600; color: #333; margin-bottom: 4px;">✓ Group ${index + 1}</div>`;
+                        uvHtml += `<div style="color: #666; font-size: 13px; margin-left: 12px;">`;
+                        const methods = group.map(m => m.userVerificationMethod || 'unknown').join(', ');
+                        uvHtml += `Method${group.length > 1 ? 's' : ''}: ${methods}`;
+                        uvHtml += `</div></div>`;
+                    });
+                    uvHtml += '</div>';
+                    addMetadataProperty(metadataContent, 'User Verification Details', uvHtml, true);
+                }
+
+                // Authenticator Get Info
+                if (item.authenticatorGetInfo) {
+                    const agi = item.authenticatorGetInfo;
+                    
+                    // Versions
+                    if (agi.versions && agi.versions.length > 0) {
+                        const versions = agi.versions.map(v => `<span class="value-tag">${v}</span>`).join(' ');
+                        addMetadataProperty(metadataContent, 'FIDO Versions', versions, true);
+                    }
+
+                    // Extensions
+                    if (agi.extensions && agi.extensions.length > 0) {
+                        const exts = agi.extensions.map(e => `<span class="value-tag secondary">${e}</span>`).join(' ');
+                        addMetadataProperty(metadataContent, 'Extensions', exts, true);
+                    }
+
+                    // Options
+                    if (agi.options) {
+                        let optionsHtml = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-top: 8px;">';
+                        for (const [key, value] of Object.entries(agi.options)) {
+                            const icon = value ? '✓' : '✗';
+                            const className = value ? 'success' : '';
+                            optionsHtml += `<div class="option-item" style="background: ${value ? '#d1fae5' : '#fee2e2'}; color: ${value ? '#10b981' : '#ef4444'}; padding: 6px 10px; border-radius: 6px; text-align: center; font-size: 12px; font-weight: 500;">${icon} ${key}</div>`;
+                        }
+                        optionsHtml += '</div>';
+                        addMetadataProperty(metadataContent, 'Options', optionsHtml, true);
+                    }
+
+                    // Max Credential Count
+                    if (agi.maxCredentialCountInList !== undefined) {
+                        addMetadataProperty(metadataContent, 'Max Credential Count', agi.maxCredentialCountInList.toString());
+                    }
+
+                    // Max Credential ID Length
+                    if (agi.maxCredentialIdLength !== undefined) {
+                        addMetadataProperty(metadataContent, 'Max Credential ID Length', agi.maxCredentialIdLength.toString() + ' bytes');
+                    }
+
+                    // Transports
+                    if (agi.transports && agi.transports.length > 0) {
+                        const transports = agi.transports.map(t => `<span class="value-tag">${t}</span>`).join(' ');
+                        addMetadataProperty(metadataContent, 'Transports', transports, true);
+                    }
+                }
+            } else {
+                metadataSection.style.display = 'none';
+            }
+
             // Populate the raw data section
             const rawDataContent = document.getElementById('rawDataContent');
             rawDataContent.textContent = JSON.stringify(item, null, 2);
 
             // Show the modal
             document.getElementById('myModal').style.display = 'block';
+        }
+
+        function addMetadataProperty(container, label, value, isHtml = false) {
+            const propDiv = document.createElement('div');
+            propDiv.className = 'modal-property';
+            propDiv.innerHTML = `
+                <div class="modal-property-label">${label}</div>
+                <div class="modal-property-value">${isHtml ? value : escapeHtml(value)}</div>
+            `;
+            container.appendChild(propDiv);
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
 
         const modal = document.getElementById('myModal');
