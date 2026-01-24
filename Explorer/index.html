@@ -857,7 +857,10 @@
                     }
                 }
             } else {
-                metadataSection.style.displa with syntax highlighting
+                metadataSection.style.display = 'none';
+            }
+
+            // Populate the raw data section with syntax highlighting
             const rawDataContent = document.getElementById('rawDataContent');
             rawDataContent.innerHTML = syntaxHighlight(JSON.stringify(item, null, 2));
 
@@ -901,9 +904,6 @@
             }).catch(err => {
                 console.error('Failed to copy:', err);
             });
-
-            // Show the modal
-            document.getElementById('myModal').style.display = 'block';
         }
 
         function addMetadataProperty(container, label, value, isHtml = false) {
