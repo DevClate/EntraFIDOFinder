@@ -1,3 +1,153 @@
+DETAILED LOG - 2026-01-24 00:17:03
+
+Vendor '' for description 'eToken Fusion BIO' has become invalid.
+
+Vendor 'TruU' for description 'TruU Windows Authenticator' has become valid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Bluetooth Authenticator' has become valid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with Lightning (RC Preview)' has become invalid.
+
+Vendor '' for description 'IDEX CTAP2.1 Biometric, No pin' has become invalid.
+
+Vendor 'NEOWAVE' for description 'NEOWAVE Badgeo FIDO2 (CTAP 2.1)' has become valid.
+
+Vendor 'OneSpan' for description 'OneSpan DIGIPASS FX7-B' has become valid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series (RC Preview)' has become invalid.
+
+Vendor 'ZTPass' for description 'ZTPass SmartAuth' has become valid.
+
+Vendor 'KeyVault' for description 'KeyVault Secp256R1 FIDO2 CTAP2 Authenticator' has become valid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (USB)' has become invalid.
+
+Vendor 'Ledger' for description 'Ledger Nano S Plus FIDO2 Authenticator' has become valid.
+
+Vendor 'TruU' for description 'TruU Windows Authenticator' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Flex FIDO2 Authenticator' has become valid.
+
+Vendor 'OneSpan' for description 'OneSpan DIGIPASS FX2-A' has become valid.
+
+Vendor '' for description 'Dapple Authenticator from Dapple Security Inc.' has become invalid.
+
+Vendor 'Ensurity' for description 'Ensurity AUTH TouchPro' has become valid.
+
+Vendor 'Feitian' for description 'Feitian ePass FIDO2-NFC Plus Authenticator' has become valid.
+
+Vendor 'OCTATCO' for description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' has become valid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'GoldKey Security Token' has become invalid.
+
+Vendor '' for description 'Pone Biometrics OFFPAD Authenticator' has become invalid.
+
+Vendor '' for description 'Ideem ZSM FIDO2 Authenticator' has become invalid.
+
+Vendor '' for description 'Mettlesemi Vishwaas Eagle Authenticator using FIDO2' has become invalid.
+
+Vendor '' for description 'ESS Smart Card Inc. Authenticator' has become invalid.
+
+Vendor '' for description 'YubiKey 5 CCN Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor 'WiSECURE' for description 'WiSECURE Blentity FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC Preview' has become invalid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - TPM' has become valid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (FP)' has become invalid.
+
+Vendor 'NEOWAVE' for description 'NEOWAVE WINKEO V2.0' has become valid.
+
+Vendor '' for description 'eToken Fusion NFC PIV Enterprise' has become invalid.
+
+Vendor 'Hideez' for description 'Hideez Key 3 FIDO2' has become valid.
+
+Vendor '' for description 'Securitag Assembly Group FIDO Authenticator NFC' has become invalid.
+
+Vendor '' for description 'HID Crescendo 4000 FIPS' has become invalid.
+
+Vendor 'OneSpan' for description 'OneSpan DIGIPASS FX1-C' has become valid.
+
+Vendor 'Android' for description 'Android Authenticator' has become valid.
+
+Vendor '' for description 'ATLKey Authenticator' has become invalid.
+
+Vendor 'OneSpan' for description 'OneSpan DIGIPASS FX7-C' has become valid.
+
+Vendor '' for description 'VeriMark NFC+ USB-C Security Key' has become invalid.
+
+Vendor 'OneSpan' for description 'OneSpan DIGIPASS FX7' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC Preview' has become invalid.
+
+Vendor 'Excelsecu' for description 'Excelsecu eSecu FIDO2 PRO+ Security Key' has become valid.
+
+Vendor '' for description 'Security Key NFC by Yubico - Enterprise Edition Preview' has become invalid.
+
+Vendor 'ellipticSecure' for description 'ellipticSecure MIRkey USB Authenticator' has become valid.
+
+Vendor '' for description 'ToothPic Passkey Provider' has become invalid.
+
+Vendor 'eWBM' for description 'eWBM eFA500 FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'HID Crescendo Key V3 - Enterprise Edition' has become invalid.
+
+Vendor '' for description 'Mettlesemi Vishwaas Hawk Authenticator using FIDO2' has become invalid.
+
+Vendor '' for description 'TEST (DUMMY RECORD)' has become invalid.
+
+Vendor '' for description 'USB/NFC Passcode Authenticator' has become invalid.
+
+Vendor '' for description 'VeriMark NFC+ USB-A Security Key' has become invalid.
+
+Vendor 'Veridium' for description 'Veridium iOS SDK' has become valid.
+
+Vendor '' for description 'SECORA ID V2 FIDO2.1 L1' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with Lightning Preview' has become invalid.
+
+Vendor 'Veridium' for description 'Veridium Android SDK' has become valid.
+
+Vendor '' for description 'FIDO Alliance TruU Sample FIDO2 Authenticator' has become invalid.
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R1 FIDO Card Draft' has become valid.
+
+Vendor '' for description 'Security Key NFC by Yubico Preview' has become invalid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - Software' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Nano S FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with Lightning Preview' has become invalid.
+
+Vendor 'Ledger' for description 'Ledger Stax FIDO2 Authenticator' has become valid.
+
+Vendor 'VivoKey' for description 'VivoKey Apex FIDO2' has become valid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC (RC Preview)' has become invalid.
+
+Vendor '' for description 'Idem Key (Consumer profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 CCN Series with NFC' has become invalid.
+
+Vendor 'WinMagic' for description 'WinMagic FIDO Eazy - Phone' has become valid.
+
+Vendor 'TruU' for description 'TruU FIDO2 Authenticator' has become valid.
+
+Vendor 'Samsung' for description 'Samsung Pass' has become valid.
+
+Vendor 'Feitian' for description 'Feitian FIDO Smart Card' has become valid.
+
+Vendor 'Ensurity' for description 'Ensurity AUTH BioPro Desktop' has become valid.
+
+Vendor 'Ledger' for description 'Ledger Nano X FIDO2 Authenticator' has become valid.
+
+
+
 DETAILED LOG - 2026-01-23 00:18:01
 
 Added new entry for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' with description 'Ledger Nano S Plus FIDO2 Authenticator' and vendor 'Ledger'.
@@ -5694,6 +5844,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
