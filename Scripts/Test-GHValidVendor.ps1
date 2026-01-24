@@ -81,6 +81,62 @@ function Test-GHValidVendor {
         [System.Collections.ArrayList]$currentLogEntries
     )
 
+    # Handle empty or null vendor explicitly
+    if ([string]::IsNullOrWhiteSpace($vendor.Value)) {
+        Write-Host "Vendor is empty for AAGUID '$aaguid' with description '$description'. Attempting to derive vendor from description."
+        $logEntry = "Empty vendor detected for AAGUID '$aaguid' with description '$description'."
+        $detailedLogContent.Add("")
+        $detailedLogContent.Add($logEntry)
+        
+        # Attempt to use the first word of the description as the vendor
+        $firstWord = ($description -split ' ')[0]
+        if ($firstWord) {
+            if ($ValidVendors -contains $firstWord) {
+                Write-Host "Successfully derived vendor '$firstWord' from description."
+                $vendor.Value = $firstWord
+                $logEntry = "Vendor set for AAGUID '$aaguid': '' to '$firstWord' (derived from description)."
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for vendor derivation: $logEntry"
+                $changesDetected.Value = $true
+                $currentLogEntries.Add($logEntry)
+                return "Yes"
+            }
+        }
+        
+        # Try to find any valid vendor in the description
+        foreach ($validVendorName in $ValidVendors) {
+            if ($description -match $validVendorName) {
+                Write-Host "Found valid vendor '$validVendorName' in description for AAGUID '$aaguid'."
+                $vendor.Value = $validVendorName
+                $logEntry = "Vendor derived for AAGUID '$aaguid': '' to '$validVendorName' from description match."
+                $detailedLogContent.Add($logEntry)
+                Write-Host "Added log entry for vendor derivation: $logEntry"
+                $changesDetected.Value = $true
+                $currentLogEntries.Add($logEntry)
+                return "Yes"
+            }
+        }
+        
+        # If we couldn't derive a valid vendor, log the error and continue with validation failure
+        $logEntry = "Failed to derive valid vendor for AAGUID '$aaguid' with description '$description'. Vendor field was empty."
+        $detailedLogContent.Add($logEntry)
+        Write-Host $logEntry
+        $currentLogEntries.Add($logEntry)
+        $changesDetected.Value = $true
+        
+        # Prepare issue entry
+        if ($IsNewEntry) {
+            $logEntryTrimmed = $logEntry.Trim()
+            if (-not ($existingLogEntries -contains $logEntryTrimmed)) {
+                $markdownContent.Add($logEntry)
+                $issueTitle = "Empty Vendor Detected for AAGUID $aaguid"
+                $issueBody = $logEntry
+                $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
+            }
+        }
+        return "No"
+    }
+
     # Check if the vendor is valid
     if ($ValidVendors -contains $vendor.Value) {
         return "Yes"
