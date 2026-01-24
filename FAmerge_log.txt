@@ -1,4 +1,955 @@
 
+===== Script Run on 2026-01-24 12:46:04 UTC =====
+2026-01-24 12:45:58 - AAGUID: b93fd961-f2e6-462f-b122-82002247de78
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-12-17
+
+2026-01-24 12:45:58 - AAGUID: b93fd961-f2e6-462f-b122-82002247de78
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Android
+Description: Android Authenticator
+
+2026-01-24 12:45:58 - AAGUID: 019614a3-2703-7e35-a453-285fd06c5d24
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-09-10
+
+2026-01-24 12:45:58 - AAGUID: 019614a3-2703-7e35-a453-285fd06c5d24
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ATLKey
+Description: ATLKey Authenticator
+
+2026-01-24 12:45:59 - AAGUID: 6dae43be-af9c-417b-8b9f-1b611168ec60
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-06-05
+
+2026-01-24 12:45:59 - AAGUID: 6dae43be-af9c-417b-8b9f-1b611168ec60
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Dapple Security
+Description: Dapple Authenticator from Dapple Security Inc.
+
+2026-01-24 12:45:59 - AAGUID: b9f6b7b6-f929-4189-bca9-dd951240c132
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-25
+
+2026-01-24 12:45:59 - AAGUID: b9f6b7b6-f929-4189-bca9-dd951240c132
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Deepnet
+Description: Deepnet SafeKey/Classic (USB)
+
+2026-01-24 12:45:59 - AAGUID: e41b42a3-60ac-4afb-8757-a98f2d7f6c9f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-02-25
+
+2026-01-24 12:45:59 - AAGUID: e41b42a3-60ac-4afb-8757-a98f2d7f6c9f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Deepnet
+Description: Deepnet SafeKey/Classic (FP)
+
+2026-01-24 12:45:59 - AAGUID: eb3b131e-59dc-536a-d176-cb7306da10f5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2019-10-28
+
+2026-01-24 12:45:59 - AAGUID: eb3b131e-59dc-536a-d176-cb7306da10f5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ellipticSecure
+Description: ellipticSecure MIRkey USB Authenticator
+
+2026-01-24 12:45:59 - AAGUID: 50cbf15a-238c-4457-8f16-812c43bf3c49
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-05
+
+2026-01-24 12:45:59 - AAGUID: 50cbf15a-238c-4457-8f16-812c43bf3c49
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ensurity
+Description: Ensurity AUTH TouchPro
+
+2026-01-24 12:45:59 - AAGUID: 9eb85bb6-9625-4a72-815d-0487830ccab2
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-09-05
+
+2026-01-24 12:45:59 - AAGUID: 9eb85bb6-9625-4a72-815d-0487830ccab2
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ensurity
+Description: Ensurity AUTH BioPro Desktop
+
+2026-01-24 12:45:59 - AAGUID: 5343502d-5343-5343-6172-644649444f32
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-07-01
+
+2026-01-24 12:45:59 - AAGUID: 5343502d-5343-5343-6172-644649444f32
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ESS
+Description: ESS Smart Card Inc. Authenticator
+
+2026-01-24 12:45:59 - AAGUID: c3f47802-de73-4dfc-ba22-671fe3304f90
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-06-12
+
+2026-01-24 12:45:59 - AAGUID: c3f47802-de73-4dfc-ba22-671fe3304f90
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: eToken
+Description: eToken Fusion NFC PIV Enterprise
+
+2026-01-24 12:45:59 - AAGUID: d716019a-9f4e-4041-9750-17c78f8ae81a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-02
+
+2026-01-24 12:45:59 - AAGUID: d716019a-9f4e-4041-9750-17c78f8ae81a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: eToken
+Description: eToken Fusion BIO
+
+2026-01-24 12:45:59 - AAGUID: 361a3082-0278-4583-a16f-72a527f973e4
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2019-07-18
+
+2026-01-24 12:45:59 - AAGUID: 361a3082-0278-4583-a16f-72a527f973e4
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: eWBM
+Description: eWBM eFA500 FIDO2 Authenticator
+
+2026-01-24 12:45:59 - AAGUID: f573f209-b7fb-b261-671a-d7cf624cc812
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-30
+
+2026-01-24 12:45:59 - AAGUID: f573f209-b7fb-b261-671a-d7cf624cc812
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Excelsecu
+Description: Excelsecu eSecu FIDO2 PRO+ Security Key
+
+2026-01-24 12:46:00 - AAGUID: 260e3021-482d-442d-838c-7edfbe153b7e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-07-19
+
+2026-01-24 12:46:00 - AAGUID: 260e3021-482d-442d-838c-7edfbe153b7e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian ePass FIDO2-NFC Plus Authenticator
+
+2026-01-24 12:46:00 - AAGUID: 2c0df832-92de-4be1-8412-88a8f074df4a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-04-24
+
+2026-01-24 12:46:00 - AAGUID: 2c0df832-92de-4be1-8412-88a8f074df4a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Feitian
+Description: Feitian FIDO Smart Card
+
+2026-01-24 12:46:00 - AAGUID: 0db01cd6-5618-455b-bb46-1ec203d3213e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-08
+
+2026-01-24 12:46:00 - AAGUID: 0db01cd6-5618-455b-bb46-1ec203d3213e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: GoldKey
+Description: GoldKey Security Token
+
+2026-01-24 12:46:00 - AAGUID: 8eec9bf9-486c-46da-9a67-1fbb4f66b9ed
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-24
+
+2026-01-24 12:46:00 - AAGUID: 8eec9bf9-486c-46da-9a67-1fbb4f66b9ed
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo 4000 FIPS
+
+2026-01-24 12:46:00 - AAGUID: 13ac47cf-1d78-4fd5-9060-aedaabacf826
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-12-11
+
+2026-01-24 12:46:00 - AAGUID: 13ac47cf-1d78-4fd5-9060-aedaabacf826
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo Key V3 - Enterprise Edition
+
+2026-01-24 12:46:01 - AAGUID: 3e078ffd-4c54-4586-8baa-a77da113aec5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-07-11
+
+2026-01-24 12:46:01 - AAGUID: 3e078ffd-4c54-4586-8baa-a77da113aec5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Hideez
+Description: Hideez Key 3 FIDO2
+
+2026-01-24 12:46:01 - AAGUID: 5e264d9d-28ef-4d34-95b4-5941e7a4faa8
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-23
+
+2026-01-24 12:46:01 - AAGUID: 5e264d9d-28ef-4d34-95b4-5941e7a4faa8
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ideem
+Description: Ideem ZSM FIDO2 Authenticator
+
+2026-01-24 12:46:01 - AAGUID: c611b55c-77b2-4527-8082-590e931b2f08
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-12-19
+
+2026-01-24 12:46:01 - AAGUID: c611b55c-77b2-4527-8082-590e931b2f08
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Idem
+Description: Idem Key (Consumer profile)
+
+2026-01-24 12:46:01 - AAGUID: 3fd410dc-8ab7-4b86-a1cb-c7174620b2dc
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-04-22
+
+2026-01-24 12:46:01 - AAGUID: 3fd410dc-8ab7-4b86-a1cb-c7174620b2dc
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: IDEMIA
+Description: IDEMIA SOLVO Fly 80 R1 FIDO Card Draft
+
+2026-01-24 12:46:01 - AAGUID: 49a15c1c-3f63-3f51-23a7-b9e00096edd1
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-09-10
+
+2026-01-24 12:46:01 - AAGUID: 49a15c1c-3f63-3f51-23a7-b9e00096edd1
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: IDEX
+Description: IDEX CTAP2.1 Biometric, No pin
+
+2026-01-24 12:46:01 - AAGUID: d61d3b87-3e7c-4aea-9c50-441c371903ad
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-12-12
+
+2026-01-24 12:46:01 - AAGUID: d61d3b87-3e7c-4aea-9c50-441c371903ad
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: KeyVault
+Description: KeyVault Secp256R1 FIDO2 CTAP2 Authenticator
+
+2026-01-24 12:46:01 - AAGUID: 1d8cac46-47a1-3386-af50-e88ae46fe802
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-27
+
+2026-01-24 12:46:01 - AAGUID: 1d8cac46-47a1-3386-af50-e88ae46fe802
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Flex FIDO2 Authenticator
+
+2026-01-24 12:46:01 - AAGUID: 6e24d385-004a-16a0-7bfe-efd963845b34
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-03-27
+
+2026-01-24 12:46:01 - AAGUID: 6e24d385-004a-16a0-7bfe-efd963845b34
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Stax FIDO2 Authenticator
+
+2026-01-24 12:46:01 - AAGUID: 341e4da9-3c2e-8103-5a9f-aad887135200
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-04
+
+2026-01-24 12:46:01 - AAGUID: 341e4da9-3c2e-8103-5a9f-aad887135200
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Nano S FIDO2 Authenticator
+
+2026-01-24 12:46:01 - AAGUID: fcb1bcb4-f370-078c-6993-bc24d0ae3fbe
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-09-18
+
+2026-01-24 12:46:01 - AAGUID: fcb1bcb4-f370-078c-6993-bc24d0ae3fbe
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Nano X FIDO2 Authenticator
+
+2026-01-24 12:46:02 - AAGUID: 58b44d0b-0a7c-f33a-fd48-f7153c871352
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-09-18
+
+2026-01-24 12:46:02 - AAGUID: 58b44d0b-0a7c-f33a-fd48-f7153c871352
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Ledger
+Description: Ledger Nano S Plus FIDO2 Authenticator
+
+2026-01-24 12:46:02 - AAGUID: bb66c294-de08-47e4-b7aa-d12c2cd3fb20
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-09-01
+
+2026-01-24 12:46:02 - AAGUID: bb66c294-de08-47e4-b7aa-d12c2cd3fb20
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Mettlesemi
+Description: Mettlesemi Vishwaas Hawk Authenticator using FIDO2
+
+2026-01-24 12:46:02 - AAGUID: 489ff376-b48d-6640-bb69-782a860ca795
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-09-01
+
+2026-01-24 12:46:02 - AAGUID: 489ff376-b48d-6640-bb69-782a860ca795
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Mettlesemi
+Description: Mettlesemi Vishwaas Eagle Authenticator using FIDO2
+
+2026-01-24 12:46:02 - AAGUID: 2c2aeed8-8174-4159-814b-486e92a261d0
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-12-05
+
+2026-01-24 12:46:02 - AAGUID: 2c2aeed8-8174-4159-814b-486e92a261d0
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: NEOWAVE
+Description: NEOWAVE WINKEO V2.0
+
+2026-01-24 12:46:02 - AAGUID: a7fc3f84-86a3-4da4-a3d7-eb6485a066d8
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-11-21
+
+2026-01-24 12:46:02 - AAGUID: a7fc3f84-86a3-4da4-a3d7-eb6485a066d8
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: NEOWAVE
+Description: NEOWAVE Badgeo FIDO2 (CTAP 2.1)
+
+2026-01-24 12:46:02 - AAGUID: bc2fe499-0d8e-4ffe-96f3-94a82840cf8c
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2021-08-10
+
+2026-01-24 12:46:02 - AAGUID: bc2fe499-0d8e-4ffe-96f3-94a82840cf8c
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OCTATCO
+Description: OCTATCO EzQuant FIDO2 AUTHENTICATOR
+
+2026-01-24 12:46:02 - AAGUID: 70e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-12-16
+
+2026-01-24 12:46:02 - AAGUID: 70e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneKey
+Description: OneKey FIDO2 Bluetooth Authenticator
+
+2026-01-24 12:46:02 - AAGUID: 69e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-08-02
+
+2026-01-24 12:46:02 - AAGUID: 69e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneKey
+Description: OneKey FIDO2 Authenticator
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff7-030b-addc96ba6a98
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-21
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff7-030b-addc96ba6a98
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneSpan
+Description: OneSpan DIGIPASS FX7-C
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff7-020b-addc96ba6a98
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-21
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff7-020b-addc96ba6a98
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneSpan
+Description: OneSpan DIGIPASS FX7
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff1-020b-addc96ba6a98
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-21
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff1-020b-addc96ba6a98
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneSpan
+Description: OneSpan DIGIPASS FX1-C
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff7-010b-addc96ba6a98
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-21
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff7-010b-addc96ba6a98
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneSpan
+Description: OneSpan DIGIPASS FX7-B
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff2-010b-addc96ba6a98
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-21
+
+2026-01-24 12:46:02 - AAGUID: 30b5035e-d297-4ff2-010b-addc96ba6a98
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneSpan
+Description: OneSpan DIGIPASS FX2-A
+
+2026-01-24 12:46:02 - AAGUID: 09591fc6-9811-48f7-8f57-b9f23df6413f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-11-10
+
+2026-01-24 12:46:02 - AAGUID: 09591fc6-9811-48f7-8f57-b9f23df6413f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Pone Biometrics
+Description: Pone Biometrics OFFPAD Authenticator
+
+2026-01-24 12:46:02 - AAGUID: 53414d53-554e-4700-0000-000000000000
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-03-12
+
+2026-01-24 12:46:02 - AAGUID: 53414d53-554e-4700-0000-000000000000
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Samsung
+Description: Samsung Pass
+
+2026-01-24 12:46:02 - AAGUID: 4e2ddbc2-2687-4709-8551-cb66c9776bfe
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-01-27
+
+2026-01-24 12:46:02 - AAGUID: 4e2ddbc2-2687-4709-8551-cb66c9776bfe
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SECORA
+Description: SECORA ID V2 FIDO2.1 L1
+
+2026-01-24 12:46:02 - AAGUID: 5df66f62-5b47-43d3-aa1d-a6e31c8dbeb5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-11-25
+
+2026-01-24 12:46:02 - AAGUID: 5df66f62-5b47-43d3-aa1d-a6e31c8dbeb5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Securitag
+Description: Securitag Assembly Group FIDO Authenticator NFC
+
+2026-01-24 12:46:03 - AAGUID: cc45f64e-52a2-451b-831a-4edd8022a202
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-06-05
+
+2026-01-24 12:46:03 - AAGUID: cc45f64e-52a2-451b-831a-4edd8022a202
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ToothPic
+Description: ToothPic Passkey Provider
+
+2026-01-24 12:46:03 - AAGUID: ba86dc56-635f-4141-aef6-00227b1b9af6
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-12-20
+
+2026-01-24 12:46:03 - AAGUID: ba86dc56-635f-4141-aef6-00227b1b9af6
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: TruU Windows Authenticator
+
+2026-01-24 12:46:03 - AAGUID: 95e4d58c-056e-4a65-866d-f5a69659e880
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-11-01
+
+2026-01-24 12:46:03 - AAGUID: 95e4d58c-056e-4a65-866d-f5a69659e880
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: TruU Windows Authenticator
+
+2026-01-24 12:46:03 - AAGUID: ca87cb70-4c1b-4579-a8e8-4efdd7c007e0
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-10-06
+
+2026-01-24 12:46:03 - AAGUID: ca87cb70-4c1b-4579-a8e8-4efdd7c007e0
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: FIDO Alliance TruU Sample FIDO2 Authenticator
+
+2026-01-24 12:46:03 - AAGUID: bb878d7b-cf54-4784-b390-357030497043
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-08-26
+
+2026-01-24 12:46:03 - AAGUID: bb878d7b-cf54-4784-b390-357030497043
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: TruU FIDO2 Authenticator
+
+2026-01-24 12:46:03 - AAGUID: cfcb13a2-244f-4b36-9077-82b79d6a7de7
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-04-16
+
+2026-01-24 12:46:03 - AAGUID: cfcb13a2-244f-4b36-9077-82b79d6a7de7
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: USB/NFC Passcode Authenticator
+
+2026-01-24 12:46:03 - AAGUID: ab32f0c6-2239-afbb-c470-d2ef4e254db6
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-02-28
+
+2026-01-24 12:46:03 - AAGUID: ab32f0c6-2239-afbb-c470-d2ef4e254db6
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Unknown
+Description: TEST (DUMMY RECORD)
+
+2026-01-24 12:46:03 - AAGUID: 6e8d1eae-8d40-4c25-bcf8-4633959afc71
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-28
+
+2026-01-24 12:46:03 - AAGUID: 6e8d1eae-8d40-4c25-bcf8-4633959afc71
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Veridium
+Description: Veridium iOS SDK
+
+2026-01-24 12:46:03 - AAGUID: 5ea308b2-7ac7-48b9-ac09-7e2da9015f8c
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-07-28
+
+2026-01-24 12:46:03 - AAGUID: 5ea308b2-7ac7-48b9-ac09-7e2da9015f8c
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Veridium
+Description: Veridium Android SDK
+
+2026-01-24 12:46:03 - AAGUID: ee7fa1e0-9539-432f-bd43-9c2fc6d4f311
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-27
+
+2026-01-24 12:46:03 - AAGUID: ee7fa1e0-9539-432f-bd43-9c2fc6d4f311
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeriMark
+Description: VeriMark NFC+ USB-C Security Key
+
+2026-01-24 12:46:03 - AAGUID: 76692dc1-c56a-48d9-8e7d-31b5ced430ac
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-27
+
+2026-01-24 12:46:03 - AAGUID: 76692dc1-c56a-48d9-8e7d-31b5ced430ac
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeriMark
+Description: VeriMark NFC+ USB-A Security Key
+
+2026-01-24 12:46:03 - AAGUID: d7a423ad-3e19-4492-9200-78137dccc136
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2022-08-14
+
+2026-01-24 12:46:03 - AAGUID: d7a423ad-3e19-4492-9200-78137dccc136
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VivoKey
+Description: VivoKey Apex FIDO2
+
+2026-01-24 12:46:03 - AAGUID: 31c3f7ff-bf15-4327-83ec-9336abcbcd34
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-26
+
+2026-01-24 12:46:03 - AAGUID: 31c3f7ff-bf15-4327-83ec-9336abcbcd34
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WinMagic
+Description: WinMagic FIDO Eazy - Software
+
+2026-01-24 12:46:03 - AAGUID: 970c8d9c-19d2-46af-aa32-3f448db49e35
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-26
+
+2026-01-24 12:46:03 - AAGUID: 970c8d9c-19d2-46af-aa32-3f448db49e35
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WinMagic
+Description: WinMagic FIDO Eazy - TPM
+
+2026-01-24 12:46:03 - AAGUID: f56f58b3-d711-4afc-ba7d-6ac05f88cb19
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-01-26
+
+2026-01-24 12:46:03 - AAGUID: f56f58b3-d711-4afc-ba7d-6ac05f88cb19
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WinMagic
+Description: WinMagic FIDO Eazy - Phone
+
+2026-01-24 12:46:03 - AAGUID: 5753362b-4e6b-6345-7b2f-255438404c75
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-02-23
+
+2026-01-24 12:46:03 - AAGUID: 5753362b-4e6b-6345-7b2f-255438404c75
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WiSECURE
+Description: WiSECURE Blentity FIDO2 Authenticator
+
+2026-01-24 12:46:03 - AAGUID: 4fc84f16-2545-4e53-b8fc-7bf4d7282a10
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-24
+
+2026-01-24 12:46:03 - AAGUID: 4fc84f16-2545-4e53-b8fc-7bf4d7282a10
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 CCN Series with NFC (Enterprise Profile)
+
+2026-01-24 12:46:03 - AAGUID: 5b0e46ba-db02-44ac-b979-ca9b84f5e335
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2026-01-24 12:46:03 - AAGUID: 5b0e46ba-db02-44ac-b979-ca9b84f5e335
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with Lightning Preview
+
+2026-01-24 12:46:03 - AAGUID: 760eda36-00aa-4d29-855b-4012a182cdeb
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2026-01-24 12:46:03 - AAGUID: 760eda36-00aa-4d29-855b-4012a182cdeb
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico Preview
+
+2026-01-24 12:46:03 - AAGUID: 3124e301-f14e-4e38-876d-fbeeb090e7bf
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2026-01-24 12:46:03 - AAGUID: 3124e301-f14e-4e38-876d-fbeeb090e7bf
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning Preview
+
+2026-01-24 12:46:03 - AAGUID: 9e66c661-e428-452a-a8fb-51f7ed088acf
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-15
+
+2026-01-24 12:46:03 - AAGUID: 9e66c661-e428-452a-a8fb-51f7ed088acf
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with Lightning (RC Preview)
+
+2026-01-24 12:46:03 - AAGUID: ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-15
+
+2026-01-24 12:46:03 - AAGUID: ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with NFC (RC Preview)
+
+2026-01-24 12:46:04 - AAGUID: 62e54e98-c209-4df3-b692-de71bb6a8528
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2026-01-24 12:46:04 - AAGUID: 62e54e98-c209-4df3-b692-de71bb6a8528
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series with NFC Preview
+
+2026-01-24 12:46:04 - AAGUID: 3aa78eb1-ddd8-46a8-a821-8f8ec57a7bd5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-10-24
+
+2026-01-24 12:46:04 - AAGUID: 3aa78eb1-ddd8-46a8-a821-8f8ec57a7bd5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 CCN Series with NFC
+
+2026-01-24 12:46:04 - AAGUID: 2772ce93-eb4b-4090-8b73-330f48477d73
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-04-07
+
+2026-01-24 12:46:04 - AAGUID: 2772ce93-eb4b-4090-8b73-330f48477d73
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key NFC by Yubico - Enterprise Edition Preview
+
+2026-01-24 12:46:04 - AAGUID: 34f5766d-1536-4a24-9033-0e294e510fb0
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2020-09-17
+
+2026-01-24 12:46:04 - AAGUID: 34f5766d-1536-4a24-9033-0e294e510fb0
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC Preview
+
+2026-01-24 12:46:04 - AAGUID: d2fbd093-ee62-488d-9dad-1e36389f8826
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2024-10-15
+
+2026-01-24 12:46:04 - AAGUID: d2fbd093-ee62-488d-9dad-1e36389f8826
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 FIPS Series (RC Preview)
+
+2026-01-24 12:46:04 - AAGUID: 99bf4610-ec26-4252-b31f-7380ccd59db5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2023-11-24
+
+2026-01-24 12:46:04 - AAGUID: 99bf4610-ec26-4252-b31f-7380ccd59db5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ZTPass
+Description: ZTPass SmartAuth
+
+
 ===== Script Run on 2026-01-23 10:08:42 UTC =====
 2026-01-23 10:08:37 - AAGUID: b93fd961-f2e6-462f-b122-82002247de78
 Updating timeOfLastStatusChange
@@ -3299,6 +4250,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
