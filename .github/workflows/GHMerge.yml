@@ -62,6 +62,11 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
+          const fs = require('fs');
+          
+          // Load FidoKeys.json to check current vendor status
+          const fidoKeysData = JSON.parse(fs.readFileSync('Assets/FidoKeys.json', 'utf8'));
+          
           const issueEntriesRaw = process.env.ISSUE_ENTRIES || '';
           const issueEntries = issueEntriesRaw.split('%0A').map(entry => decodeURIComponent(entry)).filter(entry => entry.trim() !== '');
           if (issueEntries.length === 0) {
@@ -102,23 +107,34 @@ jobs:
             }
           }
 
-          // Close issues for keys (AAGUIDs) that are now valid
-          const keysNowValidRaw = process.env.KEYS_NOW_VALID || '';
-          const keysNowValid = keysNowValidRaw.split('%0A').map(entry => decodeURIComponent(entry)).filter(entry => entry.trim() !== '');
-          if (keysNowValid.length === 0) {
-            console.log('No keys have become valid.');
-          } else {
-            console.log('Keys that are now valid:', keysNowValid);
-            for (const aaguid of keysNowValid) {
-              const { data: issues } = await github.rest.issues.listForRepo({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                state: 'open',
-                labels: ['auto-generated', 'InvalidVendor'],
-                per_page: 100,
-              });
-              for (const issue of issues) {
-                if (issue.title.includes(aaguid)) {
+          // Check all InvalidVendor issues and close those that are now valid
+          console.log('Checking all InvalidVendor issues for validation status...');
+          const { data: invalidVendorIssues } = await github.rest.issues.listForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            state: 'open',
+            labels: ['auto-generated', 'InvalidVendor'],
+            per_page: 100,
+          });
+          
+          console.log(`Found ${invalidVendorIssues.length} open InvalidVendor issues`);
+          
+          for (const issue of invalidVendorIssues) {
+            // Extract AAGUID from issue title (format: "Invalid Vendor Detected for AAGUID <aaguid> : <vendor>")
+            const aaguidMatch = issue.title.match(/AAGUID\s+([a-f0-9-]+)/i);
+            if (aaguidMatch) {
+              const aaguid = aaguidMatch[1];
+              console.log(`Checking AAGUID ${aaguid} from issue #${issue.number}`);
+              
+              // Find the key in FidoKeys.json
+              const key = fidoKeysData.keys.find(k => k.AAGUID === aaguid);
+              
+              if (key) {
+                console.log(`Found key: Vendor='${key.Vendor}', ValidVendor='${key.ValidVendor}'`);
+                
+                // Check if vendor is now valid
+                if (key.ValidVendor === 'Yes') {
+                  console.log(`Vendor is now valid for AAGUID ${aaguid}. Closing issue #${issue.number}`);
                   await github.rest.issues.update({
                     owner: context.repo.owner,
                     repo: context.repo.repo,
@@ -130,11 +146,17 @@ jobs:
                     owner: context.repo.owner,
                     repo: context.repo.repo,
                     issue_number: issue.number,
-                    body: `The vendor for key with AAGUID '${aaguid}' is now valid. This issue is being closed automatically.`,
+                    body: `The vendor for key with AAGUID '${aaguid}' is now valid (Vendor: ${key.Vendor}). This issue is being closed automatically.`,
                   });
-                  console.log(`Closed issue for key with AAGUID: ${aaguid}`);
+                  console.log(`Closed issue #${issue.number} for AAGUID: ${aaguid}`);
+                } else {
+                  console.log(`Vendor still invalid for AAGUID ${aaguid}. Keeping issue open.`);
                 }
+              } else {
+                console.log(`AAGUID ${aaguid} not found in FidoKeys.json`);
               }
+            } else {
+              console.log(`Could not extract AAGUID from issue title: ${issue.title}`);
             }
           }
 
