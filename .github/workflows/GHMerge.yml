@@ -69,10 +69,25 @@ jobs:
           
           const issueEntriesRaw = process.env.ISSUE_ENTRIES || '';
           const issueEntries = issueEntriesRaw.split('%0A').map(entry => decodeURIComponent(entry)).filter(entry => entry.trim() !== '');
-          if (issueEntries.length === 0) {
+          
+          // Remove duplicates from issueEntries
+          const uniqueIssueEntries = [...new Set(issueEntries)];
+          
+          if (uniqueIssueEntries.length === 0) {
             console.log('No new issue entries found.');
           } else {
-            for (const entry of issueEntries) {
+            console.log(`Processing ${uniqueIssueEntries.length} unique issue entries`);
+            
+            // Fetch all open auto-generated issues once
+            const { data: allOpenIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'auto-generated',
+              per_page: 100,
+            });
+            
+            for (const entry of uniqueIssueEntries) {
               const parts = entry.split('|');
               if (parts.length < 2) {
                 console.error(`Invalid entry format: ${entry}`);
@@ -80,13 +95,9 @@ jobs:
               }
               const [issueTitle, issueBody, issueLabel] = parts;
               console.log(`Processing issue: ${issueTitle}`);
-              const { data: issues } = await github.rest.issues.listForRepo({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                state: 'open',
-                labels: 'auto-generated',
-              });
-              const existingIssue = issues.find(issue => issue.title === issueTitle);
+              
+              // Check if issue already exists in the fetched list
+              const existingIssue = allOpenIssues.find(issue => issue.title === issueTitle);
               if (!existingIssue) {
                 const assignees = [];
                 if (issueLabel === 'InvalidVendor' || issueLabel === 'DuplicateEntry') {

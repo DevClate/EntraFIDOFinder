@@ -131,7 +131,11 @@ function Test-GHValidVendor {
                 $markdownContent.Add($logEntry)
                 $issueTitle = "Empty Vendor Detected for AAGUID $aaguid"
                 $issueBody = $logEntry
-                $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
+                $issueKey = "$issueTitle|$issueBody|InvalidVendor"
+                # Check if this issue is already in the list
+                if (-not ($issueEntries -contains $issueKey)) {
+                    $issueEntries.Add($issueKey)
+                }
             }
         }
         return "No"
@@ -210,7 +214,11 @@ function Test-GHValidVendor {
                 # Prepare issue entry with AAGUID included in the title
                 $issueTitle = "Invalid Vendor Detected for AAGUID $aaguid : $($vendor.Value)"
                 $issueBody = $logEntry
-                $issueEntries.Add("$issueTitle|$issueBody|InvalidVendor")
+                $issueKey = "$issueTitle|$issueBody|InvalidVendor"
+                # Check if this issue is already in the list
+                if (-not ($issueEntries -contains $issueKey)) {
+                    $issueEntries.Add($issueKey)
+                }
             }
         }
         return "No"
