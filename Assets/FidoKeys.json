@@ -19271,7 +19271,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "eToken",
       "Description": "eToken Fusion BIO",
       "AAGUID": "d716019a-9f4e-4041-9750-17c78f8ae81a",
       "Bio": "✅",
@@ -19279,7 +19279,7 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
@@ -19299,7 +19299,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "ATLKey",
       "Description": "ATLKey Authenticator",
       "AAGUID": "019614a3-2703-7e35-a453-285fd06c5d24",
       "Bio": "❌",
@@ -19307,13 +19307,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Mettlesemi",
       "Description": "Mettlesemi Vishwaas Hawk Authenticator using FIDO2",
       "AAGUID": "bb66c294-de08-47e4-b7aa-d12c2cd3fb20",
       "Bio": "❌",
@@ -19321,13 +19321,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "VeriMark",
       "Description": "VeriMark NFC+ USB-C Security Key",
       "AAGUID": "ee7fa1e0-9539-432f-bd43-9c2fc6d4f311",
       "Bio": "❌",
@@ -19335,13 +19335,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "VeriMark",
       "Description": "VeriMark NFC+ USB-A Security Key",
       "AAGUID": "76692dc1-c56a-48d9-8e7d-31b5ced430ac",
       "Bio": "❌",
@@ -19349,13 +19349,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Mettlesemi",
       "Description": "Mettlesemi Vishwaas Eagle Authenticator using FIDO2",
       "AAGUID": "489ff376-b48d-6640-bb69-782a860ca795",
       "Bio": "❌",
@@ -19363,13 +19363,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Securitag",
       "Description": "Securitag Assembly Group FIDO Authenticator NFC",
       "AAGUID": "5df66f62-5b47-43d3-aa1d-a6e31c8dbeb5",
       "Bio": "❌",
@@ -19377,7 +19377,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
@@ -19397,7 +19397,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "ESS",
       "Description": "ESS Smart Card Inc. Authenticator",
       "AAGUID": "5343502d-5343-5343-6172-644649444f32",
       "Bio": "❌",
@@ -19405,13 +19405,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "SECORA",
       "Description": "SECORA ID V2 FIDO2.1 L1",
       "AAGUID": "4e2ddbc2-2687-4709-8551-cb66c9776bfe",
       "Bio": "❌",
@@ -19419,13 +19419,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Ideem",
       "Description": "Ideem ZSM FIDO2 Authenticator",
       "AAGUID": "5e264d9d-28ef-4d34-95b4-5941e7a4faa8",
       "Bio": "✅",
@@ -19433,13 +19433,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "eToken",
       "Description": "eToken Fusion NFC PIV Enterprise",
       "AAGUID": "c3f47802-de73-4dfc-ba22-671fe3304f90",
       "Bio": "❌",
@@ -19447,13 +19447,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "IDEX",
       "Description": "IDEX CTAP2.1 Biometric, No pin",
       "AAGUID": "49a15c1c-3f63-3f51-23a7-b9e00096edd1",
       "Bio": "✅",
@@ -19461,7 +19461,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
