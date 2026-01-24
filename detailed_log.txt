@@ -1,3 +1,195 @@
+DETAILED LOG - 2026-01-24 09:14:21
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2026-01-24 00:26:27
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2026-01-23 10:35:16
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2026-01-23 10:33:13
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2026-01-23 10:28:46
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2026-01-23 10:22:40
+
+Updated 'Version' for AAGUID '3124e301-f14e-4e38-876d-fbeeb090e7bf' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '5753362b-4e6b-6345-7b2f-255438404c75' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'f573f209-b7fb-b261-671a-d7cf624cc812' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '3fd410dc-8ab7-4b86-a1cb-c7174620b2dc' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '13ac47cf-1d78-4fd5-9060-aedaabacf826' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '30b5035e-d297-4ff2-010b-addc96ba6a98' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '99bf4610-ec26-4252-b31f-7380ccd59db5' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '1d8cac46-47a1-3386-af50-e88ae46fe802' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '6e8d1eae-8d40-4c25-bcf8-4633959afc71' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '5343502d-5343-5343-6172-644649444f32' from '' to 'U2F V2'.
+
+Updated 'Version' for AAGUID '5df66f62-5b47-43d3-aa1d-a6e31c8dbeb5' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'd716019a-9f4e-4041-9750-17c78f8ae81a' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '76692dc1-c56a-48d9-8e7d-31b5ced430ac' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '8eec9bf9-486c-46da-9a67-1fbb4f66b9ed' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'ca87cb70-4c1b-4579-a8e8-4efdd7c007e0' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'bb66c294-de08-47e4-b7aa-d12c2cd3fb20' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '9e66c661-e428-452a-a8fb-51f7ed088acf' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '341e4da9-3c2e-8103-5a9f-aad887135200' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'a7fc3f84-86a3-4da4-a3d7-eb6485a066d8' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '30b5035e-d297-4ff1-020b-addc96ba6a98' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '3aa78eb1-ddd8-46a8-a821-8f8ec57a7bd5' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '4fc84f16-2545-4e53-b8fc-7bf4d7282a10' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '5b0e46ba-db02-44ac-b979-ca9b84f5e335' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '58b44d0b-0a7c-f33a-fd48-f7153c871352' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '6dae43be-af9c-417b-8b9f-1b611168ec60' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '30b5035e-d297-4ff7-020b-addc96ba6a98' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '09591fc6-9811-48f7-8f57-b9f23df6413f' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'cfcb13a2-244f-4b36-9077-82b79d6a7de7' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '62e54e98-c209-4df3-b692-de71bb6a8528' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'd61d3b87-3e7c-4aea-9c50-441c371903ad' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'd2fbd093-ee62-488d-9dad-1e36389f8826' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '5e264d9d-28ef-4d34-95b4-5941e7a4faa8' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '30b5035e-d297-4ff7-030b-addc96ba6a98' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '019614a3-2703-7e35-a453-285fd06c5d24' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'ee7fa1e0-9539-432f-bd43-9c2fc6d4f311' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '6e24d385-004a-16a0-7bfe-efd963845b34' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '49a15c1c-3f63-3f51-23a7-b9e00096edd1' from '' to 'U2F V2'.
+
+Updated 'Version' for AAGUID 'fcb1bcb4-f370-078c-6993-bc24d0ae3fbe' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '95e4d58c-056e-4a65-866d-f5a69659e880' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '970c8d9c-19d2-46af-aa32-3f448db49e35' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'cc45f64e-52a2-451b-831a-4edd8022a202' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'ba86dc56-635f-4141-aef6-00227b1b9af6' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '53414d53-554e-4700-0000-000000000000' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'eb3b131e-59dc-536a-d176-cb7306da10f5' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '5ea308b2-7ac7-48b9-ac09-7e2da9015f8c' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'b93fd961-f2e6-462f-b122-82002247de78' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '9eb85bb6-9625-4a72-815d-0487830ccab2' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'ab32f0c6-2239-afbb-c470-d2ef4e254db6' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '489ff376-b48d-6640-bb69-782a860ca795' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '30b5035e-d297-4ff7-010b-addc96ba6a98' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '260e3021-482d-442d-838c-7edfbe153b7e' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID 'bb878d7b-cf54-4784-b390-357030497043' from '' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '2c2aeed8-8174-4159-814b-486e92a261d0' from '' to 'FIDO 2.1'.
+
+
+
+DETAILED LOG - 2026-01-23 10:06:14
+
+No changes detected during this run.
+
+
+
+DETAILED LOG - 2026-01-23 09:39:22
+
+No changes detected during this run.
+
+
+
 DETAILED LOG - 2026-01-23 09:30:46
 
 Vendor 'Yubico' for description 'YubiKey 5 FIPS Series with Lightning Preview' has become valid.
@@ -7951,6 +8143,14 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
+
+
+
+
+
+
+
 
 
 
