@@ -38,6 +38,7 @@ jobs:
         . ./Scripts/Test-GHAAGUIDExists.ps1
         . ./Scripts/Export-GHEntraFido.ps1
         . ./Scripts/Merge-GHFidoData.ps1
+        Merge-GHFidoData
 
     - name: Read Environment Variables
       shell: bash

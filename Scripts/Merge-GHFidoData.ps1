@@ -492,4 +492,3 @@ Function Merge-GHFidoData {
         }
     }
 }
-Merge-GHFidoData
