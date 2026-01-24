@@ -199,18 +199,3 @@ jobs:
             });
             console.log(`Created new issue #${newIssue.number}`);
           }
-          
-          // Save suggestions as artifact for the approval workflow
-          const artifactData = {
-            suggestions: suggestions,
-            timestamp: new Date().toISOString()
-          };
-          fs.writeFileSync('vendor-suggestions.json', JSON.stringify(artifactData, null, 2));
-    
-    - name: Upload Suggestions Artifact
-      if: env.HAS_UNKNOWNS == 'true'
-      uses: actions/upload-artifact@v6
-      with:
-        name: vendor-suggestions
-        path: vendor-suggestions.json
-        retention-days: 90

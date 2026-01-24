@@ -17,13 +17,55 @@ jobs:
         ref: main
         token: ${{ secrets.GITHUB_TOKEN }}
     
-    - name: Download Latest Suggestions
-      uses: dawidd6/action-download-artifact@v6
+    - name: Parse Issue Body for Suggestions
+      uses: actions/github-script@v6
       with:
-        workflow: ReviewUnknownVendors.yml
-        name: vendor-suggestions
-        path: .
-        if_no_artifact_found: fail
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const fs = require('fs');
+          
+          // Get the issue body
+          const { data: issue } = await github.rest.issues.get({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            issue_number: context.issue.number,
+          });
+          
+          const body = issue.body;
+          const suggestions = [];
+          
+          // Parse the markdown tables to extract suggestions
+          const tableRegex = /\|\s*`([a-f0-9-]{36})`\s*\|\s*([^|]+)\|\s*\*\*([^*]+)\*\*\s*\|\s*(🆕 Yes|No)\s*\|\s*([^|]+)\|/g;
+          
+          let match;
+          while ((match = tableRegex.exec(body)) !== null) {
+            const aaguid = match[1].trim();
+            const description = match[2].trim();
+            const suggestedVendor = match[3].trim();
+            const isNewVendor = match[4].trim() === '🆕 Yes';
+            const reason = match[5].trim();
+            
+            // Determine confidence from which section it's in
+            const beforeMatch = body.substring(0, match.index);
+            let confidence = 'Low';
+            if (beforeMatch.lastIndexOf('### ✅ High Confidence') > beforeMatch.lastIndexOf('### ⚠️ Medium Confidence')) {
+              confidence = 'High';
+            } else if (beforeMatch.lastIndexOf('### ⚠️ Medium Confidence') > beforeMatch.lastIndexOf('### ⚡ Low Confidence')) {
+              confidence = 'Medium';
+            }
+            
+            suggestions.push({
+              AAGUID: aaguid,
+              Description: description,
+              SuggestedVendor: suggestedVendor,
+              Confidence: confidence,
+              Reason: reason,
+              IsNewVendor: isNewVendor
+            });
+          }
+          
+          console.log(`Parsed ${suggestions.length} suggestions from issue`);
+          fs.writeFileSync('suggestions.json', JSON.stringify(suggestions, null, 2));
     
     - name: Process Approvals
       shell: pwsh
@@ -31,9 +73,8 @@ jobs:
         COMMENT_BODY: ${{ github.event.comment.body }}
         COMMENT_USER: ${{ github.event.comment.user.login }}
       run: |
-        # Load suggestions
-        $suggestionsData = Get-Content -Path vendor-suggestions.json -Raw | ConvertFrom-Json
-        $suggestions = $suggestionsData.suggestions
+        # Load suggestions parsed from issue body
+        $suggestions = Get-Content -Path suggestions.json -Raw | ConvertFrom-Json
         
         Write-Host "Loaded $($suggestions.Count) suggestions"
         Write-Host "Comment: $env:COMMENT_BODY"
