@@ -18,7 +18,7 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: Download Latest Suggestions
-      uses: dawidd6/action-download-artifact@v3
+      uses: dawidd6/action-download-artifact@v6
       with:
         workflow: ReviewUnknownVendors.yml
         name: vendor-suggestions
