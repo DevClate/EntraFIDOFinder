@@ -113,6 +113,25 @@ PrivateData = @{
         # ReleaseNotes of this module
         # ReleaseNotes = ''
 
+        # Exclude non-module assets when publishing
+        Exclude = @(
+            '.github',
+            'Explorer',
+            'Scripts',
+            'DESIGN_OPTION_*',
+            'detailed_log.txt',
+            'merge_log.txt',
+            'merge_log.md',
+            'FAmerge_log.txt',
+            'FIDO_SYNC_*.md',
+            'FIDO_KEY_CHANGES_*.md',
+            'publish.ps1',
+            'start-server.sh',
+            '.fido_diff_state.json',
+            'fido_diff_state.json',
+            '*.psd1.bak'
+        )
+
         # Prerelease string of this module
         # Prerelease = ''
 
