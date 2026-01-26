@@ -663,6 +663,26 @@
             .then(data => {
                 allData = data.keys;
                 
+                // Update metadata dates if available
+                if (data.metadata) {
+                    if (data.metadata.databaseLastUpdated) {
+                        const updatedDate = new Date(data.metadata.databaseLastUpdated);
+                        document.getElementById('lastUpdated').textContent = updatedDate.toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                        });
+                    }
+                    if (data.metadata.databaseLastChecked) {
+                        const checkedDate = new Date(data.metadata.databaseLastChecked);
+                        document.getElementById('lastChecked').textContent = checkedDate.toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'long', 
+                            day: 'numeric' 
+                        });
+                    }
+                }
+                
                 // Extract unique values for filters
                 allData.forEach(item => {
                     uniqueVendors.add(item.Vendor);
