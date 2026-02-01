@@ -1,4 +1,8 @@
 
+===== Script Run on 2026-02-01 04:43:16 UTC =====
+2026-02-01 04:43:14 - Updating AAGUID c611b55c-77b2-4527-8082-590e931b2f08 : description : "Idem Key (Consumer profile)" -> "GoTrust Idem Key (Consumer profile)"
+2026-02-01 04:43:14 - Updating AAGUID c611b55c-77b2-4527-8082-590e931b2f08 : alternativeDescriptions.en-US : "Idem Key (Consumer profile)" -> "GoTrust Idem Key (Consumer profile)"
+
 ===== Script Run on 2026-01-24 12:46:04 UTC =====
 2026-01-24 12:45:58 - AAGUID: b93fd961-f2e6-462f-b122-82002247de78
 Updating timeOfLastStatusChange
@@ -4250,6 +4254,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 

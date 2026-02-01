@@ -13115,9 +13115,9 @@
         "friendlyNames": {
           "en-US": "Idem Key (Consumer profile)"
         },
-        "description": "Idem Key (Consumer profile)",
+        "description": "GoTrust Idem Key (Consumer profile)",
         "alternativeDescriptions": {
-          "en-US": "Idem Key (Consumer profile)"
+          "en-US": "GoTrust Idem Key (Consumer profile)"
         },
         "authenticatorVersion": 262145,
         "protocolFamily": "fido2",
