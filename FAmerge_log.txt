@@ -1,4 +1,20 @@
 
+===== Script Run on 2026-03-11 09:58:10 UTC =====
+2026-03-11 09:58:06 - AAGUID: 3b1adb99-0dfe-46fd-90b8-7f7614a4de2a
+Path: attachmentHint
+Old Value:
+"external"
+
+New Value:
+[
+  "external",
+  "wired",
+  "wireless",
+  "nfc"
+]
+
+2026-03-11 09:58:06 - Updating AAGUID 3b1adb99-0dfe-46fd-90b8-7f7614a4de2a : authenticatorGetInfo.options.clientPin : true -> false
+
 ===== Script Run on 2026-03-01 04:38:23 UTC =====
 2026-03-01 04:38:18 - AAGUID: 019614a3-2703-7e35-a453-285fd06c5d24
 Updating timeOfLastStatusChange
@@ -4398,6 +4414,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
