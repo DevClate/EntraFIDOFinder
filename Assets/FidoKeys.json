@@ -21204,7 +21204,7 @@
       "timeOfLastStatusChange": "2023-03-01"
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Chipwon",
       "Description": "Clife Key 2 NFC",
       "AAGUID": "23315ad0-6aca-4ba1-952e-f044f1e36976",
       "Bio": "❌",
@@ -21212,21 +21212,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": [
-        1,
-        2,
-        3,
-        0,
-        0,
-        0,
-        "No"
-      ],
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Chipwon",
       "Description": "Clife Key 2",
       "AAGUID": "fc5ca237-69a0-4f3c-afe4-1ebc66def6df",
       "Bio": "❌",
@@ -21234,15 +21226,7 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": [
-        7,
-        8,
-        9,
-        6,
-        1,
-        1,
-        "No"
-      ],
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
