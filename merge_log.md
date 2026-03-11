@@ -1,3 +1,12 @@
+# Merge Log - 2026-03-11 10:27:17
+
+Vendor 'Taglio' for description 'Taglio CTAP2.1 BIO' has become valid.
+
+Vendor 'Unknown' for description 'Clife Key 2' has become invalid.
+
+Vendor 'Unknown' for description 'Clife Key 2 NFC' has become invalid.
+
+
 # Merge Log - 2026-03-11 10:17:01
 
 Failed to derive valid vendor for AAGUID '23315ad0-6aca-4ba1-952e-f044f1e36976' with description 'Clife Key 2 NFC'. Vendor field was empty.
