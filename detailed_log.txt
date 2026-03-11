@@ -1,3 +1,13 @@
+DETAILED LOG - 2026-03-11 10:27:17
+
+Vendor 'Taglio' for description 'Taglio CTAP2.1 BIO' has become valid.
+
+Vendor 'Unknown' for description 'Clife Key 2' has become invalid.
+
+Vendor 'Unknown' for description 'Clife Key 2 NFC' has become invalid.
+
+
+
 DETAILED LOG - 2026-03-11 10:17:01
 
 Set vendor name for invalid AAGUID '23315ad0-6aca-4ba1-952e-f044f1e36976' to 'Unknown'.
@@ -8878,6 +8888,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
