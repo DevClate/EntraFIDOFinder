@@ -1,3 +1,13 @@
+DETAILED LOG - 2026-03-13 00:21:14
+
+Vendor '' for description 'Clife Key 2' has become invalid.
+
+Vendor 'Taglio' for description 'Taglio CTAP2.1 BIO' has become valid.
+
+Vendor '' for description 'Clife Key 2 NFC' has become invalid.
+
+
+
 DETAILED LOG - 2026-03-12 00:18:19
 
 Updated 'Description' for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08' from 'Idem Key (Consumer profile)' to 'GoTrust Idem Key (Consumer profile)'.
@@ -6230,6 +6240,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
