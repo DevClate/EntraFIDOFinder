@@ -1,3 +1,62 @@
+# Merge Log - 2026-03-28 00:23:13
+
+Added new entry for AAGUID '04a8fcf2-19c1-457b-911e-69219f17583f' with description 'Thales PAY GFCX13 authenticator' and vendor 'Thales'.
+
+Invalid vendor detected for AAGUID 'b113a455-cfb6-4c17-8cba-cd952feb7d48' with description 'eToken FIDO NFC'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '489ff376-b48d-6640-bb69-782a860ca795' with description 'Mettlesemi Vishwaas Eagle Authenticator using FIDO2'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Description' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from 'IDmelon iOS Authenticator' to 'IDmelon Authenticator'.
+
+Invalid vendor detected for AAGUID 'ee7fa1e0-9539-432f-bd43-9c2fc6d4f311' with description 'VeriMark NFC+ USB-C Security Key'. Vendor '' is not in the list of valid vendors.
+
+Updated 'USB' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from '❌' to '✅'.
+
+Invalid vendor detected for AAGUID 'd716019a-9f4e-4041-9750-17c78f8ae81a' with description 'eToken Fusion BIO'. Vendor '' is not in the list of valid vendors.
+
+Updated 'Description' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from 'IDmelon Android Authenticator' to 'IDmelon Key'.
+
+Added new entry for AAGUID '504d7149-4e4c-3841-4555-55445a677357' with description 'WiSECURE AuthTron USB FIDO2 Authenticator' and vendor 'WiSECURE'.
+
+Invalid vendor detected for AAGUID 'bb66c294-de08-47e4-b7aa-d12c2cd3fb20' with description 'Mettlesemi Vishwaas Hawk Authenticator using FIDO2'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '76692dc1-c56a-48d9-8e7d-31b5ced430ac' with description 'VeriMark NFC+ USB-A Security Key'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '49a15c1c-3f63-3f51-23a7-b9e00096edd1' with description 'IDEX CTAP2.1 Biometrics'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '87c13177-85d6-40ac-8c61-fe7ab3de9dfb' with description 'HID Crescendo Key V3'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '019614a3-2703-7e35-a453-285fd06c5d24' with description 'ATLKey Authenticator'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '0b8b05a4-ebd4-4b0b-8f5f-33d7b6e606ab' with description 'HID Crescendo 4000'. Vendor '' is not in the list of valid vendors.
+
+Entry removed for description 'VivoKey Apex FIDO2' with AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136'.
+
+Entry removed for description 'OneKey FIDO2 Authenticator' with AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b'.
+
+Entry removed for description 'Security Key NFC by Yubico Preview' with AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb'.
+
+Entry removed for description 'Feitian ePass FIDO2-NFC Plus Authenticator' with AAGUID '260e3021-482d-442d-838c-7edfbe153b7e'.
+
+Entry removed for description 'WinMagic FIDO Eazy - Software' with AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34'.
+
+Entry removed for description 'WinMagic FIDO Eazy - Phone' with AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19'.
+
+Entry removed for description 'OneKey FIDO2 Bluetooth Authenticator' with AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b'.
+
+Entry removed for description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' with AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c'.
+
+Entry removed for description 'YubiKey 5 Series with NFC Preview' with AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0'.
+
+Entry removed for description 'Hideez Key 3 FIDO2' with AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5'.
+
+Entry removed for description 'Security Key NFC by Yubico - Enterprise Edition Preview' with AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73'.
+
+Entry removed for description 'Excelsecu eSecu FIDO2 PRO+ Security Key' with AAGUID 'f573f209-b7fb-b261-671a-d7cf624cc812'.
+
+
 # Merge Log - 2026-03-14 00:20:15
 
 

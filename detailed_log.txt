@@ -1,3 +1,43 @@
+DETAILED LOG - 2026-03-28 00:23:13
+
+Added new entry for AAGUID '04a8fcf2-19c1-457b-911e-69219f17583f' with description 'Thales PAY GFCX13 authenticator' and vendor 'Thales'.
+
+Updated 'Description' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from 'IDmelon iOS Authenticator' to 'IDmelon Authenticator'.
+
+Updated 'USB' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from '❌' to '✅'.
+
+Updated 'Description' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from 'IDmelon Android Authenticator' to 'IDmelon Key'.
+
+Added new entry for AAGUID '504d7149-4e4c-3841-4555-55445a677357' with description 'WiSECURE AuthTron USB FIDO2 Authenticator' and vendor 'WiSECURE'.
+
+Entry removed for description 'VivoKey Apex FIDO2' with AAGUID 'd7a423ad-3e19-4492-9200-78137dccc136'.
+
+Entry removed for description 'OneKey FIDO2 Authenticator' with AAGUID '69e7c36f-f2f6-9e0d-07a6-bcc243262e6b'.
+
+Entry removed for description 'Security Key NFC by Yubico Preview' with AAGUID '760eda36-00aa-4d29-855b-4012a182cdeb'.
+
+Entry removed for description 'Feitian ePass FIDO2-NFC Plus Authenticator' with AAGUID '260e3021-482d-442d-838c-7edfbe153b7e'.
+
+Entry removed for description 'WinMagic FIDO Eazy - Software' with AAGUID '31c3f7ff-bf15-4327-83ec-9336abcbcd34'.
+
+Entry removed for description 'WinMagic FIDO Eazy - Phone' with AAGUID 'f56f58b3-d711-4afc-ba7d-6ac05f88cb19'.
+
+Entry removed for description 'OneKey FIDO2 Bluetooth Authenticator' with AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b'.
+
+Entry removed for description 'OCTATCO EzQuant FIDO2 AUTHENTICATOR' with AAGUID 'bc2fe499-0d8e-4ffe-96f3-94a82840cf8c'.
+
+Entry removed for description 'YubiKey 5 Series with NFC Preview' with AAGUID '34f5766d-1536-4a24-9033-0e294e510fb0'.
+
+Entry removed for description 'Hideez Key 3 FIDO2' with AAGUID '3e078ffd-4c54-4586-8baa-a77da113aec5'.
+
+Entry removed for description 'Security Key NFC by Yubico - Enterprise Edition Preview' with AAGUID '2772ce93-eb4b-4090-8b73-330f48477d73'.
+
+Entry removed for description 'Excelsecu eSecu FIDO2 PRO+ Security Key' with AAGUID 'f573f209-b7fb-b261-671a-d7cf624cc812'.
+
+
+
 DETAILED LOG - 2026-03-27 00:24:42
 
 No changes have been detected since last run.
@@ -6323,6 +6363,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
