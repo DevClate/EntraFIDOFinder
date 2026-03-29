@@ -1,3 +1,30 @@
+# Merge Log - 2026-03-29 00:38:48
+
+Vendor 'HID' for description 'HID Crescendo Key V3' has become valid.
+
+Vendor 'ATLKey' for description 'ATLKey Authenticator' has become valid.
+
+Vendor 'eToken' for description 'eToken Fusion BIO' has become valid.
+
+Vendor 'eToken' for description 'eToken FIDO NFC' has become valid.
+
+Vendor 'VeriMark' for description 'VeriMark NFC+ USB-C Security Key' has become valid.
+
+Vendor 'VeriMark' for description 'VeriMark NFC+ USB-A Security Key' has become valid.
+
+Vendor 'Mettlesemi' for description 'Mettlesemi Vishwaas Hawk Authenticator using FIDO2' has become valid.
+
+Vendor 'Thales' for description 'Thales PAY GFCX13 authenticator' has become valid.
+
+Vendor 'IDEX' for description 'IDEX CTAP2.1 Biometrics' has become valid.
+
+Vendor 'Mettlesemi' for description 'Mettlesemi Vishwaas Eagle Authenticator using FIDO2' has become valid.
+
+Vendor 'WiSECURE' for description 'WiSECURE AuthTron USB FIDO2 Authenticator' has become valid.
+
+Vendor 'HID' for description 'HID Crescendo 4000' has become valid.
+
+
 # Merge Log - 2026-03-28 00:34:03
 
 Vendor set for AAGUID '019614a3-2703-7e35-a453-285fd06c5d24': '' to 'ATLKey' (derived from description).
