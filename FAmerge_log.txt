@@ -1,4 +1,233 @@
 
+===== Script Run on 2026-04-01 04:56:32 UTC =====
+2026-04-01 04:56:28 - AAGUID: 019614a3-2703-7e35-a453-285fd06c5d24
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-11
+
+2026-04-01 04:56:28 - AAGUID: 019614a3-2703-7e35-a453-285fd06c5d24
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ATLKey
+Description: ATLKey Authenticator
+
+2026-04-01 04:56:28 - AAGUID: fc5ca237-69a0-4f3c-afe4-1ebc66def6df
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-12-19
+
+2026-04-01 04:56:28 - AAGUID: fc5ca237-69a0-4f3c-afe4-1ebc66def6df
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Chipwon
+Description: Clife Key 2
+
+2026-04-01 04:56:28 - AAGUID: 23315ad0-6aca-4ba1-952e-f044f1e36976
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2025-12-19
+
+2026-04-01 04:56:28 - AAGUID: 23315ad0-6aca-4ba1-952e-f044f1e36976
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Chipwon
+Description: Clife Key 2 NFC
+
+2026-04-01 04:56:29 - AAGUID: d716019a-9f4e-4041-9750-17c78f8ae81a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-01 04:56:29 - AAGUID: d716019a-9f4e-4041-9750-17c78f8ae81a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: eToken
+Description: eToken Fusion BIO
+
+2026-04-01 04:56:29 - AAGUID: b113a455-cfb6-4c17-8cba-cd952feb7d48
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-01 04:56:29 - AAGUID: b113a455-cfb6-4c17-8cba-cd952feb7d48
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: eToken
+Description: eToken FIDO NFC
+
+2026-04-01 04:56:30 - AAGUID: 87c13177-85d6-40ac-8c61-fe7ab3de9dfb
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-13
+
+2026-04-01 04:56:30 - AAGUID: 87c13177-85d6-40ac-8c61-fe7ab3de9dfb
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo Key V3
+
+2026-04-01 04:56:30 - AAGUID: 0b8b05a4-ebd4-4b0b-8f5f-33d7b6e606ab
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-13
+
+2026-04-01 04:56:30 - AAGUID: 0b8b05a4-ebd4-4b0b-8f5f-33d7b6e606ab
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: HID
+Description: HID Crescendo 4000
+
+2026-04-01 04:56:30 - AAGUID: 49a15c1c-3f63-3f51-23a7-b9e00096edd1
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-02
+
+2026-04-01 04:56:30 - AAGUID: 49a15c1c-3f63-3f51-23a7-b9e00096edd1
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: IDEX
+Description: IDEX CTAP2.1 Biometrics
+
+2026-04-01 04:56:31 - AAGUID: bb66c294-de08-47e4-b7aa-d12c2cd3fb20
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-11
+
+2026-04-01 04:56:31 - AAGUID: bb66c294-de08-47e4-b7aa-d12c2cd3fb20
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Mettlesemi
+Description: Mettlesemi Vishwaas Hawk Authenticator using FIDO2
+
+2026-04-01 04:56:31 - AAGUID: 489ff376-b48d-6640-bb69-782a860ca795
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-11
+
+2026-04-01 04:56:31 - AAGUID: 489ff376-b48d-6640-bb69-782a860ca795
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Mettlesemi
+Description: Mettlesemi Vishwaas Eagle Authenticator using FIDO2
+
+2026-04-01 04:56:31 - AAGUID: 5eaff75a-dd43-451f-af9f-87c9eeae293e
+Updating timeOfLastStatusChange
+Old Value:
+2025-03-25
+
+New Value:
+2026-03-20
+
+2026-04-01 04:56:31 - AAGUID: e400ef8c-711d-4692-af46-7f2cf7da23ad
+Updating timeOfLastStatusChange
+Old Value:
+2025-03-25
+
+New Value:
+2026-03-20
+
+2026-04-01 04:56:31 - AAGUID: 7787a482-13e8-4784-8a06-c7ed49a7aaf4
+Updating timeOfLastStatusChange
+Old Value:
+2025-03-25
+
+New Value:
+2026-03-20
+
+2026-04-01 04:56:31 - AAGUID: 817cdab8-0d51-4de1-a821-e25b88519cf3
+Updating timeOfLastStatusChange
+Old Value:
+2025-03-25
+
+New Value:
+2026-03-20
+
+2026-04-01 04:56:31 - AAGUID: 0f00cc22-4640-41e7-9585-384ec73ffe9b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-01-26
+
+2026-04-01 04:56:31 - AAGUID: 0f00cc22-4640-41e7-9585-384ec73ffe9b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Taglio
+Description: Taglio CTAP2.1 BIO
+
+2026-04-01 04:56:31 - AAGUID: 04a8fcf2-19c1-457b-911e-69219f17583f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-20
+
+2026-04-01 04:56:31 - AAGUID: 04a8fcf2-19c1-457b-911e-69219f17583f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thales
+Description: Thales PAY GFCX13 authenticator
+
+2026-04-01 04:56:32 - AAGUID: ee7fa1e0-9539-432f-bd43-9c2fc6d4f311
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-11
+
+2026-04-01 04:56:32 - AAGUID: ee7fa1e0-9539-432f-bd43-9c2fc6d4f311
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeriMark
+Description: VeriMark NFC+ USB-C Security Key
+
+2026-04-01 04:56:32 - AAGUID: 76692dc1-c56a-48d9-8e7d-31b5ced430ac
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-02-11
+
+2026-04-01 04:56:32 - AAGUID: 76692dc1-c56a-48d9-8e7d-31b5ced430ac
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeriMark
+Description: VeriMark NFC+ USB-A Security Key
+
+2026-04-01 04:56:32 - AAGUID: 504d7149-4e4c-3841-4555-55445a677357
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2021-11-11
+
+2026-04-01 04:56:32 - AAGUID: 504d7149-4e4c-3841-4555-55445a677357
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: WiSECURE
+Description: WiSECURE AuthTron USB FIDO2 Authenticator
+
+
 ===== Script Run on 2026-03-11 09:58:10 UTC =====
 2026-03-11 09:58:06 - AAGUID: 3b1adb99-0dfe-46fd-90b8-7f7614a4de2a
 Path: attachmentHint
@@ -4414,6 +4643,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
