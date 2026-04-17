@@ -1,3 +1,26 @@
+# Merge Log - 2026-04-17 00:42:07
+
+Vendor set for AAGUID '3e9db280-256a-4e17-b08e-19d79e9be166': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '3e9db280-256a-4e17-b08e-19d79e9be166' with description 'SECORA ID V2 by Infineon Pay Edition' and vendor 'SECORA'.
+
+Failed to derive valid vendor for AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12' with description 'G+D StarKey FIDO2-NFC'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12' to 'Unknown'.
+
+Vendor set for AAGUID '9a272558-5cfa-4424-be37-65509677b77d': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '9a272558-5cfa-4424-be37-65509677b77d' with description 'SECORA ID Key S USB by Infineon Consumer Edition' and vendor 'SECORA'.
+
+Vendor set for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe' with description 'SECORA ID V2 FIDO2.1 L1' and vendor 'SECORA'.
+
+Vendor set for AAGUID '005b20e1-f146-4b87-8f3a-36848ff60ea6': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '005b20e1-f146-4b87-8f3a-36848ff60ea6' with description 'SECORA ID V2 by Infineon Pay Edition M' and vendor 'SECORA'.
+
+
 # Merge Log - 2026-04-02 00:34:58
 
 Updated 'Version' for AAGUID '0b8b05a4-ebd4-4b0b-8f5f-33d7b6e606ab' from '' to 'FIDO 2.1'.

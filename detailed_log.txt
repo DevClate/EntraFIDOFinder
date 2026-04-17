@@ -1,3 +1,17 @@
+DETAILED LOG - 2026-04-17 00:42:07
+
+Added new entry for AAGUID '3e9db280-256a-4e17-b08e-19d79e9be166' with description 'SECORA ID V2 by Infineon Pay Edition' and vendor 'SECORA'.
+
+Set vendor name for invalid AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12' to 'Unknown'.
+
+Added new entry for AAGUID '9a272558-5cfa-4424-be37-65509677b77d' with description 'SECORA ID Key S USB by Infineon Consumer Edition' and vendor 'SECORA'.
+
+Added new entry for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe' with description 'SECORA ID V2 FIDO2.1 L1' and vendor 'SECORA'.
+
+Added new entry for AAGUID '005b20e1-f146-4b87-8f3a-36848ff60ea6' with description 'SECORA ID V2 by Infineon Pay Edition M' and vendor 'SECORA'.
+
+
+
 DETAILED LOG - 2026-04-16 00:43:55
 
 No changes detected during this run.
@@ -9228,6 +9242,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
