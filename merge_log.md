@@ -1,3 +1,16 @@
+# Merge Log - 2026-04-17 00:29:42
+
+Invalid vendor detected for AAGUID '9a272558-5cfa-4424-be37-65509677b77d' with description 'SECORA ID Key S USB by Infineon Consumer Edition'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '005b20e1-f146-4b87-8f3a-36848ff60ea6' with description 'SECORA ID V2 by Infineon Pay Edition M'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '3e9db280-256a-4e17-b08e-19d79e9be166' with description 'SECORA ID V2 by Infineon Pay Edition'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe' with description 'SECORA ID V2 FIDO2.1 L1'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12' with description 'G+D StarKey FIDO2-NFC'. Vendor '' is not in the list of valid vendors.
+
+
 # Merge Log - 2026-03-30 00:26:06
 
 
