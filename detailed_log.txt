@@ -1,3 +1,17 @@
+DETAILED LOG - 2026-04-18 00:26:52
+
+Vendor '' for description 'SECORA ID V2 by Infineon Pay Edition M' has become invalid.
+
+Vendor '' for description 'SECORA ID V2 by Infineon Pay Edition' has become invalid.
+
+Vendor '' for description 'SECORA ID V2 FIDO2.1 L1' has become invalid.
+
+Vendor '' for description 'G+D StarKey FIDO2-NFC' has become invalid.
+
+Vendor '' for description 'SECORA ID Key S USB by Infineon Consumer Edition' has become invalid.
+
+
+
 DETAILED LOG - 2026-04-17 00:29:42
 
 
@@ -6503,6 +6517,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
