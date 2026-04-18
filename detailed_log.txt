@@ -1,3 +1,17 @@
+DETAILED LOG - 2026-04-18 00:38:18
+
+Vendor 'SECORA' for description 'SECORA ID V2 by Infineon Pay Edition M' has become valid.
+
+Vendor 'SECORA' for description 'SECORA ID V2 FIDO2.1 L1' has become valid.
+
+Vendor 'SECORA' for description 'SECORA ID V2 by Infineon Pay Edition' has become valid.
+
+Vendor 'Unknown' for description 'G+D StarKey FIDO2-NFC' has become invalid.
+
+Vendor 'SECORA' for description 'SECORA ID Key S USB by Infineon Consumer Edition' has become valid.
+
+
+
 DETAILED LOG - 2026-04-17 00:42:07
 
 Added new entry for AAGUID '3e9db280-256a-4e17-b08e-19d79e9be166' with description 'SECORA ID V2 by Infineon Pay Edition' and vendor 'SECORA'.
@@ -9242,6 +9256,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
