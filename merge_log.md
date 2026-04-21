@@ -1,3 +1,8 @@
+# Merge Log - 2026-04-21 09:05:29
+
+Vendor corrected for AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12': 'Unknown' to 'G+D'.
+
+
 # Merge Log - 2026-04-21 00:42:32
 
 Updated 'USB' for AAGUID '833b721a-ff5f-4d00-bb2e-bdda3ec01e29' from '❌' to '✅'.
