@@ -98,7 +98,7 @@ jobs:
         Write-Host "Generated $($suggestions.Count) suggestions"
         
         # Save suggestions to JSON file
-        $suggestions | ConvertTo-Json -Depth 10 | Set-Content -Path suggestions.json
+        @($suggestions) | ConvertTo-Json -Depth 10 | Set-Content -Path suggestions.json
         
         echo "HAS_UNKNOWNS=true" >> $env:GITHUB_ENV
         echo "SUGGESTION_COUNT=$($suggestions.Count)" >> $env:GITHUB_ENV
@@ -110,7 +110,8 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
           const fs = require('fs');
-          const suggestions = JSON.parse(fs.readFileSync('suggestions.json', 'utf8'));
+          const parsed = JSON.parse(fs.readFileSync('suggestions.json', 'utf8'));
+          const suggestions = Array.isArray(parsed) ? parsed : [parsed];
           
           if (suggestions.length === 0) {
             console.log('No suggestions to create issue for');
