@@ -1,3 +1,9 @@
+DETAILED LOG - 2026-04-21 10:34:56
+
+Vendor 'G+D' for description 'G+D StarKey FIDO2-NFC' has become valid.
+
+
+
 DETAILED LOG - 2026-04-21 10:31:11
 
 No changes detected during this run.
@@ -9303,6 +9309,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 

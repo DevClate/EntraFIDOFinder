@@ -1,3 +1,8 @@
+# Merge Log - 2026-04-21 10:34:56
+
+Vendor 'G+D' for description 'G+D StarKey FIDO2-NFC' has become valid.
+
+
 # Merge Log - 2026-04-21 09:05:29
 
 Vendor corrected for AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12': 'Unknown' to 'G+D'.
