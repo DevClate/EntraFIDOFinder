@@ -1,4 +1,71 @@
 
+===== Script Run on 2026-04-21 10:37:32 UTC =====
+2026-04-21 10:37:29 - AAGUID: 7a53c643-9dec-4219-b3a4-f9d24aca4e12
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-21 10:37:29 - AAGUID: 7a53c643-9dec-4219-b3a4-f9d24aca4e12
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: G+D
+Description: G+D StarKey FIDO2-NFC
+
+2026-04-21 10:37:31 - AAGUID: 3e9db280-256a-4e17-b08e-19d79e9be166
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-21 10:37:31 - AAGUID: 3e9db280-256a-4e17-b08e-19d79e9be166
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SECORA
+Description: SECORA ID V2 by Infineon Pay Edition
+
+2026-04-21 10:37:31 - AAGUID: 4e2ddbc2-2687-4709-8551-cb66c9776bfe
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-21 10:37:31 - AAGUID: 4e2ddbc2-2687-4709-8551-cb66c9776bfe
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SECORA
+Description: SECORA ID V2 FIDO2.1 L1
+
+2026-04-21 10:37:31 - AAGUID: 005b20e1-f146-4b87-8f3a-36848ff60ea6
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-21 10:37:31 - AAGUID: 005b20e1-f146-4b87-8f3a-36848ff60ea6
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SECORA
+Description: SECORA ID V2 by Infineon Pay Edition M
+
+2026-04-21 10:37:31 - AAGUID: 9a272558-5cfa-4424-be37-65509677b77d
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-03-20
+
+2026-04-21 10:37:31 - AAGUID: 9a272558-5cfa-4424-be37-65509677b77d
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: SECORA
+Description: SECORA ID Key S USB by Infineon Consumer Edition
+
+
 ===== Script Run on 2026-04-01 04:56:32 UTC =====
 2026-04-01 04:56:28 - AAGUID: 019614a3-2703-7e35-a453-285fd06c5d24
 Updating timeOfLastStatusChange
@@ -4643,6 +4710,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
