@@ -1,3 +1,16 @@
+# Merge Log - 2026-04-22 00:40:02
+
+Updated 'Version' for AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '4e2ddbc2-2687-4709-8551-cb66c9776bfe' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '005b20e1-f146-4b87-8f3a-36848ff60ea6' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '9a272558-5cfa-4424-be37-65509677b77d' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '3e9db280-256a-4e17-b08e-19d79e9be166' from '' to 'FIDO 2.1'.
+
+
 # Merge Log - 2026-04-21 10:34:56
 
 Vendor 'G+D' for description 'G+D StarKey FIDO2-NFC' has become valid.
