@@ -1,3 +1,14 @@
+# Merge Log - 2026-05-06 00:44:17
+
+Updated 'USB' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '❌' to '✅'.
+
+Updated 'USB' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '✅' to '❌'.
+
+Updated 'NFC' for AAGUID '9d3df6ba-282f-11ed-a261-0242ac120002' from '❌' to '✅'.
+
+
 # Merge Log - 2026-04-22 00:40:02
 
 Updated 'Version' for AAGUID '7a53c643-9dec-4219-b3a4-f9d24aca4e12' from '' to 'FIDO 2.1 PRE'.
