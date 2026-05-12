@@ -22,9 +22,11 @@ jobs:
         fetch-depth: 0
         ref: development
 
-    - name: Install PSParseHTML Module
+    - name: Install HtmlAgilityPack
       shell: pwsh
-      run: Install-Module -Name PSParseHTML -Force -Scope CurrentUser
+      run: |
+        Install-Package HtmlAgilityPack -ProviderName NuGet -Scope CurrentUser -Force -SkipDependencies
+        Write-Host "HtmlAgilityPack installed successfully"
 
     - name: Run Merge-GHFidoData Script
       id: merge_script
@@ -33,7 +35,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ github.repository }}
       run: |
-        Import-Module PSParseHTML
         . ./Scripts/Test-GHValidVendor.ps1
         . ./Scripts/Test-GHAAGUIDExists.ps1
         . ./Scripts/Export-GHEntraFido.ps1
