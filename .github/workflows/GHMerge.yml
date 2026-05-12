@@ -24,7 +24,10 @@ jobs:
 
     - name: Install PSParseHTML Module
       shell: pwsh
-      run: Install-Module -Name PSParseHTML -Force -Scope CurrentUser
+      run: |
+        Set-PSRepository PSGallery -InstallationPolicy Trusted
+        Install-Module -Name PSParseHTML -Force -Scope CurrentUser
+        Import-Module PSParseHTML -Force
 
     - name: Run Merge-GHFidoData Script
       id: merge_script
