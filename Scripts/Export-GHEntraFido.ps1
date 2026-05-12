@@ -23,6 +23,23 @@ Function Export-GHEntraFido {
         [string]$Url
     )
 
+    if (-not ('HtmlAgilityPack.HtmlDocument' -as [type])) {
+    $dll = Get-ChildItem -Path $HOME -Recurse -Filter HtmlAgilityPack.dll -ErrorAction SilentlyContinue |
+        Select-Object -First 1
+
+    if (-not $dll) {
+        throw "HtmlAgilityPack.dll not found. Ensure the dependency is installed before running Export-GHEntraFido."
+    }
+
+    Add-Type -Path $dll.FullName
+}
+
+    $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
+    $htmlContent = $response.Content
+
+    $htmlDocument = New-Object HtmlAgilityPack.HtmlDocument
+    $htmlDocument.LoadHtml($htmlContent)
+
     # Fetch the webpage content
     $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
     $htmlContent = $response.Content
