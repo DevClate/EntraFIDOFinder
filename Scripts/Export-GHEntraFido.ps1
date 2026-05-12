@@ -23,22 +23,30 @@ Function Export-GHEntraFido {
         [string]$Url
     )
 
-    if (-not ('HtmlAgilityPack.HtmlDocument' -as [type])) {
-    $dll = Get-ChildItem -Path $HOME -Recurse -Filter HtmlAgilityPack.dll -ErrorAction SilentlyContinue |
-        Select-Object -First 1
-
-    if (-not $dll) {
-        throw "HtmlAgilityPack.dll not found. Ensure the dependency is installed before running Export-GHEntraFido."
+    if (-not (Get-Module -Name PSParseHTML)) {
+        Import-Module PSParseHTML -ErrorAction Stop
     }
 
-    Add-Type -Path $dll.FullName
-}
+    if (-not ('HtmlAgilityPack.HtmlDocument' -as [type])) {
+        $module = Get-Module PSParseHTML
+        $dll = $null
 
-    $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
-    $htmlContent = $response.Content
+        if ($module -and $module.ModuleBase) {
+            $dll = Get-ChildItem -Path $module.ModuleBase -Recurse -Filter HtmlAgilityPack.dll -ErrorAction SilentlyContinue |
+                Select-Object -First 1
+        }
 
-    $htmlDocument = New-Object HtmlAgilityPack.HtmlDocument
-    $htmlDocument.LoadHtml($htmlContent)
+        if (-not $dll) {
+            $dll = Get-ChildItem -Path $HOME -Recurse -Filter HtmlAgilityPack.dll -ErrorAction SilentlyContinue |
+                Select-Object -First 1
+        }
+
+        if (-not $dll) {
+            throw "HtmlAgilityPack.dll not found. Ensure the dependency is installed before running Export-GHEntraFido."
+        }
+
+        Add-Type -Path $dll.FullName
+    }
 
     # Fetch the webpage content
     $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
