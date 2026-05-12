@@ -22,11 +22,33 @@ jobs:
         fetch-depth: 0
         ref: development
 
-    - name: Install HtmlAgilityPack
+    - name: Install and Load HtmlAgilityPack
       shell: pwsh
       run: |
-        Install-Package HtmlAgilityPack -ProviderName NuGet -Scope CurrentUser -Force -SkipDependencies
-        Write-Host "HtmlAgilityPack installed successfully"
+        # Download HtmlAgilityPack NuGet package directly
+        $nugetUrl = "https://www.nuget.org/api/v2/package/HtmlAgilityPack"
+        $packagePath = "./HtmlAgilityPack.nupkg"
+        $extractPath = "./HtmlAgilityPack"
+        
+        Write-Host "Downloading HtmlAgilityPack..."
+        Invoke-WebRequest -Uri $nugetUrl -OutFile $packagePath
+        
+        Write-Host "Extracting package..."
+        Expand-Archive -Path $packagePath -DestinationPath $extractPath -Force
+        
+        # Find the appropriate DLL (prefer netstandard2.0 or net45)
+        $dllPath = Get-ChildItem -Path $extractPath -Recurse -Filter "HtmlAgilityPack.dll" | 
+          Where-Object { $_.DirectoryName -match '(netstandard2\.0|netstandard1\.6|net45|net40)' } | 
+          Sort-Object { if ($_.DirectoryName -match 'netstandard2.0') { 0 } elseif ($_.DirectoryName -match 'netstandard') { 1 } else { 2 } } |
+          Select-Object -First 1
+        
+        if ($dllPath) {
+          Write-Host "Found DLL at: $($dllPath.FullName)"
+          Add-Type -Path $dllPath.FullName
+          Write-Host "HtmlAgilityPack loaded successfully"
+        } else {
+          throw "Could not find HtmlAgilityPack.dll in extracted package"
+        }
 
     - name: Run Merge-GHFidoData Script
       id: merge_script
