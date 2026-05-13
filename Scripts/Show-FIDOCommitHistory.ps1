@@ -134,7 +134,7 @@ Function Show-FIDOCommitHistory {
             $sha = $commit.sha
             $date = [DateTime]::Parse($commit.commit.author.date)
             $message = $commit.commit.message
-            $author = $commit.commit.author.name
+            # $author = $commit.commit.author.name
             
             Write-Host "  📥 Fetching commit $($sha.Substring(0,7)) - $($date.ToString('yyyy-MM-dd HH:mm'))..." -ForegroundColor Gray
             
@@ -156,7 +156,7 @@ Function Show-FIDOCommitHistory {
                 ShortSHA = $sha.Substring(0, 7)
                 Date = $date
                 Message = $message
-                Author = $author
+                # Author = $author
                 Entries = $entries
                 AAGUIDs = $entries.AAGUID
             }
@@ -195,7 +195,7 @@ Function Show-FIDOCommitHistory {
             if ($AsChangeLog) {
                 $outputLines.Add("## $($current.Date.ToString('yyyy-MM-dd')) - Commit $($current.ShortSHA)") | Out-Null
                 $outputLines.Add("") | Out-Null
-                $outputLines.Add("**Author:** $($current.Author)") | Out-Null
+                # $outputLines.Add("**Author:** $($current.Author)") | Out-Null
                 $outputLines.Add("**Total AAGUIDs:** $($current.Entries.Count)") | Out-Null
                 if ($current.Message -notmatch '^(Update|Fix|Add|Remove)') {
                     $outputLines.Add("**Note:** $($current.Message)") | Out-Null
@@ -204,7 +204,7 @@ Function Show-FIDOCommitHistory {
             } else {
                 Write-Host "`n[$($i + 1)] Commit: $($current.ShortSHA)" -ForegroundColor Yellow
                 Write-Host "    Date:    $($current.Date.ToString('yyyy-MM-dd HH:mm:ss'))" -ForegroundColor Gray
-                Write-Host "    Author:  $($current.Author)" -ForegroundColor Gray
+                # Write-Host "    Author:  $($current.Author)" -ForegroundColor Gray
                 Write-Host "    Message: $($current.Message)" -ForegroundColor Gray
                 Write-Host "    Entries: $($current.Entries.Count) AAGUIDs" -ForegroundColor Gray
             }
@@ -378,7 +378,7 @@ Function Show-FIDOCommitHistory {
             $outputLines.Add("") | Out-Null
             $outputLines.Add("---") | Out-Null
             $outputLines.Add("") | Out-Null
-            $outputLines.Add("*This changelog was automatically generated from the [Microsoft Docs FIDO2 Hardware Vendor page](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor).*") | Out-Null
+            $outputLines.Add("*This changelog was generated from the [Microsoft Docs FIDO2 Hardware Vendor page](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor).*") | Out-Null
             
             # Output to file or console
             if ($OutputFile) {
