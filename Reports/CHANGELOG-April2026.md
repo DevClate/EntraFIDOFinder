@@ -7,7 +7,6 @@ Source: [Microsoft Docs FIDO2 Vendor Page](https://learn.microsoft.com/en-us/ent
 
 ## 2026-04-27 - Commit 157d75e
 
-**Author:** Justin Hall
 **Total AAGUIDs:** 232
 **Note:** Clarify attestation enforcement in FIDO2 policy
 
@@ -15,14 +14,12 @@ No changes to FIDO2 hardware vendor table in this commit.
 
 ## 2026-04-23 - Commit 5414783
 
-**Author:** Justinha
 **Total AAGUIDs:** 232
 
 No changes to FIDO2 hardware vendor table in this commit.
 
 ## 2026-04-20 - Commit bea108b
 
-**Author:** Justin Hall
 **Total AAGUIDs:** 232
 
 ### Summary
@@ -38,7 +35,6 @@ No changes to FIDO2 hardware vendor table in this commit.
 
 ## 2026-04-07 - Commit 97156d8
 
-**Author:** Justinha
 **Total AAGUIDs:** 232
 
 ### Summary
@@ -274,7 +270,6 @@ No changes to FIDO2 hardware vendor table in this commit.
 
 ## 2026-04-06 - Commit 01e5bce
 
-**Author:** Justinha
 **Total AAGUIDs:** 187
 
 ---
@@ -290,4 +285,4 @@ No changes to FIDO2 hardware vendor table in this commit.
 
 ---
 
-*This changelog was automatically generated from the [Microsoft Docs FIDO2 Hardware Vendor page](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor).*
+*This changelog was generated from the [Microsoft Docs FIDO2 Hardware Vendor page](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-fido2-hardware-vendor).*
