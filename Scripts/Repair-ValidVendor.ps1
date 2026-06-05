@@ -35,9 +35,9 @@ function Repair-ValidVendor {
             $changed = $true
         }
 
-        # Fix Unknown vendors when description contains YubiKey (case-insensitive)
-        if ($key.Vendor -eq "Unknown" -and $key.Description -imatch "^Yubikey") {
-            Write-Host "Updating Vendor for AAGUID $($key.AAGUID): 'Unknown' -> 'Yubico' (Description: $($key.Description))"
+        # Set Vendor to Yubico for any key whose name starts with YubiKey (case-insensitive)
+        if ($key.Description -imatch "^Yubikey" -and $key.Vendor -ne "Yubico") {
+            Write-Host "Updating Vendor for AAGUID $($key.AAGUID): '$($key.Vendor)' -> 'Yubico' (Description: $($key.Description))"
             $key.Vendor = "Yubico"
             $key.ValidVendor = "Yes"
             $changed = $true
