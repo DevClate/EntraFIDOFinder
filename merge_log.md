@@ -1,3 +1,92 @@
+# Merge Log - 2026-06-05 00:58:19
+
+Updated 'Description' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'GoTrust Idem Card FIDO2 Authenticator' to 'GoTrust Idem Card'.
+
+Failed to derive valid vendor for AAGUID '41e39911-c669-4811-b860-c6ad0b411b96' with description 'YubiKey 5 Series with NFC (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '41e39911-c669-4811-b860-c6ad0b411b96' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '0a357157-9b18-4c8a-920e-d156e972b2f8' with description 'YubiKey 5 Series (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '0a357157-9b18-4c8a-920e-d156e972b2f8' to 'Unknown'.
+
+Updated 'Description' for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08' from 'GoTrust Idem Key (Consumer profile)' to 'GoTrust Idem Key'.
+
+Failed to derive valid vendor for AAGUID 'ba0a9266-40d8-4048-9786-d710b5474752' with description 'YubiKey Bio Multi-protocol Edition (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'ba0a9266-40d8-4048-9786-d710b5474752' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '24083bcb-3034-4867-99de-a3b52e1d426a' with description 'Enterprise Security Key Series with NFC (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '24083bcb-3034-4867-99de-a3b52e1d426a' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '0f083f18-4105-43a8-ad69-24e812e38141' with description 'Security Key Series with NFC (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '0f083f18-4105-43a8-ad69-24e812e38141' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID 'dc5e949d-f939-43b3-9877-a85c7186b753' with description 'YubiKey Bio Multi-protocol Edition (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'dc5e949d-f939-43b3-9877-a85c7186b753' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID 'f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5' with description 'YubiKey 5 Series with NFC (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '9806a2c8-c0da-478e-b4ca-620005d34182' with description 'YubiKey Bio Multi-protocol Edition (Consumer Profile) 1VDJSN-2'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '9806a2c8-c0da-478e-b4ca-620005d34182' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '0ebd9f2c-f685-441c-8c3e-a02a234a840a' with description 'YubiKey 5 Series with NFC Enhanced PIN (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '0ebd9f2c-f685-441c-8c3e-a02a234a840a' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '524de2de-982f-49b4-a769-2b5e3b73ad79' with description 'YubiKey 5 Series (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '524de2de-982f-49b4-a769-2b5e3b73ad79' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID 'add92433-0d69-4026-8166-29b25bce64e9' with description 'YubiKey Bio Fido Edition (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'add92433-0d69-4026-8166-29b25bce64e9' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f' with description 'YubiKey 5 CCN Series with NFC (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9' with description 'YubiKey 5 Series with Lightning (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID 'c3479970-e58a-4f70-836f-853bf42fb063' with description 'YubiKey 5 Series with Lightning (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'c3479970-e58a-4f70-836f-853bf42fb063' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID 'ab7d1767-3fa0-4388-b6c4-feef7a844809' with description 'Enterprise Security Key Series with NFC (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'ab7d1767-3fa0-4388-b6c4-feef7a844809' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '9dd8d593-2213-438a-97f8-d6b813d51c27' with description 'YubiKey Bio Fido Edition (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '9dd8d593-2213-438a-97f8-d6b813d51c27' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '9a3f2abd-a73d-439c-9ee7-1b53a857eaa7' with description 'YubiKey 5 Series with NFC Enhanced PIN (Enterprise Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '9a3f2abd-a73d-439c-9ee7-1b53a857eaa7' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID '7dab85a5-d16d-4eaf-a7ef-4c1385b151c5' with description 'YubiKey 5 Series with NFC (Consumer Profile) KVZR57-2'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '7dab85a5-d16d-4eaf-a7ef-4c1385b151c5' to 'Unknown'.
+
+Failed to derive valid vendor for AAGUID 'eb7ef748-cbe0-4b40-b8f6-07bd2d592d35' with description 'YubiKey 5 CCN Series with NFC (Consumer Profile)'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID 'eb7ef748-cbe0-4b40-b8f6-07bd2d592d35' to 'Unknown'.
+
+Updated 'Description' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'GoTrust Idem Key FIDO2 Authenticator' to 'GoTrust Idem Key'.
+
+Vendor set for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e': '' to 'GoldKey' (derived from description).
+
+Added new entry for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e' with description 'GoldKey Security Token' and vendor 'GoldKey'.
+
+
 # Merge Log - 2026-05-06 00:44:17
 
 Updated 'USB' for AAGUID '3f59672f-20aa-4afe-b6f4-7e5e916b6d98' from '✅' to '❌'.

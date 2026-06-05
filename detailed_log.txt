@@ -1,3 +1,59 @@
+DETAILED LOG - 2026-06-05 00:58:19
+
+Updated 'Description' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'GoTrust Idem Card FIDO2 Authenticator' to 'GoTrust Idem Card'.
+
+Set vendor name for invalid AAGUID '41e39911-c669-4811-b860-c6ad0b411b96' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '0a357157-9b18-4c8a-920e-d156e972b2f8' to 'Unknown'.
+
+Updated 'Description' for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08' from 'GoTrust Idem Key (Consumer profile)' to 'GoTrust Idem Key'.
+
+Set vendor name for invalid AAGUID 'ba0a9266-40d8-4048-9786-d710b5474752' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '24083bcb-3034-4867-99de-a3b52e1d426a' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '0f083f18-4105-43a8-ad69-24e812e38141' to 'Unknown'.
+
+Set vendor name for invalid AAGUID 'dc5e949d-f939-43b3-9877-a85c7186b753' to 'Unknown'.
+
+Set vendor name for invalid AAGUID 'f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '9806a2c8-c0da-478e-b4ca-620005d34182' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '0ebd9f2c-f685-441c-8c3e-a02a234a840a' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '524de2de-982f-49b4-a769-2b5e3b73ad79' to 'Unknown'.
+
+Set vendor name for invalid AAGUID 'add92433-0d69-4026-8166-29b25bce64e9' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9' to 'Unknown'.
+
+Set vendor name for invalid AAGUID 'c3479970-e58a-4f70-836f-853bf42fb063' to 'Unknown'.
+
+Set vendor name for invalid AAGUID 'ab7d1767-3fa0-4388-b6c4-feef7a844809' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '9dd8d593-2213-438a-97f8-d6b813d51c27' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '9a3f2abd-a73d-439c-9ee7-1b53a857eaa7' to 'Unknown'.
+
+Set vendor name for invalid AAGUID '7dab85a5-d16d-4eaf-a7ef-4c1385b151c5' to 'Unknown'.
+
+Set vendor name for invalid AAGUID 'eb7ef748-cbe0-4b40-b8f6-07bd2d592d35' to 'Unknown'.
+
+Updated 'Description' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'GoTrust Idem Key FIDO2 Authenticator' to 'GoTrust Idem Key'.
+
+Added new entry for AAGUID '0db01cd6-5618-455b-bb46-1ec203d3213e' with description 'GoldKey Security Token' and vendor 'GoldKey'.
+
+
+
+DETAILED LOG - 2026-06-04 01:06:47
+
+No changes detected during this run.
+
+
+
 DETAILED LOG - 2026-06-03 01:06:40
 
 No changes detected during this run.
@@ -9629,6 +9685,8 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
+
 
 
 
