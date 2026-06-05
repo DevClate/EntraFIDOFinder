@@ -1,3 +1,12 @@
+# Merge Log - 2026-06-05 11:43:43
+
+Vendor 'Yubico' for description 'Enterprise Security Key Series with NFC (Enterprise Profile)' has become valid.
+
+Vendor 'Yubico' for description 'Security Key Series with NFC (Consumer Profile)' has become valid.
+
+Vendor 'Thales' for description 'Enterprise Security Key Series with NFC (Consumer Profile)' has become valid.
+
+
 # Merge Log - 2026-06-05 11:34:16
 
 Vendor 'Unknown' for description 'Enterprise Security Key Series with NFC (Consumer Profile)' has become invalid.
