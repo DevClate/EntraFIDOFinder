@@ -1,3 +1,15 @@
+DETAILED LOG - 2026-06-05 11:34:16
+
+Vendor 'Unknown' for description 'Enterprise Security Key Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor 'Unknown' for description 'Security Key Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor 'GoldKey' for description 'GoldKey Security Token' has become valid.
+
+Vendor 'Unknown' for description 'Enterprise Security Key Series with NFC (Enterprise Profile)' has become invalid.
+
+
+
 DETAILED LOG - 2026-06-05 00:58:19
 
 Updated 'Description' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'GoTrust Idem Card FIDO2 Authenticator' to 'GoTrust Idem Card'.
@@ -9685,6 +9697,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 

@@ -1,3 +1,46 @@
+# Merge Log - 2026-06-05 11:34:16
+
+Vendor 'Unknown' for description 'Enterprise Security Key Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor corrected for AAGUID '03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '524de2de-982f-49b4-a769-2b5e3b73ad79': 'Unknown' to 'Yubico'.
+
+Vendor 'Unknown' for description 'Security Key Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor corrected for AAGUID '0a357157-9b18-4c8a-920e-d156e972b2f8': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'eb7ef748-cbe0-4b40-b8f6-07bd2d592d35': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'add92433-0d69-4026-8166-29b25bce64e9': 'Unknown' to 'Yubico'.
+
+Vendor 'GoldKey' for description 'GoldKey Security Token' has become valid.
+
+Vendor 'Unknown' for description 'Enterprise Security Key Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor corrected for AAGUID '9a3f2abd-a73d-439c-9ee7-1b53a857eaa7': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '0ebd9f2c-f685-441c-8c3e-a02a234a840a': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '7dab85a5-d16d-4eaf-a7ef-4c1385b151c5': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'ba0a9266-40d8-4048-9786-d710b5474752': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '41e39911-c669-4811-b860-c6ad0b411b96': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '9dd8d593-2213-438a-97f8-d6b813d51c27': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '9806a2c8-c0da-478e-b4ca-620005d34182': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'dc5e949d-f939-43b3-9877-a85c7186b753': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID '3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f': 'Unknown' to 'Yubico'.
+
+Vendor corrected for AAGUID 'c3479970-e58a-4f70-836f-853bf42fb063': 'Unknown' to 'Yubico'.
+
+
 # Merge Log - 2026-06-05 00:58:19
 
 Updated 'Description' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'GoTrust Idem Card FIDO2 Authenticator' to 'GoTrust Idem Card'.
