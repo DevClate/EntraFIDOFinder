@@ -23011,7 +23011,7 @@
       "timeOfLastStatusChange": "2023-03-01"
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series (Consumer Profile)",
       "AAGUID": "0a357157-9b18-4c8a-920e-d156e972b2f8",
       "Bio": "❌",
@@ -23019,13 +23019,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "5 6 4 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Fido Edition (Consumer Profile)",
       "AAGUID": "9dd8d593-2213-438a-97f8-d6b813d51c27",
       "Bio": "✅",
@@ -23033,13 +23033,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "23 24 15 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Multi-protocol Edition (Consumer Profile) 1VDJSN-2",
       "AAGUID": "9806a2c8-c0da-478e-b4ca-620005d34182",
       "Bio": "✅",
@@ -23047,13 +23047,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "25 26 16 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with Lightning (Enterprise Profile)",
       "AAGUID": "c3479970-e58a-4f70-836f-853bf42fb063",
       "Bio": "❌",
@@ -23061,7 +23061,7 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "31 32 19 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
@@ -23081,7 +23081,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Fido Edition (Enterprise Profile)",
       "AAGUID": "add92433-0d69-4026-8166-29b25bce64e9",
       "Bio": "✅",
@@ -23089,13 +23089,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "9 10 6 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC (Consumer Profile)",
       "AAGUID": "f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5",
       "Bio": "❌",
@@ -23103,13 +23103,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "13 14 10 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC (Enterprise Profile)",
       "AAGUID": "41e39911-c669-4811-b860-c6ad0b411b96",
       "Bio": "❌",
@@ -23117,13 +23117,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "21 22 14 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 CCN Series with NFC (Consumer Profile)",
       "AAGUID": "eb7ef748-cbe0-4b40-b8f6-07bd2d592d35",
       "Bio": "❌",
@@ -23131,13 +23131,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "7 8 5 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Multi-protocol Edition (Enterprise Profile)",
       "AAGUID": "dc5e949d-f939-43b3-9877-a85c7186b753",
       "Bio": "✅",
@@ -23145,7 +23145,7 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "27 28 17 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
@@ -23165,7 +23165,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with Lightning (Consumer Profile)",
       "AAGUID": "03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9",
       "Bio": "❌",
@@ -23173,13 +23173,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "1 2 1 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey Bio Multi-protocol Edition (Consumer Profile)",
       "AAGUID": "ba0a9266-40d8-4048-9786-d710b5474752",
       "Bio": "✅",
@@ -23187,13 +23187,13 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "19 20 13 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC (Consumer Profile) KVZR57-2",
       "AAGUID": "7dab85a5-d16d-4eaf-a7ef-4c1385b151c5",
       "Bio": "❌",
@@ -23201,13 +23201,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "17 18 12 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC Enhanced PIN (Consumer Profile)",
       "AAGUID": "0ebd9f2c-f685-441c-8c3e-a02a234a840a",
       "Bio": "❌",
@@ -23215,13 +23215,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "15 16 11 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series with NFC Enhanced PIN (Enterprise Profile)",
       "AAGUID": "9a3f2abd-a73d-439c-9ee7-1b53a857eaa7",
       "Bio": "❌",
@@ -23229,7 +23229,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "11 12 9 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
@@ -23249,7 +23249,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 CCN Series with NFC (Enterprise Profile)",
       "AAGUID": "3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f",
       "Bio": "❌",
@@ -23257,13 +23257,13 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "29 30 18 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "YubiKey 5 Series (Enterprise Profile)",
       "AAGUID": "524de2de-982f-49b4-a769-2b5e3b73ad79",
       "Bio": "❌",
@@ -23271,7 +23271,7 @@
       "NFC": "❌",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "3 4 2 Yes",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
