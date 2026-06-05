@@ -23011,7 +23011,7 @@
       "timeOfLastStatusChange": "2024-12-30"
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Thales",
       "Description": "Enterprise Security Key Series with NFC (Consumer Profile)",
       "AAGUID": "24083bcb-3034-4867-99de-a3b52e1d426a",
       "Bio": "❌",
@@ -23025,7 +23025,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "Enterprise Security Key Series with NFC (Enterprise Profile)",
       "AAGUID": "ab7d1767-3fa0-4388-b6c4-feef7a844809",
       "Bio": "❌",
@@ -23039,7 +23039,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Yubico",
       "Description": "Security Key Series with NFC (Consumer Profile)",
       "AAGUID": "0f083f18-4105-43a8-ad69-24e812e38141",
       "Bio": "❌",
