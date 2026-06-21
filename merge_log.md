@@ -1,3 +1,26 @@
+# Merge Log - 2026-06-21 01:04:26
+
+Vendor set for AAGUID '72a2b5b1-95a5-4df9-a881-4192aff4f72e': '' to 'GoTrust' (derived from description).
+
+Added new entry for AAGUID '72a2b5b1-95a5-4df9-a881-4192aff4f72e' with description 'GoTrust Idem Key mini' and vendor 'GoTrust'.
+
+Vendor set for AAGUID '6d4aa745-dad5-40c4-b9b4-6a252fcee70f': '' to 'GoTrust' (derived from description).
+
+Added new entry for AAGUID '6d4aa745-dad5-40c4-b9b4-6a252fcee70f' with description 'GoTrust Cyber Key' and vendor 'GoTrust'.
+
+Vendor derived for AAGUID '09619fbf-d75e-4a62-be1d-fe4d240864ae': '' to 'VeriMark' from description match.
+
+Added new entry for AAGUID '09619fbf-d75e-4a62-be1d-fe4d240864ae' with description 'VeriMark(TM) Guard 2.1 Fingerprint Security Key' and vendor 'VeriMark'.
+
+Vendor set for AAGUID 'cb4f796c-a20a-af9e-d639-213c1ec247f3': '' to 'ACS' (derived from description).
+
+Added new entry for AAGUID 'cb4f796c-a20a-af9e-d639-213c1ec247f3' with description 'ACS PocketKey+ Bio' and vendor 'ACS'.
+
+Vendor set for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b': '' to 'OneKey' (derived from description).
+
+Added new entry for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Bluetooth Authenticator' and vendor 'OneKey'.
+
+
 # Merge Log - 2026-06-12 01:03:24
 
 Updated 'USB' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '❌' to '✅'.
