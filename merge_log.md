@@ -1,3 +1,16 @@
+# Merge Log - 2026-06-22 01:04:22
+
+Vendor 'VeriMark' for description 'VeriMark(TM) Guard 2.1 Fingerprint Security Key' has become valid.
+
+Vendor 'GoTrust' for description 'GoTrust Cyber Key' has become valid.
+
+Vendor 'GoTrust' for description 'GoTrust Idem Key mini' has become valid.
+
+Vendor 'ACS' for description 'ACS PocketKey+ Bio' has become valid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Bluetooth Authenticator' has become valid.
+
+
 # Merge Log - 2026-06-21 01:04:26
 
 Vendor set for AAGUID '72a2b5b1-95a5-4df9-a881-4192aff4f72e': '' to 'GoTrust' (derived from description).
