@@ -1,4 +1,331 @@
 
+===== Script Run on 2026-07-01 05:31:21 UTC =====
+2026-07-01 05:31:15 - AAGUID: cb4f796c-a20a-af9e-d639-213c1ec247f3
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-06
+
+2026-07-01 05:31:15 - AAGUID: cb4f796c-a20a-af9e-d639-213c1ec247f3
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: ACS
+Description: ACS PocketKey+ Bio
+
+2026-07-01 05:31:17 - AAGUID: 0db01cd6-5618-455b-bb46-1ec203d3213e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-04-10
+
+2026-07-01 05:31:17 - AAGUID: 0db01cd6-5618-455b-bb46-1ec203d3213e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: GoldKey
+Description: GoldKey Security Token
+
+2026-07-01 05:31:17 - AAGUID: 6d4aa745-dad5-40c4-b9b4-6a252fcee70f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-20
+
+2026-07-01 05:31:17 - AAGUID: 6d4aa745-dad5-40c4-b9b4-6a252fcee70f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: GoTrust
+Description: GoTrust Cyber Key
+
+2026-07-01 05:31:17 - AAGUID: 72a2b5b1-95a5-4df9-a881-4192aff4f72e
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-20
+
+2026-07-01 05:31:17 - AAGUID: 72a2b5b1-95a5-4df9-a881-4192aff4f72e
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: GoTrust
+Description: GoTrust Idem Key mini
+
+2026-07-01 05:31:18 - AAGUID: 70e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-20
+
+2026-07-01 05:31:18 - AAGUID: 70e7c36f-f2f6-9e0d-07a6-bcc243262e6b
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: OneKey
+Description: OneKey FIDO2 Bluetooth Authenticator
+
+2026-07-01 05:31:19 - AAGUID: 24083bcb-3034-4867-99de-a3b52e1d426a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:19 - AAGUID: 24083bcb-3034-4867-99de-a3b52e1d426a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thales
+Description: Enterprise Security Key Series with NFC (Consumer Profile)
+
+2026-07-01 05:31:20 - AAGUID: 09619fbf-d75e-4a62-be1d-fe4d240864ae
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-06
+
+2026-07-01 05:31:20 - AAGUID: 09619fbf-d75e-4a62-be1d-fe4d240864ae
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: VeriMark
+Description: VeriMark(TM) Guard 2.1 Fingerprint Security Key
+
+2026-07-01 05:31:20 - AAGUID: f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC (Consumer Profile)
+
+2026-07-01 05:31:20 - AAGUID: 524de2de-982f-49b4-a769-2b5e3b73ad79
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 524de2de-982f-49b4-a769-2b5e3b73ad79
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series (Enterprise Profile)
+
+2026-07-01 05:31:20 - AAGUID: 0a357157-9b18-4c8a-920e-d156e972b2f8
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 0a357157-9b18-4c8a-920e-d156e972b2f8
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series (Consumer Profile)
+
+2026-07-01 05:31:20 - AAGUID: dc5e949d-f939-43b3-9877-a85c7186b753
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: dc5e949d-f939-43b3-9877-a85c7186b753
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Multi-protocol Edition (Enterprise Profile)
+
+2026-07-01 05:31:20 - AAGUID: c3479970-e58a-4f70-836f-853bf42fb063
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: c3479970-e58a-4f70-836f-853bf42fb063
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning (Enterprise Profile)
+
+2026-07-01 05:31:20 - AAGUID: 41e39911-c669-4811-b860-c6ad0b411b96
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 41e39911-c669-4811-b860-c6ad0b411b96
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC (Enterprise Profile)
+
+2026-07-01 05:31:20 - AAGUID: add92433-0d69-4026-8166-29b25bce64e9
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: add92433-0d69-4026-8166-29b25bce64e9
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Fido Edition (Enterprise Profile)
+
+2026-07-01 05:31:20 - AAGUID: 7dab85a5-d16d-4eaf-a7ef-4c1385b151c5
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 7dab85a5-d16d-4eaf-a7ef-4c1385b151c5
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC (Consumer Profile) KVZR57-2
+
+2026-07-01 05:31:20 - AAGUID: 9dd8d593-2213-438a-97f8-d6b813d51c27
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 9dd8d593-2213-438a-97f8-d6b813d51c27
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Fido Edition (Consumer Profile)
+
+2026-07-01 05:31:20 - AAGUID: 0f083f18-4105-43a8-ad69-24e812e38141
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 0f083f18-4105-43a8-ad69-24e812e38141
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Security Key Series with NFC (Consumer Profile)
+
+2026-07-01 05:31:20 - AAGUID: 03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with Lightning (Consumer Profile)
+
+2026-07-01 05:31:20 - AAGUID: 9a3f2abd-a73d-439c-9ee7-1b53a857eaa7
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 9a3f2abd-a73d-439c-9ee7-1b53a857eaa7
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC Enhanced PIN (Enterprise Profile)
+
+2026-07-01 05:31:20 - AAGUID: 9806a2c8-c0da-478e-b4ca-620005d34182
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:20 - AAGUID: 9806a2c8-c0da-478e-b4ca-620005d34182
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Multi-protocol Edition (Consumer Profile) 1VDJSN-2
+
+2026-07-01 05:31:21 - AAGUID: ba0a9266-40d8-4048-9786-d710b5474752
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:21 - AAGUID: ba0a9266-40d8-4048-9786-d710b5474752
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey Bio Multi-protocol Edition (Consumer Profile)
+
+2026-07-01 05:31:21 - AAGUID: ab7d1767-3fa0-4388-b6c4-feef7a844809
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:21 - AAGUID: ab7d1767-3fa0-4388-b6c4-feef7a844809
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: Enterprise Security Key Series with NFC (Enterprise Profile)
+
+2026-07-01 05:31:21 - AAGUID: 0ebd9f2c-f685-441c-8c3e-a02a234a840a
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:21 - AAGUID: 0ebd9f2c-f685-441c-8c3e-a02a234a840a
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 Series with NFC Enhanced PIN (Consumer Profile)
+
+2026-07-01 05:31:21 - AAGUID: 3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:21 - AAGUID: 3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 CCN Series with NFC (Enterprise Profile)
+
+2026-07-01 05:31:21 - AAGUID: eb7ef748-cbe0-4b40-b8f6-07bd2d592d35
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-05-01
+
+2026-07-01 05:31:21 - AAGUID: eb7ef748-cbe0-4b40-b8f6-07bd2d592d35
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Yubico
+Description: YubiKey 5 CCN Series with NFC (Consumer Profile)
+
+
 ===== Script Run on 2026-06-01 05:35:48 UTC =====
 2026-06-01 05:35:47 - AAGUID: 662ef48a-95e2-4aaa-a6c1-5b9c40375824
 Path: attestationRootCertificates
@@ -5300,6 +5627,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
