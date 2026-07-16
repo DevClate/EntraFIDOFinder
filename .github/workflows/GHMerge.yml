@@ -22,27 +22,31 @@ jobs:
         fetch-depth: 0
         ref: main
 
-    - name: Install and Load HtmlAgilityPack
+    - name: Install HtmlAgilityPack and Run Merge-GHFidoData Script
+      id: merge_script
       shell: pwsh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ github.repository }}
       run: |
         # Pin to a specific version of HtmlAgilityPack that includes XPath (SelectNodes) support
         $version = "1.11.61"
         $nugetUrl = "https://www.nuget.org/api/v2/package/HtmlAgilityPack/$version"
         $packagePath = "./HtmlAgilityPack.nupkg"
         $extractPath = "./HtmlAgilityPack"
-        
+
         Write-Host "Downloading HtmlAgilityPack $version..."
         Invoke-WebRequest -Uri $nugetUrl -OutFile $packagePath
-        
+
         Write-Host "Extracting package..."
         Expand-Archive -Path $packagePath -DestinationPath $extractPath -Force
-        
+
         # Find the appropriate DLL (prefer netstandard2.0, then other compatible TFMs)
-        $dllPath = Get-ChildItem -Path $extractPath -Recurse -Filter "HtmlAgilityPack.dll" | 
-          Where-Object { $_.DirectoryName -match '(netstandard2\.0|netstandard1\.6|net45|net40)' } | 
+        $dllPath = Get-ChildItem -Path $extractPath -Recurse -Filter "HtmlAgilityPack.dll" |
+          Where-Object { $_.DirectoryName -match '(netstandard2\.0|netstandard1\.6|net45|net40)' } |
           Sort-Object { if ($_.DirectoryName -match 'netstandard2.0') { 0 } elseif ($_.DirectoryName -match 'netstandard') { 1 } else { 2 } } |
           Select-Object -First 1
-        
+
         if ($dllPath) {
           Write-Host "Found DLL at: $($dllPath.FullName)"
           Add-Type -Path $dllPath.FullName
@@ -51,13 +55,6 @@ jobs:
           throw "Could not find HtmlAgilityPack.dll in extracted package"
         }
 
-    - name: Run Merge-GHFidoData Script
-      id: merge_script
-      shell: pwsh
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ github.repository }}
-      run: |
         . ./Scripts/Test-GHValidVendor.ps1
         . ./Scripts/Test-GHAAGUIDExists.ps1
         . ./Scripts/Export-GHEntraFido.ps1
