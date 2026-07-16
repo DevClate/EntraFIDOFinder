@@ -29,18 +29,19 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ github.repository }}
       run: |
-        # Download HtmlAgilityPack NuGet package directly
-        $nugetUrl = "https://www.nuget.org/api/v2/package/HtmlAgilityPack"
+        # Pin to a specific version of HtmlAgilityPack that includes XPath (SelectNodes) support
+        $version = "1.11.61"
+        $nugetUrl = "https://www.nuget.org/api/v2/package/HtmlAgilityPack/$version"
         $packagePath = "./HtmlAgilityPack.nupkg"
         $extractPath = "./HtmlAgilityPack"
 
-        Write-Host "Downloading HtmlAgilityPack..."
+        Write-Host "Downloading HtmlAgilityPack $version..."
         Invoke-WebRequest -Uri $nugetUrl -OutFile $packagePath
 
         Write-Host "Extracting package..."
         Expand-Archive -Path $packagePath -DestinationPath $extractPath -Force
 
-        # Find the appropriate DLL (prefer netstandard2.0 or net45)
+        # Find the appropriate DLL (prefer netstandard2.0, then other compatible TFMs)
         $dllPath = Get-ChildItem -Path $extractPath -Recurse -Filter "HtmlAgilityPack.dll" |
           Where-Object { $_.DirectoryName -match '(netstandard2\.0|netstandard1\.6|net45|net40)' } |
           Sort-Object { if ($_.DirectoryName -match 'netstandard2.0') { 0 } elseif ($_.DirectoryName -match 'netstandard') { 1 } else { 2 } } |
