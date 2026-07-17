@@ -1,3 +1,29 @@
+DETAILED LOG - 2026-07-17 00:30:19
+
+Added new entry for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Bluetooth Authenticator' and vendor 'OneKey'.
+
+Updated 'Description' for AAGUID '3b1adb99-0dfe-46fd-90b8-7f7614a4de2a' from 'GoTrust Idem Key FIDO2 Authenticator' to 'GoTrust Idem Key'.
+
+Updated 'Description' for AAGUID 'c611b55c-77b2-4527-8082-590e931b2f08' from 'GoTrust Idem Key (Consumer profile)' to 'GoTrust Idem Key'.
+
+Added new entry for AAGUID '6d4aa745-dad5-40c4-b9b4-6a252fcee70f' with description 'GoTrust Cyber Key' and vendor 'GoTrust'.
+
+Updated 'USB' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '❌' to '✅'.
+
+Updated 'BLE' for AAGUID '820d89ed-d65a-409e-85cb-f73f0578f82a' from '❌' to '✅'.
+
+Added new entry for AAGUID 'cb4f796c-a20a-af9e-d639-213c1ec247f3' with description 'ACS PocketKey+ Bio' and vendor 'ACS'.
+
+Updated 'USB' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '❌' to '✅'.
+
+Updated 'NFC' for AAGUID '39a5647e-1853-446c-a1f6-a79bae9f5bc7' from '❌' to '✅'.
+
+Added new entry for AAGUID '72a2b5b1-95a5-4df9-a881-4192aff4f72e' with description 'GoTrust Idem Key mini' and vendor 'GoTrust'.
+
+Updated 'Description' for AAGUID '9f0d8150-baa5-4c00-9299-ad62c8bb4e87' from 'GoTrust Idem Card FIDO2 Authenticator' to 'GoTrust Idem Card'.
+
+
+
 DETAILED LOG - 2026-05-10 00:36:32
 
 No changes have been detected since last run.
@@ -6652,6 +6678,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
