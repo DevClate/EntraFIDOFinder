@@ -1,3 +1,56 @@
+# Merge Log - 2026-07-18 00:27:44
+
+Vendor '' for description 'YubiKey 5 Series with Lightning (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC Enhanced PIN (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 CCN Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor 'GoTrust' for description 'GoTrust Idem Key mini' has become valid.
+
+Vendor '' for description 'YubiKey Bio Fido Edition (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC (Consumer Profile) KVZR57-2' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Fido Edition (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'Enterprise Security Key Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'Security Key Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor 'ACS' for description 'ACS PocketKey+ Bio' has become valid.
+
+Vendor '' for description 'Enterprise Security Key Series with NFC (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Multi-protocol Edition (Consumer Profile) 1VDJSN-2' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Multi-protocol Edition (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey Bio Multi-protocol Edition (Enterprise Profile)' has become invalid.
+
+Vendor 'OneKey' for description 'OneKey FIDO2 Bluetooth Authenticator' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with Lightning (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 CCN Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC Enhanced PIN (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'GoldKey Security Token' has become invalid.
+
+Vendor '' for description 'VeriMark(TM) Guard 2.1 Fingerprint Security Key' has become invalid.
+
+Vendor 'GoTrust' for description 'GoTrust Cyber Key' has become valid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC (Consumer Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series (Enterprise Profile)' has become invalid.
+
+Vendor '' for description 'YubiKey 5 Series with NFC (Enterprise Profile)' has become invalid.
+
+
 # Merge Log - 2026-07-17 00:30:19
 
 Added new entry for AAGUID '70e7c36f-f2f6-9e0d-07a6-bcc243262e6b' with description 'OneKey FIDO2 Bluetooth Authenticator' and vendor 'OneKey'.
