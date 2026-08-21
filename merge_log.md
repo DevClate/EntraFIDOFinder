@@ -1,3 +1,10 @@
+# Merge Log - 2026-08-21 00:11:33
+
+Added new entry for AAGUID 'bb878d7b-cf54-4784-b390-357030497043' with description 'TruU FIDO2 Authenticator' and vendor 'TruU'.
+
+Invalid vendor detected for AAGUID '1f8e43df-71ff-e11d-bea3-c4ee7003b232' with description 'Thetis Pro FIDO2 Key'. Vendor '' is not in the list of valid vendors.
+
+
 # Merge Log - 2026-07-19 00:30:19
 
 
