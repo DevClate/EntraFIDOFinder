@@ -1,3 +1,11 @@
+DETAILED LOG - 2026-08-22 00:15:09
+
+Vendor 'Unknown' for description 'Thetis Pro FIDO2 Key' has become invalid.
+
+Vendor 'TruU' for description 'TruU FIDO2 Authenticator' has become valid.
+
+
+
 DETAILED LOG - 2026-08-21 00:16:29
 
 Set vendor name for invalid AAGUID '1f8e43df-71ff-e11d-bea3-c4ee7003b232' to 'Unknown'.
@@ -10295,6 +10303,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 
