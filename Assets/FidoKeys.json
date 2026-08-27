@@ -24052,7 +24052,7 @@
       "timeOfLastStatusChange": null
     },
     {
-      "Vendor": "Unknown",
+      "Vendor": "Thetis",
       "Description": "Thetis Pro FIDO2 Key",
       "AAGUID": "1f8e43df-71ff-e11d-bea3-c4ee7003b232",
       "Bio": "❌",
@@ -24060,7 +24060,7 @@
       "NFC": "✅",
       "BLE": "❌",
       "Version": null,
-      "ValidVendor": "No",
+      "ValidVendor": "Yes",
       "authenticatorGetInfo": null,
       "statusReports": null,
       "timeOfLastStatusChange": null
