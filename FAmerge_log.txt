@@ -1,4 +1,32 @@
 
+===== Script Run on 2026-09-01 04:07:04 UTC =====
+2026-09-01 04:07:02 - AAGUID: 1f8e43df-71ff-e11d-bea3-c4ee7003b232
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-07-28
+
+2026-09-01 04:07:02 - AAGUID: 1f8e43df-71ff-e11d-bea3-c4ee7003b232
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: Thetis
+Description: Thetis Pro FIDO2 Key
+
+2026-09-01 04:07:03 - AAGUID: bb878d7b-cf54-4784-b390-357030497043
+Updating timeOfLastStatusChange
+Old Value:
+
+
+New Value:
+2026-07-15
+
+2026-09-01 04:07:03 - AAGUID: bb878d7b-cf54-4784-b390-357030497043
+Adding metadataStatement from FAAA to EXXX entry
+Vendor: TruU
+Description: TruU FIDO2 Authenticator
+
+
 ===== Script Run on 2026-08-01 05:03:27 UTC =====
 2026-08-01 05:03:23 - AAGUID: 8c97a730-3f7b-41a6-87d6-1e9b62bda6f0
 Path: attestationRootCertificates
@@ -5664,6 +5692,7 @@ New Value:
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.algorithms[1].alg : -257 -> -37
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.firmwareVersion : 1 -> 2
 2024-12-16 11:50:18 - Updating AAGUID 69700f79-d1fb-472e-bd9b-a3a3b9a9eda0 : authenticatorGetInfo.uvModality : 3 -> 2051
+
 
 
 
