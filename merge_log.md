@@ -1,3 +1,8 @@
+# Merge Log - 2026-09-26 00:21:54
+
+Added new entry for AAGUID '238ab2f5-b57f-4917-b3c6-3d3c6c0c350f' with description 'FEITIAN FT-JCOS BioCard' and vendor 'FEITIAN'.
+
+
 # Merge Log - 2026-08-23 00:10:39
 
 
