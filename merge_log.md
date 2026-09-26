@@ -1,3 +1,10 @@
+# Merge Log - 2026-09-26 00:35:10
+
+Vendor set for AAGUID '238ab2f5-b57f-4917-b3c6-3d3c6c0c350f': '' to 'FEITIAN' (derived from description).
+
+Added new entry for AAGUID '238ab2f5-b57f-4917-b3c6-3d3c6c0c350f' with description 'FEITIAN FT-JCOS BioCard' and vendor 'FEITIAN'.
+
+
 # Merge Log - 2026-09-02 00:36:08
 
 Updated 'Version' for AAGUID '1f8e43df-71ff-e11d-bea3-c4ee7003b232' from '' to 'FIDO 2.1'.
