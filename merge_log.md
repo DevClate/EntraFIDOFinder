@@ -1,3 +1,8 @@
+# Merge Log - 2026-10-02 00:38:08
+
+Updated 'Version' for AAGUID '238ab2f5-b57f-4917-b3c6-3d3c6c0c350f' from '' to 'FIDO 2.3'.
+
+
 # Merge Log - 2026-09-27 00:41:19
 
 Vendor 'FEITIAN' for description 'FEITIAN FT-JCOS BioCard' has become valid.
