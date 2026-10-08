@@ -1,3 +1,26 @@
+# Merge Log - 2026-10-08 00:38:37
+
+Vendor set for AAGUID 'b68c4b8d-65cb-42ae-b4f6-8606dfba3c22': '' to 'IDEMIA' (derived from description).
+
+Added new entry for AAGUID 'b68c4b8d-65cb-42ae-b4f6-8606dfba3c22' with description 'IDEMIA SOLVO Fly 80 R3 FIDO Card for j' and vendor 'IDEMIA'.
+
+Vendor set for AAGUID '19bca99b-7c09-44fe-a969-8cba45764542': '' to 'HID' (derived from description).
+
+Added new entry for AAGUID '19bca99b-7c09-44fe-a969-8cba45764542' with description 'HID Crescendo Key V3 FIPS' and vendor 'HID'.
+
+Vendor set for AAGUID '11544c3c-3693-40ba-9dbb-3b8d2b977988': '' to 'Thales' (derived from description).
+
+Added new entry for AAGUID '11544c3c-3693-40ba-9dbb-3b8d2b977988' with description 'Thales PAY GFCX20.1 authenticator' and vendor 'Thales'.
+
+Vendor derived for AAGUID '39502df1-646d-4e31-81a1-2ef68b324678': '' to 'Goldkey' from description match.
+
+Added new entry for AAGUID '39502df1-646d-4e31-81a1-2ef68b324678' with description 'USB GoldKey Security Token' and vendor 'Goldkey'.
+
+Vendor set for AAGUID '0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae': '' to 'Thales' (derived from description).
+
+Added new entry for AAGUID '0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae' with description 'Thales PAY GFCX19 authenticator' and vendor 'Thales'.
+
+
 # Merge Log - 2026-10-02 00:38:08
 
 Updated 'Version' for AAGUID '238ab2f5-b57f-4917-b3c6-3d3c6c0c350f' from '' to 'FIDO 2.3'.
