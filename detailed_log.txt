@@ -1,3 +1,13 @@
+DETAILED LOG - 2026-10-08 00:23:47
+
+Added new entry for AAGUID 'b68c4b8d-65cb-42ae-b4f6-8606dfba3c22' with description 'IDEMIA SOLVO Fly 80 R3 FIDO Card for j' and vendor 'IDEMIA'.
+
+Added new entry for AAGUID '11544c3c-3693-40ba-9dbb-3b8d2b977988' with description 'Thales PAY GFCX20.1 authenticator' and vendor 'Thales'.
+
+Added new entry for AAGUID '0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae' with description 'Thales PAY GFCX19 authenticator' and vendor 'Thales'.
+
+
+
 DETAILED LOG - 2026-10-07 00:24:53
 
 No changes have been detected since last run.
@@ -7217,6 +7227,7 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
 
 
 

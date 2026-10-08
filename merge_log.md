@@ -1,3 +1,16 @@
+# Merge Log - 2026-10-08 00:23:47
+
+Added new entry for AAGUID 'b68c4b8d-65cb-42ae-b4f6-8606dfba3c22' with description 'IDEMIA SOLVO Fly 80 R3 FIDO Card for j' and vendor 'IDEMIA'.
+
+Added new entry for AAGUID '11544c3c-3693-40ba-9dbb-3b8d2b977988' with description 'Thales PAY GFCX20.1 authenticator' and vendor 'Thales'.
+
+Invalid vendor detected for AAGUID '19bca99b-7c09-44fe-a969-8cba45764542' with description 'HID Crescendo Key V3 FIPS'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '39502df1-646d-4e31-81a1-2ef68b324678' with description 'USB GoldKey Security Token'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae' with description 'Thales PAY GFCX19 authenticator' and vendor 'Thales'.
+
+
 # Merge Log - 2026-09-28 00:26:03
 
 
