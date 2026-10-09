@@ -1,3 +1,16 @@
+# Merge Log - 2026-10-09 00:40:24
+
+Vendor 'HID' for description 'HID Crescendo Key V3 FIPS' has become valid.
+
+Vendor 'Goldkey' for description 'USB GoldKey Security Token' has become valid.
+
+Vendor 'Thales' for description 'Thales PAY GFCX20.1 authenticator' has become valid.
+
+Vendor 'Thales' for description 'Thales PAY GFCX19 authenticator' has become valid.
+
+Vendor 'IDEMIA' for description 'IDEMIA SOLVO Fly 80 R3 FIDO Card for j' has become valid.
+
+
 # Merge Log - 2026-10-08 00:38:37
 
 Vendor set for AAGUID 'b68c4b8d-65cb-42ae-b4f6-8606dfba3c22': '' to 'IDEMIA' (derived from description).
