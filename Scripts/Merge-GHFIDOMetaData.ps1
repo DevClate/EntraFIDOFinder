@@ -1,39 +1,94 @@
-$ErrorActionPreference = 'Stop'
+<#
+.SYNOPSIS
+Merges FIDO Alliance MDS3 metadata into Assets/FidoKeys.json.
 
-# Define parameters with defaults
-$ExistingKeyFile = 'Assets/FidoKeys.json'
-$LogFilePath = 'FAmerge_log.txt'
-$FIDOUri = 'https://mds3.fidoalliance.org/'
+.DESCRIPTION
+Downloads the MDS3 blob, and for every AAGUID present in both the MDS3 blob and the local database
+updates timeOfLastStatusChange, metadataStatement and statusReports. Changes are logged to a log file
+(newest run first). Aborts before writing anything if the MDS3 data is empty or matches none of the
+local AAGUIDs. Sets metadata.databaseLastChecked on every run and metadata.databaseLastUpdated when
+something changed. Run from the repository root; all parameters are optional.
+
+.PARAMETER ExistingKeyFile
+Path to the local FIDO key database.
+
+.PARAMETER LogFilePath
+Path to the merge log that is prepended to on each run.
+
+.PARAMETER FIDOUri
+MDS3 endpoint to download.
+
+.PARAMETER MdsData
+Already decoded MDS3 payload (object with an 'entries' collection). Skips the download; mainly for tests.
+#>
+[CmdletBinding()]
+param (
+    [string]$ExistingKeyFile = 'Assets/FidoKeys.json',
+    [string]$LogFilePath = 'FAmerge_log.txt',
+    [string]$FIDOUri = 'https://mds3.fidoalliance.org/',
+    [psobject]$MdsData
+)
+
+$ErrorActionPreference = 'Stop'
 
 # Load existing FIDO keys from local JSON file
 try {
-    $existingFIDOKeys = Get-Content -Path $ExistingKeyFile -Raw | ConvertFrom-Json -Depth 10
+    $existingFIDOKeys = Get-Content -Path $ExistingKeyFile -Raw | ConvertFrom-Json -Depth 100
 }
 catch {
     Write-Error "Failed to load FIDO keys from '$ExistingKeyFile': $_" -ErrorAction Stop
 }
 
-# Fetch FIDO Alliance keys from the MDS3 endpoint
-try {
-    $FIDOAURL = Invoke-WebRequest -Uri $FIDOUri -ErrorAction Stop
-    $FIDOAKeys = $FIDOAURL | Get-JWTDetails
+# Fetch FIDO Alliance keys from the MDS3 endpoint (unless supplied)
+if ($MdsData) {
+    $FIDOAKeys = $MdsData
 }
-catch {
-    Write-Error "Failed to fetch FIDO Alliance data from '$FIDOUri': $_" -ErrorAction Stop
+else {
+    try {
+        $FIDOAURL = Invoke-WebRequest -Uri $FIDOUri -ErrorAction Stop
+        $FIDOAKeys = $FIDOAURL | Get-JWTDetails
+    }
+    catch {
+        Write-Error "Failed to fetch FIDO Alliance data from '$FIDOUri': $_" -ErrorAction Stop
+    }
 }
 
 # Initialize the log buffer as an ArrayList
 $LogBuffer = New-Object System.Collections.ArrayList
 
-# Define the log file path
-$LogFilePath = "FAmerge_log.txt"
-
 # Initialize the changes tracking variable
 $ChangesMade = $false
 
+# Guard: never merge an empty or unusable MDS payload
+if (-not $FIDOAKeys -or @($FIDOAKeys.entries).Count -eq 0) {
+    Write-Error "FIDO Alliance data from '$FIDOUri' contains no entries. Aborting without changes." -ErrorAction Stop
+}
+
+# Index MDS entries and existing keys by AAGUID (first occurrence wins)
+$mdsIndex = @{}
+foreach ($entry in @($FIDOAKeys.entries)) {
+    if (-not $entry.aaguid) { continue }
+    $id = "$($entry.aaguid)".ToLowerInvariant()
+    if ($mdsIndex.ContainsKey($id)) {
+        Write-Warning "Duplicate AAGUID $id in MDS data; keeping the first entry."
+    }
+    else {
+        $mdsIndex[$id] = $entry
+    }
+}
+$existingIndex = @{}
+foreach ($key in @($existingFIDOKeys.keys)) {
+    if (-not $key.AAGUID) { continue }
+    $id = "$($key.AAGUID)".ToLowerInvariant()
+    if (-not $existingIndex.ContainsKey($id)) {
+        $existingIndex[$id] = $key
+    }
+}
+
 # Create a list of common AAGUIDs between existing keys and FIDO Alliance keys
-$CommonAAGUIDs = @($existingFIDOKeys.keys.AAGUID) | Where-Object {
-    $FIDOAKeys.entries.aaguid -contains $_
+$CommonAAGUIDs = @($existingIndex.Keys | Where-Object { $mdsIndex.ContainsKey($_) })
+if ($CommonAAGUIDs.Count -eq 0) {
+    Write-Error "None of the existing AAGUIDs were found in the FIDO Alliance data. Aborting without changes." -ErrorAction Stop
 }
 
 # Function to get a timestamp for logging
@@ -94,6 +149,27 @@ function Ensure-ArrayProperty {
     }
 }
 
+# Logs a multi-line change record and flags that changes were made
+function Write-BlockChange {
+    param ($AAGUID, $Path, $Old, $New)
+    $timestamp = Get-Timestamp
+    $oldStr = ConvertTo-Json -InputObject $Old -Depth 100
+    $newStr = ConvertTo-Json -InputObject $New -Depth 100
+    $logMessage = @"
+$timestamp - AAGUID: $AAGUID
+Path: $Path
+Old Value:
+$oldStr
+
+New Value:
+$newStr
+
+"@
+    Write-Output $logMessage
+    Add-ToLogBuffer -Value $logMessage
+    $script:ChangesMade = $true
+}
+
 # Function to compare two objects and update differences
 function Compare-Objects {
     param (
@@ -118,41 +194,47 @@ function Compare-Objects {
         $value2 = $obj2.Value.PSObject.Properties[$name]?.Value
         $currentPath = if ($path) { "$path.$name" } else { $name }
 
+        # Property no longer present upstream: remove it
+        if (-not $obj2.Value.PSObject.Properties[$name]) {
+            if ($update) {
+                Write-BlockChange -AAGUID $AAGUID -Path $currentPath -Old $value1 -New $null
+                $obj1.Value.PSObject.Properties.Remove($name)
+            }
+            continue
+        }
+
         if ($value1 -is [PSCustomObject] -or $value1 -is [Array]) {
-            if ($value1 -is [Array] -and $value2 -is [Array]) {
-                if ($value1.Count -ne $value2.Count) {
-                    if ($update) {
-                        $timestamp = Get-Timestamp
-                        $value1Str = $value1 | ConvertTo-Json -Depth 100
-                        $value2Str = $value2 | ConvertTo-Json -Depth 100
-                        $logMessage = @"
-$timestamp - AAGUID: $AAGUID
-Path: $currentPath
-Old Value:
-$value1Str
-
-New Value:
-$value2Str
-
-"@
-                        Write-Output $logMessage
-                        Add-ToLogBuffer -Value $logMessage
-                        # Set the changes made flag to true
-                        $script:ChangesMade = $true
-                        # Update the value
-                        if ($prop.IsSettable) {
-                            $obj1.Value.$name = $value2
-                        }
-                    }
-                } else {
-                    for ($i = 0; $i -lt $value1.Count; $i++) {
-                        $item1 = $value1[$i]
-                        $item2 = $value2[$i]
+            $bothArrays = $value1 -is [Array] -and $value2 -is [Array]
+            $bothObjects = $value1 -is [PSCustomObject] -and $value2 -is [PSCustomObject]
+            $hasObjectItems = $bothArrays -and (@($value1 + $value2) | Where-Object { $_ -is [PSCustomObject] })
+            if ($bothArrays -and $value1.Count -eq $value2.Count -and $hasObjectItems) {
+                for ($i = 0; $i -lt $value1.Count; $i++) {
+                    $item1 = $value1[$i]
+                    $item2 = $value2[$i]
+                    if ($item1 -is [PSCustomObject] -and $item2 -is [PSCustomObject]) {
                         Compare-Objects -obj1 ([ref]$item1) -obj2 ([ref]$item2) -path "$currentPath`[$i`]" -update:$update -AAGUID $AAGUID
                     }
+                    elseif ((ConvertTo-Json -InputObject $item1 -Depth 100 -Compress) -ne (ConvertTo-Json -InputObject $item2 -Depth 100 -Compress)) {
+                        if ($update) {
+                            Write-BlockChange -AAGUID $AAGUID -Path "$currentPath`[$i`]" -Old $item1 -New $item2
+                            $value1[$i] = $item2
+                        }
+                    }
                 }
-            } else {
+            }
+            elseif ($bothObjects) {
                 Compare-Objects -obj1 ([ref]$value1) -obj2 ([ref]$value2) -path $currentPath -update:$update -AAGUID $AAGUID
+            }
+            else {
+                # Arrays of scalars, arrays of different length, or a type change: compare as a whole
+                $old = ConvertTo-Json -InputObject $value1 -Depth 100 -Compress
+                $new = ConvertTo-Json -InputObject $value2 -Depth 100 -Compress
+                if ($old -ne $new -and $update) {
+                    Write-BlockChange -AAGUID $AAGUID -Path $currentPath -Old $value1 -New $value2
+                    if ($prop.IsSettable) {
+                        $obj1.Value.$name = $value2
+                    }
+                }
             }
         } else {
             if ($value1 -ne $value2) {
@@ -173,13 +255,25 @@ $value2Str
             }
         }
     }
+
+    # Properties that exist upstream but not locally are added
+    $localNames = @($obj1.Value.PSObject.Properties.Name)
+    foreach ($upstream in $obj2.Value.PSObject.Properties) {
+        if ($upstream.MemberType -ne 'NoteProperty' -or $excludedProperties -contains $upstream.Name -or $localNames -contains $upstream.Name) { continue }
+        if ($update) {
+            $currentPath = if ($path) { "$path.$($upstream.Name)" } else { $upstream.Name }
+            Write-BlockChange -AAGUID $AAGUID -Path $currentPath -Old $null -New $upstream.Value
+            $obj1.Value | Add-Member -MemberType NoteProperty -Name $upstream.Name -Value $upstream.Value
+        }
+    }
 }
 
 # Main comparison and update loop
-foreach ($AAGUID in $CommonAAGUIDs) {
+foreach ($AAGUIDKey in $CommonAAGUIDs) {
     # Get the entries with the current AAGUID
-    $EXXXKey = $existingFIDOKeys.keys | Where-Object { $_.AAGUID -eq $AAGUID }
-    $FAAAKey = $FIDOAKeys.entries | Where-Object { $_.aaguid -eq $AAGUID }
+    $EXXXKey = $existingIndex[$AAGUIDKey]
+    $FAAAKey = $mdsIndex[$AAGUIDKey]
+    $AAGUID = $EXXXKey.AAGUID
 
     if ($EXXXKey -and $FAAAKey) {
         # Check if timeOfLastStatusChange property exists, and add it if it doesn't
@@ -314,6 +408,33 @@ if (-not $ChangesMade) {
     Add-ToLogBuffer -Value $message
 }
 
+# Record database check/update times
+$now = Get-Timestamp
+if (-not $existingFIDOKeys.metadata) {
+    $existingFIDOKeys | Add-Member -MemberType NoteProperty -Name 'metadata' -Value ([PSCustomObject]@{}) -Force
+}
+$fieldsToStamp = @('databaseLastChecked')
+if ($ChangesMade) { $fieldsToStamp += 'databaseLastUpdated' }
+foreach ($field in $fieldsToStamp) {
+    if ($existingFIDOKeys.metadata.PSObject.Properties[$field]) {
+        $existingFIDOKeys.metadata.$field = $now
+    }
+    else {
+        $existingFIDOKeys.metadata | Add-Member -MemberType NoteProperty -Name $field -Value $now
+    }
+}
+
+# Save the updated $existingFIDOKeys to the JSON file first (atomically), then the log
+try {
+    $UpdatedKeysJson = $existingFIDOKeys | ConvertTo-Json -Depth 100
+    $tmpFile = "$ExistingKeyFile.tmp"
+    Set-Content -Path $tmpFile -Value $UpdatedKeysJson -Encoding utf8
+    Move-Item -Path $tmpFile -Destination $ExistingKeyFile -Force
+}
+catch {
+    Write-Error "Failed to save updated FIDO keys to '$ExistingKeyFile': $_" -ErrorAction Stop
+}
+
 # Add the separator line to the log buffer at the top
 $separator = "===== Script Run on $(Get-Date -AsUTC -Format 'yyyy-MM-dd HH:mm:ss') UTC ====="
 $LogBuffer.InsertRange(0, @('', $separator))
@@ -333,15 +454,6 @@ try {
 }
 catch {
     Write-Error "Failed to write to log file '$LogFilePath': $_" -ErrorAction Stop
-}
-
-# Save the updated $existingFIDOKeys to the JSON file
-try {
-    $UpdatedKeysJson = $existingFIDOKeys | ConvertTo-Json -Depth 100
-    Set-Content -Path 'Assets/FidoKeys.json' -Value $UpdatedKeysJson -Encoding utf8
-}
-catch {
-    Write-Error "Failed to save updated FIDO keys to 'Assets/FidoKeys.json': $_" -ErrorAction Stop
 }
 
 # Calculate counts
