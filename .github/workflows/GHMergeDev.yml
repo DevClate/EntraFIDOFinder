@@ -59,6 +59,7 @@ jobs:
         . ./Scripts/Test-GHAAGUIDExists.ps1
         . ./Scripts/Export-GHEntraFido.ps1
         . ./Scripts/Merge-GHFidoData.ps1
+        Merge-GHFidoData
 
     - name: Read Environment Variables
       shell: bash
@@ -183,7 +184,7 @@ jobs:
         echo "Extracting the 3 newest entries from detailed_log.txt"
 
         # Extract the first 3 'Detailed Log -' sections
-        awk '/^Detailed Log -/{n++; if(n>3) exit} {print}' detailed_log.txt > newest_detailed_log_entries.txt
+        awk 'tolower($0) ~ /^detailed log -/{n++; if(n>3) exit} {print}' detailed_log.txt > newest_detailed_log_entries.txt
 
         # Append to GitHub Action Summary
         echo "## Detailed Log - Newest 3 Entries" >> $GITHUB_STEP_SUMMARY

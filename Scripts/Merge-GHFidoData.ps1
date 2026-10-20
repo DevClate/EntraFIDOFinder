@@ -27,8 +27,21 @@
     The path to the JSON file containing valid vendors.
     Default is 'Assets/valid_vendors.json'.
 
+.PARAMETER EnvFilePath
+    The path of the environment variable file read by the GitHub Actions workflows
+    (ISSUE_ENTRIES and KEYS_NOW_VALID). The file is reset at the start of every run.
+    Default is 'env_vars.txt' next to this script.
+
+.PARAMETER MaxRemovalPercent
+    Safety limit. The run fails before writing anything when the scraped data is empty
+    or would remove more than this percentage of the existing keys. Use 100 to disable
+    the percentage check. Default is 20.
+
 .EXAMPLE
     Merge-GHFidoData
+
+.EXAMPLE
+    Merge-GHFidoData -MaxRemovalPercent 50
 
 .NOTES
     Author: Clayton Tyger
@@ -47,7 +60,12 @@ Function Merge-GHFidoData {
         [Parameter()]
         [string]$DetailedLogFilePath = "detailed_log.txt",
         [Parameter()]
-        [string]$ValidVendorsFilePath = "Assets/valid_vendors.json"
+        [string]$ValidVendorsFilePath = "Assets/valid_vendors.json",
+        [Parameter()]
+        [string]$EnvFilePath = (Join-Path -Path $PSScriptRoot -ChildPath 'env_vars.txt'),
+        [Parameter()]
+        [ValidateRange(0, 100)]
+        [int]$MaxRemovalPercent = 20
     )
 
     $ErrorActionPreference = 'Stop'
@@ -119,8 +137,26 @@ Function Merge-GHFidoData {
         return
     }
 
-    # Index URL data by AAGUID
-    $urlDataByAAGUID = $urlData | Group-Object -AsHashTable -Property AAGUID
+    # Index URL data by AAGUID in page order; the first row wins when an AAGUID is listed twice
+    $urlDataByAAGUID = @{}
+    $urlAAGUIDs = [System.Collections.Generic.List[string]]::new()
+    foreach ($urlRow in @($urlData)) {
+        if ($urlDataByAAGUID.ContainsKey($urlRow.AAGUID)) {
+            Write-Warning "Duplicate AAGUID '$($urlRow.AAGUID)' found on the source page. Ignoring '$($urlRow.Description)'."
+            continue
+        }
+        $urlDataByAAGUID[$urlRow.AAGUID] = $urlRow
+        $urlAAGUIDs.Add($urlRow.AAGUID)
+    }
+
+    # Refuse to continue when the scrape looks wrong, before anything is written
+    if ($urlAAGUIDs.Count -eq 0) {
+        throw "No FIDO keys were found at '$Url'. Existing data was left unchanged."
+    }
+    $removedCount = @($jsonDataByAAGUID.Keys | Where-Object { -not $urlDataByAAGUID.ContainsKey($_) }).Count
+    if ($jsonDataByAAGUID.Count -gt 0 -and ($removedCount * 100 / $jsonDataByAAGUID.Count) -gt $MaxRemovalPercent) {
+        throw "Refusing to remove $removedCount of $($jsonDataByAAGUID.Count) existing keys (limit: $MaxRemovalPercent%). Existing data was left unchanged. Use -MaxRemovalPercent to override."
+    }
 
     # Prepare for logging
     $logDate = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'
@@ -144,28 +180,29 @@ Function Merge-GHFidoData {
     $markdownContent = New-Object System.Collections.ArrayList
     $detailedLogContent = New-Object System.Collections.ArrayList
     $detailedLogContent.Add("Detailed Log - $logDate") | Out-Null # Initialize with the log date
-    $envFilePath = Join-Path -Path $PSScriptRoot -ChildPath 'env_vars.txt'
 
     # Parse existing markdown content to extract last log entries
     if ($existingMarkdownContent -ne "") {
         # Regex to match each log entry
         $pattern = "(?ms)^# Merge Log - \d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\s*(.*?)(?=^# Merge Log - \d{4}-\d{2}-\d{2}|\z)"
-        $matches = [regex]::Matches($existingMarkdownContent, $pattern)
-        if ($matches.Count -gt 0) {
+        $logSections = [regex]::Matches($existingMarkdownContent, $pattern)
+        if ($logSections.Count -gt 0) {
             # The first match is the most recent log entries
-            $lastLogEntriesSection = $matches[0].Groups[1].Value
+            $lastLogEntriesSection = $logSections[0].Groups[1].Value
             $existingLogEntries = $lastLogEntriesSection -split "`r?`n" | ForEach-Object { $_.Trim() } | Where-Object { $_ -ne "" }
         }
     }
 
     # Initialize existingLogEntries as an array even if it's null or empty
-    $existingLogEntries = @($existingLogEntries)
+    $existingLogEntries = @($existingLogEntries | Where-Object { $null -ne $_ })
 
     # Collect changes in a separate variable
     $detailedChanges = @()
 
+    $mergedKeys = [System.Collections.Generic.List[object]]::new()
+
     # Merge data and handle vendors
-    foreach ($aaguid in $urlDataByAAGUID.Keys) {
+    foreach ($aaguid in $urlAAGUIDs) {
         $urlItem = $urlDataByAAGUID[$aaguid]
         $description = $urlItem.Description
         $vendor = ""
@@ -192,11 +229,16 @@ Function Merge-GHFidoData {
                 currentLogEntries    = $currentLogEntries
             }
 
-            # Call the function with splatting
-            $validVendor = Test-GHValidVendor @ValidVendorParams
+            # Call the function with splatting; keep only the returned "Yes"/"No" status
+            $validVendor = @(Test-GHValidVendor @ValidVendorParams) | Where-Object { $_ -is [string] } | Select-Object -Last 1
             $vendor = $vendorRef.Value
 
-            # Access $existingItem.Version
+            # Persist a vendor correction made during validation
+            if (-not [string]::IsNullOrWhiteSpace($vendor) -and $vendor -ne $existingItem.Vendor) {
+                $existingItem.Vendor = $vendor
+                $changesDetected.Value = $true
+                $updateDatabaseLastUpdated = $true
+            }
             $existingVersion = $existingItem.Version
 
             # Get the latest version from metadataStatement.authenticatorGetInfo.versions
@@ -290,7 +332,7 @@ Function Merge-GHFidoData {
             }
 
             # Add updated item to merged data
-            $mergedData.keys += $existingItem
+            $mergedKeys.Add($existingItem)
         }
         else {
             # New entry
@@ -310,8 +352,8 @@ Function Merge-GHFidoData {
                 currentLogEntries    = $currentLogEntries
             }
 
-            # Call the function with splatting
-            $validVendor = Test-GHValidVendor @ValidVendorParams
+            # Call the function with splatting; keep only the returned "Yes"/"No" status
+            $validVendor = @(Test-GHValidVendor @ValidVendorParams) | Where-Object { $_ -is [string] } | Select-Object -Last 1
             $vendor = $vendorRef.Value
 
             # If vendor is valid, ensure it matches a valid vendor name from the list
@@ -376,7 +418,7 @@ Function Merge-GHFidoData {
                 statusReports          = $urlItem.statusReports
                 timeOfLastStatusChange = $urlItem.timeOfLastStatusChange
             }
-            $mergedData.keys += @($newItem)
+            $mergedKeys.Add($newItem)
             $changesDetected.Value = $true
             $updateDatabaseLastUpdated = $true
 
@@ -408,10 +450,12 @@ Function Merge-GHFidoData {
     }
     $mergedData.metadata.databaseLastChecked = (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')
 
-    # Sort and write the merged data
-    $mergedData.keys = $mergedData.keys | Sort-Object Vendor
+    # Sort and write the merged data; write to a temp file first so a failure cannot truncate the database
+    $mergedData.keys = @($mergedKeys | Sort-Object Vendor)
     $jsonOutput = $mergedData | ConvertTo-Json -Depth 10
-    Set-Content -Path $JsonFilePath -Value $jsonOutput -Encoding utf8
+    $tempJsonPath = "$JsonFilePath.tmp"
+    Set-Content -Path $tempJsonPath -Value $jsonOutput -Encoding utf8
+    Move-Item -Path $tempJsonPath -Destination $JsonFilePath -Force
 
     # Compare current log entries with last run's log entries
     if ($changesDetected.Value) {
@@ -471,13 +515,16 @@ Function Merge-GHFidoData {
         Set-Content -Path $DetailedLogFilePath -Value $newDetailedContent -Encoding utf8
     }
 
-    # Update environment variables for GitHub Actions
+    # Update environment variables for GitHub Actions (start from a clean file)
+    if (Test-Path -Path $EnvFilePath) {
+        Remove-Item -Path $EnvFilePath -Force
+    }
     if ($issueEntries -and $issueEntries.Count -gt 0) {
         $issueEntriesString = $issueEntries -join "`n"
         # Escape special characters for GitHub Actions
         if (-not [string]::IsNullOrWhiteSpace($issueEntriesString)) {
             $issueEntriesEscaped = $issueEntriesString.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A').Replace("'", '%27').Replace('"', '%22')
-            "ISSUE_ENTRIES=$issueEntriesEscaped" | Out-File -FilePath $envFilePath -Encoding utf8 -Append
+            "ISSUE_ENTRIES=$issueEntriesEscaped" | Out-File -FilePath $EnvFilePath -Encoding utf8 -Append
         }
     }
 
@@ -488,7 +535,7 @@ Function Merge-GHFidoData {
         # Escape special characters for GitHub Actions
         if (-not [string]::IsNullOrWhiteSpace($keysNowValidString)) {
             $keysNowValidEscaped = $keysNowValidString.Replace('%', '%25').Replace("`r", '%0D').Replace("`n", '%0A').Replace("'", '%27').Replace('"', '%22')
-            "KEYS_NOW_VALID=$keysNowValidEscaped" | Out-File -FilePath $envFilePath -Encoding utf8 -Append
+            "KEYS_NOW_VALID=$keysNowValidEscaped" | Out-File -FilePath $EnvFilePath -Encoding utf8 -Append
         }
     }
 }
