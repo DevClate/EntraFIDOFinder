@@ -1,114 +1,203 @@
-Function Export-GHEntraFido {
+function Export-GHEntraFido {
     <#
     .SYNOPSIS
     Exports FIDO data from a specified URL.
 
     .DESCRIPTION
-    This function fetches the HTML content from the provided URL, parses the HTML to find a specific table with headers "Description" and "AAGUID",
-    and extracts the data from the table. The data is then output in a structured format.
+    Fetches a webpage once, finds the table with Description and AAGUID columns,
+    and returns normalized FIDO authenticator data. The expected properties are
+    Description, AAGUID, Bio, USB, NFC, BLE, and Vendor. Missing required table
+    structure or unusable rows produce terminating errors.
 
     .PARAMETER Url
     The URL of the webpage containing the FIDO data table.
 
+    .PARAMETER HtmlAgilityPackPath
+    Optional path to HtmlAgilityPack.dll when its assembly is not already loaded.
+
     .EXAMPLE
     Export-GHEntraFido -Url "https://example.com/fido-data"
-    This command fetches and exports the FIDO data from the specified URL.
+
+    .EXAMPLE
+    Export-GHEntraFido -Url "https://example.com/fido-data" -HtmlAgilityPackPath "./HtmlAgilityPack.dll"
+
+    .OUTPUTS
+    PSCustomObject with Description, AAGUID, Bio, USB, NFC, BLE, and Vendor properties.
 
     .NOTES
-    The function uses HtmlAgilityPack to parse the HTML content.
+    The GitHub merge workflows load their pinned HtmlAgilityPack assembly before
+    dot-sourcing this script. For standalone use, load the assembly first or pass
+    -HtmlAgilityPackPath. Focused tests are in Scripts/Tests/Export-GHEntraFido.Tests.ps1;
+    set HTML_AGILITY_PACK_PATH to HtmlAgilityPack.dll before running them with Invoke-Pester.
     #>
     [CmdletBinding()]
+    [OutputType([PSCustomObject])]
     param (
         [Parameter(Mandatory = $true)]
-        [string]$Url
+        [string]$Url,
+
+        [Parameter()]
+        [string]$HtmlAgilityPackPath
     )
 
     if (-not ('HtmlAgilityPack.HtmlDocument' -as [type])) {
-    $dll = Get-ChildItem -Path $HOME -Recurse -Filter HtmlAgilityPack.dll -ErrorAction SilentlyContinue |
-        Select-Object -First 1
+        if ([string]::IsNullOrWhiteSpace($HtmlAgilityPackPath)) {
+            throw "HtmlAgilityPack is not loaded. Load the assembly before calling this function or provide -HtmlAgilityPackPath."
+        }
 
-    if (-not $dll) {
-        throw "HtmlAgilityPack.dll not found. Ensure the dependency is installed before running Export-GHEntraFido."
+        if (-not (Test-Path -LiteralPath $HtmlAgilityPackPath -PathType Leaf)) {
+            throw "HtmlAgilityPack.dll was not found at '$HtmlAgilityPackPath'."
+        }
+
+        try {
+            Add-Type -Path (Resolve-Path -LiteralPath $HtmlAgilityPackPath).Path -ErrorAction Stop
+        }
+        catch {
+            throw "Failed to load HtmlAgilityPack from '$HtmlAgilityPackPath': $($_.Exception.Message)"
+        }
     }
 
-    Add-Type -Path $dll.FullName
-}
+    $response = Invoke-WebRequest -Uri $Url -ErrorAction Stop
+    if ([string]::IsNullOrWhiteSpace($response.Content)) {
+        throw "The response from '$Url' did not contain HTML content."
+    }
 
-    $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
-    $htmlContent = $response.Content
-
-    $htmlDocument = New-Object HtmlAgilityPack.HtmlDocument
-    $htmlDocument.LoadHtml($htmlContent)
-
-    # Fetch the webpage content
-    $response = Invoke-WebRequest -Uri $Url -UseBasicParsing
-    $htmlContent = $response.Content
-
-    # Load the HTML content into an HtmlDocument object
-    $htmlDocument = New-Object HtmlAgilityPack.HtmlDocument
-    $htmlDocument.LoadHtml($htmlContent)
-
-    # Extract all table nodes from the HTML document
-    $tableNodes = $htmlDocument.DocumentNode.SelectNodes("//table")
-
-    # Find the target table based on headers
+    $htmlDocument = [HtmlAgilityPack.HtmlDocument]::new()
+    $htmlDocument.LoadHtml($response.Content)
+    $tableNodes = $htmlDocument.DocumentNode.SelectNodes('//table')
     $targetTableNode = $null
-    foreach ($tableNode in $tableNodes) {
-        $headers = $tableNode.SelectNodes(".//thead/tr/th") | ForEach-Object { $_.InnerText.Trim() }
-        if ($headers -contains "Description" -and $headers -contains "AAGUID") {
+    $headers = @()
+
+    foreach ($tableNode in @($tableNodes)) {
+        if ($null -eq $tableNode) {
+            continue
+        }
+
+        $headerNodes = $tableNode.SelectNodes('./thead/tr[1]/th')
+        if ($null -eq $headerNodes) {
+            $headerNodes = $tableNode.SelectNodes('./tr[1]/th')
+        }
+
+        if ($null -eq $headerNodes) {
+            continue
+        }
+
+        $candidateHeaders = @(
+            foreach ($headerNode in $headerNodes) {
+                [HtmlAgilityPack.HtmlEntity]::DeEntitize($headerNode.InnerText) -replace '\s+', ' '
+            }
+        ) | ForEach-Object { $_.Trim() }
+
+        $normalizedHeaders = @(
+            foreach ($header in $candidateHeaders) {
+                switch -Regex ($header.Trim().ToLowerInvariant()) {
+                    '^(description)$' { 'Description'; break }
+                    '^(aaguid)$' { 'AAGUID'; break }
+                    '^(bio|biometric)$' { 'Bio'; break }
+                    '^(usb)$' { 'USB'; break }
+                    '^(nfc)$' { 'NFC'; break }
+                    '^(ble|bluetooth low energy)$' { 'BLE'; break }
+                    default { $header.Trim() }
+                }
+            }
+        )
+
+        if ($normalizedHeaders -contains 'Description' -and $normalizedHeaders -contains 'AAGUID') {
             $targetTableNode = $tableNode
+            $headers = $normalizedHeaders
             break
         }
     }
 
-    if ($null -ne $targetTableNode) {
-        # Extract headers from the target table
-        $headers = $targetTableNode.SelectNodes(".//thead/tr/th") | ForEach-Object { $_.InnerText.Trim() }
+    if ($null -eq $targetTableNode) {
+        throw "No table with both Description and AAGUID headers was found at '$Url'."
+    }
 
-        # Initialize an array to hold the data
-        $data = @()
+    $capabilityHeaders = @('Bio', 'USB', 'NFC', 'BLE')
+    $data = [System.Collections.Generic.List[object]]::new()
+    $rowNodes = $targetTableNode.SelectNodes('./tbody/tr')
 
-        # Process the rows of the target table
-        $rowNodes = $targetTableNode.SelectNodes(".//tbody/tr")
-        foreach ($rowNode in $rowNodes) {
-            $cellNodes = $rowNode.SelectNodes("td")
-            $row = @{
-                Description = ""
-                AAGUID = ""
-                Bio = ""
-                USB = ""
-                NFC = ""
-                BLE = ""
-                Vendor = ""  # Initialize Vendor as an empty string
+    foreach ($rowNode in @($rowNodes)) {
+        if ($null -eq $rowNode) {
+            continue
+        }
+
+        $cellNodes = $rowNode.SelectNodes('./td')
+        if ($null -eq $cellNodes -or $cellNodes.Count -eq 0) {
+            continue
+        }
+
+        if ($cellNodes.Count -ne $headers.Count) {
+            throw "A row in the FIDO table at '$Url' has $($cellNodes.Count) table cells for $($headers.Count) header columns."
+        }
+
+        $row = [ordered]@{
+            Description = ''
+            AAGUID      = ''
+            Bio         = ''
+            USB         = ''
+            NFC         = ''
+            BLE         = ''
+            Vendor      = ''
+        }
+
+        for ($index = 0; $index -lt [Math]::Min($cellNodes.Count, $headers.Count); $index++) {
+            $header = $headers[$index]
+            if (-not $row.Contains($header)) {
+                continue
             }
 
-            for ($i = 0; $i -lt $cellNodes.Count; $i++) {
-                $header = $headers[$i]
-                $cell = $cellNodes[$i]
-                $value = $cell.InnerText.Trim()
+            $cell = $cellNodes[$index]
+            $value = [HtmlAgilityPack.HtmlEntity]::DeEntitize($cell.InnerText) -replace '\s+', ' '
+            $value = $value.Trim()
 
-                if ($header -in @("Bio", "USB", "BLE", "NFC")) {
-                    $urlValue = $null
-                    if ($cell.SelectSingleNode(".//a")) {
-                        $urlValue = $cell.SelectSingleNode(".//a").GetAttributeValue("href", "")
-                    } elseif ($cell.SelectSingleNode(".//img")) {
-                        $urlValue = $cell.SelectSingleNode(".//img").GetAttributeValue("src", "")
+            if ($header -in $capabilityHeaders) {
+                $imageNode = $cell.SelectSingleNode('.//img')
+                if ($null -ne $imageNode) {
+                    $altText = [HtmlAgilityPack.HtmlEntity]::DeEntitize(
+                        $imageNode.GetAttributeValue('alt', '')
+                    ).Trim()
+                    if ($altText -match '^(?i:yes|no)$') {
+                        $value = $altText.Substring(0, 1).ToUpperInvariant() + $altText.Substring(1).ToLowerInvariant()
                     }
-
-                    if ($urlValue -match "(yes|no)\.png$") {
-                        $value = $matches[1] -replace "yes", "Yes" -replace "no", "No"
+                    else {
+                        $imageSource = $imageNode.GetAttributeValue('src', '')
+                        $iconMatch = [regex]::Match($imageSource, '(?i)(?:^|/)(yes|no)\.png(?:[?#].*)?$')
+                        if ($iconMatch.Success) {
+                            $value = $iconMatch.Groups[1].Value.Substring(0, 1).ToUpperInvariant() +
+                                $iconMatch.Groups[1].Value.Substring(1).ToLowerInvariant()
+                        }
                     }
                 }
 
-                $row[$header] = $value
+                if ($value -notmatch '^(?i:yes|no)$') {
+                    $linkNode = $cell.SelectSingleNode('.//a')
+                    if ($null -ne $linkNode) {
+                        $linkMatch = [regex]::Match(
+                            $linkNode.GetAttributeValue('href', ''),
+                            '(?i)(?:^|/)(yes|no)\.png(?:[?#].*)?$'
+                        )
+                        if ($linkMatch.Success) {
+                            $value = $linkMatch.Groups[1].Value.Substring(0, 1).ToUpperInvariant() +
+                                $linkMatch.Groups[1].Value.Substring(1).ToLowerInvariant()
+                        }
+                    }
+                }
             }
 
-            $data += [PSCustomObject]$row
+            $row[$header] = $value
         }
 
-        # Output the data in the specified order
-        $data | Select-Object Description, AAGUID, Bio, USB, NFC, BLE, Vendor
-    } else {
-        Write-Error "No table found with the specified headers."
+        if ([string]::IsNullOrWhiteSpace($row.Description) -or [string]::IsNullOrWhiteSpace($row.AAGUID)) {
+            throw "A row in the FIDO table at '$Url' has an empty Description or AAGUID."
+        }
+
+        $data.Add([PSCustomObject]$row)
     }
+
+    if ($data.Count -eq 0) {
+        throw "The FIDO table at '$Url' did not contain any data rows."
+    }
+
+    $data
 }
