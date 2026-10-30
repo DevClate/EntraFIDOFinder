@@ -1,4 +1,8 @@
 {
+  "metadata": {
+    "databaseLastUpdated": "2026-10-09 00:40:24",
+    "databaseLastChecked": "2026-10-30 00:26:27"
+  },
   "keys": [
     {
       "Vendor": "ACS",
@@ -39960,9 +39964,5 @@
       ],
       "timeOfLastStatusChange": "2025-03-06"
     }
-  ],
-  "metadata": {
-    "databaseLastUpdated": "2026-10-09 00:40:24",
-    "databaseLastChecked": "2026-10-29 00:25:43"
-  }
+  ]
 }
