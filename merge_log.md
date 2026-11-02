@@ -1,3 +1,18 @@
+# Merge Log - 2026-11-02 00:23:30
+
+Updated 'Version' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from 'FIDO 2.1 PRE' to 'FIDO 2.0'.
+
+Updated 'Version' for AAGUID '19bca99b-7c09-44fe-a969-8cba45764542' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID 'b68c4b8d-65cb-42ae-b4f6-8606dfba3c22' from '' to 'FIDO 2.1'.
+
+Updated 'Version' for AAGUID '0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '11544c3c-3693-40ba-9dbb-3b8d2b977988' from '' to 'FIDO 2.1 PRE'.
+
+Updated 'Version' for AAGUID '39502df1-646d-4e31-81a1-2ef68b324678' from '' to 'FIDO 2.0'.
+
+
 # Merge Log - 2026-10-09 00:40:24
 
 Vendor 'HID' for description 'HID Crescendo Key V3 FIPS' has become valid.

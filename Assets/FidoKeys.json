@@ -669,7 +669,7 @@
       "USB": "✅",
       "NFC": "❌",
       "BLE": "❌",
-      "Version": "FIDO 2.1 PRE",
+      "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
       "metadataStatement": {
         "legalHeader": "Submission of this statement and retrieval and use of this statement indicates acceptance of the appropriate agreement located at https://fidoalliance.org/metadata/metadata-legal-terms/.",
@@ -8917,7 +8917,7 @@
       "USB": "✅",
       "NFC": "✅",
       "BLE": "❌",
-      "Version": null,
+      "Version": "FIDO 2.0",
       "ValidVendor": "Yes",
       "statusReports": [
         {
@@ -10761,7 +10761,7 @@
       "USB": "✅",
       "NFC": "✅",
       "BLE": "❌",
-      "Version": null,
+      "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
       "statusReports": [
         {
@@ -13965,7 +13965,7 @@
       "USB": "❌",
       "NFC": "✅",
       "BLE": "❌",
-      "Version": null,
+      "Version": "FIDO 2.1",
       "ValidVendor": "Yes",
       "statusReports": [
         {
@@ -23288,7 +23288,7 @@
       "USB": "❌",
       "NFC": "✅",
       "BLE": "❌",
-      "Version": null,
+      "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
       "statusReports": [
         {
@@ -23454,7 +23454,7 @@
       "USB": "❌",
       "NFC": "✅",
       "BLE": "❌",
-      "Version": null,
+      "Version": "FIDO 2.1 PRE",
       "ValidVendor": "Yes",
       "statusReports": [
         {
@@ -41325,7 +41325,7 @@
     }
   ],
   "metadata": {
-    "databaseLastUpdated": "2026-11-01 04:03:58",
-    "databaseLastChecked": "2026-11-01 04:03:58"
+    "databaseLastUpdated": "2026-11-02 00:23:31",
+    "databaseLastChecked": "2026-11-02 00:23:31"
   }
 }
