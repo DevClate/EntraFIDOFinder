@@ -1,3 +1,78 @@
+# Merge Log - 2026-11-19 00:21:55
+
+Vendor set for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f': '' to 'Deepnet' (derived from description).
+
+Added new entry for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f' with description 'Deepnet SafeKey/Classic (FP)' and vendor 'Deepnet'.
+
+Vendor set for AAGUID 'c1288a5c-d66b-495c-a68f-4e81f9ec5b53': '' to 'Deepnet' (derived from description).
+
+Added new entry for AAGUID 'c1288a5c-d66b-495c-a68f-4e81f9ec5b53' with description 'Deepnet SafeKey/Classic (FP) XF' and vendor 'Deepnet'.
+
+Vendor set for AAGUID '357f2718-434f-4124-8a58-7e28c5e4a2fc': '' to 'Deepnet' (derived from description).
+
+Added new entry for AAGUID '357f2718-434f-4124-8a58-7e28c5e4a2fc' with description 'Deepnet SafeKey/Classic (NFC)' and vendor 'Deepnet'.
+
+Vendor set for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132': '' to 'Deepnet' (derived from description).
+
+Added new entry for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132' with description 'Deepnet SafeKey/Classic (USB)' and vendor 'Deepnet'.
+
+Vendor set for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49': '' to 'Ensurity' (derived from description).
+
+Added new entry for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49' with description 'Ensurity AUTH TouchPro' and vendor 'Ensurity'.
+
+Vendor set for AAGUID 'a6c5f5d8-2ad0-48b6-8257-e502c8970931': '' to 'eToken' (derived from description).
+
+Added new entry for AAGUID 'a6c5f5d8-2ad0-48b6-8257-e502c8970931' with description 'eToken FIDO NFC Enterprise' and vendor 'eToken'.
+
+Vendor set for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90': '' to 'eToken' (derived from description).
+
+Added new entry for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' with description 'eToken Fusion NFC PIV Enterprise' and vendor 'eToken'.
+
+Vendor set for AAGUID '361a3082-0278-4583-a16f-72a527f973e4': '' to 'eWBM' (derived from description).
+
+Added new entry for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' with description 'eWBM eFA500 FIDO2 Authenticator' and vendor 'eWBM'.
+
+Vendor set for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a': '' to 'Feitian' (derived from description).
+
+Added new entry for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' with description 'Feitian FIDO Smart Card' and vendor 'Feitian'.
+
+Vendor derived for AAGUID 'c09b3399-4a3d-306c-7bdc-967fef47241f': '' to 'StarSign' from description match.
+
+Added new entry for AAGUID 'c09b3399-4a3d-306c-7bdc-967fef47241f' with description 'Giesecke+Devrient StarSign FIDO Card 2.1' and vendor 'StarSign'.
+
+Vendor set for AAGUID '6169eb16-f87a-42d8-978d-e1ac0c3f319f': '' to 'IDEMIA' (derived from description).
+
+Added new entry for AAGUID '6169eb16-f87a-42d8-978d-e1ac0c3f319f' with description 'IDEMIA Access FIDO Smart Card' and vendor 'IDEMIA'.
+
+Vendor set for AAGUID '9152406a-de8e-46dd-8685-3875c067e486': '' to 'SafeNet' (derived from description).
+
+Added new entry for AAGUID '9152406a-de8e-46dd-8685-3875c067e486' with description 'SafeNet eToken Fusion NFC 930C FIDO2.1' and vendor 'SafeNet'.
+
+Vendor set for AAGUID '18852056-063b-4042-9814-7d0d383081f9': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '18852056-063b-4042-9814-7d0d383081f9' with description 'SECORA ID Key S USB by Infineon Enterprise Edition' and vendor 'SECORA'.
+
+Vendor set for AAGUID '55fd881f-40ba-4eaf-8435-42c5fed08b76': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '55fd881f-40ba-4eaf-8435-42c5fed08b76' with description 'SECORA ID V2 by Infineon Consumer Edition' and vendor 'SECORA'.
+
+Vendor set for AAGUID '8108bdcd-8483-46b3-b3ce-359f8190325e': '' to 'SECORA' (derived from description).
+
+Added new entry for AAGUID '8108bdcd-8483-46b3-b3ce-359f8190325e' with description 'SECORA ID V2 by Infineon Enterprise Edition' and vendor 'SECORA'.
+
+Vendor set for AAGUID '33d6d7d0-279f-4ef3-96b3-2d3282f4bde6': '' to 'Thales' (derived from description).
+
+Added new entry for AAGUID '33d6d7d0-279f-4ef3-96b3-2d3282f4bde6' with description 'Thales eToken Fusion BIO Enterprise' and vendor 'Thales'.
+
+Failed to derive valid vendor for AAGUID '6e34341a-88c7-483d-b777-a425c355be93' with description 'WebComm OETHenticator'. Vendor field was empty.
+
+Set vendor name for invalid AAGUID '6e34341a-88c7-483d-b777-a425c355be93' to 'Unknown'.
+
+Vendor set for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1': '' to 'Yubico' (derived from description).
+
+Added new entry for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' with description 'YubiKey 5 FIPS Series with NFC (RC Preview)' and vendor 'Yubico'.
+
+
 # Merge Log - 2026-11-02 00:23:30
 
 Updated 'Version' for AAGUID '5ca1ab1e-fa57-1337-f1d0-a117371ca702' from 'FIDO 2.1 PRE' to 'FIDO 2.0'.
