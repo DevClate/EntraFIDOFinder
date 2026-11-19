@@ -1,3 +1,59 @@
+DETAILED LOG - 2026-11-19 00:14:15
+
+Vendor '' for description 'eToken Fusion NFC PIV Enterprise' has become invalid.
+
+Vendor 'Ensurity' for description 'Ensurity AUTH TouchPro' has become valid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (USB)' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian FIDO Smart Card' has become valid.
+
+Vendor '' for description 'SECORA ID V2 by Infineon Consumer Edition' has become invalid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (NFC)' has become invalid.
+
+Vendor '' for description 'WebComm OETHenticator' has become invalid.
+
+Vendor 'eWBM' for description 'eWBM eFA500 FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'SECORA ID Key S USB by Infineon Enterprise Edition' has become invalid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (FP) XF' has become invalid.
+
+Vendor '' for description 'Giesecke+Devrient StarSign FIDO Card 2.1' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC (RC Preview)' has become invalid.
+
+Vendor 'Thales' for description 'Thales eToken Fusion BIO Enterprise' has become valid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (FP)' has become invalid.
+
+Vendor '' for description 'eToken FIDO NFC Enterprise' has become invalid.
+
+Vendor 'SafeNet' for description 'SafeNet eToken Fusion NFC 930C FIDO2.1' has become valid.
+
+Vendor '' for description 'SECORA ID V2 by Infineon Enterprise Edition' has become invalid.
+
+Vendor 'IDEMIA' for description 'IDEMIA Access FIDO Smart Card' has become valid.
+
+
+
+DETAILED LOG - 2026-11-19 00:14:14
+
+Added new entry for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49' with description 'Ensurity AUTH TouchPro' and vendor 'Ensurity'.
+
+Added new entry for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' with description 'Feitian FIDO Smart Card' and vendor 'Feitian'.
+
+Added new entry for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' with description 'eWBM eFA500 FIDO2 Authenticator' and vendor 'eWBM'.
+
+Added new entry for AAGUID '33d6d7d0-279f-4ef3-96b3-2d3282f4bde6' with description 'Thales eToken Fusion BIO Enterprise' and vendor 'Thales'.
+
+Added new entry for AAGUID '9152406a-de8e-46dd-8685-3875c067e486' with description 'SafeNet eToken Fusion NFC 930C FIDO2.1' and vendor 'SafeNet'.
+
+Added new entry for AAGUID '6169eb16-f87a-42d8-978d-e1ac0c3f319f' with description 'IDEMIA Access FIDO Smart Card' and vendor 'IDEMIA'.
+
+
+
 DETAILED LOG - 2026-11-18 00:14:03
 
 No changes have been detected since last run.
@@ -7654,6 +7710,8 @@ No changes detected during this run.
 Detailed Log - 2024-11-13 11:47:11
 
 No changes detected during this run.
+
+
 
 
 

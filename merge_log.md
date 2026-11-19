@@ -1,3 +1,81 @@
+# Merge Log - 2026-11-19 00:14:15
+
+Vendor '' for description 'eToken Fusion NFC PIV Enterprise' has become invalid.
+
+Vendor 'Ensurity' for description 'Ensurity AUTH TouchPro' has become valid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (USB)' has become invalid.
+
+Vendor 'Feitian' for description 'Feitian FIDO Smart Card' has become valid.
+
+Vendor '' for description 'SECORA ID V2 by Infineon Consumer Edition' has become invalid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (NFC)' has become invalid.
+
+Vendor '' for description 'WebComm OETHenticator' has become invalid.
+
+Vendor 'eWBM' for description 'eWBM eFA500 FIDO2 Authenticator' has become valid.
+
+Vendor '' for description 'SECORA ID Key S USB by Infineon Enterprise Edition' has become invalid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (FP) XF' has become invalid.
+
+Vendor '' for description 'Giesecke+Devrient StarSign FIDO Card 2.1' has become invalid.
+
+Vendor '' for description 'YubiKey 5 FIPS Series with NFC (RC Preview)' has become invalid.
+
+Vendor 'Thales' for description 'Thales eToken Fusion BIO Enterprise' has become valid.
+
+Vendor '' for description 'Deepnet SafeKey/Classic (FP)' has become invalid.
+
+Vendor '' for description 'eToken FIDO NFC Enterprise' has become invalid.
+
+Vendor 'SafeNet' for description 'SafeNet eToken Fusion NFC 930C FIDO2.1' has become valid.
+
+Vendor '' for description 'SECORA ID V2 by Infineon Enterprise Edition' has become invalid.
+
+Vendor 'IDEMIA' for description 'IDEMIA Access FIDO Smart Card' has become valid.
+
+
+# Merge Log - 2026-11-19 00:14:14
+
+Invalid vendor detected for AAGUID 'c3f47802-de73-4dfc-ba22-671fe3304f90' with description 'eToken Fusion NFC PIV Enterprise'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '50cbf15a-238c-4457-8f16-812c43bf3c49' with description 'Ensurity AUTH TouchPro' and vendor 'Ensurity'.
+
+Invalid vendor detected for AAGUID 'b9f6b7b6-f929-4189-bca9-dd951240c132' with description 'Deepnet SafeKey/Classic (USB)'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '2c0df832-92de-4be1-8412-88a8f074df4a' with description 'Feitian FIDO Smart Card' and vendor 'Feitian'.
+
+Invalid vendor detected for AAGUID '55fd881f-40ba-4eaf-8435-42c5fed08b76' with description 'SECORA ID V2 by Infineon Consumer Edition'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '357f2718-434f-4124-8a58-7e28c5e4a2fc' with description 'Deepnet SafeKey/Classic (NFC)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID '6e34341a-88c7-483d-b777-a425c355be93' with description 'WebComm OETHenticator'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '361a3082-0278-4583-a16f-72a527f973e4' with description 'eWBM eFA500 FIDO2 Authenticator' and vendor 'eWBM'.
+
+Invalid vendor detected for AAGUID '18852056-063b-4042-9814-7d0d383081f9' with description 'SECORA ID Key S USB by Infineon Enterprise Edition'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'c1288a5c-d66b-495c-a68f-4e81f9ec5b53' with description 'Deepnet SafeKey/Classic (FP) XF'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'c09b3399-4a3d-306c-7bdc-967fef47241f' with description 'Giesecke+Devrient StarSign FIDO Card 2.1'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1' with description 'YubiKey 5 FIPS Series with NFC (RC Preview)'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '33d6d7d0-279f-4ef3-96b3-2d3282f4bde6' with description 'Thales eToken Fusion BIO Enterprise' and vendor 'Thales'.
+
+Invalid vendor detected for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f' with description 'Deepnet SafeKey/Classic (FP)'. Vendor '' is not in the list of valid vendors.
+
+Invalid vendor detected for AAGUID 'a6c5f5d8-2ad0-48b6-8257-e502c8970931' with description 'eToken FIDO NFC Enterprise'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '9152406a-de8e-46dd-8685-3875c067e486' with description 'SafeNet eToken Fusion NFC 930C FIDO2.1' and vendor 'SafeNet'.
+
+Invalid vendor detected for AAGUID '8108bdcd-8483-46b3-b3ce-359f8190325e' with description 'SECORA ID V2 by Infineon Enterprise Edition'. Vendor '' is not in the list of valid vendors.
+
+Added new entry for AAGUID '6169eb16-f87a-42d8-978d-e1ac0c3f319f' with description 'IDEMIA Access FIDO Smart Card' and vendor 'IDEMIA'.
+
+
 # Merge Log - 2026-10-10 00:24:46
 
 
