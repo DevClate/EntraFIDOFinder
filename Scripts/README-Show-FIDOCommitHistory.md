@@ -11,6 +11,7 @@ This script fetches commit history from the [Microsoft Docs Entra FIDO2 vendor d
 - ✅ Fetches commits directly from GitHub API (no local clone needed)
 - 📊 Parses markdown tables to extract FIDO key data
 - 🔍 Detects added, removed, and modified AAGUIDs
+- 📅 Uses the latest pre-month commit as the baseline for monthly reports
 - 🎨 Color-coded output for easy reading
 - 📈 Summary statistics across commit range
 
@@ -48,6 +49,9 @@ Show-FIDOCommitHistory -Month 4 -Year 2026
 Show-FIDOCommitHistory -Month 3
 ```
 
+Monthly reports always include a baseline comparison. If a month has one commit,
+that commit is compared with the latest FIDO vendor-page commit before the month.
+
 ### Show Detailed Changes
 
 ```powershell
@@ -71,6 +75,9 @@ Show-FIDOCommitHistory -Month 4 -Year 2026 -AsChangeLog -OutputFile "CHANGELOG-A
 
 # Or pipe to file
 Show-FIDOCommitHistory -CurrentMonth -AsChangeLog > "CHANGELOG-$(Get-Date -Format 'yyyy-MM').md"
+
+# The script can also be invoked directly
+./Scripts/Show-FIDOCommitHistory.ps1 -Month 10 -Year 2026 -AsChangeLog -OutputFile "CHANGELOG-October2026.md"
 ```
 
 ## Parameters

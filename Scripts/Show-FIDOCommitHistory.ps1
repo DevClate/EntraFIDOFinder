@@ -49,6 +49,32 @@
     Date: 2026-05-12
 #>
 
+[CmdletBinding(DefaultParameterSetName = 'Count')]
+param (
+    [Parameter(ParameterSetName = 'Count')]
+    [int]$CommitCount = 3,
+
+    [Parameter(ParameterSetName = 'CurrentMonth')]
+    [switch]$CurrentMonth,
+
+    [Parameter(ParameterSetName = 'SpecificMonth')]
+    [ValidateRange(1, 12)]
+    [int]$Month,
+
+    [Parameter(ParameterSetName = 'SpecificMonth')]
+    [ValidateRange(2020, 2030)]
+    [int]$Year = (Get-Date).Year,
+
+    [Parameter()]
+    [switch]$ShowDetails,
+
+    [Parameter()]
+    [switch]$AsChangeLog,
+
+    [Parameter()]
+    [string]$OutputFile
+)
+
 Function Show-FIDOCommitHistory {
     [CmdletBinding(DefaultParameterSetName='Count')]
     param (
@@ -83,6 +109,42 @@ Function Show-FIDOCommitHistory {
     $repo = "entra-docs"
     $filePath = "docs/identity/authentication/concept-fido2-hardware-vendor.md"
     $apiBase = "https://api.github.com"
+    $githubHeaders = @{
+        "Accept" = "application/vnd.github.v3+json"
+        "User-Agent" = "PowerShell-FIDO-Tracker"
+    }
+
+    function Get-FIDOCommitData {
+        param(
+            [Parameter(Mandatory)]
+            [object]$Commit,
+
+            [Parameter(Mandatory)]
+            [string]$Label
+        )
+
+        $sha = $Commit.sha
+        $date = [DateTimeOffset]::Parse($Commit.commit.author.date)
+        $message = $Commit.commit.message
+
+        Write-Host "  📥 Fetching $Label commit $($sha.Substring(0,7)) - $($date.ToString('yyyy-MM-dd HH:mm'))..." -ForegroundColor Gray
+
+        $fileUrl = "$apiBase/repos/$owner/$repo/contents/$filePath`?ref=$sha"
+        $fileData = Invoke-RestMethod -Uri $fileUrl -Headers $githubHeaders
+        $content = [System.Text.Encoding]::UTF8.GetString(
+            [System.Convert]::FromBase64String($fileData.content)
+        )
+        $entries = Parse-FIDOTable -Content $content
+
+        [PSCustomObject]@{
+            SHA = $sha
+            ShortSHA = $sha.Substring(0, 7)
+            Date = $date
+            Message = $message
+            Entries = $entries
+            AAGUIDs = $entries.AAGUID
+        }
+    }
     
     # Determine date range based on parameters
     $since = $null
@@ -91,12 +153,18 @@ Function Show-FIDOCommitHistory {
     
     if ($CurrentMonth) {
         $now = Get-Date
-        $since = Get-Date -Year $now.Year -Month $now.Month -Day 1 -Hour 0 -Minute 0 -Second 0
+        $since = [DateTime]::SpecifyKind(
+            (Get-Date -Year $now.Year -Month $now.Month -Day 1 -Hour 0 -Minute 0 -Second 0),
+            [DateTimeKind]::Utc
+        )
         $until = $since.AddMonths(1).AddSeconds(-1)
         Write-Host "`n🔍 Fetching commits for current month ($($since.ToString('MMMM yyyy')))..." -ForegroundColor Cyan
     }
     elseif ($PSBoundParameters.ContainsKey('Month')) {
-        $since = Get-Date -Year $Year -Month $Month -Day 1 -Hour 0 -Minute 0 -Second 0
+        $since = [DateTime]::SpecifyKind(
+            (Get-Date -Year $Year -Month $Month -Day 1 -Hour 0 -Minute 0 -Second 0),
+            [DateTimeKind]::Utc
+        )
         $until = $since.AddMonths(1).AddSeconds(-1)
         Write-Host "`n🔍 Fetching commits for $($since.ToString('MMMM yyyy'))..." -ForegroundColor Cyan
     }
@@ -115,10 +183,7 @@ Function Show-FIDOCommitHistory {
             $commitsUrl += "&until=$($until.ToString('yyyy-MM-ddTHH:mm:ssZ'))"
         }
         
-        $commits = Invoke-RestMethod -Uri $commitsUrl -Headers @{
-            "Accept" = "application/vnd.github.v3+json"
-            "User-Agent" = "PowerShell-FIDO-Tracker"
-        }
+        $commits = Invoke-RestMethod -Uri $commitsUrl -Headers $githubHeaders
         
         if ($commits.Count -eq 0) {
             Write-Host "No commits found." -ForegroundColor Yellow
@@ -131,34 +196,18 @@ Function Show-FIDOCommitHistory {
         $commitData = @()
         
         foreach ($commit in $commits) {
-            $sha = $commit.sha
-            $date = [DateTime]::Parse($commit.commit.author.date)
-            $message = $commit.commit.message
-            # $author = $commit.commit.author.name
-            
-            Write-Host "  📥 Fetching commit $($sha.Substring(0,7)) - $($date.ToString('yyyy-MM-dd HH:mm'))..." -ForegroundColor Gray
-            
-            # Get the file content at this commit
-            $fileUrl = "$apiBase/repos/$owner/$repo/contents/$filePath`?ref=$sha"
-            $fileData = Invoke-RestMethod -Uri $fileUrl -Headers @{
-                "Accept" = "application/vnd.github.v3+json"
-                "User-Agent" = "PowerShell-FIDO-Tracker"
-            }
-            
-            # Decode content (it's base64 encoded)
-            $content = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($fileData.content))
-            
-            # Parse the markdown table
-            $entries = Parse-FIDOTable -Content $content
-            
-            $commitData += [PSCustomObject]@{
-                SHA = $sha
-                ShortSHA = $sha.Substring(0, 7)
-                Date = $date
-                Message = $message
-                # Author = $author
-                Entries = $entries
-                AAGUIDs = $entries.AAGUID
+            $commitData += Get-FIDOCommitData -Commit $commit -Label 'report'
+        }
+
+        # A month can contain only one commit. Use the newest commit before the
+        # report range as its comparison baseline, without listing it in the report.
+        $baselineCommitData = $null
+        if ($since) {
+            $baselineUrl = "$apiBase/repos/$owner/$repo/commits?path=$filePath&per_page=1"
+            $baselineUrl += "&until=$($since.AddSeconds(-1).ToString('yyyy-MM-ddTHH:mm:ssZ'))"
+            $baselineCommits = @(Invoke-RestMethod -Uri $baselineUrl -Headers $githubHeaders)
+            if ($baselineCommits.Count -gt 0) {
+                $baselineCommitData = Get-FIDOCommitData -Commit $baselineCommits[0] -Label 'baseline'
             }
         }
         
@@ -168,9 +217,9 @@ Function Show-FIDOCommitHistory {
         if ($AsChangeLog) {
             # Professional changelog format
             $title = if ($CurrentMonth) {
-                "# FIDO2 Hardware Vendor Changes - $($commitData[0].Date.ToString('MMMM yyyy'))"
+                "# FIDO2 Hardware Vendor Changes - $($since.ToString('MMMM yyyy'))"
             } elseif ($PSBoundParameters.ContainsKey('Month')) {
-                "# FIDO2 Hardware Vendor Changes - $($commitData[0].Date.ToString('MMMM yyyy'))"
+                "# FIDO2 Hardware Vendor Changes - $($since.ToString('MMMM yyyy'))"
             } else {
                 "# FIDO2 Hardware Vendor Changes - Recent Updates"
             }
@@ -191,6 +240,13 @@ Function Show-FIDOCommitHistory {
         
         for ($i = 0; $i -lt $commitData.Count; $i++) {
             $current = $commitData[$i]
+            $previous = if ($i -lt ($commitData.Count - 1)) {
+                $commitData[$i + 1]
+            } elseif ($baselineCommitData) {
+                $baselineCommitData
+            } else {
+                $null
+            }
             
             if ($AsChangeLog) {
                 $outputLines.Add("## $($current.Date.ToString('yyyy-MM-dd')) - Commit $($current.ShortSHA)") | Out-Null
@@ -199,6 +255,9 @@ Function Show-FIDOCommitHistory {
                 $outputLines.Add("**Total AAGUIDs:** $($current.Entries.Count)") | Out-Null
                 if ($current.Message -notmatch '^(Update|Fix|Add|Remove)') {
                     $outputLines.Add("**Note:** $($current.Message)") | Out-Null
+                }
+                if ($previous) {
+                    $outputLines.Add("**Compared with:** $($previous.ShortSHA) ($($previous.Date.ToString('yyyy-MM-dd')))") | Out-Null
                 }
                 $outputLines.Add("") | Out-Null
             } else {
@@ -209,10 +268,8 @@ Function Show-FIDOCommitHistory {
                 Write-Host "    Entries: $($current.Entries.Count) AAGUIDs" -ForegroundColor Gray
             }
             
-            # Compare with previous commit
-            if ($i -lt ($commitData.Count - 1)) {
-                $previous = $commitData[$i + 1]
-                
+            # Compare with the previous report commit, or the pre-month baseline.
+            if ($previous) {
                 if (-not $AsChangeLog) {
                     Write-Host "`n    📈 Changes from previous commit ($($previous.ShortSHA)):" -ForegroundColor Magenta
                 }
@@ -370,8 +427,12 @@ Function Show-FIDOCommitHistory {
             $outputLines.Add("| Commits Analyzed | $($commitData.Count) |") | Out-Null
             $outputLines.Add("| Date Range | $($commitData[-1].Date.ToString('yyyy-MM-dd')) to $($commitData[0].Date.ToString('yyyy-MM-dd')) |") | Out-Null
             $outputLines.Add("| Current Total AAGUIDs | $($commitData[0].Entries.Count) |") | Out-Null
-            if ($commitData.Count -gt 1) {
-                $netChange = $commitData[0].Entries.Count - $commitData[-1].Entries.Count
+            if ($baselineCommitData) {
+                $outputLines.Add("| Baseline Commit | $($baselineCommitData.ShortSHA) ($($baselineCommitData.Date.ToString('yyyy-MM-dd'))) |") | Out-Null
+            }
+            $comparisonStart = if ($baselineCommitData) { $baselineCommitData } else { $commitData[-1] }
+            if ($commitData.Count -gt 1 -or $baselineCommitData) {
+                $netChange = $commitData[0].Entries.Count - $comparisonStart.Entries.Count
                 $changeSymbol = if ($netChange -gt 0) { "+" } elseif ($netChange -lt 0) { "" } else { "" }
                 $outputLines.Add("| Net Change | $changeSymbol$netChange |") | Out-Null
             }
@@ -394,9 +455,13 @@ Function Show-FIDOCommitHistory {
             Write-Host "Total commits analyzed:     $($commitData.Count)" -ForegroundColor White
             Write-Host "Date range:                 $($commitData[-1].Date.ToString('yyyy-MM-dd')) to $($commitData[0].Date.ToString('yyyy-MM-dd'))" -ForegroundColor White
             Write-Host "Current AAGUIDs:            $($commitData[0].Entries.Count)" -ForegroundColor White
-            if ($commitData.Count -gt 1) {
-                Write-Host "Oldest commit AAGUIDs:      $($commitData[-1].Entries.Count)" -ForegroundColor White
-                Write-Host "Net change:                 $($commitData[0].Entries.Count - $commitData[-1].Entries.Count)" -ForegroundColor White
+            if ($baselineCommitData) {
+                Write-Host "Baseline commit:            $($baselineCommitData.ShortSHA) ($($baselineCommitData.Date.ToString('yyyy-MM-dd')))" -ForegroundColor White
+            }
+            $comparisonStart = if ($baselineCommitData) { $baselineCommitData } else { $commitData[-1] }
+            if ($commitData.Count -gt 1 -or $baselineCommitData) {
+                Write-Host "Starting AAGUIDs:           $($comparisonStart.Entries.Count)" -ForegroundColor White
+                Write-Host "Net change:                 $($commitData[0].Entries.Count - $comparisonStart.Entries.Count)" -ForegroundColor White
             }
             Write-Host ""
         }
