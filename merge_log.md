@@ -1,3 +1,10 @@
+# Merge Log - 2026-11-20 11:03:27
+
+Vendor corrected for AAGUID '6e34341a-88c7-483d-b777-a425c355be93': 'Unknown' to 'WebComm'.
+
+Vendor 'WebComm' for description 'WebComm OETHenticator' has become valid.
+
+
 # Merge Log - 2026-11-19 00:21:55
 
 Vendor set for AAGUID 'e41b42a3-60ac-4afb-8757-a98f2d7f6c9f': '' to 'Deepnet' (derived from description).
