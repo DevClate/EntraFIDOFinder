@@ -5,7 +5,7 @@ Fetches and parses a FIDO database log from a specified URL.
 .DESCRIPTION
 The Get-FIDODbLog function retrieves a log file from a given URL and parses its content. 
 The log entries are expected to follow a specific format, with each entry starting with a date and time stamp.
-Entries are categorized by lines starting with "Duplicate" or "Updated". The function returns the parsed log entries as an array of PSCustomObject.
+Entries are categorized by lines starting with "Duplicate" or "Updated". The function returns parsed log entries as objects.
 
 .PARAMETER Url
 The URL from which to fetch the log file. Defaults to "https://raw.githubusercontent.com/DevClate/EntraFIDOFinder/main/merge_log.md".
@@ -88,12 +88,11 @@ function Get-FIDODbLog {
                 }
             }
 
-            # Return the logs as a PSCustomObject array and format as list
-            $logs | Format-List
+            $logs
         } else {
-            Write-Host "No content found at the specified URL." -ForegroundColor Yellow
+            Write-Warning "No content found at the specified URL."
         }
     } catch {
-        Write-Host "An error occurred while fetching the log file: $_" -ForegroundColor Red
+        Write-Error "An error occurred while fetching or parsing the log file: $_"
     }
 }

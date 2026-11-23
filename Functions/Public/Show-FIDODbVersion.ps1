@@ -78,7 +78,9 @@ function Show-FIDODbVersion {
     # Compare the dates and inform the user
     if ($localLastUpdated -eq $latestLastUpdated) {
         Write-Output "Your local database is up to date."
-    } else {
+    } elseif ($localLastUpdated -lt $latestLastUpdated) {
         Write-Output ("A newer version of the database is available. The latest database was last updated on: {0:yyyy-MM-dd HH:mm:ss}" -f $latestLastUpdated)
+    } else {
+        Write-Output ("Your local database is newer than the latest database, which was last updated on: {0:yyyy-MM-dd HH:mm:ss}" -f $latestLastUpdated)
     }
 }

@@ -2,7 +2,7 @@
 
 PowerShell Module to find compatible attestation FIDO2 keys for Entra.
 
-**Database Last Updated:** 2026-05-24
+**Database Last Updated:** 2026-11-20
 
 ## Features
 
@@ -43,10 +43,10 @@ Find-FIDOKey -Type USB,NFC -TypeFilterMode AtLeastTwo
 Find-FIDOKey -Type USB,NFC
 
 # Find keys that are FIDO 2.1
-Find-FIDOKey -FIDOVersion "FIDO 2.1"
+Find-FIDOKey | Where-Object Version -eq "FIDO 2.1"
 
 # Find keys that are FIDO 2.1 with all properties in JSON output
-Find-FIDOKey -FIDOVersion "FIDO 2.1" -AllProperties
+Find-FIDOKey -DetailedProperties | Where-Object Version -eq "FIDO 2.1" | ConvertTo-Json -Depth 10
 
 # Here is an example showing the standard with Protocol Family
 Find-FIDOKey -DetailedProperties | Select-Object Vendor, Description, @{Name="ProtocolFamily";Expression={$_.metadataStatement.protocolFamily}} | fl
@@ -70,7 +70,7 @@ Get-FIDODbLog
 ## Properties
 
 Brands:
-This parameter is validated so if you start typing in a brand and press tab it will fill the rest of the brand name in if it is available.
+This parameter is validated against the bundled database, and tab completion offers available brand names.
 
 Type:
 The four types of keys are USB, NFC, BIO, and BLE which are also validated in so you can tab complete.
@@ -89,20 +89,20 @@ Allows you to pull any property from the FIDO Alliance, but some you may have to
 Vendor      : ACS
 Description : ACS FIDO Authenticator
 AAGUID      : 50a45b0c-80e7-f944-bf29-f552bfa2e048
-Bio         : No
-USB         : Yes
-NFC         : No
-BLE         : No
+Bio         : ❌
+USB         : ✅
+NFC         : ❌
+BLE         : ❌
 Version     : FIDO 2.1 PRE
 ValidVendor : Yes
 
 Vendor      : ACS
 Description : ACS FIDO Authenticator Card
 AAGUID      : 973446ca-e21c-9a9b-99f5-9b985a67af0f
-Bio         : No
-USB         : No
-NFC         : Yes
-BLE         : No
+Bio         : ❌
+USB         : ❌
+NFC         : ✅
+BLE         : ❌
 Version     : FIDO 2.1 PRE
 ValidVendor : Yes
 
@@ -111,10 +111,10 @@ ValidVendor : Yes
   "Vendor": "ACS",
   "Description": "ACS FIDO Authenticator",
   "AAGUID": "50a45b0c-80e7-f944-bf29-f552bfa2e048",
-  "Bio": "No",
-  "USB": "Yes",
-  "NFC": "No",
-  "BLE": "No",
+  "Bio": "❌",
+  "USB": "✅",
+  "NFC": "❌",
+  "BLE": "❌",
   "Version": "FIDO 2.1 PRE",
   "ValidVendor": "Yes",
   "metadataStatement": {

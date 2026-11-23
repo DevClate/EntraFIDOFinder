@@ -2,6 +2,744 @@
 
 Here you will find all changes per version
 
+## v0.0.24
+
+51 new authenticators added, 6 authenticators updated, and 0 authenticators removed since v0.0.23.
+
+- **51 new authenticators** have been added to the bundled database
+- **6 authenticators** have updated standard properties
+- **0 authenticators** have been removed
+
+### Module improvements
+
+- Fixed capability filters for the current database format.
+- Updated brand validation and tab completion to use the bundled database.
+- Made database log entries available as objects and surfaced download errors.
+- Corrected database version comparisons and examples.
+
+## ✅ New Authenticators (51)
+
+The following authenticators are now included:
+
+### ACS PocketKey+ Bio
+
+**AAGUID:** `cb4f796c-a20a-af9e-d639-213c1ec247f3`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Deepnet SafeKey/Classic (FP)
+
+**AAGUID:** `e41b42a3-60ac-4afb-8757-a98f2d7f6c9f`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ❌ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### Deepnet SafeKey/Classic (FP) XF
+
+**AAGUID:** `c1288a5c-d66b-495c-a68f-4e81f9ec5b53`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ❌ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### Deepnet SafeKey/Classic (NFC)
+
+**AAGUID:** `357f2718-434f-4124-8a58-7e28c5e4a2fc`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Deepnet SafeKey/Classic (USB)
+
+**AAGUID:** `b9f6b7b6-f929-4189-bca9-dd951240c132`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### Ensurity AUTH TouchPro
+
+**AAGUID:** `50cbf15a-238c-4457-8f16-812c43bf3c49`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### eToken FIDO NFC Enterprise
+
+**AAGUID:** `a6c5f5d8-2ad0-48b6-8257-e502c8970931`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### eToken Fusion NFC PIV Enterprise
+
+**AAGUID:** `c3f47802-de73-4dfc-ba22-671fe3304f90`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### eWBM eFA500 FIDO2 Authenticator
+
+**AAGUID:** `361a3082-0278-4583-a16f-72a527f973e4`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ❌ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### Feitian FIDO Smart Card
+
+**AAGUID:** `2c0df832-92de-4be1-8412-88a8f074df4a`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### FEITIAN FT-JCOS BioCard
+
+**AAGUID:** `238ab2f5-b57f-4917-b3c6-3d3c6c0c350f`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### GoldKey Security Token
+
+**AAGUID:** `0db01cd6-5618-455b-bb46-1ec203d3213e`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### USB GoldKey Security Token
+
+**AAGUID:** `39502df1-646d-4e31-81a1-2ef68b324678`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### GoTrust Cyber Key
+
+**AAGUID:** `6d4aa745-dad5-40c4-b9b4-6a252fcee70f`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### GoTrust Idem Key mini
+
+**AAGUID:** `72a2b5b1-95a5-4df9-a881-4192aff4f72e`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### HID Crescendo Key V3 FIPS
+
+**AAGUID:** `19bca99b-7c09-44fe-a969-8cba45764542`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### IDEMIA Access FIDO Smart Card
+
+**AAGUID:** `6169eb16-f87a-42d8-978d-e1ac0c3f319f`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### IDEMIA SOLVO Fly 80 R3 FIDO Card for j
+
+**AAGUID:** `b68c4b8d-65cb-42ae-b4f6-8606dfba3c22`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### OneKey FIDO2 Bluetooth Authenticator
+
+**AAGUID:** `70e7c36f-f2f6-9e0d-07a6-bcc243262e6b`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ✅ |
+
+### SafeNet eToken Fusion NFC 930C FIDO2.1
+
+**AAGUID:** `9152406a-de8e-46dd-8685-3875c067e486`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### SECORA ID Key S USB by Infineon Enterprise Edition
+
+**AAGUID:** `18852056-063b-4042-9814-7d0d383081f9`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### SECORA ID V2 by Infineon Consumer Edition
+
+**AAGUID:** `55fd881f-40ba-4eaf-8435-42c5fed08b76`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### SECORA ID V2 by Infineon Enterprise Edition
+
+**AAGUID:** `8108bdcd-8483-46b3-b3ce-359f8190325e`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Giesecke+Devrient StarSign FIDO Card 2.1
+
+**AAGUID:** `c09b3399-4a3d-306c-7bdc-967fef47241f`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Enterprise Security Key Series with NFC (Consumer Profile)
+
+**AAGUID:** `24083bcb-3034-4867-99de-a3b52e1d426a`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Thales eToken Fusion BIO Enterprise
+
+**AAGUID:** `33d6d7d0-279f-4ef3-96b3-2d3282f4bde6`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### Thales PAY GFCX19 authenticator
+
+**AAGUID:** `0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Thales PAY GFCX20.1 authenticator
+
+**AAGUID:** `11544c3c-3693-40ba-9dbb-3b8d2b977988`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Thetis Pro FIDO2 Key
+
+**AAGUID:** `1f8e43df-71ff-e11d-bea3-c4ee7003b232`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### TruU FIDO2 Authenticator
+
+**AAGUID:** `bb878d7b-cf54-4784-b390-357030497043`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ❌ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### VeriMark(TM) Guard 2.1 Fingerprint Security Key
+
+**AAGUID:** `09619fbf-d75e-4a62-be1d-fe4d240864ae`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### WebComm OETHenticator
+
+**AAGUID:** `6e34341a-88c7-483d-b777-a425c355be93`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### Enterprise Security Key Series with NFC (Enterprise Profile)
+
+**AAGUID:** `ab7d1767-3fa0-4388-b6c4-feef7a844809`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### Security Key Series with NFC (Consumer Profile)
+
+**AAGUID:** `0f083f18-4105-43a8-ad69-24e812e38141`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 CCN Series with NFC (Consumer Profile)
+
+**AAGUID:** `eb7ef748-cbe0-4b40-b8f6-07bd2d592d35`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 CCN Series with NFC (Enterprise Profile)
+
+**AAGUID:** `3ec9c8d3-a5a7-415b-a7b5-f1d606368d3f`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 FIPS Series with NFC (RC Preview)
+
+**AAGUID:** `ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 Series (Consumer Profile)
+
+**AAGUID:** `0a357157-9b18-4c8a-920e-d156e972b2f8`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey 5 Series (Enterprise Profile)
+
+**AAGUID:** `524de2de-982f-49b4-a769-2b5e3b73ad79`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with Lightning (Consumer Profile)
+
+**AAGUID:** `03012cb7-4fb2-42e7-9e8d-a81f10e2a5e9`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with Lightning (Enterprise Profile)
+
+**AAGUID:** `c3479970-e58a-4f70-836f-853bf42fb063`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with NFC (Consumer Profile)
+
+**AAGUID:** `f4ce5fc0-57d3-46f5-a736-efb7d5bc63b5`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with NFC (Consumer Profile) KVZR57-2
+
+**AAGUID:** `7dab85a5-d16d-4eaf-a7ef-4c1385b151c5`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with NFC (Enterprise Profile)
+
+**AAGUID:** `41e39911-c669-4811-b860-c6ad0b411b96`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with NFC Enhanced PIN (Consumer Profile)
+
+**AAGUID:** `0ebd9f2c-f685-441c-8c3e-a02a234a840a`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey 5 Series with NFC Enhanced PIN (Enterprise Profile)
+
+**AAGUID:** `9a3f2abd-a73d-439c-9ee7-1b53a857eaa7`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ❌ |
+| USB | ✅ |
+| NFC | ✅ |
+| BLE | ❌ |
+
+### YubiKey Bio Fido Edition (Consumer Profile)
+
+**AAGUID:** `9dd8d593-2213-438a-97f8-d6b813d51c27`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey Bio Fido Edition (Enterprise Profile)
+
+**AAGUID:** `add92433-0d69-4026-8166-29b25bce64e9`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey Bio Multi-protocol Edition (Consumer Profile)
+
+**AAGUID:** `ba0a9266-40d8-4048-9786-d710b5474752`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey Bio Multi-protocol Edition (Consumer Profile) 1VDJSN-2
+
+**AAGUID:** `9806a2c8-c0da-478e-b4ca-620005d34182`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+### YubiKey Bio Multi-protocol Edition (Enterprise Profile)
+
+**AAGUID:** `dc5e949d-f939-43b3-9877-a85c7186b753`
+
+**Supported Interfaces:**
+
+| Interface | Supported |
+|-----------|-----------|
+| Biometric | ✅ |
+| USB | ✅ |
+| NFC | ❌ |
+| BLE | ❌ |
+
+## ⚠️ Updated Authenticators (6)
+
+### Allthenticator Android App: roaming BLE FIDO2 Allthenticator for Windows, Mac, Linux, and Allthenticate door readers
+
+**AAGUID:** `5ca1ab1e-fa57-1337-f1d0-a117371ca702`
+
+**Changes:**
+
+- **Version:** FIDO 2.1 PRE → FIDO 2.0
+
+### GoTrust Idem Card
+
+**AAGUID:** `9f0d8150-baa5-4c00-9299-ad62c8bb4e87`
+
+**Changes:**
+
+- **Description:** GoTrust Idem Card FIDO2 Authenticator → GoTrust Idem Card
+
+### GoTrust Idem Key
+
+**AAGUID:** `3b1adb99-0dfe-46fd-90b8-7f7614a4de2a`
+
+**Changes:**
+
+- **Description:** GoTrust Idem Key FIDO2 Authenticator → GoTrust Idem Key
+
+### GoTrust Idem Key
+
+**AAGUID:** `c611b55c-77b2-4527-8082-590e931b2f08`
+
+**Changes:**
+
+- **Description:** GoTrust Idem Key (Consumer profile) → GoTrust Idem Key
+
+### IDmelon Authenticator
+
+**AAGUID:** `820d89ed-d65a-409e-85cb-f73f0578f82a`
+
+**Changes:**
+
+- **USB:** ❌ → ✅
+- **BLE:** ❌ → ✅
+
+### IDmelon Key
+
+**AAGUID:** `39a5647e-1853-446c-a1f6-a79bae9f5bc7`
+
+**Changes:**
+
+- **USB:** ❌ → ✅
+- **NFC:** ❌ → ✅
+
+## ❌ Removed Authenticators (0)
+
+No authenticators were removed.
+
 ## v0.0.23
 
 11 new authenticators added, 7 authenticators updated, 52 authenticators removed since last release.

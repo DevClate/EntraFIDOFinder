@@ -8,7 +8,7 @@
     The results can be displayed in a table, list format, or pipe.
 
 .PARAMETER Brand
-    Filter the FIDO keys by Brand. The available brands are listed in the ValidateSet.
+    Filter the FIDO keys by Brand. Available brands come from the bundled database.
 
 .PARAMETER Type
     Filter the FIDO keys by Type. The available types are Bio, USB, NFC, and BLE.
@@ -52,13 +52,20 @@ function Find-FIDOKey {
     param (
 
         [Parameter()]
-        [ValidateSet("ACS", "Allthenticator", "Arculus", "AuthenTrend", "Atos", "authenton1", "Chunghwa Telecom",
-            "Crayonic", "Cryptnox", "Egomet", "Ensurity", "eWBM", "Excelsecu", "Feitian", "FIDO KeyPass", "FT-JCOS",
-            "Google", "GoTrust", "HID Global", "Hideez", "Hypersecu", "HYPR", "IDCore", "IDEMIA", "IDmelon", "Thales",
-            "ImproveID", "KEY-ID", "KeyXentic", "KONAI", "NEOWAVE", "NXP Semiconductors", "Nymi", "OCTATCO", "OneSpan",
-            "OnlyKey", "OpenSK", "Pone Biometrics", "Precision", "RSA", "SafeNet", "Yubico", "Sentry Enterprises",
-            "SmartDisplayer", "SoloKeys", "Swissbit", "Taglio", "Token Ring", "TOKEN2", "Identiv", "VALMIDO", "Kensington",
-            "VinCSS", "WiSECURE")]
+        [ArgumentCompleter({
+            param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameters)
+            $module = (Get-Command -Name $commandName -CommandType Function).Module
+            $path = Join-Path $module.ModuleBase "Assets/FidoKeys.json"
+            $vendors = (Get-Content -Raw -Path $path -ErrorAction Stop | ConvertFrom-Json).keys.Vendor |
+                Where-Object { $_ } | Sort-Object -Unique
+            $prefix = $wordToComplete.Trim("'`"")
+            foreach ($vendor in $vendors) {
+                if ($vendor.StartsWith($prefix, [StringComparison]::OrdinalIgnoreCase)) {
+                    $completion = "'" + $vendor.Replace("'", "''") + "'"
+                    [System.Management.Automation.CompletionResult]::new($completion, $vendor, 'ParameterValue', $vendor)
+                }
+            }
+        })]
         [string[]]$Brand,
 
         [Parameter()]
@@ -168,6 +175,15 @@ function Find-FIDOKey {
         $metadata = $data.metadata
         $results = $data.keys
 
+        if ($Brand) {
+            $vendors = $data.keys.Vendor | Sort-Object -Unique
+            $invalidBrands = @($Brand | Where-Object { $vendors -notcontains $_ })
+            if ($invalidBrands.Count -gt 0) {
+                Write-Error "Unknown brand(s): $($invalidBrands -join ', '). Use tab completion to see available brands."
+                return
+            }
+        }
+
         # Filter by AAGUID if provided
         if ($allAAGUIDs) {
             $results = $results | Where-Object {
@@ -186,10 +202,10 @@ function Find-FIDOKey {
         if ($Type) {
             $results = $results | Where-Object {
                 $typeCount = 0
-                if ($Type -contains "Bio" -and $_.Bio -eq "Yes") { $typeCount++ }
-                if ($Type -contains "USB" -and $_.USB -eq "Yes") { $typeCount++ }
-                if ($Type -contains "NFC" -and $_.NFC -eq "Yes") { $typeCount++ }
-                if ($Type -contains "BLE" -and $_.BLE -eq "Yes") { $typeCount++ }
+                if ($Type -contains "Bio" -and $_.Bio -in @("Yes", "✅")) { $typeCount++ }
+                if ($Type -contains "USB" -and $_.USB -in @("Yes", "✅")) { $typeCount++ }
+                if ($Type -contains "NFC" -and $_.NFC -in @("Yes", "✅")) { $typeCount++ }
+                if ($Type -contains "BLE" -and $_.BLE -in @("Yes", "✅")) { $typeCount++ }
 
                 switch ($TypeFilterMode) {
                     "AtLeastTwo" { $typeCount -ge 2 }
